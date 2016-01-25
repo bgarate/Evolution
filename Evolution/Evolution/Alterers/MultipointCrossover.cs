@@ -1,12 +1,14 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Singular.Evolution.Core;
 using Singular.Evolution.Genotypes;
 using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class MultipointCrossover<G> where G : IGene, new()
+    public class MultipointCrossover<G,F>: IAlterer where G : IGene, new() where F: IComparable<F>
     {
         public MultipointCrossover(int points)
         {
@@ -15,13 +17,13 @@ namespace Singular.Evolution.Alterers
 
         public int Points { get; }
 
-        public IEnumerable<IListGenotype<G>> Apply(IList<IListGenotype<G>> parents)
+        public IList<Individual<IListGenotype<G>,F>> Apply(IList<Individual<IListGenotype<G>,F>> parents)
         {
             if (parents.Count() != 2)
                 throw new ArgumentException("Input expected two parents");
 
-            IListGenotype<G> parent1 = parents[0];
-            IListGenotype<G> parent2 = parents[1];
+            IListGenotype<G> parent1 = parents[0].Genotype;
+            IListGenotype<G> parent2 = parents[1].Genotype;
 
             if (parent1.Count != parent2.Count)
                 throw new ArgumentException("Parents should have same length");
@@ -31,10 +33,10 @@ namespace Singular.Evolution.Alterers
             if (Points >= count)
                 throw new ArgumentException($"Parents should have at least {count} genes");
 
-            return GetOffsprig(parent1, parent2);
+            return Individual<IListGenotype<G>,F>.FromGenotypes(GetOffsprig(parent1, parent2));
         }
 
-        private IEnumerable<IListGenotype<G>> GetOffsprig(IListGenotype<G> parent1, IListGenotype<G> parent2)
+        private IList<IListGenotype<G>> GetOffsprig(IListGenotype<G> parent1, IListGenotype<G> parent2)
         {
             int count = parent1.Count;
 
@@ -79,7 +81,7 @@ namespace Singular.Evolution.Alterers
                 }
             }
         }
-
+       
         private List<int> GenerateIndexes(int count)
         {
             RandomGenerator rnd = RandomGenerator.GetInstance();
@@ -95,6 +97,11 @@ namespace Singular.Evolution.Alterers
 
             indexes.Sort();
             return indexes;
+        }
+        
+        IList<Individual<G1, F1>> IAlterer.Apply<G1, F1>(IList<Individual<G1, F1>> individuals)
+        {
+            return (IList<Individual<G1, F1>>) Apply((IList<Individual<IListGenotype<G>, F>>) individuals);
         }
     }
 }

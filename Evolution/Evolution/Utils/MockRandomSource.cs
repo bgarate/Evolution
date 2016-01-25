@@ -4,35 +4,25 @@ namespace Singular.Evolution.Utils
 {
     internal class MockRandomSource : IRandomSource
     {
-        private readonly IEnumerator<int> enumerator;
+        private readonly IEnumerator<double> enumerator;
 
-        public MockRandomSource()
+        public MockRandomSource(IEnumerable<double> enumerable)
         {
-            enumerator = Increment().GetEnumerator();
+            enumerator = enumerable.GetEnumerator();
         }
 
         public int NextInt()
         {
             enumerator.MoveNext();
-            return enumerator.Current/2;
+            return (int)(enumerator.Current * 10);
         }
 
 
         public double NextDouble()
         {
             enumerator.MoveNext();
-            return 1/(double) enumerator.Current;
+            return enumerator.Current;
         }
 
-        private IEnumerable<int> Increment()
-        {
-            int x = 0;
-
-            while (true)
-            {
-                x = x + 1;
-                yield return x;
-            }
-        }
     }
 }

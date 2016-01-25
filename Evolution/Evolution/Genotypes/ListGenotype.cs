@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genotypes
 {

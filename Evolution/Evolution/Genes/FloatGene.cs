@@ -1,4 +1,5 @@
 ﻿using System;
+using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genes
 {
@@ -28,7 +29,7 @@ namespace Singular.Evolution.Genes
 
         public double Value { get; }
 
-        public bool IsBounded => MinValue == null;
+        public bool IsBounded => MinValue != null;
 
         public bool Equals(FloatGene other)
         {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Singular.Evolution
+namespace Singular.Evolution.Core
 {
     public interface INumericGene<T> : IGene, IComparable<T>
     {

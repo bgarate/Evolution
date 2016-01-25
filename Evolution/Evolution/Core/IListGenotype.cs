@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Singular.Evolution
+namespace Singular.Evolution.Core
 {
     public interface IListGenotype<G> : IGenotype, IEnumerable<G> where G : IGene, new()
     {

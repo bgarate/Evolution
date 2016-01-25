@@ -1,4 +1,4 @@
-namespace Singular.Evolution
+namespace Singular.Evolution.Core
 {
     public interface IGenotype
     {

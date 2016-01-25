@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Singular.Evolution
+namespace Singular.Evolution.Core
 {
     public class GeneEnumerator<G> : IEnumerator<G> where G : IGene
     {

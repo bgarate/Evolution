@@ -30,18 +30,23 @@ namespace Singular.Evolution.Utils
             {
                 if (value != mockEnabled)
                 {
-                    mockEnabled = value;
-                    if (mockEnabled)
+                    if (value)
                     {
-                        rnd = new MockRandomSource();
+                        if (MockSource == null)
+                            throw new Exception("MockSource is not set");
+
+                        rnd = new MockRandomSource(MockSource);
                     }
                     else
                     {
                         rnd = new SystemRandomSource();
                     }
+                    mockEnabled = value;
                 }
             }
         }
+
+        public IEnumerable<double> MockSource { get; set; } 
 
         public int NextInt()
         {
