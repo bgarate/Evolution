@@ -2,7 +2,7 @@ language: csharp
 solution: Evolution/Evolution.sln
 
 before_install:
-  - sudo pip install codecov
+  - sudo pip install --user codecov
 
 install:
   - nuget restore Evolution/Evolution.sln
