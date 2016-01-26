@@ -20,10 +20,9 @@ namespace Evolution.Test
             RandomGenerator rnd = RandomGenerator.GetInstance();
             
             ListGenotype<FloatGene> genotype =
-                new ListGenotype<FloatGene>(new[]
-                {new FloatGene(0), new FloatGene(1), new FloatGene(2), new FloatGene(3), new FloatGene(4)});
+                new ListGenotype<FloatGene>(10000);
             
-            GaussianMutator<int> mutator = new GaussianMutator<int>(0.5);
+            GaussianMutator<int> mutator = new GaussianMutator<int>(0.1);
             var parents = new List<IListGenotype<FloatGene>>();
 
             parents.Add(genotype);
@@ -42,7 +41,7 @@ namespace Evolution.Test
                     changes++;
             }
             
-            Assert.AreEqual(changes, 2);
+            Assert.LessOrEqual(changes, 1000);
             
         }
     }

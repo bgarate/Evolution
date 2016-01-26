@@ -55,7 +55,7 @@ namespace Singular.Evolution.Utils
 
         public int NextInt(int min, int max)
         {
-            return min + rnd.NextInt()%max;
+            return min + rnd.NextInt()%(max - min);
         }
 
         public int NextInt(int max)

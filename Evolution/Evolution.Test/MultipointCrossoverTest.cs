@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Singular.Evolution;
@@ -17,8 +18,6 @@ namespace Evolution.Test
         public void TestMultipointCrossover()
         {
             RandomGenerator rnd = RandomGenerator.GetInstance();
-            rnd.MockSource = new double[] { 1, 1, 2, 3, 4,5,6,7,8 };
-            rnd.MockEnabled = true;
 
             ListGenotype<FloatGene> genotype =
                 new ListGenotype<FloatGene>(new[]
@@ -40,20 +39,19 @@ namespace Evolution.Test
 
             Assert.AreEqual(offspring.Count, 2);
 
-            IListGenotype<FloatGene> child1 = offspring[0].Genotype;
-            IListGenotype<FloatGene> child2 = offspring[1].Genotype;
-
-            Assert.AreEqual(child1[0].Value, 1);
-            Assert.AreEqual(child1[1].Value, 2.5);
-            Assert.AreEqual(child1[2].Value, 3);
-            Assert.AreEqual(child1[3].Value, 4.5);
-            Assert.AreEqual(child1[4].Value, 5.5);
-
-            Assert.AreEqual(child2[0].Value, 1.5);
-            Assert.AreEqual(child2[1].Value, 2);
-            Assert.AreEqual(child2[2].Value, 3.5);
-            Assert.AreEqual(child2[3].Value, 4);
-            Assert.AreEqual(child2[4].Value, 5);
+            foreach (Individual<IListGenotype<FloatGene>, int> child in offspring)
+            {
+                bool previousWasInteger = Math.Abs(child.Genotype[0].Value - (int)child.Genotype[0].Value) < Double.Epsilon;
+                int cuts = 0;
+                foreach (FloatGene gene in child.Genotype)
+                {
+                    bool currentIsInteger = Math.Abs(gene.Value - (int) gene.Value) < Double.Epsilon;
+                    if (currentIsInteger != previousWasInteger)
+                        cuts++;
+                    previousWasInteger = currentIsInteger;
+                }
+                Assert.AreEqual(3,cuts);
+            }
         }
     }
 }
