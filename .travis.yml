@@ -2,7 +2,7 @@ language: csharp
 solution: Evolution/Evolution.sln
 
 before_install:
-  - sudo pip install --user codecov
+  - sudo -H pip install codecov
 
 install:
   - nuget restore Evolution/Evolution.sln
@@ -13,4 +13,4 @@ script:
   - mono ./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe ./Evolution/Evolution.Test/bin/Debug/Evolution.Test.dll
   
 after_success:
-  - sudo codecov
+  - codecov
