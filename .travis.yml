@@ -10,8 +10,8 @@ install:
 
 script:
   - xbuild /p:Configuration=Debug Evolution/Evolution.sln
-  - mono ./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe ./Evolution/Evolution.Test/bin/Debug/Evolution.Test.dll
-  - mono ./Evolution/packages/OpenCover.4.6.166/tools/OpenCover.Console.exe -register:user -target:"./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe" -targetargs:"Evolution/Evolution.Test/bin/Debug/Evolution.Test.dll" -filter:"+[Evolution*]*" -output:coverage.xml
+  - mono --profile=monocov:outfile=coverage.cov,+Evolution ./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe ./Evolution/Evolution.Test/bin/Debug/Evolution.Test.dll
+  - monocov --export-xml=coverage coverage.cov
 
 after_success:
   - codecov
