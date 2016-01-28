@@ -7,7 +7,7 @@ namespace Singular.Evolution.Core
 {
     public class Algorithm<G,F> where G : IGenotype where F : IComparable<F>
     {
-        public Algorithm(IPipe<G,F> initialPipe, IList<G> initialGenotypes)
+        private Algorithm(IPipe<G,F> initialPipe, IList<G> initialGenotypes)
         {
             InitialPipe = initialPipe;
             InitialGenotypes = initialGenotypes;
@@ -22,6 +22,11 @@ namespace Singular.Evolution.Core
         {
             IList<Individual<G,F>> output = InitialPipe.Input(CurrentWorld.Population);
             CurrentWorld = new World<G, F>(CurrentWorld.Generation, output);
+        }
+
+        public class Builder
+        {
+               
         }
     }
 }
