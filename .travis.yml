@@ -11,6 +11,3 @@ install:
 script:
   - xbuild /p:Configuration=Debug Evolution/Evolution.sln
   - mono ./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe ./Evolution/Evolution.Test/bin/Debug/Evolution.Test.dll
-  
-after_success:
-  - codecov
