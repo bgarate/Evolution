@@ -45,19 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\EasyGa.cs" />
+    <Compile Include="Algorithms\IAlgorithm.cs" />
     <Compile Include="Alterers\GaussianMutator.cs" />
     <Compile Include="Alterers\MultipointCrossover.cs" />
-    <Compile Include="Core\Algorithm.cs" />
+    <Compile Include="Core\Engine.cs" />
     <Compile Include="Core\GeneEnumerator.cs" />
     <Compile Include="Core\IAlterer.cs" />
+    <Compile Include="Core\IBreeder.cs" />
     <Compile Include="Core\IGene.cs" />
     <Compile Include="Core\IGenotype.cs" />
-    <Compile Include="Core\Individual.cs" />
     <Compile Include="Core\IListGenotype.cs" />
+    <Compile Include="Core\Individual.cs" />
     <Compile Include="Core\INumericGene.cs" />
-    <Compile Include="Core\IProcessPipe.cs" />
+    <Compile Include="Core\ISelector.cs" />
+    <Compile Include="Core\Recombinator.cs" />
     <Compile Include="Core\Mutator.cs" />
-    <Compile Include="Core\ProcessPipe.cs" />
     <Compile Include="Core\World.cs" />
     <Compile Include="Genes\FloatGene.cs" />
     <Compile Include="Genotypes\ListGenotype.cs" />

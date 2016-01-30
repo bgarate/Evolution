@@ -27,8 +27,10 @@ namespace Evolution.Test
 
             parents.Add(genotype);
 
+            IList<Individual<IListGenotype<FloatGene>, int>> individuals = Individual<IListGenotype<FloatGene>, int>.FromGenotypes(parents);
+
             var offspring =
-                mutator.Apply(Individual<IListGenotype<FloatGene>, int>.FromGenotypes(parents));
+                mutator.Apply(individuals);
 
             Assert.AreEqual(offspring.Count, 1);
 

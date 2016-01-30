@@ -8,11 +8,7 @@ namespace Singular.Evolution.Genes
         public FloatGene()
         {
         }
-
-        public FloatGene(double value) : this(value, null, null)
-        {
-        }
-
+        
         public FloatGene(double value, double? max = null, double? min = null)
         {
             Value = value;

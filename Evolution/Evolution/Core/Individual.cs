@@ -4,12 +4,22 @@ using System.Linq;
 
 namespace Singular.Evolution.Core
 {
-    public class Individual<G, F> where F : IComparable<F>
+    public class Individual<G, F> where F : IComparable<F> where G : IGenotype
     {
-        Individual(G genotype)
+        public Individual(G genotype)
         {
             Genotype = genotype;
+            HasFitnessAssigned = false;
         }
+
+        public Individual(G genotype, F fitness)
+        {
+            Genotype = genotype;
+            Fitness = fitness;
+            HasFitnessAssigned = true;
+        }
+
+        public bool HasFitnessAssigned { get; }
 
         public G Genotype { get; }
         public F Fitness { get; }
@@ -27,7 +37,7 @@ namespace Singular.Evolution.Core
 
     public static class IndividualExtensions
     {
-        public static IList<G> GetGenotypes<G,F>(this IList<Individual<G, F>> individuals) where F : IComparable<F>
+        public static IList<G> GetGenotypes<G,F>(this IList<Individual<G, F>> individuals) where F : IComparable<F> where G:IGenotype
         {
             return individuals.Select(i => i.Genotype).ToList();
         }
