@@ -12,7 +12,7 @@ using Singular.Evolution.Utils;
 namespace Evolution.Test
 {
     [TestFixture]
-    public class RnadomGeneratorTest
+    public class RandomGeneratorTest
     {
         [Test]
         public void TestInt()
@@ -68,6 +68,24 @@ namespace Evolution.Test
                 double a = rnd.NextDouble(Math.Min(1/b, 1/c), Math.Max(1/b, 1/c));
                 Assert.True(a >= Math.Min(1/b, 1/c) && a <= Math.Max(1/b, 1/c));
             }
+        }
+
+        [Test]
+        public void TestRandomGeneratorMock()
+        {
+            RandomGenerator rnd = RandomGenerator.GetInstance();
+            rnd.RandomSource = new MockRandomSource(new[] {3,450, 97},
+                new[] {0, 0.6, 0.9, 3});
+            
+
+            Assert.AreEqual(0,rnd.NextDouble());
+            Assert.AreEqual(3, rnd.NextInt());
+            Assert.AreEqual(50, rnd.NextInt(100));
+            Assert.AreEqual(3, rnd.NextInt(3,100));
+            Assert.AreEqual(0.3, rnd.NextDouble(0.5));
+            Assert.AreEqual(2.93, rnd.NextDouble(0.5,3.2));
+            Assert.Throws(typeof (InvalidOperationException), () => rnd.NextInt());
+            Assert.Throws(typeof(Exception), () => rnd.NextDouble());
         }
     }
 }

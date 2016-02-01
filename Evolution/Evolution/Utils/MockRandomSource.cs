@@ -1,27 +1,33 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Singular.Evolution.Utils
 {
-    internal class MockRandomSource : IRandomSource
+    public class MockRandomSource : IRandomSource
     {
-        private readonly IEnumerator<double> enumerator;
+        private readonly IEnumerator<int> intEnumerator;
+        private readonly IEnumerator<double> doubleEnumerator;
 
-        public MockRandomSource(IEnumerable<double> enumerable)
+        public MockRandomSource(IEnumerable<int> intEnumerator, IEnumerable<double> doubleEnumerator)
         {
-            enumerator = enumerable.GetEnumerator();
+            this.intEnumerator = intEnumerator.GetEnumerator();
+            this.doubleEnumerator = doubleEnumerator.GetEnumerator();
         }
 
         public int NextInt()
         {
-            enumerator.MoveNext();
-            return (int)(enumerator.Current * 10);
+            intEnumerator.MoveNext();
+            
+            return intEnumerator.Current;
         }
 
 
         public double NextDouble()
         {
-            enumerator.MoveNext();
-            return enumerator.Current;
+            doubleEnumerator.MoveNext();
+            if (doubleEnumerator.Current < 0 || doubleEnumerator.Current > 1)
+                throw new Exception("Mock values must be between 0 and 1");
+            return doubleEnumerator.Current;
         }
 
     }

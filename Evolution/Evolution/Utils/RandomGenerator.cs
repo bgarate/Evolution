@@ -7,9 +7,7 @@ namespace Singular.Evolution.Utils
     {
         private static readonly RandomGenerator Instance = new RandomGenerator();
         private readonly BoxMullerTransformation gaussian;
-
-        private bool mockEnabled;
-
+        
         private IRandomSource rnd = new SystemRandomSource();
 
         // Explicit static constructor to tell C# compiler
@@ -23,30 +21,16 @@ namespace Singular.Evolution.Utils
             gaussian = new BoxMullerTransformation(this);
         }
 
-        public bool MockEnabled
+        public IRandomSource RandomSource
         {
-            get { return mockEnabled; }
             set
             {
-                if (value != mockEnabled)
-                {
-                    if (value)
-                    {
-                        if (MockSource == null)
-                            throw new Exception("MockSource is not set");
+                if (value == null)
+                    throw new Exception("Random source not set");
 
-                        rnd = new MockRandomSource(MockSource);
-                    }
-                    else
-                    {
-                        rnd = new SystemRandomSource();
-                    }
-                    mockEnabled = value;
-                }
+                rnd = value;
             }
         }
-
-        public IEnumerable<double> MockSource { get; set; } 
 
         public int NextInt()
         {

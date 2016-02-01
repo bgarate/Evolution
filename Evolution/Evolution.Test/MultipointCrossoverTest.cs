@@ -27,11 +27,11 @@ namespace Evolution.Test
                 new ListGenotype<FloatGene>(new[]
                 {new FloatGene(1.5), new FloatGene(2.5), new FloatGene(3.5), new FloatGene(4.5), new FloatGene(5.5)});
 
-            MultipointCrossover<FloatGene,int> crossover = new MultipointCrossover<FloatGene,int>(3);
+            MultipointCrossover<ListGenotype<FloatGene>,FloatGene,int> crossover = new MultipointCrossover<ListGenotype<FloatGene>,FloatGene,int>(3);
 
-            List<Individual<IListGenotype<FloatGene>,int>> offspring =
+            List<Individual<ListGenotype<FloatGene>,int>> offspring =
                 crossover.Apply(
-                    Individual<IListGenotype<FloatGene>, int>.FromGenotypes(new List<IListGenotype<FloatGene>>()
+                    Individual<ListGenotype<FloatGene>, int>.FromGenotypes(new List<ListGenotype<FloatGene>>()
                     {
                         genotype,
                         genotype2
@@ -39,7 +39,7 @@ namespace Evolution.Test
 
             Assert.AreEqual(offspring.Count, 2);
 
-            foreach (Individual<IListGenotype<FloatGene>, int> child in offspring)
+            foreach (Individual<ListGenotype<FloatGene>, int> child in offspring)
             {
                 bool previousWasInteger = Math.Abs(child.Genotype[0].Value - (int)child.Genotype[0].Value) < Double.Epsilon;
                 int cuts = 0;

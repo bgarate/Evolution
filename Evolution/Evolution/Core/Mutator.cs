@@ -50,6 +50,10 @@ namespace Singular.Evolution.Core
         }
 
         protected abstract R Mutate(R g);
-        
+
+        public object Apply(object individuals)
+        {
+            return (object) Apply((IList<Individual<IListGenotype<R>, F>>) individuals);
+        }
     }
 }

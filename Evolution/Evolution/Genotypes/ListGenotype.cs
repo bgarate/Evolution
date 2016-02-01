@@ -5,6 +5,7 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genotypes
 {
+    [Factory(typeof(ListGenotypeFactory<>))]
     public class ListGenotype<G> : IListGenotype<G> where G : IGene, new()
     {
         private readonly List<G> genesList;
@@ -46,7 +47,7 @@ namespace Singular.Evolution.Genotypes
 
         public int Count => genesList.Count;
 
-        G IListGenotype<G>.this[int index] => genesList[index];
+        public G this[int index] => genesList[index];
 
         public IListGenotype<G> Swap(int i, int j)
         {

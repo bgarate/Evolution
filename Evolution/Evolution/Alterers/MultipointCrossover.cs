@@ -8,8 +8,8 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class MultipointCrossover<R, F> : IAlterer<IListGenotype<R>, F> where R : IGene, new()
-        where F : IComparable<F>
+    public class MultipointCrossover<G, R, F> : IAlterer<G, F> where G : IListGenotype<R>
+        where F : IComparable<F> where R: IGene, new ()
     {
         public MultipointCrossover(int points)
         {
@@ -18,13 +18,13 @@ namespace Singular.Evolution.Alterers
 
         public int Points { get; }
 
-        public IList<Individual<IListGenotype<R>, F>> Apply(IList<Individual<IListGenotype<R>, F>> parents)
+        public IList<Individual<G, F>> Apply(IList<Individual<G, F>> parents)
         {
             if (parents.Count() != 2)
                 throw new ArgumentException("Input expected two parents");
 
-            IListGenotype<R> parent1 = parents[0].Genotype;
-            IListGenotype<R> parent2 = parents[1].Genotype;
+            G parent1 = parents[0].Genotype;
+            G parent2 = parents[1].Genotype;
 
             if (parent1.Count != parent2.Count)
                 throw new ArgumentException("Parents should have same length");
@@ -34,10 +34,10 @@ namespace Singular.Evolution.Alterers
             if (Points >= count)
                 throw new ArgumentException($"Parents should have at least {count} genes");
 
-            return Individual<IListGenotype<R>, F>.FromGenotypes(GetOffsprig(parent1, parent2));
+            return Individual<G, F>.FromGenotypes(GetOffsprig(parent1, parent2));
         }
 
-        private IList<IListGenotype<R>> GetOffsprig(IListGenotype<R> parent1, IListGenotype<R> parent2)
+        private IList<G> GetOffsprig(IListGenotype<R> parent1, IListGenotype<R> parent2)
         {
             int count = parent1.Count;
 
@@ -60,7 +60,8 @@ namespace Singular.Evolution.Alterers
                 lastIndex = index;
             }
 
-            return new List<IListGenotype<R>> {new ListGenotype<R>(child1), new ListGenotype<R>(child2)};
+            IListGenotypeFactory<G, R> factory = Factory.GetInstance().BuildFactory<G,IListGenotypeFactory<G,R>>();
+            return new List<G> {factory.Create(child1), factory.Create(child2)};
         }
 
         private static void FromParentToChilds(int index, int lastIndex, bool parent1ToChild1, Queue<R> parentGenes1,
@@ -99,6 +100,6 @@ namespace Singular.Evolution.Alterers
             indexes.Sort();
             return indexes;
         }
-        
+
     }
 }

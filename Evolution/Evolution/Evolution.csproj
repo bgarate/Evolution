@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework, Version=3.0.5813.39033, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
@@ -55,16 +57,20 @@
     <Compile Include="Core\IBreeder.cs" />
     <Compile Include="Core\IGene.cs" />
     <Compile Include="Core\IGenotype.cs" />
+    <Compile Include="Core\IGenotypeFactory.cs" />
     <Compile Include="Core\IListGenotype.cs" />
+    <Compile Include="Core\IListGenotypeFactory.cs" />
     <Compile Include="Core\Individual.cs" />
     <Compile Include="Core\INumericGene.cs" />
     <Compile Include="Core\ISelector.cs" />
+    <Compile Include="Core\ListGenotypeFactory.cs" />
     <Compile Include="Core\Recombinator.cs" />
     <Compile Include="Core\Mutator.cs" />
     <Compile Include="Core\World.cs" />
     <Compile Include="Genes\FloatGene.cs" />
     <Compile Include="Genotypes\ListGenotype.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GenotypeFactory.cs" />
     <Compile Include="Utils\MoreMath.cs" />
     <Compile Include="Utils\IRandomGenerator.cs" />
     <Compile Include="Utils\IRandomSource.cs" />

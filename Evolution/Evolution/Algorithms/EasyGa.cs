@@ -31,7 +31,7 @@ namespace Singular.Evolution.Algorithms
         public IList<Individual<G, F>> Execute(World<G,F> world)
         {
             IList<Individual<G, F>> original = world.Population;
-            IList<Individual<G, F>> individuals = Selectors.SelectMany(s => s.Select(original)).ToList();
+            IList<Individual<G, F>> individuals = Selectors.SelectMany(s => s.Apply(original)).ToList();
             individuals = individuals.Select(i => new Individual<G, F>(i.Genotype,FitnessFunction(i.Genotype))).ToList();
             individuals = Alterers.Aggregate(individuals, (current, alterer) => alterer.Apply(current));
             return individuals;
