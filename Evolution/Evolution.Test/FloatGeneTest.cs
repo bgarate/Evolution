@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
-using Singular.Evolution;
-using Singular.Evolution.Alterers;
-using Singular.Evolution.Core;
+﻿using NUnit.Framework;
 using Singular.Evolution.Genes;
-using Singular.Evolution.Genotypes;
-using Singular.Evolution.Utils;
 
 namespace Evolution.Test
 {
@@ -19,7 +11,7 @@ namespace Evolution.Test
         {
             FloatGene a = new FloatGene();
 
-            Assert.AreEqual(0,a.Value);
+            Assert.AreEqual(0, a.Value);
 
             a = new FloatGene(2);
 
@@ -27,17 +19,17 @@ namespace Evolution.Test
 
             Assert.AreEqual(2, a.Value);
 
-            a = new FloatGene(5,2,-1000000);
+            a = new FloatGene(5, 2, -1000000);
 
             Assert.False(a.IsValid);
             Assert.True(a.IsBounded);
 
-            FloatGene b = new FloatGene(-3,1000000,0);
+            FloatGene b = new FloatGene(-3, 1000000, 0);
 
             Assert.False(b.IsValid);
             Assert.True(b.IsBounded);
 
-            FloatGene c= a.Sum(b);
+            FloatGene c = a.Sum(b);
 
             Assert.True(c.IsValid);
             Assert.True(c.IsBounded);
@@ -54,12 +46,12 @@ namespace Evolution.Test
             Assert.AreEqual(2, a.MaxValue);
             Assert.AreEqual(1000000, b.MaxValue);
 
-            a = new FloatGene(3,4,2);
+            a = new FloatGene(3, 4, 2);
             b = new FloatGene(4);
 
-            c = FloatGene.MinimumBoundedGene(0,a,b);
+            c = FloatGene.MinimumBoundedGene(0, a, b);
 
-            Assert.AreEqual(0,c.Value);
+            Assert.AreEqual(0, c.Value);
             Assert.AreEqual(2, c.MinValue);
             Assert.AreEqual(4, c.MaxValue);
             Assert.False(c.IsValid);
@@ -84,8 +76,6 @@ namespace Evolution.Test
             Assert.AreEqual(2, c.MinValue);
             Assert.AreEqual(4, c.MaxValue);
             Assert.False(c.IsValid);
-
         }
-
     }
 }

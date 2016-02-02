@@ -5,8 +5,8 @@ namespace Singular.Evolution.Utils
 {
     public class MockRandomSource : IRandomSource
     {
-        private readonly IEnumerator<int> intEnumerator;
         private readonly IEnumerator<double> doubleEnumerator;
+        private readonly IEnumerator<int> intEnumerator;
 
         public MockRandomSource(IEnumerable<int> intEnumerator, IEnumerable<double> doubleEnumerator)
         {
@@ -17,7 +17,7 @@ namespace Singular.Evolution.Utils
         public int NextInt()
         {
             intEnumerator.MoveNext();
-            
+
             return intEnumerator.Current;
         }
 
@@ -29,6 +29,5 @@ namespace Singular.Evolution.Utils
                 throw new Exception("Mock values must be between 0 and 1");
             return doubleEnumerator.Current;
         }
-
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using NUnit.Framework;
-using Singular.Evolution;
 using Singular.Evolution.Core;
 using Singular.Evolution.Genes;
 using Singular.Evolution.Genotypes;

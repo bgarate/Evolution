@@ -7,7 +7,7 @@ namespace Singular.Evolution.Utils
     {
         private static readonly RandomGenerator Instance = new RandomGenerator();
         private readonly BoxMullerTransformation gaussian;
-        
+
         private IRandomSource rnd = new SystemRandomSource();
 
         // Explicit static constructor to tell C# compiler

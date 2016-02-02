@@ -5,7 +5,7 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Algorithms
 {
-    public class EasyGa<G,F> : IAlgorithm<G, F> where G : IGenotype where F : IComparable<F>
+    public class EasyGa<G, F> : IAlgorithm<G, F> where G : IGenotype where F : IComparable<F>
     {
         private EasyGa()
         {
@@ -17,10 +17,10 @@ namespace Singular.Evolution.Algorithms
         public IList<IBreeder<G>> Breeders { get; }
         public IList<ISelector<G, F>> Selectors { get; }
         public IList<IAlterer<G, F>> Alterers { get; }
+        public Predicate<World<G, F>> StopCriteria { get; private set; }
 
-        
+
         public FitnessFunctionDelegate<F> FitnessFunction { get; private set; }
-        public Predicate<World<G,F>> StopCriteria { get; private set; }
 
         public IList<Individual<G, F>> Initialize()
         {
@@ -28,11 +28,12 @@ namespace Singular.Evolution.Algorithms
             return Individual<G, F>.FromGenotypes(firstGeneration);
         }
 
-        public IList<Individual<G, F>> Execute(World<G,F> world)
+        public IList<Individual<G, F>> Execute(World<G, F> world)
         {
             IList<Individual<G, F>> original = world.Population;
             IList<Individual<G, F>> individuals = Selectors.SelectMany(s => s.Apply(original)).ToList();
-            individuals = individuals.Select(i => new Individual<G, F>(i.Genotype,FitnessFunction(i.Genotype))).ToList();
+            individuals =
+                individuals.Select(i => new Individual<G, F>(i.Genotype, FitnessFunction(i.Genotype))).ToList();
             individuals = Alterers.Aggregate(individuals, (current, alterer) => alterer.Apply(current));
             return individuals;
         }
@@ -44,11 +45,16 @@ namespace Singular.Evolution.Algorithms
 
         public class Builder
         {
-            private readonly EasyGa<G,F> algorithm = new EasyGa<G, F>(); 
+            private readonly EasyGa<G, F> algorithm = new EasyGa<G, F>();
 
-            public Builder()
+            private FitnessFunctionDelegate<F> FitnessFunction
             {
-                
+                set { algorithm.FitnessFunction = value; }
+            }
+
+            private Predicate<World<G, F>> StopCriteria
+            {
+                set { algorithm.StopCriteria = value; }
             }
 
             public void RegisterBreeder(IBreeder<G> breeder)
@@ -56,7 +62,7 @@ namespace Singular.Evolution.Algorithms
                 algorithm.Breeders.Add(breeder);
             }
 
-            public void Register(ISelector<G,F> selector)
+            public void Register(ISelector<G, F> selector)
             {
                 algorithm.Selectors.Add(selector);
             }
@@ -66,19 +72,9 @@ namespace Singular.Evolution.Algorithms
                 algorithm.Alterers.Add(alterer);
             }
 
-            FitnessFunctionDelegate<F> FitnessFunction
-            {
-                set { algorithm.FitnessFunction = value; }
-            }
-
-            Predicate<World<G,F>> StopCriteria
-            {
-                set { algorithm.StopCriteria = value; }
-            }
-
             public EasyGa<G, F> Build()
             {
-                if(!algorithm.Breeders.Any())
+                if (!algorithm.Breeders.Any())
                     throw new Exception("Must have at least one breeder");
 
                 if (!algorithm.Selectors.Any())
@@ -87,15 +83,14 @@ namespace Singular.Evolution.Algorithms
                 if (!algorithm.Alterers.Any())
                     throw new Exception("Must have at least one alterer");
 
-                if(algorithm.FitnessFunction == null)
+                if (algorithm.FitnessFunction == null)
                     throw new Exception($"Must define a {nameof(algorithm.FitnessFunction)}");
 
                 if (algorithm.StopCriteria == null)
                     throw new Exception($"Must define a {nameof(algorithm.StopCriteria)}");
 
                 return algorithm;
-            } 
-
+            }
         }
     }
 }

@@ -1,15 +1,14 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Singular.Evolution.Core;
-using Singular.Evolution.Genotypes;
 using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
     public class MultipointCrossover<G, R, F> : IAlterer<G, F> where G : IListGenotype<R>
-        where F : IComparable<F> where R: IGene, new ()
+        where F : IComparable<F>
+        where R : IGene, new()
     {
         public MultipointCrossover(int points)
         {
@@ -60,7 +59,7 @@ namespace Singular.Evolution.Alterers
                 lastIndex = index;
             }
 
-            IListGenotypeFactory<G, R> factory = Factory.GetInstance().BuildFactory<G,IListGenotypeFactory<G,R>>();
+            IListGenotypeFactory<G, R> factory = Factory.GetInstance().BuildFactory<G, IListGenotypeFactory<G, R>>();
             return new List<G> {factory.Create(child1), factory.Create(child2)};
         }
 
@@ -100,6 +99,5 @@ namespace Singular.Evolution.Alterers
             indexes.Sort();
             return indexes;
         }
-
     }
 }

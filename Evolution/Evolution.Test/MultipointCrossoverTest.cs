@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using Singular.Evolution;
 using Singular.Evolution.Alterers;
 using Singular.Evolution.Core;
 using Singular.Evolution.Genes;
@@ -27,11 +26,12 @@ namespace Evolution.Test
                 new ListGenotype<FloatGene>(new[]
                 {new FloatGene(1.5), new FloatGene(2.5), new FloatGene(3.5), new FloatGene(4.5), new FloatGene(5.5)});
 
-            MultipointCrossover<ListGenotype<FloatGene>,FloatGene,int> crossover = new MultipointCrossover<ListGenotype<FloatGene>,FloatGene,int>(3);
+            MultipointCrossover<ListGenotype<FloatGene>, FloatGene, int> crossover =
+                new MultipointCrossover<ListGenotype<FloatGene>, FloatGene, int>(3);
 
-            List<Individual<ListGenotype<FloatGene>,int>> offspring =
+            List<Individual<ListGenotype<FloatGene>, int>> offspring =
                 crossover.Apply(
-                    Individual<ListGenotype<FloatGene>, int>.FromGenotypes(new List<ListGenotype<FloatGene>>()
+                    Individual<ListGenotype<FloatGene>, int>.FromGenotypes(new List<ListGenotype<FloatGene>>
                     {
                         genotype,
                         genotype2
@@ -41,16 +41,17 @@ namespace Evolution.Test
 
             foreach (Individual<ListGenotype<FloatGene>, int> child in offspring)
             {
-                bool previousWasInteger = Math.Abs(child.Genotype[0].Value - (int)child.Genotype[0].Value) < Double.Epsilon;
+                bool previousWasInteger = Math.Abs(child.Genotype[0].Value - (int) child.Genotype[0].Value) <
+                                          double.Epsilon;
                 int cuts = 0;
                 foreach (FloatGene gene in child.Genotype)
                 {
-                    bool currentIsInteger = Math.Abs(gene.Value - (int) gene.Value) < Double.Epsilon;
+                    bool currentIsInteger = Math.Abs(gene.Value - (int) gene.Value) < double.Epsilon;
                     if (currentIsInteger != previousWasInteger)
                         cuts++;
                     previousWasInteger = currentIsInteger;
                 }
-                Assert.AreEqual(3,cuts);
+                Assert.AreEqual(3, cuts);
             }
         }
     }

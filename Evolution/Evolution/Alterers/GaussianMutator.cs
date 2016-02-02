@@ -5,7 +5,7 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class GaussianMutator<F> : Mutator<FloatGene,F> where F:IComparable<F>
+    public class GaussianMutator<F> : Mutator<FloatGene, F> where F : IComparable<F>
     {
         private readonly RandomGenerator rnd = RandomGenerator.GetInstance();
 

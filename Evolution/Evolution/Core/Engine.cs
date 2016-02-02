@@ -1,22 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Singular.Evolution.Algorithms;
 
 namespace Singular.Evolution.Core
 {
     public class Engine<G, F> where F : IComparable<F> where G : IGenotype
     {
-        public bool HasReachedStopCriteria { get; private set; }
-
         private Engine()
         {
         }
 
+        public bool HasReachedStopCriteria { get; private set; }
+
+        public IAlgorithm<G, F> Algorithm { get; private set; }
+        public World<G, F> World { get; private set; }
+
         public void NextGeneration()
         {
-            if(HasReachedStopCriteria)
+            if (HasReachedStopCriteria)
                 throw new Exception("Algorithm has reach stop criteria");
 
             if (World == null)
@@ -36,24 +37,20 @@ namespace Singular.Evolution.Core
             }
         }
 
-        public IAlgorithm<G, F> Algorithm { get; private set; } 
-        public World<G,F> World { get; private set; } 
-        
         public class Builder
         {
             private readonly Engine<G, F> engine = new Engine<G, F>();
-            
+
+            public Builder()
+            {
+                if (engine.Algorithm == null)
+                    throw new Exception($"{nameof(engine.Algorithm)} should be set");
+            }
+
             public IAlgorithm<G, F> Algorithm
             {
                 set { engine.Algorithm = value; }
             }
-
-            public Builder()
-            {   
-                if(engine.Algorithm == null)
-                    throw new Exception($"{nameof(engine.Algorithm)} should be set");
-            }
-            
         }
     }
 }

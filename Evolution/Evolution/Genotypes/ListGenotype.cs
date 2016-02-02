@@ -5,7 +5,7 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genotypes
 {
-    [Factory(typeof(ListGenotypeFactory<>))]
+    [Factory(typeof (ListGenotypeFactory<>))]
     public class ListGenotype<G> : IListGenotype<G> where G : IGene, new()
     {
         private readonly List<G> genesList;

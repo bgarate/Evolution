@@ -5,7 +5,7 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Core
 {
-    public abstract class Mutator<R, F> : IAlterer<IListGenotype<R>,F> where F : IComparable<F> where R: IGene, new()
+    public abstract class Mutator<R, F> : IAlterer<IListGenotype<R>, F> where F : IComparable<F> where R : IGene, new()
 
     {
         public Mutator(double probability)
@@ -18,9 +18,8 @@ namespace Singular.Evolution.Core
 
         public double Probability { get; }
 
-        public IList<Individual<IListGenotype<R>,F>> Apply(IList<Individual<IListGenotype<R>,F>> individuals)
+        public IList<Individual<IListGenotype<R>, F>> Apply(IList<Individual<IListGenotype<R>, F>> individuals)
         {
-
             IList<IListGenotype<R>> genotypes = individuals.Select(i => i.Genotype).ToList();
 
             int numberOfMutations = (int) Math.Round(genotypes.Sum(g => g.Count)*Probability);
@@ -35,7 +34,7 @@ namespace Singular.Evolution.Core
                 genotypes[genotypeNumber] = mutatedGenotype;
             }
 
-            return Individual<IListGenotype<R>,F>.FromGenotypes(genotypes);
+            return Individual<IListGenotype<R>, F>.FromGenotypes(genotypes);
         }
 
         private IListGenotype<R> MutateGene(IListGenotype<R> genotype)
@@ -53,7 +52,7 @@ namespace Singular.Evolution.Core
 
         public object Apply(object individuals)
         {
-            return (object) Apply((IList<Individual<IListGenotype<R>, F>>) individuals);
+            return Apply((IList<Individual<IListGenotype<R>, F>>) individuals);
         }
     }
 }

@@ -3,41 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
 using Singular.Evolution.Core;
-using Singular.Evolution.Genotypes;
 
 namespace Singular.Evolution
 {
-
-    [System.AttributeUsage(System.AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.Class)]
     public class FactoryAttribute : Attribute
     {
-        public Type FactoryType { get; }
-
         public FactoryAttribute(Type factoryType)
         {
             FactoryType = factoryType;
         }
+
+        public Type FactoryType { get; }
     }
 
     public class Factory
-    { 
-
+    {
         private static readonly Factory Instance = new Factory();
 
-        private Dictionary<Type, TypeLambda> Factories = new Dictionary<Type, TypeLambda>();
-
-        private class TypeLambda
-        {
-            public TypeLambda(Type factoryType)
-            {
-                FactoryType = factoryType;
-            }
-
-            public Type FactoryType { get; set; }
-            public Activator.ObjectActivator Activator { get; set; }
-        }
+        private readonly Dictionary<Type, TypeLambda> Factories = new Dictionary<Type, TypeLambda>();
 
         // Explicit static constructor to tell C# compiler
         // not to mark type as beforefieldinit
@@ -49,13 +34,13 @@ namespace Singular.Evolution
         {
             foreach (Type type in Assembly.GetExecutingAssembly().GetTypes())
             {
-                FactoryAttribute factoryAttribute = type.GetCustomAttributes(typeof (FactoryAttribute), true).SingleOrDefault() as FactoryAttribute;
-                if(factoryAttribute == null)
+                FactoryAttribute factoryAttribute =
+                    type.GetCustomAttributes(typeof (FactoryAttribute), true).SingleOrDefault() as FactoryAttribute;
+                if (factoryAttribute == null)
                     continue;
 
                 Factories.Add(type, new TypeLambda(factoryAttribute.FactoryType));
             }
-            
         }
 
         public static Factory GetInstance()
@@ -63,7 +48,7 @@ namespace Singular.Evolution
             return Instance;
         }
 
-        public G BuildFactory<T,G>() where T :IGenotype
+        public G BuildFactory<T, G>() where T : IGenotype
         {
             TypeLambda typeLambda;
 
@@ -77,7 +62,7 @@ namespace Singular.Evolution
                 Type genericFactory = Factories[genericType].FactoryType;
                 Type newFactoryType = genericFactory.MakeGenericType(typeof (T).GetGenericArguments());
                 typeLambda = new TypeLambda(newFactoryType);
-                Factories.Add(typeof(T),typeLambda);
+                Factories.Add(typeof (T), typeLambda);
             }
 
             if (typeLambda.Activator == null)
@@ -90,24 +75,32 @@ namespace Singular.Evolution
             return (G) objectActivator();
         }
 
+        private class TypeLambda
+        {
+            public TypeLambda(Type factoryType)
+            {
+                FactoryType = factoryType;
+            }
+
+            public Type FactoryType { get; }
+            public Activator.ObjectActivator Activator { get; set; }
+        }
     }
 
-    
 
     public static class Activator
     {
-
         public delegate object ObjectActivator(params object[] args);
 
         public static ObjectActivator GetActivator
-    (ConstructorInfo ctor)
+            (ConstructorInfo ctor)
         {
             Type type = ctor.DeclaringType;
             ParameterInfo[] paramsInfo = ctor.GetParameters();
 
             //create a single param of type object[]
             ParameterExpression param =
-                Expression.Parameter(typeof(object[]), "args");
+                Expression.Parameter(typeof (object[]), "args");
 
             Expression[] argsExp =
                 new Expression[paramsInfo.Length];
@@ -135,12 +128,11 @@ namespace Singular.Evolution
             //create a lambda with the New
             //Expression as body and our param object[] as arg
             LambdaExpression lambda =
-                Expression.Lambda(typeof(ObjectActivator), newExp, param);
+                Expression.Lambda(typeof (ObjectActivator), newExp, param);
 
             //compile it
-            ObjectActivator compiled = (ObjectActivator)lambda.Compile();
+            ObjectActivator compiled = (ObjectActivator) lambda.Compile();
             return compiled;
         }
     }
-
 }

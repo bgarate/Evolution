@@ -3,12 +3,12 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genes
 {
-    public class FloatGene : INumericGene<FloatGene>, IEquatable<FloatGene>
+    public class FloatGene : INumericGene<FloatGene, double>, IEquatable<FloatGene>, IComparable<FloatGene>
     {
         public FloatGene()
         {
         }
-        
+
         public FloatGene(double value, double? max = null, double? min = null)
         {
             Value = value;
@@ -46,22 +46,22 @@ namespace Singular.Evolution.Genes
 
         public FloatGene Sum(FloatGene b)
         {
-            return MinimumBoundedGene(this.Value + b.Value, this, b);
+            return MinimumBoundedGene(Value + b.Value, this, b);
         }
 
         public FloatGene Substract(FloatGene b)
         {
-            return MinimumBoundedGene(this.Value - b.Value, this, b);
+            return MinimumBoundedGene(Value - b.Value, this, b);
         }
 
         public FloatGene Multiply(FloatGene b)
         {
-            return MinimumBoundedGene(this.Value * b.Value, this, b);
+            return MinimumBoundedGene(Value*b.Value, this, b);
         }
 
         public FloatGene Divide(FloatGene b)
         {
-            return MinimumBoundedGene(this.Value / b.Value, this, b);
+            return MinimumBoundedGene(Value/b.Value, this, b);
         }
 
         public override int GetHashCode()

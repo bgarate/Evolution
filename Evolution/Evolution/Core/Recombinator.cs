@@ -1,27 +1,29 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Singular.Evolution.Genes;
+using Singular.Evolution.Genotypes;
 using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Core
 {
-    public class Recombinator<G,F> : IAlterer<G,F> where F : IComparable<F> where G: IGenotype
+    public class Recombinator<G, F> : IAlterer<G, F> where F : IComparable<F> where G : IGenotype
 
     {
-        public Recombinator(IAlterer<G,F> alterer, int numberOfRecombinations, int numberOfParents)
+        public Recombinator(IAlterer<G, F> alterer, int numberOfParents, int numberOfRecombinations)
         {
             Alterer = alterer;
             NumberOfRecombinations = numberOfRecombinations;
             NumberOfParents = numberOfParents;
         }
 
-        public IAlterer<G,F> Alterer { get;}
+        public IAlterer<G, F> Alterer { get; }
         public int NumberOfRecombinations { get; }
         public int NumberOfParents { get; }
 
         public IList<Individual<G, F>> Apply(IList<Individual<G, F>> individuals)
         {
-            List<Individual<G,F>> offspring = new List<Individual<G, F>>();
+            List<Individual<G, F>> offspring = new List<Individual<G, F>>();
 
             for (int i = 0; i < NumberOfRecombinations; i++)
             {
@@ -32,9 +34,10 @@ namespace Singular.Evolution.Core
             return offspring;
         }
 
-        //public object Apply(object individuals)
-        //{
-        //    return Apply((IList<Individual<G, F>>) individuals);
         //}
+        //    return Apply((IList<Individual<G, F>>) individuals);
+        //{
+
+            //public object Apply(object individuals)
     }
 }

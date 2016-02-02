@@ -2,11 +2,13 @@ using System;
 
 namespace Singular.Evolution.Core
 {
-    public interface INumericGene<T> : IGene, IComparable<T>
+    public interface INumericGene<G,T> : IGene where G : IGene, IComparable<G> where T : IComparable<T>
     {
-        T Sum(T b);
-        T Substract(T b);
-        T Multiply(T b);
-        T Divide(T b);
+        T Value { get; }
+        
+        G Sum(G b);
+        G Substract(G b);
+        G Multiply(G b);
+        G Divide(G b);
     }
 }

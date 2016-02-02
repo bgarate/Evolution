@@ -29,7 +29,7 @@ namespace Singular.Evolution.Core
             return new Individual<G, F>(Genotype);
         }
 
-        public static IList<Individual<G,F>> FromGenotypes(IList<G> genotypes)
+        public static IList<Individual<G, F>> FromGenotypes(IList<G> genotypes)
         {
             return genotypes.Select(g => new Individual<G, F>(g)).ToList();
         }
@@ -37,7 +37,8 @@ namespace Singular.Evolution.Core
 
     public static class IndividualExtensions
     {
-        public static IList<G> GetGenotypes<G,F>(this IList<Individual<G, F>> individuals) where F : IComparable<F> where G:IGenotype
+        public static IList<G> GetGenotypes<G, F>(this IList<Individual<G, F>> individuals) where F : IComparable<F>
+            where G : IGenotype
         {
             return individuals.Select(i => i.Genotype).ToList();
         }

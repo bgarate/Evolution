@@ -8,7 +8,7 @@ namespace Singular.Evolution.Core
         //object Apply(object individuals);
     }
 
-    public interface IAlterer<G,F>:IAlterer where G : IGenotype where F : IComparable<F>
+    public interface IAlterer<G, F> : IAlterer where G : IGenotype where F : IComparable<F>
     {
         IList<Individual<G, F>> Apply(IList<Individual<G, F>> individuals);
     }

@@ -3,7 +3,7 @@ using Singular.Evolution.Genotypes;
 
 namespace Singular.Evolution.Core
 {
-    class ListGenotypeFactory<R> : IListGenotypeFactory<ListGenotype<R>, R> where R : IGene, new()
+    internal class ListGenotypeFactory<R> : IListGenotypeFactory<ListGenotype<R>, R> where R : IGene, new()
     {
         public ListGenotype<R> Create(IEnumerable<R> genes)
         {

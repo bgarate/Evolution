@@ -2,7 +2,7 @@
 
 namespace Singular.Evolution.Utils
 {
-    internal class SystemRandomSource : IRandomSource
+    public class SystemRandomSource : IRandomSource
     {
         private readonly Random rnd = new Random();
 
