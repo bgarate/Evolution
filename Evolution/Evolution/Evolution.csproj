@@ -69,6 +69,8 @@
     <Compile Include="Genotypes\ListGenotype.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GenotypeFactory.cs" />
+    <Compile Include="Selectors\ProbabilitySelector.cs" />
+    <Compile Include="Selectors\RouletteWheelSelector.cs" />
     <Compile Include="Utils\MoreMath.cs" />
     <Compile Include="Utils\IRandomGenerator.cs" />
     <Compile Include="Utils\IRandomSource.cs" />

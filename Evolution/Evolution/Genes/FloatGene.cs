@@ -49,7 +49,7 @@ namespace Singular.Evolution.Genes
             return MinimumBoundedGene(Value + b.Value, this, b);
         }
 
-        public FloatGene Substract(FloatGene b)
+        public FloatGene Subtract(FloatGene b)
         {
             return MinimumBoundedGene(Value - b.Value, this, b);
         }

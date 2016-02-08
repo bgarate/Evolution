@@ -33,10 +33,10 @@ namespace Singular.Evolution.Alterers
             if (Points >= count)
                 throw new ArgumentException($"Parents should have at least {count} genes");
 
-            return Individual<G, F>.FromGenotypes(GetOffsprig(parent1, parent2));
+            return Individual<G, F>.FromGenotypes(GetOffspring(parent1, parent2));
         }
 
-        private IList<G> GetOffsprig(IListGenotype<R> parent1, IListGenotype<R> parent2)
+        private IList<G> GetOffspring(IListGenotype<R> parent1, IListGenotype<R> parent2)
         {
             int count = parent1.Count;
 

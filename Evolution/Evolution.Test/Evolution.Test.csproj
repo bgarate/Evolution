@@ -63,6 +63,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RouletteWheelSelectorTest.cs" />
     <Compile Include="GaussianMutatorTest.cs" />
     <Compile Include="RecombinatorTest.cs" />
     <Compile Include="MultipointCrossoverTest.cs" />
@@ -70,7 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FloatGeneTest.cs" />
     <Compile Include="RandomGeneratorTest.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="IndividualTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Evolution\Evolution.csproj">
@@ -97,6 +98,9 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Singular.Evolution.Core
 {
-    public class Individual<G, F> where F : IComparable<F> where G : IGenotype
+    public class Individual<G, F> : IComparable<Individual<G,F>> where F : IComparable<F> where G : IGenotype
     {
         public Individual(G genotype)
         {
@@ -16,13 +16,29 @@ namespace Singular.Evolution.Core
         {
             Genotype = genotype;
             Fitness = fitness;
-            HasFitnessAssigned = true;
         }
 
-        public bool HasFitnessAssigned { get; }
+        public bool HasFitnessAssigned { get; private set; }
 
         public G Genotype { get; }
-        public F Fitness { get; }
+
+        F fitness = default (F);
+
+        public F Fitness
+        {
+            get
+            {
+                if (HasFitnessAssigned)
+                    return fitness;
+                else
+                    throw new Exception("The individual has not fitness assigned");
+            }
+            private set
+            {
+                fitness = value;
+                HasFitnessAssigned = true;
+            }
+        }
 
         public Individual<G, F> Clone()
         {
@@ -32,6 +48,11 @@ namespace Singular.Evolution.Core
         public static IList<Individual<G, F>> FromGenotypes(IList<G> genotypes)
         {
             return genotypes.Select(g => new Individual<G, F>(g)).ToList();
+        }
+
+        public int CompareTo(Individual<G, F> other)
+        {
+            return Fitness.CompareTo(other.Fitness);
         }
     }
 

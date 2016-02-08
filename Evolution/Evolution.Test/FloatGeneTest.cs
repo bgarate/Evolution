@@ -56,7 +56,7 @@ namespace Evolution.Test
             Assert.AreEqual(4, c.MaxValue);
             Assert.False(c.IsValid);
 
-            c = a.Substract(b);
+            c = a.Subtract(b);
 
             Assert.AreEqual(-1, c.Value);
             Assert.AreEqual(2, c.MinValue);

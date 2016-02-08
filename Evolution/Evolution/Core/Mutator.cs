@@ -5,9 +5,15 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Core
 {
+    /// <summary>
+    /// Base class to define a mutator on a <c>IListGenotype</c>.
+    /// </summary>
+    /// <typeparam name="R">Type of genes</typeparam>
+    /// <typeparam name="F">Return type of the fitness function</typeparam>
     public abstract class Mutator<R, F> : IAlterer<IListGenotype<R>, F> where F : IComparable<F> where R : IGene, new()
 
     {
+
         public Mutator(double probability)
         {
             if (probability < 0 || probability > 1)
