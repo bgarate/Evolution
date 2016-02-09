@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genotypes
 {
     [Factory(typeof (ListGenotypeFactory<>))]
-    public class ListGenotype<G> : IListGenotype<G> where G : IGene, new()
+    public class ListGenotype<G> : IListGenotype<ListGenotype<G>,G> where G : IGene, new()
     {
         private readonly List<G> genesList;
 
@@ -49,7 +50,7 @@ namespace Singular.Evolution.Genotypes
 
         public G this[int index] => genesList[index];
 
-        public IListGenotype<G> Swap(int i, int j)
+        public ListGenotype<G> Swap(int i, int j)
         {
             List<G> res = new List<G>(genesList);
             G t = res[i];
@@ -58,16 +59,21 @@ namespace Singular.Evolution.Genotypes
             return new ListGenotype<G>(res);
         }
 
-        public IListGenotype<G> Replace(int i, G g)
+        public ListGenotype<G> Replace(int i, G g)
         {
             List<G> res = new List<G>(genesList);
             res[i] = g;
             return new ListGenotype<G>(res);
         }
 
-        public IListGenotype<G> Clone()
+        public ListGenotype<G> Clone()
         {
             return new ListGenotype<G>(genesList.Select(g => (G) g.Clone()));
+        }
+
+        public override string ToString()
+        {
+            return string.Join("|", genesList.Select(g => g.ToString()).ToArray());
         }
     }
 }

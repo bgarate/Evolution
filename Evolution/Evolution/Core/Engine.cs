@@ -30,7 +30,7 @@ namespace Singular.Evolution.Core
                 IList<Individual<G, F>> newGeneration = Algorithm.Execute(World);
                 World = new World<G, F>(World, newGeneration);
             }
-
+            
             if (Algorithm.ShouldStop(World))
             {
                 HasReachedStopCriteria = true;
@@ -43,8 +43,7 @@ namespace Singular.Evolution.Core
 
             public Builder()
             {
-                if (engine.Algorithm == null)
-                    throw new Exception($"{nameof(engine.Algorithm)} should be set");
+                
             }
 
             public Builder WithAlgorithm(IAlgorithm<G,F> algorithm)

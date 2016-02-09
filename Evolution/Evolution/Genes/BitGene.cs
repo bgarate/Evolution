@@ -68,5 +68,9 @@ namespace Singular.Evolution.Genes
             return Equals(g);
         }
 
+        public override string ToString()
+        {
+            return Value ? "1" : "0";
+        }
     }
 }

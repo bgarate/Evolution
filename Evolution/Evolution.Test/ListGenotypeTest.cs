@@ -14,7 +14,7 @@ namespace Evolution.Test
         {
             ListGenotype<FloatGene> genotype = new ListGenotype<FloatGene>(5);
 
-            IListGenotype<FloatGene> genotype2 = genotype.Clone();
+            ListGenotype<FloatGene> genotype2 = genotype.Clone();
 
             Assert.IsTrue(genotype.All(g1 => genotype2.All(g2 => !ReferenceEquals(g1, g2) && g1.Equals(g2))));
         }

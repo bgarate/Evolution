@@ -2,11 +2,11 @@ using System.Collections.Generic;
 
 namespace Singular.Evolution.Core
 {
-    public interface IListGenotype<G> : IGenotype, IEnumerable<G> where G : IGene, new()
+    public interface IListGenotype<G,R> : IGenotype, IEnumerable<R> where G: IListGenotype<G,R> where R : IGene, new()
     {
         int Count { get; }
-        G this[int index] { get; }
-        IListGenotype<G> Swap(int i, int j);
-        IListGenotype<G> Replace(int i, G g);
+        R this[int index] { get; }
+        G Swap(int i, int j);
+        G Replace(int i, R g);
     }
 }

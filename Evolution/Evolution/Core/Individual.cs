@@ -40,6 +40,8 @@ namespace Singular.Evolution.Core
             }
         }
 
+        public F FitnessOrDefault => HasFitnessAssigned ? fitness : default(F);
+
         public Individual<G, F> Clone()
         {
             return new Individual<G, F>(Genotype);
@@ -54,6 +56,11 @@ namespace Singular.Evolution.Core
         {
             return Fitness.CompareTo(other.Fitness);
         }
+
+        public override string ToString()
+        {
+            return $"{{ Fitness: {(HasFitnessAssigned ? Fitness.ToString() : "-")} Genotype: {Genotype} }}";
+        }
     }
 
     public static class IndividualExtensions
@@ -64,4 +71,5 @@ namespace Singular.Evolution.Core
             return individuals.Select(i => i.Genotype).ToList();
         }
     }
+    
 }

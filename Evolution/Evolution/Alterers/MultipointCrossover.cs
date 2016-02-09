@@ -6,7 +6,7 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class MultipointCrossover<G, R, F> : IAlterer<G, F> where G : IListGenotype<R>
+    public class MultipointCrossover<G, R, F> : IAlterer<G, F> where G : IListGenotype<G,R>
         where F : IComparable<F>
         where R : IGene, new()
     {
@@ -36,7 +36,7 @@ namespace Singular.Evolution.Alterers
             return Individual<G, F>.FromGenotypes(GetOffspring(parent1, parent2));
         }
 
-        private IList<G> GetOffspring(IListGenotype<R> parent1, IListGenotype<R> parent2)
+        private IList<G> GetOffspring(IListGenotype<G,R> parent1, IListGenotype<G,R> parent2)
         {
             int count = parent1.Count;
 

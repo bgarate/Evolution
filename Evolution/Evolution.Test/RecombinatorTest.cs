@@ -43,7 +43,7 @@ namespace Evolution.Test
         }
     }
 
-    public class SumAlterer<G, R, F> : IAlterer<G, F> where G : IListGenotype<R> where F : IComparable<F> where R : INumericGene<R,double>, IComparable<R>, new()
+    public class SumAlterer<G, R, F> : IAlterer<G, F> where G : IListGenotype<G,R> where F : IComparable<F> where R : INumericGene<R,double>, IComparable<R>, new()
     {
         public IList<Individual<G, F>> Apply(IList<Individual<G, F>> individuals)
         {

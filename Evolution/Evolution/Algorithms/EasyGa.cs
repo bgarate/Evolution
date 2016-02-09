@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Singular.Evolution.Core;
+using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Algorithms
 {
@@ -9,12 +12,12 @@ namespace Singular.Evolution.Algorithms
     {
         private EasyGa()
         {
-            Breeders = new List<IBreeder<G>>();
+            Breeders = new List<object>();
             Selectors = new List<ISelector<G, F>>();
             Alterers = new List<IAlterer<G, F>>();
         }
 
-        public IList<IBreeder<G>> Breeders { get; }
+        public IList<object> Breeders { get; }
         public IList<ISelector<G, F>> Selectors { get; }
         public IList<IAlterer<G, F>> Alterers { get; }
         public Predicate<World<G, F>> StopCriteria { get; private set; }
@@ -25,18 +28,65 @@ namespace Singular.Evolution.Algorithms
 
         public IList<Individual<G, F>> Initialize()
         {
-            IList<G> firstGeneration = Breeders.SelectMany(b => b.Breed()).ToList();
-            return Individual<G, F>.FromGenotypes(firstGeneration);
+            List<Individual<G,F>> firstGeneration= new List<Individual<G,F>>();
+
+            foreach (object item in Breeders)
+            {
+                IBreeder<G> breeder = item as IBreeder<G>;
+
+                if (breeder != null)
+                {
+                    firstGeneration.AddRange(Individual<G,F>.FromGenotypes(breeder.Breed()));
+                }
+                else
+                {
+                    IAlterer<G, F> alterer = item as IAlterer<G, F>;
+                    Debug.Assert(alterer != null);
+                    firstGeneration = alterer.Apply(firstGeneration).ToList();
+                }
+
+            }
+            firstGeneration = UpdateFitness(firstGeneration).ToList();
+            return firstGeneration;
         }
 
         public IList<Individual<G, F>> Execute(World<G, F> world)
         {
-            IList<Individual<G, F>> original = world.Population;
-            IList<Individual<G, F>> individuals = Selectors.SelectMany(s => s.Apply(original)).ToList();
-            individuals =
-                individuals.Select(i => new Individual<G, F>(i.Genotype, FitnessFunction(i.Genotype))).ToList();
-            individuals = Alterers.Aggregate(individuals, (current, alterer) => alterer.Apply(current));
+            List<Individual<G, F>> original = world.Population.ToList();
+
+            List<Individual<G, F>> individuals = Select(original);
+
+            individuals = ApplyAlterers(individuals);
+
+            individuals.AddRange(GetElite(original));
+
+            individuals = UpdateFitness(individuals);
             return individuals;
+        }
+
+        private List<Individual<G, F>> Select(List<Individual<G, F>> original)
+        {
+            return Selectors.SelectMany(s => s.Apply(original)).ToList();
+        }
+
+        private List<Individual<G, F>> ApplyAlterers(List<Individual<G, F>> individuals)
+        {
+            individuals = Alterers.Aggregate(individuals, (current, alterer) => alterer.Apply(current).ToList());
+            return individuals;
+        }
+
+        private List<Individual<G, F>> GetElite(List<Individual<G, F>> original)
+        {
+            List<Individual<G, F>> sortedOriginal = new List<Individual<G, F>>(original);
+            sortedOriginal.Sort((i1, i2) => -i1.CompareTo(i2));
+            List<Individual<G, F>> elite = sortedOriginal.Take((int) (original.Count*ElitismPercentage)).ToList();
+            return elite;
+        }
+
+        private List<Individual<G, F>> UpdateFitness(List<Individual<G, F>> original)
+        {
+            original = original.Select(i => new Individual<G, F>(i.Genotype, FitnessFunction(i.Genotype))).ToList();
+            return original;
         }
 
         public bool ShouldStop(World<G, F> world)
@@ -70,9 +120,15 @@ namespace Singular.Evolution.Algorithms
                 set { algorithm.StopCriteria = value; }
             }
 
-            public Builder Register(IBreeder<G> breeder)
+            public Builder RegisterBreeder(IBreeder<G> breeder)
             {
                 algorithm.Breeders.Add(breeder);
+                return this;
+            }
+
+            public Builder RegisterBreeder(IAlterer alterer)
+            {
+                algorithm.Breeders.Add(alterer);
                 return this;
             }
 

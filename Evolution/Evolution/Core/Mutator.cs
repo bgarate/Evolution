@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Singular.Evolution.Genotypes;
 using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Core
@@ -10,7 +11,7 @@ namespace Singular.Evolution.Core
     /// </summary>
     /// <typeparam name="R">Type of genes</typeparam>
     /// <typeparam name="F">Return type of the fitness function</typeparam>
-    public abstract class Mutator<R, F> : IAlterer<IListGenotype<R>, F> where F : IComparable<F> where R : IGene, new()
+    public abstract class Mutator<G, R, F> : IAlterer<G, F> where F : IComparable<F> where R : IGene, new() where G : IListGenotype<G,R>
 
     {
 
@@ -24,9 +25,9 @@ namespace Singular.Evolution.Core
 
         public double Probability { get; }
 
-        public IList<Individual<IListGenotype<R>, F>> Apply(IList<Individual<IListGenotype<R>, F>> individuals)
+        public IList<Individual<G, F>> Apply(IList<Individual<G, F>> individuals)
         {
-            IList<IListGenotype<R>> genotypes = individuals.Select(i => i.Genotype).ToList();
+            IList<G> genotypes = individuals.Select(i => i.Genotype).ToList();
 
             int numberOfMutations = (int) Math.Round(genotypes.Sum(g => g.Count)*Probability);
 
@@ -35,22 +36,22 @@ namespace Singular.Evolution.Core
 
             foreach (int genotypeNumber in targets)
             {
-                IListGenotype<R> genotype = genotypes[genotypeNumber];
-                IListGenotype<R> mutatedGenotype = MutateGene(genotype);
+                G genotype = genotypes[genotypeNumber];
+                G mutatedGenotype = MutateGene(genotype);
                 genotypes[genotypeNumber] = mutatedGenotype;
             }
 
-            return Individual<IListGenotype<R>, F>.FromGenotypes(genotypes);
+            return Individual<G, F>.FromGenotypes(genotypes);
         }
 
-        private IListGenotype<R> MutateGene(IListGenotype<R> genotype)
+        private G MutateGene(G genotype)
         {
             int genePlace = RandomGenerator.GetInstance().NextInt(genotype.Count);
 
             R orignalGene = genotype[genePlace];
             R mutatedGene = Mutate(orignalGene);
 
-            IListGenotype<R> mutatedGenotype = genotype.Replace(genePlace, mutatedGene);
+            G mutatedGenotype = genotype.Replace(genePlace, mutatedGene);
             return mutatedGenotype;
         }
 
@@ -58,7 +59,7 @@ namespace Singular.Evolution.Core
 
         public object Apply(object individuals)
         {
-            return Apply((IList<Individual<IListGenotype<R>, F>>) individuals);
+            return Apply((IList<Individual<ListGenotype<R>, F>>) individuals);
         }
     }
 }

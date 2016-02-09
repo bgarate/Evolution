@@ -64,32 +64,50 @@ namespace Singular.Evolution.Utils
 
         public IEnumerable<int> IntSequence()
         {
-            yield return NextInt();
+            while (true)
+            {
+                yield return NextInt();
+            }
         }
 
         public IEnumerable<int> IntSequence(int max)
         {
-            yield return NextInt(max);
+            while (true)
+            {
+                yield return NextInt(max);
+            }
         }
 
         public IEnumerable<int> IntSequence(int min, int max)
         {
-            yield return NextInt(min, max);
+            while (true)
+            {
+                yield return NextInt(min, max);
+            }
         }
 
         public IEnumerable<double> DoubleSequence()
         {
-            yield return NextDouble();
+            while (true)
+            {
+                yield return NextDouble();
+            }
         }
 
         public IEnumerable<double> DoubleSequence(double max)
         {
-            yield return NextDouble(max);
+            while (true)
+            {
+                yield return NextDouble(max);
+            }
         }
 
         public IEnumerable<double> DoubleSequence(double min, double max)
         {
-            yield return NextDouble(min, max);
+            while (true)
+            {
+                yield return NextDouble(min, max);
+            }
         }
 
         public double NextGaussian()

@@ -21,20 +21,20 @@ namespace Evolution.Test
             ListGenotype<FloatGene> genotype =
                 new ListGenotype<FloatGene>(10000);
 
-            GaussianMutator<int> mutator = new GaussianMutator<int>(0.1);
-            List<IListGenotype<FloatGene>> parents = new List<IListGenotype<FloatGene>>();
+            GaussianMutator<ListGenotype<FloatGene>,int> mutator = new GaussianMutator<ListGenotype<FloatGene>, int>(0.1);
+            List<ListGenotype<FloatGene>> parents = new List<ListGenotype<FloatGene>>();
 
             parents.Add(genotype);
 
-            IList<Individual<IListGenotype<FloatGene>, int>> individuals =
-                Individual<IListGenotype<FloatGene>, int>.FromGenotypes(parents);
+            IList<Individual<ListGenotype<FloatGene>, int>> individuals =
+                Individual<ListGenotype<FloatGene>, int>.FromGenotypes(parents);
 
-            IList<Individual<IListGenotype<FloatGene>, int>> offspring =
+            IList<Individual<ListGenotype<FloatGene>, int>> offspring =
                 mutator.Apply(individuals);
 
             Assert.AreEqual(offspring.Count, 1);
 
-            IListGenotype<FloatGene> child1 = offspring.First().Genotype;
+            ListGenotype<FloatGene> child1 = offspring.First().Genotype;
 
             int changes = 0;
             for (int i = 0; i < 5; i++)
