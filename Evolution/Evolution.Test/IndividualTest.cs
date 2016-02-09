@@ -24,7 +24,8 @@ namespace Evolution.Test
             Assert.False(individual1.HasFitnessAssigned);
             Assert.True(individual2.HasFitnessAssigned);
 
-            Assert.Throws<Exception>(() => { var i = individual1.Fitness; });
+            int a;
+            Assert.Throws<Exception>(() => a = individual1.Fitness);
             Assert.AreEqual(30, individual2.Fitness);
 
             var genotype3 = individual1.Genotype;

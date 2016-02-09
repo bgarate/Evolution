@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using NUnit.Framework;
 using Singular.Evolution.Utils;
 
@@ -78,6 +81,33 @@ namespace Evolution.Test
             Assert.AreEqual(2.93, rnd.NextDouble(0.5, 3.2));
             Assert.Throws(typeof (InvalidOperationException), () => rnd.NextInt());
             Assert.Throws(typeof (Exception), () => rnd.NextDouble());
+        }
+
+        [Test]
+        public void TestRandomGuassian()
+        {
+            RandomGenerator rnd = RandomGenerator.GetInstance();
+
+            rnd.RandomSource = new SystemRandomSource(1234);
+            List<double> gaussianSamples1 = Enumerable.Range(0,100000).Select(s=>rnd.NextGaussian()).ToList();
+            List<double> gaussianSamples2 =
+                Enumerable.Range(0, 100000).Select(s => rnd.NextGaussian(3, 2)).ToList();
+            List<double> gaussianSamples3 =
+                Enumerable.Range(0, 100000).Select(s => rnd.NextBoundedGaussian(4, 1, 5)).ToList();
+
+            double mean1 = gaussianSamples1.Average();
+            double mean2 = gaussianSamples2.Average();
+            double mean3 = gaussianSamples3.Average();
+            double min3 = gaussianSamples3.Min();
+            double max3 = gaussianSamples3.Max();
+
+            Assert.AreEqual(0,mean1,0.01);
+            Assert.AreEqual(3, mean2, 0.1);
+            Assert.AreEqual(4, mean3, 0.1);
+            Assert.GreaterOrEqual(min3,1);
+            Assert.LessOrEqual(max3,5);
+
+
         }
     }
 }

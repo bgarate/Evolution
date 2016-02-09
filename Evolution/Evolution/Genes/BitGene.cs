@@ -30,7 +30,7 @@ namespace Singular.Evolution.Genes
 
         public int CompareTo(BitGene other)
         {
-            return Value.CompareTo(other);
+            return Value.CompareTo(other.Value);
         }
 
         public BitGene Sum(BitGene b)

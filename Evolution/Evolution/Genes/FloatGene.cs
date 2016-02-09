@@ -49,7 +49,7 @@ namespace Singular.Evolution.Genes
 
         public int CompareTo(FloatGene other)
         {
-            return Value.CompareTo(other);
+            return Value.CompareTo(other.Value);
         }
 
         public FloatGene Sum(FloatGene b)
