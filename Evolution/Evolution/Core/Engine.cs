@@ -9,7 +9,7 @@ namespace Singular.Evolution.Core
         private Engine()
         {
         }
-
+        
         public bool HasReachedStopCriteria { get; private set; }
 
         public IAlgorithm<G, F> Algorithm { get; private set; }
@@ -47,10 +47,24 @@ namespace Singular.Evolution.Core
                     throw new Exception($"{nameof(engine.Algorithm)} should be set");
             }
 
+            public Builder WithAlgorithm(IAlgorithm<G,F> algorithm)
+            {
+                engine.Algorithm = algorithm;
+                return this;
+            }
+
             public IAlgorithm<G, F> Algorithm
             {
                 set { engine.Algorithm = value; }
             }
+
+            public Engine<G, F> Build()
+            {
+                if(engine.Algorithm == null)
+                    throw  new Exception($"{nameof(engine.Algorithm)} must be set");
+
+                return engine;
+            } 
         }
     }
 }

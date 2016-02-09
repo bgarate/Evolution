@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Algorithms\EasyGa.cs" />
     <Compile Include="Algorithms\IAlgorithm.cs" />
+    <Compile Include="Alterers\BitMutator.cs" />
     <Compile Include="Alterers\GaussianMutator.cs" />
     <Compile Include="Alterers\MultipointCrossover.cs" />
     <Compile Include="Core\Engine.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Core\Recombinator.cs" />
     <Compile Include="Core\Mutator.cs" />
     <Compile Include="Core\World.cs" />
+    <Compile Include="Genes\BitGene.cs" />
     <Compile Include="Genes\FloatGene.cs" />
     <Compile Include="Genotypes\ListGenotype.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

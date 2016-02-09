@@ -29,7 +29,15 @@ namespace Singular.Evolution.Genes
 
         public bool Equals(FloatGene other)
         {
-            return Math.Abs(Value - other.Value) < double.Epsilon;
+            return Math.Abs(Value - other.Value) < double.Epsilon && EqualBounds(other);
+        }
+
+        private bool EqualBounds(FloatGene other)
+        {
+            var bothBounded = IsBounded && other.IsBounded;
+            return (bothBounded && Math.Abs(MaxValue.Value - other.MaxValue.Value) < double.Epsilon &&
+                    (MinValue.Value - other.MinValue.Value) < double.Epsilon)
+                    || (!IsBounded && !other.IsBounded);
         }
 
         public bool IsValid => (MaxValue == null && MinValue == null) || (MaxValue >= Value && MinValue <= Value);

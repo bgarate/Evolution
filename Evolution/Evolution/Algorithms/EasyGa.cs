@@ -19,8 +19,9 @@ namespace Singular.Evolution.Algorithms
         public IList<IAlterer<G, F>> Alterers { get; }
         public Predicate<World<G, F>> StopCriteria { get; private set; }
 
+        public double ElitismPercentage { get; private set; }
 
-        public FitnessFunctionDelegate<F> FitnessFunction { get; private set; }
+        public FitnessFunctionDelegate<G,F> FitnessFunction { get; private set; }
 
         public IList<Individual<G, F>> Initialize()
         {
@@ -47,29 +48,61 @@ namespace Singular.Evolution.Algorithms
         {
             private readonly EasyGa<G, F> algorithm = new EasyGa<G, F>();
 
-            private FitnessFunctionDelegate<F> FitnessFunction
+            public FitnessFunctionDelegate<G,F> FitnessFunction
             {
                 set { algorithm.FitnessFunction = value; }
             }
 
-            private Predicate<World<G, F>> StopCriteria
+            public Builder WithFitnessFunction(FitnessFunctionDelegate<G,F> value)
+            {
+                FitnessFunction = value;
+                return this;
+            }
+
+            public Builder WithStopCriteria(Predicate<World<G, F>> value)
+            {
+                StopCriteria = value;
+                return this;
+            }
+
+            public Predicate<World<G, F>> StopCriteria
             {
                 set { algorithm.StopCriteria = value; }
             }
 
-            public void RegisterBreeder(IBreeder<G> breeder)
+            public Builder Register(IBreeder<G> breeder)
             {
                 algorithm.Breeders.Add(breeder);
+                return this;
             }
 
-            public void Register(ISelector<G, F> selector)
+            public Builder Register(ISelector<G, F> selector)
             {
                 algorithm.Selectors.Add(selector);
+                return this;
             }
 
-            public void Register(IAlterer<G, F> alterer)
+            public Builder Register(IAlterer<G, F> alterer)
             {
                 algorithm.Alterers.Add(alterer);
+                return this;
+            }
+
+            public double ElitismPercentage
+            {
+                set
+                {
+                    if(value < 0 || value > 0)
+                        throw new Exception($"{nameof(algorithm.ElitismPercentage)} must be between 0 and 1");
+
+                    algorithm.ElitismPercentage = value;
+                } 
+            }
+
+            public Builder WithElitismPercentage(double value)
+            {
+                ElitismPercentage = value;
+                return this;
             }
 
             public EasyGa<G, F> Build()

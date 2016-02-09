@@ -63,6 +63,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EasyGa.cs" />
     <Compile Include="RouletteWheelSelectorTest.cs" />
     <Compile Include="GaussianMutatorTest.cs" />
     <Compile Include="RecombinatorTest.cs" />
