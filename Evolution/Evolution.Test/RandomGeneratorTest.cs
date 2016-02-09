@@ -84,12 +84,12 @@ namespace Evolution.Test
         }
 
         [Test]
-        public void TestRandomGuassian()
+        public void TestRandomGaussian()
         {
             RandomGenerator rnd = RandomGenerator.GetInstance();
 
             rnd.RandomSource = new SystemRandomSource(1234);
-            List<double> gaussianSamples1 = Enumerable.Range(0,100000).Select(s=>rnd.NextGaussian()).ToList();
+            List<double> gaussianSamples1 = Enumerable.Range(0, 100000).Select(s => rnd.NextGaussian()).ToList();
             List<double> gaussianSamples2 =
                 Enumerable.Range(0, 100000).Select(s => rnd.NextGaussian(3, 2)).ToList();
             List<double> gaussianSamples3 =
@@ -101,13 +101,69 @@ namespace Evolution.Test
             double min3 = gaussianSamples3.Min();
             double max3 = gaussianSamples3.Max();
 
-            Assert.AreEqual(0,mean1,0.01);
+            Assert.AreEqual(0, mean1, 0.01);
             Assert.AreEqual(3, mean2, 0.1);
             Assert.AreEqual(4, mean3, 0.1);
-            Assert.GreaterOrEqual(min3,1);
-            Assert.LessOrEqual(max3,5);
+            Assert.GreaterOrEqual(min3, 1);
+            Assert.LessOrEqual(max3, 5);
 
 
         }
+
+        [Test]
+        public void TestDoubleSequences()
+        {
+            RandomGenerator rnd = RandomGenerator.GetInstance();
+
+            rnd.RandomSource = new SystemRandomSource(1234);
+            List<double> uniformSamples1 = rnd.DoubleSequence().Take(10000).ToList();
+            List<double> uniformSamples2 = rnd.DoubleSequence(15000.3).Take(500000).ToList();
+            List<double> uniformSamples3 = rnd.DoubleSequence(-400, -1.2).Take(30000).ToList();
+
+            double min1 = uniformSamples1.Min();
+
+            double min2 = uniformSamples2.Min();
+            double max2 = uniformSamples2.Max();
+
+            double min3 = uniformSamples3.Min();
+            double max3 = uniformSamples3.Max();
+
+            Assert.GreaterOrEqual(min1, 0);
+
+            Assert.GreaterOrEqual(min2, 0);
+            Assert.LessOrEqual(max2, 15000.3);
+
+            Assert.GreaterOrEqual(min3, -400);
+            Assert.LessOrEqual(max3, -1.2);
+        }
+
+
+        [Test]
+        public void TestIntSequences()
+        {
+            RandomGenerator rnd = RandomGenerator.GetInstance();
+
+            rnd.RandomSource = new SystemRandomSource(1234);
+            List<int> uniformSamples1 = rnd.IntSequence().Take(10000).ToList();
+            List<int> uniformSamples2 = rnd.IntSequence(15000).Take(500000).ToList();
+            List<int> uniformSamples3 = rnd.IntSequence(-400, -1).Take(30000).ToList();
+
+            int min1 = uniformSamples1.Min();
+
+            int min2 = uniformSamples2.Min();
+            int max2 = uniformSamples2.Max();
+
+            int min3 = uniformSamples3.Min();
+            int max3 = uniformSamples3.Max();
+
+            Assert.GreaterOrEqual(min1, 0);
+
+            Assert.GreaterOrEqual(min2, 0);
+            Assert.LessOrEqual(max2, 15000);
+
+            Assert.GreaterOrEqual(min3, -400);
+            Assert.LessOrEqual(max3, -1);
+        }
     }
+
 }
