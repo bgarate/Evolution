@@ -92,7 +92,7 @@ namespace Singular.Evolution.Algorithms
             {
                 set
                 {
-                    if(value < 0 || value > 0)
+                    if(value < 0 || value > 1)
                         throw new Exception($"{nameof(algorithm.ElitismPercentage)} must be between 0 and 1");
 
                     algorithm.ElitismPercentage = value;

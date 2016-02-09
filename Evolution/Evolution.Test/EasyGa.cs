@@ -22,6 +22,7 @@ namespace Evolution.Test
                     .WithElitismPercentage(0.20)
                     .WithFitnessFunction(g => ((IListGenotype<BitGene>) g).Count(b => b.Value))
                     .WithStopCriteria(w => w.Generation > 500 || w.Population.Max(i => i.Fitness) == 20)
+                    .Register(new RandomBitBreeder(20,20))
                     .Register(new RouletteWheelSelector<ListGenotype<BitGene>>(20))
                     .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10))
                     .Build();
