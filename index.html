@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Evolution by bgarate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Evolution</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/bgarate/Evolution" class="btn">View on GitHub</a>
+      <a href="https://github.com/bgarate/Evolution/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/bgarate/Evolution/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="evolution" class="anchor" href="#evolution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Evolution</h1>
+
+<p>Mono.NET <a href="https://travis-ci.org/bgarate/Evolution"><img src="https://travis-ci.org/bgarate/Evolution.svg?branch=master" alt="Build Status"></a></p>
+
+<p>Microsoft .NET <a href="https://ci.appveyor.com/project/bgarate/evolution"><img src="https://ci.appveyor.com/api/projects/status/uhabegnl9qrlo2ma?svg=true" alt="Build status"></a> <a href="https://coveralls.io/github/bgarate/Evolution?branch=master"><img src="https://coveralls.io/repos/github/bgarate/Evolution/badge.svg?branch=master" alt="Coverage Status"></a></p>
+
+<h2>
+<a id="what-is-singularevolution" class="anchor" href="#what-is-singularevolution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is Singular.Evolution?</h2>
+
+<p>Singular.Evolution or simply Evolution is an Evolutionary Computation Framework written in C# compatible with Microsoft .NET(3.5 and up) and Mono. It was designed to be flexible and powerful. It offers a declarative style interface and modern design patterns.</p>
+
+<h2>
+<a id="architecture" class="anchor" href="#architecture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Architecture</h2>
+
+<h3>
+<a id="engine" class="anchor" href="#engine" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Engine</h3>
+
+<p>The engine is responsible for providing the runtime environment. After the algorithm has been defined, the engine runs and keeps the state of the evolution.</p>
+
+<h3>
+<a id="algorithm" class="anchor" href="#algorithm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Algorithm</h3>
+
+<p>The algorithm knows all the steps that must be taken place in each epoch or generation. Before building the <code>Engine</code>, an <code>Algorithm</code> must be defined. At the moment, only <code>EasyGa</code>, a basic genetic algorithm has been implemented. To create a custom one, <code>IAlgorithm</code> can be implemented or <code>EasyGa</code> can be inherited.</p>
+
+<h3>
+<a id="genes-and-genotypes" class="anchor" href="#genes-and-genotypes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Genes and Genotypes</h3>
+
+<p>Genes (which implement <code>IGene</code>) are the basic information blocks processed by the <code>Algorithm</code>. All the genes of an <code>Individual</code> form a <code>Genotype</code>. There exist multiple already implemented <code>Gene</code> types:</p>
+
+<ul>
+<li>Numeric genes. They wrap another type (generally a primitive type) and provide basic arithmetic operations
+
+<ul>
+<li>
+<code>FloatGene</code>: They store a <code>double</code> value. They can be optionally <em>bounded</em>, <em>minimum</em> and <em>maximum</em> values can be defined for its value.</li>
+<li>
+<code>BitGene</code>: They store a boolean value.</li>
+</ul>
+</li>
+<li>
+<code>EnumGene</code>: They wrap an <code>Enum</code>.</li>
+</ul>
+
+<p>Genotypes implement the <code>IGenotype</code> interface. By now only the <code>ListGenotype</code> genotype is provided as an implementation of the <code>IListGenotype</code> interface. In it, genes are arranged in a constant size list.</p>
+
+<h3>
+<a id="fitness-and-individuals" class="anchor" href="#fitness-and-individuals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fitness and Individuals</h3>
+
+<p>When declaring the engine any type <code>F</code> that implements <code>IComparable&lt;F&gt;</code> can hold the fitness value for the individuals. <code>Individuals</code> have a <code>Genotype</code> and can be assigned a <code>Fitness</code>.</p>
+
+<h3>
+<a id="world" class="anchor" href="#world" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>World</h3>
+
+<p>World represents the state of the population of individuals in a particular generation. The engine returns a <code>World</code> anytime a step (generation or epoch) of the algorithm is run.</p>
+
+<h3>
+<a id="selectors-alterers-and-breeders" class="anchor" href="#selectors-alterers-and-breeders" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Selectors, Alterers and Breeders</h3>
+
+<p>The algorithm makes use of this three elements to initialize, modify and return a new population. An <code>Alterer</code>, given a pool of individuals, returns a new set. A <code>Selector</code> selects some individuals from a population. In fact, a <code>Selector</code> can be seen as an alterer that doesn't change the individuals. <code>Breeders</code> provide a way to get the starting population for the algorithm.</p>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
+
+<p>(Code is written on C# 6)</p>
+
+<p>This is a simple example in which genotypes are a collection of <code>BitGene</code> and the <code>Fitness</code> of an Individual is seen as the number of BitGenes with value true.</p>
+
+<div class="highlight highlight-source-cs"><pre><span class="pl-k">public</span> <span class="pl-k">void</span> EasyGaTest()
+  {
+    <span class="pl-c">// Crossover with one cut ppoin </span>
+    <span class="pl-k">var</span> crossover = <span class="pl-k">new</span> MultipointCrossover&lt;ListGenotype&lt;BitGene&gt;, BitGene, <span class="pl-k">double</span>&gt;(<span class="pl-c1">1</span>);
+
+    <span class="pl-k">var</span> algorithm =
+    <span class="pl-k">new</span> EasyGa&lt;ListGenotype&lt;BitGene&gt;, <span class="pl-k">double</span>&gt;.Builder()
+          .WithElitismPercentage(<span class="pl-c1">0.5</span>)             <span class="pl-c">// Best 50% of previous population remains</span>
+          .WithFitnessFunction(g =&gt; ((ListGenotype&lt;BitGene&gt;) g).Count(b =&gt; b.Value))  <span class="pl-c">// Fitness is # of Genes with value 'true'</span>
+          .WithStopCriteria(w =&gt; w.Generation &gt; <span class="pl-c1">2500</span> || w.BestFitness == <span class="pl-c1">20</span>) <span class="pl-c">// Stop if I reach a Genotype full of genes with value 'true'</span>
+                                                                            <span class="pl-c">// or generation 2501</span>
+          .RegisterBreeder(<span class="pl-k">new</span> BitBreeder(<span class="pl-c1">20</span>,<span class="pl-c1">20</span>))         <span class="pl-c">// Start with 20 individuals with 20 BitGenes</span>
+          .Register(<span class="pl-k">new</span> RouletteWheelSelector&lt;ListGenotype&lt;BitGene&gt;&gt;(<span class="pl-c1">20</span>)) <span class="pl-c">// Select 20 individuals with RouletteWheelSelector (Fitness Proportionate Selection)</span>
+          .Register(<span class="pl-k">new</span> Recombinator&lt;ListGenotype&lt;BitGene&gt;, <span class="pl-k">double</span>&gt;(crossover, <span class="pl-c1">2</span>, <span class="pl-c1">10</span>)) <span class="pl-c">// Apply the crossover operation 10 times taking two parents each time</span>
+          .Register(<span class="pl-k">new</span> BitMutator&lt;ListGenotype&lt;BitGene&gt;, <span class="pl-k">double</span>&gt;(<span class="pl-c1">0.05</span>)) <span class="pl-c">// Mutation with a 5% probability over all population's genes</span>
+          .Build(); <span class="pl-c">// Build the algorithm</span>
+
+    <span class="pl-k">var</span> engine = <span class="pl-k">new</span> Engine&lt;ListGenotype&lt;BitGene&gt;, <span class="pl-k">double</span>&gt;.Builder()
+          .WithAlgorithm(algorithm)
+          .Build(); <span class="pl-c">// Build the engine</span>
+
+    <span class="pl-k">while</span> (!engine.HasReachedStopCriteria) <span class="pl-c">// Run until the stop criteria is met</span>
+    {
+      engine.NextGeneration(); <span class="pl-c">// Run the next generation</span>
+    }
+
+    Debug.WriteLine($<span class="pl-s"><span class="pl-pds">"</span>{engine.World.Generation} generations reached<span class="pl-pds">"</span></span>);
+    Debug.WriteLine($<span class="pl-s"><span class="pl-pds">"</span>{engine.World.BestFitness} is best Fitness<span class="pl-pds">"</span></span>);
+    Debug.WriteLine($<span class="pl-s"><span class="pl-pds">"</span>{engine.World.BestGenotype} is best Genotype<span class="pl-pds">"</span></span>);
+
+  }</pre></div>
+
+<p>An example output would be:</p>
+
+<blockquote>
+<p> 
+24 generations reached
+20 is best Fitness
+1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1 is best Genotype
+ </p>
+</blockquote>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/bgarate/Evolution">Evolution</a> is maintained by <a href="https://github.com/bgarate">bgarate</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
