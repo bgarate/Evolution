@@ -6,13 +6,13 @@ Microsoft .NET [![Build status](https://ci.appveyor.com/api/projects/status/uhab
 
 ## What is Singular.Evolution?
 
-Singular.Evolution or simply Evolution is an Evolutionary Computation Framework written in C# compatible with Microsoft .NET and Mono frameworks 3.5 and up. It was designed to be flexible and powerful. It offers a declarative style interface and modern architecture.
+Singular.Evolution or simply Evolution is an Evolutionary Computation Framework written in C# compatible with Microsoft .NET(3.5 and up) and Mono. It was designed to be flexible and powerful. It offers a declarative style interface and modern design patterns.
 
 ## Architecture
 
 ### Engine
 
-The engine is responsible for providing the runtime environment. After the algorithm has been defined, the engine is responsible of running and keep the state of the evolution.
+The engine is responsible for providing the runtime environment. After the algorithm has been defined, the engine runs and keeps the state of the evolution.
 
 ### Algorithm
 
