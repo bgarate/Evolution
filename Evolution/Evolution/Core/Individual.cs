@@ -28,10 +28,10 @@ namespace Singular.Evolution.Core
         {
             get
             {
-                if (HasFitnessAssigned)
-                    return fitness;
-                else
-                    throw new Exception("The individual has not fitness assigned");
+                if (!HasFitnessAssigned)
+                    throw new InvalidOperationException("This individual has not fitness assigned");
+
+                return fitness;
             }
             private set
             {

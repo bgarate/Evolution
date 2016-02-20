@@ -1,9 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Singular.Evolution.Core
 {
-    public class GeneEnumerator<G> : IEnumerator<G> where G : IGene
+    public sealed class GeneEnumerator<G> : IEnumerator<G> where G : IGene
     {
         private readonly IEnumerator<G> internalEnumerator;
 
@@ -16,6 +17,7 @@ namespace Singular.Evolution.Core
         public void Dispose()
         {
             internalEnumerator.Dispose();
+            GC.SuppressFinalize(this);
         }
 
         public bool MoveNext()

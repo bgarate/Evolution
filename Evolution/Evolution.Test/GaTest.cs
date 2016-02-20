@@ -4,6 +4,7 @@ using System.Linq;
 using NUnit.Framework;
 using Singular.Evolution.Algorithms;
 using Singular.Evolution.Alterers;
+using Singular.Evolution.Breeders;
 using Singular.Evolution.Core;
 using Singular.Evolution.Genes;
 using Singular.Evolution.Genotypes;
@@ -22,7 +23,7 @@ namespace Evolution.Test
             var algorithm =
                 new EasyGa<ListGenotype<BitGene>, double>.Builder()
                     .WithElitismPercentage(0.5)
-                    .WithFitnessFunction(g => ((ListGenotype<BitGene>) g).Count(b => b.Value))
+                    .WithFitnessFunction(g => g.Count(b => b.Value))
                     .WithStopCriteria(w => w.Generation > 2500 || w.BestFitness == 20)
                     .RegisterBreeder(new BitBreeder(20,20))
                     .Register(new RouletteWheelSelector<ListGenotype<BitGene>>(20))
@@ -47,9 +48,9 @@ namespace Evolution.Test
                 engine.NextGeneration();
             }
 
-            TestContext.WriteLine($"{engine.World.Generation} generations reached");
-            TestContext.WriteLine($"{engine.World.BestFitness} is best Fitness");
-            TestContext.WriteLine($"{engine.World.BestGenotype} is best Genotype");
+            TestContext.WriteLine($"{engine.CurrentWorld.Generation} generations reached");
+            TestContext.WriteLine($"{engine.CurrentWorld.BestFitness} is best Fitness");
+            TestContext.WriteLine($"{engine.CurrentWorld.BestGenotype} is best Genotype");
 
         }
     }

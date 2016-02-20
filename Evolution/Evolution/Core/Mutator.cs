@@ -48,18 +48,14 @@ namespace Singular.Evolution.Core
         {
             int genePlace = RandomGenerator.GetInstance().NextInt(genotype.Count);
 
-            R orignalGene = genotype[genePlace];
-            R mutatedGene = Mutate(orignalGene);
+            R originalGene = genotype[genePlace];
+            R mutatedGene = Mutate(originalGene);
 
             G mutatedGenotype = genotype.Replace(genePlace, mutatedGene);
             return mutatedGenotype;
         }
 
         protected abstract R Mutate(R g);
-
-        public object Apply(object individuals)
-        {
-            return Apply((IList<Individual<ListGenotype<R>, F>>) individuals);
-        }
+        
     }
 }

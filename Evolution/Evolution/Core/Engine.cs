@@ -4,46 +4,54 @@ using Singular.Evolution.Algorithms;
 
 namespace Singular.Evolution.Core
 {
+
     public class Engine<G, F> where F : IComparable<F> where G : IGenotype
     {
+        private Stats<G, F> statistics;
+
         private Engine()
         {
+
         }
-        
+
+
+        public IStats<G, F> Statistics => statistics;
+
         public bool HasReachedStopCriteria { get; private set; }
 
         public IAlgorithm<G, F> Algorithm { get; private set; }
-        public World<G, F> World { get; private set; }
+        public World<G, F> CurrentWorld { get; private set; }
 
         public void NextGeneration()
         {
             if (HasReachedStopCriteria)
                 throw new Exception("Algorithm has reach stop criteria");
 
-            if (World == null)
+            if (CurrentWorld == null)
             {
                 IList<Individual<G, F>> firstGeneration = Algorithm.Initialize();
-                World = new World<G, F>(firstGeneration);
+                CurrentWorld = new World<G, F>(firstGeneration);
             }
             else
             {
-                IList<Individual<G, F>> newGeneration = Algorithm.Execute(World);
-                World = new World<G, F>(World, newGeneration);
+                IList<Individual<G, F>> newGeneration = Algorithm.Execute(CurrentWorld);
+                CurrentWorld = new World<G, F>(CurrentWorld, newGeneration);
             }
-            
-            if (Algorithm.ShouldStop(World))
+
+            statistics = Stats<G, F>.CalculateNewStatistis(CurrentWorld,Statistics);
+
+            if (Algorithm.ShouldStop(CurrentWorld))
             {
                 HasReachedStopCriteria = true;
             }
         }
-
+        
         public class Builder
         {
             private readonly Engine<G, F> engine = new Engine<G, F>();
 
             public Builder()
             {
-                
             }
 
             public Builder WithAlgorithm(IAlgorithm<G,F> algorithm)
@@ -63,7 +71,9 @@ namespace Singular.Evolution.Core
                     throw  new Exception($"{nameof(engine.Algorithm)} must be set");
 
                 return engine;
-            } 
+            }
+        
         }
+        
     }
 }

@@ -13,8 +13,8 @@ namespace Singular.Evolution.Genes
         {
             Value = value;
 
-            if (min != max && (min == null || max == null))
-                throw new ArgumentException("Both or none bounds must be null");
+            if (min.HasValue != max.HasValue)
+                throw new ArgumentException(Resources.Both_or_none_bounds_must_be_null);
 
             MaxValue = max;
             MinValue = min;
@@ -34,9 +34,9 @@ namespace Singular.Evolution.Genes
 
         private bool EqualBounds(FloatGene other)
         {
-            var bothBounded = IsBounded && other.IsBounded;
+            bool bothBounded = IsBounded && other.IsBounded;
             return (bothBounded && Math.Abs(MaxValue.Value - other.MaxValue.Value) < double.Epsilon &&
-                    (MinValue.Value - other.MinValue.Value) < double.Epsilon)
+                    Math.Abs(MinValue.Value - other.MinValue.Value) < double.Epsilon)
                     || (!IsBounded && !other.IsBounded);
         }
 
@@ -104,6 +104,11 @@ namespace Singular.Evolution.Genes
             }
 
             return new FloatGene(newValue, max, min);
+        }
+
+        public override string ToString()
+        {
+            return $"{{{(IsBounded ? MinValue + "-" : "")}{Value}{(IsBounded ? "-" + MaxValue : "")}}}";
         }
     }
 }

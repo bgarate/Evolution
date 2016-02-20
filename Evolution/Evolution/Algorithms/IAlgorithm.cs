@@ -4,7 +4,7 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Algorithms
 {
-    public delegate F FitnessFunctionDelegate<G,out F>(IGenotype genotype) where F : IComparable<F> where G: IGenotype;
+    public delegate F FitnessFunctionDelegate<in G,out F>(G genotype) where F : IComparable<F> where G: IGenotype;
 
     public interface IAlgorithm<G, F> where F : IComparable<F> where G : IGenotype
     {
