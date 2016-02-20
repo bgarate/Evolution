@@ -4,42 +4,18 @@ Mono.NET [![Build Status](https://travis-ci.org/bgarate/Evolution.svg?branch=mas
 
 Microsoft .NET [![Build status](https://ci.appveyor.com/api/projects/status/uhabegnl9qrlo2ma?svg=true)](https://ci.appveyor.com/project/bgarate/evolution) [![Coverage Status](https://coveralls.io/repos/github/bgarate/Evolution/badge.svg?branch=master)](https://coveralls.io/github/bgarate/Evolution?branch=master)
 
-## What is Singular.Evolution?
+## Introduction
 
-Singular.Evolution or simply Evolution is an Evolutionary Computation Framework written in C# compatible with Microsoft .NET(3.5 and up) and Mono. It was designed to be flexible and powerful. It offers a declarative style interface and modern design patterns.
+Evolution is an Evolutionary Computation Framework written in C# compatible with Microsoft .NET(3.5 and up) and Mono. It was designed to be flexible and powerful. It offers a declarative style interface and modern design patterns.
 
-## Architecture
+## Features
 
-### Engine
-
-The engine is responsible for providing the runtime environment. After the algorithm has been defined, the engine runs and keeps the state of the evolution.
-
-### Algorithm
-
-The algorithm knows all the steps that must be taken place in each epoch or generation. Before building the `Engine`, an `Algorithm` must be defined. At the moment, only `EasyGa`, a basic genetic algorithm has been implemented. To create a custom one, `IAlgorithm` can be implemented or `EasyGa` can be inherited.
-
-### Genes and Genotypes
-
-Genes (which implement `IGene`) are the basic information blocks processed by the `Algorithm`. All the genes of an `Individual` form a `Genotype`. There exist multiple already implemented `Gene` types:
-
-* Numeric genes. They wrap another type (generally a primitive type) and provide basic arithmetic operations
- * `FloatGene`: They store a `double` value. They can be optionally *bounded*, *minimum* and *maximum* values can be defined for its value.
- * `BitGene`: They store a boolean value.
-* `EnumGene`: They wrap an `Enum`.
-
-Genotypes implement the `IGenotype` interface. By now only the `ListGenotype` genotype is provided as an implementation of the `IListGenotype` interface. In it, genes are arranged in a constant size list.
-
-### Fitness and Individuals
-
-When declaring the engine any type `F` that implements `IComparable<F>` can hold the fitness value for the individuals. `Individuals` have a `Genotype` and can be assigned a `Fitness`.
-
-### World
-
-World represents the state of the population of individuals in a particular generation. The engine returns a `World` anytime a step (generation or epoch) of the algorithm is run.
-
-### Selectors, Alterers and Breeders
-
-The algorithm makes use of this three elements to initialize, modify and return a new population. An `Alterer`, given a pool of individuals, returns a new set. A `Selector` selects some individuals from a population. In fact, a `Selector` can be seen as an alterer that doesn't change the individuals. `Breeders` provide a way to get the starting population for the algorithm.
+- Algorithms can be defined in a fluent, declarative style
+- Completely custom algorithms can be implemented reusing the existing operators and engine
+- Generic, flexible and extendable
+- Already implemented Mutators, selectors, alterers and chromosomes. More can be implemented
+- Pluggable source of Random Number Generator
+- Generic fitness: any type F that implements IComparable<F> can be used as a Fitness type
 
 ## Example
 (Code is written on C# 6)
@@ -82,8 +58,32 @@ public void EasyGaTest()
 
 An example output would be:
 
-> &nbsp;</br>
-> 24 generations reached</br>
-> 20 is best Fitness</br>
-> 1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1 is best Genotype</br>
-> &nbsp;
+````
+24 generations reached
+20 is best Fitness
+1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1 is best Genotype
+````
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: git checkout -b my-new-feature
+3. Commit your changes: git commit -am 'Add some feature'
+4. Push to the branch: git push origin my-new-feature
+5. Submit a pull request :D
+
+## License
+
+Copyright 2016 Bruno Garate
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
