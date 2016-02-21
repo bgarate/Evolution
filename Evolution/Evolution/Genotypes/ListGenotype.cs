@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genotypes
 {
     [Factory(typeof (ListGenotypeFactory<>))]
-    public class ListGenotype<G> : IListGenotype<ListGenotype<G>,G> where G : IGene, new()
+    public class ListGenotype<G> : IListGenotype<ListGenotype<G>, G> where G : IGene, new()
     {
         private readonly List<G> genesList;
 

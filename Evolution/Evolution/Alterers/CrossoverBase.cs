@@ -9,18 +9,19 @@ namespace Singular.Evolution.Alterers
         where F : IComparable<F>
         where R : IGene, new()
     {
-        public int NumberOfParentsNeeded { get; }
-        public bool SameLengthParentsNeeded { get; }
-        public int NumberOfChildsGenerated { get; }
-        public int MinimumGenesRequired { get; }
-
-        public CrossoverBase(int numberOfParentsNeeded, int numberOfChildsGenerated, int minimumGenesRequired, bool sameLengthParentsNeeded)
+        public CrossoverBase(int numberOfParentsNeeded, int numberOfChildsGenerated, int minimumGenesRequired,
+            bool sameLengthParentsNeeded)
         {
             NumberOfParentsNeeded = numberOfParentsNeeded;
             NumberOfChildsGenerated = numberOfChildsGenerated;
             SameLengthParentsNeeded = sameLengthParentsNeeded;
             MinimumGenesRequired = minimumGenesRequired;
         }
+
+        public int NumberOfParentsNeeded { get; }
+        public bool SameLengthParentsNeeded { get; }
+        public int NumberOfChildsGenerated { get; }
+        public int MinimumGenesRequired { get; }
 
         public IList<Individual<G, F>> Apply(IList<Individual<G, F>> parents)
         {
@@ -35,7 +36,7 @@ namespace Singular.Evolution.Alterers
                 if (SameLengthParentsNeeded && parents.Any(p => p.Genotype.Count != count))
                     throw new ArgumentException("Parents should have same length");
 
-                if(MinimumGenesRequired > individual.Genotype.Count)
+                if (MinimumGenesRequired > individual.Genotype.Count)
                     throw new ArgumentException($"Parents should have at least {MinimumGenesRequired} genes");
             }
 
@@ -43,6 +44,5 @@ namespace Singular.Evolution.Alterers
         }
 
         protected abstract IList<G> GetOffspring(IEnumerable<G> parents);
-
     }
 }

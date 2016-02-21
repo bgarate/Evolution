@@ -4,8 +4,10 @@ using System.Linq;
 
 namespace Singular.Evolution.Core
 {
-    public class Individual<G, F> : IComparable<Individual<G,F>> where F : IComparable<F> where G : IGenotype
+    public class Individual<G, F> : IComparable<Individual<G, F>> where F : IComparable<F> where G : IGenotype
     {
+        private F fitness;
+
         public Individual(G genotype)
         {
             Genotype = genotype;
@@ -21,8 +23,6 @@ namespace Singular.Evolution.Core
         public bool HasFitnessAssigned { get; private set; }
 
         public G Genotype { get; }
-
-        F fitness = default (F);
 
         public F Fitness
         {
@@ -42,6 +42,11 @@ namespace Singular.Evolution.Core
 
         public F FitnessOrDefault => HasFitnessAssigned ? fitness : default(F);
 
+        public int CompareTo(Individual<G, F> other)
+        {
+            return Fitness.CompareTo(other.Fitness);
+        }
+
         public Individual<G, F> Clone()
         {
             return new Individual<G, F>(Genotype);
@@ -50,11 +55,6 @@ namespace Singular.Evolution.Core
         public static IList<Individual<G, F>> FromGenotypes(IList<G> genotypes)
         {
             return genotypes.Select(g => new Individual<G, F>(g)).ToList();
-        }
-
-        public int CompareTo(Individual<G, F> other)
-        {
-            return Fitness.CompareTo(other.Fitness);
         }
 
         public override string ToString()
@@ -71,5 +71,4 @@ namespace Singular.Evolution.Core
             return individuals.Select(i => i.Genotype).ToList();
         }
     }
-    
 }

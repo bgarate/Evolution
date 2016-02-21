@@ -6,14 +6,12 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class PartiallyMatchedCrossover<G, R, F> : CrossoverBase<G,R, F> where G : IListGenotype<G,R>
+    public class PartiallyMatchedCrossover<G, R, F> : CrossoverBase<G, R, F> where G : IListGenotype<G, R>
         where F : IComparable<F>
-        where R : class, IGene,new()
+        where R : class, IGene, new()
     {
-
         public PartiallyMatchedCrossover() : base(2, 2, 2, true)
         {
-
         }
 
         protected override IList<G> GetOffspring(IEnumerable<G> parents)
@@ -32,9 +30,9 @@ namespace Singular.Evolution.Alterers
             IEnumerable<R> child1 = GetChild(parent1, parent2, point1, point2);
             IEnumerable<R> child2 = GetChild(parent2, parent1, point1, point2);
 
-            IListGenotypeFactory<G, R> factory = Factory.GetInstance().BuildFactory<G,IListGenotypeFactory<G,R>>();
+            IListGenotypeFactory<G, R> factory = Factory.GetInstance().BuildFactory<G, IListGenotypeFactory<G, R>>();
 
-            return new List<G> {factory.Create(child1),factory.Create(child2)};
+            return new List<G> {factory.Create(child1), factory.Create(child2)};
         }
 
         private static IEnumerable<R> GetChild(IList<R> parent1, IList<R> parent2, int point1, int point2)
@@ -65,7 +63,7 @@ namespace Singular.Evolution.Alterers
             }
         }
 
-        private static void ParentToChild(IList<R> child,IList<R> parent2)
+        private static void ParentToChild(IList<R> child, IList<R> parent2)
         {
             int count = parent2.Count;
 
@@ -97,6 +95,5 @@ namespace Singular.Evolution.Alterers
                 destination[i] = source[i];
             }
         }
-
     }
 }

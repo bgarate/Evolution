@@ -13,15 +13,17 @@ namespace Singular.Evolution.Selectors
         }
 
         public int NumberOfSelected { get; }
-        
+
         public IList<Individual<G, F>> Apply(IList<Individual<G, F>> individuals)
         {
             IList<IndividualScore> scoredIndividuals = Score(individuals);
             return Select(scoredIndividuals);
         }
 
+        public IFitnessScaling<F> Scaling { get; }
+
         protected abstract IList<Individual<G, F>> Select(IList<IndividualScore> scoredIndividuals);
-        
+
         private IList<IndividualScore> Score(IList<Individual<G, F>> individuals)
         {
             List<F> originalScores = individuals.Select(s => s.Fitness).ToList();
@@ -32,7 +34,6 @@ namespace Singular.Evolution.Selectors
 
         protected class IndividualScore
         {
-
             public IndividualScore(F score, Individual<G, F> individual)
             {
                 Score = score;
@@ -42,7 +43,5 @@ namespace Singular.Evolution.Selectors
             public F Score { get; }
             public Individual<G, F> Individual { get; }
         }
-
-        public IFitnessScaling<F> Scaling { get; }
     }
 }

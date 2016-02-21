@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Linq;
 using NUnit.Framework;
 using Singular.Evolution.Algorithms;
 using Singular.Evolution.Alterers;
@@ -18,20 +16,22 @@ namespace Evolution.Test
         [Test]
         public void EasyGaTest()
         {
-            var crossover = new MultipointCrossover<ListGenotype<BitGene>, BitGene, double>(1);
+            MultipointCrossover<ListGenotype<BitGene>, BitGene, double> crossover =
+                new MultipointCrossover<ListGenotype<BitGene>, BitGene, double>(1);
 
-            var algorithm =
+            EasyGa<ListGenotype<BitGene>, double> algorithm =
                 new EasyGa<ListGenotype<BitGene>, double>.Builder()
                     .WithElitismPercentage(0.5)
                     .WithFitnessFunction(g => g.Count(b => b.Value))
                     .WithStopCriteria(w => w.Generation > 2500 || w.BestFitness == 20)
-                    .RegisterBreeder(new BitBreeder(20,20))
+                    .RegisterBreeder(new BitBreeder(20, 20))
                     .Register(new RouletteWheelSelector<ListGenotype<BitGene>>(20))
-                    .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10,Recombinator<ListGenotype<BitGene>, double>.RecombinatioNumberType.Absolute))
+                    .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10,
+                        Recombinator<ListGenotype<BitGene>, double>.RecombinatioNumberType.Absolute))
                     .Register(new BitMutator<ListGenotype<BitGene>, double>(0.05))
                     .Build();
 
-            var engine = new Engine<ListGenotype<BitGene>, double>.Builder()
+            Engine<ListGenotype<BitGene>, double> engine = new Engine<ListGenotype<BitGene>, double>.Builder()
                 .WithAlgorithm(algorithm)
                 .Build();
 
@@ -49,9 +49,9 @@ namespace Evolution.Test
             }
 
             TestContext.WriteLine($"{engine.CurrentWorld.Generation} generations reached");
-            TestContext.WriteLine($"{engine.CurrentWorld.BestFitness} is best Fitness");
-            TestContext.WriteLine($"{engine.CurrentWorld.BestGenotype} is best Genotype");
-
+            TestContext.WriteLine($"{engine.Statistics.BestIndividualGeneration} is best indivual's generation");
+            TestContext.WriteLine($"{engine.Statistics.BestFitness} is best Fitness");
+            TestContext.WriteLine($"{engine.Statistics.BestGenotype} is best Genotype");
         }
     }
 }

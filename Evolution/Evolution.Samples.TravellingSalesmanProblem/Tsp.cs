@@ -16,15 +16,7 @@ namespace Evolution.Samples.TravelingSalesmanProblem
     internal class Tsp
     {
         private const double CIRCLE_RADIUS = 0.4;
-        private readonly List<City> cities; 
-        public List<City> Cities => cities.ToList();
-        private Engine<ListGenotype<FloatGene>,double> Engine { get; set; }
-
-        internal enum PositionSelection
-        {
-            Random,
-            Circular
-        }
+        private readonly List<City> cities;
 
         public Tsp(int numberOfCities, PositionSelection positionSelection = PositionSelection.Random)
         {
@@ -43,15 +35,17 @@ namespace Evolution.Samples.TravelingSalesmanProblem
                     double angle = (float) (Math.PI*2/numberOfCities*i);
 
                     position = new PointF((float) (Math.Sin(angle)*CIRCLE_RADIUS + 0.5),
-                        (float) (Math.Cos(angle)* CIRCLE_RADIUS + 0.5));
+                        (float) (Math.Cos(angle)*CIRCLE_RADIUS + 0.5));
                 }
 
-                cities.Add(new City(((char)("A"[0] + i)).ToString(), position));
+                cities.Add(new City(((char) ("A"[0] + i)).ToString(), position));
             }
 
             BuildEngine();
-
         }
+
+        public List<City> Cities => cities.ToList();
+        private Engine<ListGenotype<FloatGene>, double> Engine { get; set; }
 
         public int Generation => Engine.CurrentWorld?.Generation ?? 0;
         public double BestFitness => Engine.Statistics?.BestFitness ?? 0;
@@ -62,11 +56,11 @@ namespace Evolution.Samples.TravelingSalesmanProblem
             double squaredDistance = 0;
             for (int i = 1; i < genotype.Count; i++)
             {
-                City city = Cities[(int)genotype[i].Value];
-                City previousCity = Cities[(int)genotype[i-1].Value];
+                City city = Cities[(int) genotype[i].Value];
+                City previousCity = Cities[(int) genotype[i - 1].Value];
 
                 squaredDistance += Math.Pow(city.Position.X - previousCity.Position.X, 2) +
-                                  Math.Pow(city.Position.Y - previousCity.Position.Y, 2);
+                                   Math.Pow(city.Position.Y - previousCity.Position.Y, 2);
             }
 
             return 1/squaredDistance;
@@ -74,7 +68,6 @@ namespace Evolution.Samples.TravelingSalesmanProblem
 
         private void BuildEngine()
         {
-
             GenotypeGeneratorBreeder<ListGenotype<FloatGene>>.BreederDelegateWithIndex generateNewGenotype =
                 index => new ListGenotype<FloatGene>(
                     Enumerable.Range(0, cities.Count).ToList().RandomSort().Select(i => new FloatGene(i)));
@@ -101,10 +94,10 @@ namespace Evolution.Samples.TravelingSalesmanProblem
 
         public bool Evolve()
         {
-            if(!Engine.HasReachedStopCriteria)
+            if (!Engine.HasReachedStopCriteria)
                 Engine.NextGeneration();
             return !Engine.HasReachedStopCriteria;
-        } 
+        }
 
         public List<City> GetPath()
         {
@@ -115,25 +108,29 @@ namespace Evolution.Samples.TravelingSalesmanProblem
                 list.AddRange(bestGenotype.Select(gene => Cities[(int) gene.Value]));
             }
             return list;
-        } 
+        }
+
+        internal enum PositionSelection
+        {
+            Random,
+            Circular
+        }
     }
 
     internal class City
     {
-        public City(string name,PointF position)
+        public City(string name, PointF position)
         {
             Position = position;
             Name = name;
         }
 
+        public PointF Position { get; }
+        public string Name { get; }
+
         public override string ToString()
         {
             return Name;
         }
-
-        public PointF Position { get; }
-        public string Name { get; }
     }
-
-    
 }

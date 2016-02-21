@@ -157,7 +157,7 @@ namespace Singular.Evolution.Utils
         {
             double deviation = (min + max)/2/BOUNDED_DEVIATIONS;
 
-            return MoreMath.Clamp(mean + NextGaussian()*deviation, min, max);
+            return MathHelper.Clamp(mean + NextGaussian()*deviation, min, max);
         }
 
         private double CalculateGaussianDistribution()

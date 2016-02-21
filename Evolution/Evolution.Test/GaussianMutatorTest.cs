@@ -21,7 +21,8 @@ namespace Evolution.Test
             ListGenotype<FloatGene> genotype =
                 new ListGenotype<FloatGene>(10000);
 
-            GaussianMutator<ListGenotype<FloatGene>,int> mutator = new GaussianMutator<ListGenotype<FloatGene>, int>(0.1);
+            GaussianMutator<ListGenotype<FloatGene>, int> mutator =
+                new GaussianMutator<ListGenotype<FloatGene>, int>(0.1);
             List<ListGenotype<FloatGene>> parents = new List<ListGenotype<FloatGene>>();
 
             parents.Add(genotype);

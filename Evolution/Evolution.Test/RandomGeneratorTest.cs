@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using NUnit.Framework;
 using Singular.Evolution.Utils;
@@ -38,6 +37,33 @@ namespace Evolution.Test
         }
 
         [Test]
+        public void TestDoubleSequences()
+        {
+            RandomGenerator rnd = RandomGenerator.GetInstance();
+
+            rnd.RandomSource = new SystemRandomSource(1234);
+            List<double> uniformSamples1 = rnd.DoubleSequence().Take(10000).ToList();
+            List<double> uniformSamples2 = rnd.DoubleSequence(15000.3).Take(500000).ToList();
+            List<double> uniformSamples3 = rnd.DoubleSequence(-400, -1.2).Take(30000).ToList();
+
+            double min1 = uniformSamples1.Min();
+
+            double min2 = uniformSamples2.Min();
+            double max2 = uniformSamples2.Max();
+
+            double min3 = uniformSamples3.Min();
+            double max3 = uniformSamples3.Max();
+
+            Assert.GreaterOrEqual(min1, 0);
+
+            Assert.GreaterOrEqual(min2, 0);
+            Assert.LessOrEqual(max2, 15000.3);
+
+            Assert.GreaterOrEqual(min3, -400);
+            Assert.LessOrEqual(max3, -1.2);
+        }
+
+        [Test]
         public void TestInt()
         {
             RandomGenerator rnd = RandomGenerator.GetInstance();
@@ -63,78 +89,6 @@ namespace Evolution.Test
                 int a = rnd.NextInt(Math.Min(b, c), Math.Max(b, c));
                 Assert.True(a >= Math.Min(b, c) && a < Math.Max(b, c));
             }
-        }
-
-        [Test]
-        public void TestRandomGeneratorMock()
-        {
-            RandomGenerator rnd = RandomGenerator.GetInstance();
-            rnd.RandomSource = new MockRandomSource(new[] {3, 450, 97},
-                new[] {0, 0.6, 0.9, 3});
-
-
-            Assert.AreEqual(0, rnd.NextDouble());
-            Assert.AreEqual(3, rnd.NextInt());
-            Assert.AreEqual(50, rnd.NextInt(100));
-            Assert.AreEqual(3, rnd.NextInt(3, 100));
-            Assert.AreEqual(0.3, rnd.NextDouble(0.5));
-            Assert.AreEqual(2.93, rnd.NextDouble(0.5, 3.2));
-            Assert.Throws(typeof (InvalidOperationException), () => rnd.NextInt());
-            Assert.Throws(typeof (Exception), () => rnd.NextDouble());
-        }
-
-        [Test]
-        public void TestRandomGaussian()
-        {
-            RandomGenerator rnd = RandomGenerator.GetInstance();
-
-            rnd.RandomSource = new SystemRandomSource(1234);
-            List<double> gaussianSamples1 = Enumerable.Range(0, 100000).Select(s => rnd.NextGaussian()).ToList();
-            List<double> gaussianSamples2 =
-                Enumerable.Range(0, 100000).Select(s => rnd.NextGaussian(3, 2)).ToList();
-            List<double> gaussianSamples3 =
-                Enumerable.Range(0, 100000).Select(s => rnd.NextBoundedGaussian(4, 1, 5)).ToList();
-
-            double mean1 = gaussianSamples1.Average();
-            double mean2 = gaussianSamples2.Average();
-            double mean3 = gaussianSamples3.Average();
-            double min3 = gaussianSamples3.Min();
-            double max3 = gaussianSamples3.Max();
-
-            Assert.AreEqual(0, mean1, 0.01);
-            Assert.AreEqual(3, mean2, 0.1);
-            Assert.AreEqual(4, mean3, 0.1);
-            Assert.GreaterOrEqual(min3, 1);
-            Assert.LessOrEqual(max3, 5);
-
-
-        }
-
-        [Test]
-        public void TestDoubleSequences()
-        {
-            RandomGenerator rnd = RandomGenerator.GetInstance();
-
-            rnd.RandomSource = new SystemRandomSource(1234);
-            List<double> uniformSamples1 = rnd.DoubleSequence().Take(10000).ToList();
-            List<double> uniformSamples2 = rnd.DoubleSequence(15000.3).Take(500000).ToList();
-            List<double> uniformSamples3 = rnd.DoubleSequence(-400, -1.2).Take(30000).ToList();
-
-            double min1 = uniformSamples1.Min();
-
-            double min2 = uniformSamples2.Min();
-            double max2 = uniformSamples2.Max();
-
-            double min3 = uniformSamples3.Min();
-            double max3 = uniformSamples3.Max();
-
-            Assert.GreaterOrEqual(min1, 0);
-
-            Assert.GreaterOrEqual(min2, 0);
-            Assert.LessOrEqual(max2, 15000.3);
-
-            Assert.GreaterOrEqual(min3, -400);
-            Assert.LessOrEqual(max3, -1.2);
         }
 
 
@@ -164,6 +118,48 @@ namespace Evolution.Test
             Assert.GreaterOrEqual(min3, -400);
             Assert.LessOrEqual(max3, -1);
         }
-    }
 
+        [Test]
+        public void TestRandomGaussian()
+        {
+            RandomGenerator rnd = RandomGenerator.GetInstance();
+
+            rnd.RandomSource = new SystemRandomSource(1234);
+            List<double> gaussianSamples1 = Enumerable.Range(0, 100000).Select(s => rnd.NextGaussian()).ToList();
+            List<double> gaussianSamples2 =
+                Enumerable.Range(0, 100000).Select(s => rnd.NextGaussian(3, 2)).ToList();
+            List<double> gaussianSamples3 =
+                Enumerable.Range(0, 100000).Select(s => rnd.NextBoundedGaussian(4, 1, 5)).ToList();
+
+            double mean1 = gaussianSamples1.Average();
+            double mean2 = gaussianSamples2.Average();
+            double mean3 = gaussianSamples3.Average();
+            double min3 = gaussianSamples3.Min();
+            double max3 = gaussianSamples3.Max();
+
+            Assert.AreEqual(0, mean1, 0.01);
+            Assert.AreEqual(3, mean2, 0.1);
+            Assert.AreEqual(4, mean3, 0.1);
+            Assert.GreaterOrEqual(min3, 1);
+            Assert.LessOrEqual(max3, 5);
+        }
+
+        [Test]
+        public void TestRandomGeneratorMock()
+        {
+            RandomGenerator rnd = RandomGenerator.GetInstance();
+            rnd.RandomSource = new MockRandomSource(new[] {3, 450, 97},
+                new[] {0, 0.6, 0.9, 3});
+
+
+            Assert.AreEqual(0, rnd.NextDouble());
+            Assert.AreEqual(3, rnd.NextInt());
+            Assert.AreEqual(50, rnd.NextInt(100));
+            Assert.AreEqual(3, rnd.NextInt(3, 100));
+            Assert.AreEqual(0.3, rnd.NextDouble(0.5));
+            Assert.AreEqual(2.93, rnd.NextDouble(0.5, 3.2));
+            Assert.Throws(typeof (InvalidOperationException), () => rnd.NextInt());
+            Assert.Throws(typeof (Exception), () => rnd.NextDouble());
+        }
+    }
 }

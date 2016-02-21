@@ -23,33 +23,25 @@ namespace Singular.Evolution.Genes
         public double? MaxValue { get; }
         public double? MinValue { get; }
 
-        public double Value { get; }
-
         public bool IsBounded => MinValue != null;
+
+        public int CompareTo(FloatGene other)
+        {
+            return Value.CompareTo(other.Value);
+        }
 
         public bool Equals(FloatGene other)
         {
             return Math.Abs(Value - other.Value) < double.Epsilon && EqualBounds(other);
         }
 
-        private bool EqualBounds(FloatGene other)
-        {
-            bool bothBounded = IsBounded && other.IsBounded;
-            return (bothBounded && Math.Abs(MaxValue.Value - other.MaxValue.Value) < double.Epsilon &&
-                    Math.Abs(MinValue.Value - other.MinValue.Value) < double.Epsilon)
-                    || (!IsBounded && !other.IsBounded);
-        }
+        public double Value { get; }
 
         public bool IsValid => (MaxValue == null && MinValue == null) || (MaxValue >= Value && MinValue <= Value);
 
         public IGene Clone()
         {
             return new FloatGene(Value, MaxValue, MinValue);
-        }
-
-        public int CompareTo(FloatGene other)
-        {
-            return Value.CompareTo(other.Value);
         }
 
         public FloatGene Sum(FloatGene b)
@@ -70,6 +62,14 @@ namespace Singular.Evolution.Genes
         public FloatGene Divide(FloatGene b)
         {
             return MinimumBoundedGene(Value/b.Value, this, b);
+        }
+
+        private bool EqualBounds(FloatGene other)
+        {
+            bool bothBounded = IsBounded && other.IsBounded;
+            return (bothBounded && Math.Abs(MaxValue.Value - other.MaxValue.Value) < double.Epsilon &&
+                    Math.Abs(MinValue.Value - other.MinValue.Value) < double.Epsilon)
+                   || (!IsBounded && !other.IsBounded);
         }
 
         public override int GetHashCode()

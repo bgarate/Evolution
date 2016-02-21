@@ -77,10 +77,10 @@ namespace Evolution.Test
             Assert.AreEqual(4, c.MaxValue);
             Assert.False(c.IsValid);
 
-            a = new FloatGene(1,0,3);
+            a = new FloatGene(1, 0, 3);
             b = new FloatGene(1);
 
-            Assert.AreNotEqual(a,b);
+            Assert.AreNotEqual(a, b);
         }
     }
 }

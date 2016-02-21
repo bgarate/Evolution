@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Singular.Evolution.Alterers;
-using Singular.Evolution.Genes;
-using Singular.Evolution.Genotypes;
 using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Core
@@ -14,29 +12,23 @@ namespace Singular.Evolution.Core
         public enum RecombinatioNumberType
         {
             Absolute,
-            Probability            
+            Probability
         }
 
-        public Recombinator(IAlterer<G, F> alterer, int numberOfParents, double numberOfRecombinations, RecombinatioNumberType recombinationType)
+        public Recombinator(IAlterer<G, F> alterer, int numberOfParents, double numberOfRecombinations,
+            RecombinatioNumberType recombinationType)
         {
             Alterer = alterer;
             NumberOfRecombinations = numberOfRecombinations;
             NumberOfParents = numberOfParents;
             RecombinationType = recombinationType;
 
-            if ((recombinationType == RecombinatioNumberType.Probability) && !MoreMath.IsProbabilty(numberOfRecombinations)) 
+            if ((recombinationType == RecombinatioNumberType.Probability) &&
+                !MathHelper.IsProbabilty(numberOfRecombinations))
                 throw new ArgumentException($"The value of {numberOfRecombinations} must in the range [0,1]");
 
-            if ((recombinationType == RecombinatioNumberType.Absolute) && !MoreMath.IsInteger(numberOfRecombinations))
+            if ((recombinationType == RecombinatioNumberType.Absolute) && !MathHelper.IsInteger(numberOfRecombinations))
                 throw new ArgumentException($"The value of {numberOfRecombinations} must be an integer");
-        }
-
-        public static Recombinator<G2, F> FromCrossover<G2, R>(CrossoverBase<G2, R, F> crossover,
-            double numberOfRecombinations, Recombinator<G2,F>.RecombinatioNumberType recombinatioType) where R : IGene, new()
-            where G2 : IListGenotype<G2, R>
-        {
-            return new Recombinator<G2, F>(crossover, crossover.NumberOfParentsNeeded, numberOfRecombinations,
-                recombinatioType);
         }
 
         public IAlterer<G, F> Alterer { get; }
@@ -62,6 +54,13 @@ namespace Singular.Evolution.Core
             return offspring;
         }
 
-
+        public static Recombinator<G2, F> FromCrossover<G2, R>(CrossoverBase<G2, R, F> crossover,
+            double numberOfRecombinations, Recombinator<G2, F>.RecombinatioNumberType recombinatioType)
+            where R : IGene, new()
+            where G2 : IListGenotype<G2, R>
+        {
+            return new Recombinator<G2, F>(crossover, crossover.NumberOfParentsNeeded, numberOfRecombinations,
+                recombinatioType);
+        }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="Breeders\BitBreeder.cs" />
     <Compile Include="Breeders\GenotypeGeneratorBreeder.cs" />
     <Compile Include="Core\Engine.cs" />
+    <Compile Include="Core\Executor.cs" />
     <Compile Include="Core\GeneEnumerator.cs" />
     <Compile Include="Core\IAlterer.cs" />
     <Compile Include="Core\IBreeder.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Core\INumericGene.cs" />
     <Compile Include="Core\ISelector.cs" />
     <Compile Include="Core\IStats.cs" />
-    <Compile Include="Core\LinearRankScaling.cs" />
+    <Compile Include="Scaling\LinearRankScaling.cs" />
     <Compile Include="Core\ListGenotypeFactory.cs" />
     <Compile Include="Core\Recombinator.cs" />
     <Compile Include="Core\Mutator.cs" />
@@ -90,7 +91,7 @@
     </Compile>
     <Compile Include="Selectors\BaseSelector.cs" />
     <Compile Include="Selectors\RouletteWheelSelector.cs" />
-    <Compile Include="Utils\MoreMath.cs" />
+    <Compile Include="Utils\MathHelper.cs" />
     <Compile Include="Utils\IRandomGenerator.cs" />
     <Compile Include="Utils\IRandomSource.cs" />
     <Compile Include="Utils\RandomChooser.cs" />

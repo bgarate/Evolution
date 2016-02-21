@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Singular.Evolution.Core;
 
-namespace Singular.Evolution.Core
+namespace Singular.Evolution.Scaling
 {
     public class LinearRankScaling : IFitnessScaling<double>
     {
@@ -28,6 +29,5 @@ namespace Singular.Evolution.Core
                     .Select(pos => 2 - SelectionPresure + 2*(SelectionPresure - 1)*(pos - 1)/(count - 1))
                     .ToList();
         }
-
     }
 }

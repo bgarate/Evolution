@@ -6,9 +6,11 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class MultipointCrossover<G, R, F> : CrossoverBase<G,R,F> where G : IListGenotype<G, R> where R : IGene, new() where F : IComparable<F>
+    public class MultipointCrossover<G, R, F> : CrossoverBase<G, R, F> where G : IListGenotype<G, R>
+        where R : IGene, new()
+        where F : IComparable<F>
     {
-        public MultipointCrossover(int points):base(2,2,points+1,true)
+        public MultipointCrossover(int points) : base(2, 2, points + 1, true)
         {
             Points = points;
         }

@@ -5,7 +5,7 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class BitMutator<G,F> : Mutator<G, BitGene, F> where F : IComparable<F> where G: IListGenotype<G,BitGene>
+    public class BitMutator<G, F> : Mutator<G, BitGene, F> where F : IComparable<F> where G : IListGenotype<G, BitGene>
     {
         private readonly RandomGenerator rnd = RandomGenerator.GetInstance();
 

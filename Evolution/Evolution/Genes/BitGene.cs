@@ -13,13 +13,18 @@ namespace Singular.Evolution.Genes
         {
             Value = value;
         }
-        
-        public bool Value { get; }
-        
+
+        public int CompareTo(BitGene other)
+        {
+            return Value.CompareTo(other.Value);
+        }
+
         public bool Equals(BitGene other)
         {
             return Value == other.Value;
         }
+
+        public bool Value { get; }
 
         public bool IsValid => true;
 
@@ -28,16 +33,11 @@ namespace Singular.Evolution.Genes
             return new BitGene(Value);
         }
 
-        public int CompareTo(BitGene other)
-        {
-            return Value.CompareTo(other.Value);
-        }
-
         public BitGene Sum(BitGene b)
         {
             return new BitGene(Value ^ b.Value);
         }
-    
+
         public BitGene Subtract(BitGene b)
         {
             return Sum(b);

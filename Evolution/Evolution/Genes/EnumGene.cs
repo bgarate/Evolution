@@ -4,11 +4,12 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Genes
 {
-    public class EnumGene<T> :IEquatable<EnumGene<T>>, IComparable<EnumGene<T>>, IGene where T: struct, IComparable, IConvertible, IFormattable
+    public class EnumGene<T> : IEquatable<EnumGene<T>>, IComparable<EnumGene<T>>, IGene
+        where T : struct, IComparable, IConvertible, IFormattable
     {
         public EnumGene()
         {
-            if(!typeof(T).IsEnum)
+            if (!typeof (T).IsEnum)
                 throw new ArgumentException("T must be an enum");
         }
 
@@ -16,9 +17,14 @@ namespace Singular.Evolution.Genes
         {
             Value = value;
         }
-        
+
         public T Value { get; }
-        
+
+        public int CompareTo(EnumGene<T> other)
+        {
+            return Value.CompareTo(other.Value);
+        }
+
         public bool Equals(EnumGene<T> other)
         {
             return Value.CompareTo(other.Value) == 0;
@@ -29,11 +35,6 @@ namespace Singular.Evolution.Genes
         public IGene Clone()
         {
             return new EnumGene<T>(Value);
-        }
-
-        public int CompareTo(EnumGene<T> other)
-        {
-            return Value.CompareTo(other.Value);
         }
 
         public override int GetHashCode()
@@ -52,7 +53,5 @@ namespace Singular.Evolution.Genes
         {
             return Value.ToString(CultureInfo.InvariantCulture);
         }
-        
     }
-   
 }

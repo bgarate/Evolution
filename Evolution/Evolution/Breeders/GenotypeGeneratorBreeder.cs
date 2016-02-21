@@ -11,13 +11,9 @@ namespace Singular.Evolution.Breeders
     public class GenotypeGeneratorBreeder<G> : IBreeder<G> where G : IGenotype
     {
         public delegate G BreederDelegateWithIndex(int i);
+
         public delegate G BreederDelegateWithoutIndex();
 
-        public BreederDelegateWithIndex DelegateWithIndex { get; }
-        public BreederDelegateWithoutIndex DelegateWithoutIndex { get; }
-
-        public int PopulationSize { get; }
-        
         private GenotypeGeneratorBreeder(int populationSize)
         {
             PopulationSize = populationSize;
@@ -37,6 +33,11 @@ namespace Singular.Evolution.Breeders
             DelegateWithIndex = null;
         }
 
+        public BreederDelegateWithIndex DelegateWithIndex { get; }
+        public BreederDelegateWithoutIndex DelegateWithoutIndex { get; }
+
+        public int PopulationSize { get; }
+
         public IList<G> Breed()
         {
             List<G> population = new List<G>();
@@ -51,17 +52,18 @@ namespace Singular.Evolution.Breeders
 
     public static class BreederGenerators
     {
-        public static GenotypeGeneratorBreeder<ListGenotype<FloatGene>> RangeBreeder(int start, int end, int populationSize)
+        public static GenotypeGeneratorBreeder<ListGenotype<FloatGene>> RangeBreeder(int start, int end,
+            int populationSize)
         {
             return new GenotypeGeneratorBreeder<
                 ListGenotype<FloatGene>>(
                 index => new ListGenotype<FloatGene>(
                     Enumerable.Range(start, end).ToList().RandomSort().Select(i => new FloatGene(i))),
                 populationSize);
-
         }
 
-        public static GenotypeGeneratorBreeder<ListGenotype<FloatGene>> FloatBreeder(int numberOfGenes, double? min, double? max, int populationSize)
+        public static GenotypeGeneratorBreeder<ListGenotype<FloatGene>> FloatBreeder(int numberOfGenes, double? min,
+            double? max, int populationSize)
         {
             IEnumerable<double> sequence;
 
@@ -78,7 +80,7 @@ namespace Singular.Evolution.Breeders
                 throw new ArgumentException($"{nameof(max)} must be greater or equal than {nameof(min)}");
 
             if (min.HasValue)
-                sequence = RandomGenerator.GetInstance().DoubleSequence(max.Value,min.Value);
+                sequence = RandomGenerator.GetInstance().DoubleSequence(max.Value, min.Value);
             else
                 sequence = RandomGenerator.GetInstance().DoubleSequence();
 
@@ -87,7 +89,6 @@ namespace Singular.Evolution.Breeders
                 () => new ListGenotype<FloatGene>(
                     sequence.Take(numberOfGenes).Select(i => new FloatGene(i, max, min))),
                 populationSize);
-
         }
     }
 }

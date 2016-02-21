@@ -1,26 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Evolution.Samples.TravelingSalesmanProblem
 {
     public partial class FrmTsp : Form
     {
-        private Tsp Tsp { get; set; }
-
         private const int CITY_RECTANGLE_SIZE = 3;
-        Graphics graphics;
+        private Graphics graphics;
 
         public FrmTsp()
         {
             InitializeComponent();
             graphics = pctMap.CreateGraphics();
         }
+
+        private Tsp Tsp { get; set; }
 
         private void btnGenerateMap_Click(object sender, EventArgs e)
         {
@@ -29,8 +25,8 @@ namespace Evolution.Samples.TravelingSalesmanProblem
 
         private void GenerateEngine()
         {
-            Tsp = new Tsp((int)nbrNumberOfCities.Value,
-                            chkCircular.Checked ? Tsp.PositionSelection.Circular : Tsp.PositionSelection.Random);
+            Tsp = new Tsp((int) nbrNumberOfCities.Value,
+                chkCircular.Checked ? Tsp.PositionSelection.Circular : Tsp.PositionSelection.Random);
 
             DrawMap();
         }
@@ -40,7 +36,8 @@ namespace Evolution.Samples.TravelingSalesmanProblem
             Size size = pctMap.Size;
             foreach (City city in Tsp.Cities)
             {
-                Point position = new Point((int)(city.Position.X*size.Width - CITY_RECTANGLE_SIZE/2), (int)(city.Position.Y*size.Height - CITY_RECTANGLE_SIZE/2));
+                Point position = new Point((int) (city.Position.X*size.Width - CITY_RECTANGLE_SIZE/2),
+                    (int) (city.Position.Y*size.Height - CITY_RECTANGLE_SIZE/2));
                 graphics.DrawRectangle(Pens.Red, position.X, position.Y, CITY_RECTANGLE_SIZE, CITY_RECTANGLE_SIZE);
             }
         }
@@ -51,12 +48,13 @@ namespace Evolution.Samples.TravelingSalesmanProblem
             for (int i = 1; i < cities.Count; i++)
             {
                 City city = cities[i];
-                City previousCity = cities[i-1];
+                City previousCity = cities[i - 1];
 
                 Size size = pctMap.Size;
 
                 Point cityPos = new Point((int) (city.Position.X*size.Width), (int) (city.Position.Y*size.Height));
-                Point previousCityPos = new Point((int) (previousCity.Position.X*size.Width),(int) (previousCity.Position.Y*size.Height));
+                Point previousCityPos = new Point((int) (previousCity.Position.X*size.Width),
+                    (int) (previousCity.Position.Y*size.Height));
 
                 graphics.DrawLine(Pens.GreenYellow, cityPos, previousCityPos);
             }
@@ -71,12 +69,11 @@ namespace Evolution.Samples.TravelingSalesmanProblem
 
         private void FrmTsp_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnStepForward_Click(object sender, EventArgs e)
         {
-            if(Tsp == null)
+            if (Tsp == null)
                 GenerateEngine();
             Tsp.Evolve();
             DrawMap();
@@ -107,17 +104,14 @@ namespace Evolution.Samples.TravelingSalesmanProblem
                 }
             }
             DrawMap();
-            
         }
 
         private void lblGeneration_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

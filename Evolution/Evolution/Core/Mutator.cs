@@ -1,20 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Singular.Evolution.Genotypes;
 using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Core
 {
     /// <summary>
-    /// Base class to define a mutator on a <c>IListGenotype</c>.
+    ///     Base class to define a mutator on a <c>IListGenotype</c>.
     /// </summary>
     /// <typeparam name="R">Type of genes</typeparam>
     /// <typeparam name="F">Return type of the fitness function</typeparam>
-    public abstract class Mutator<G, R, F> : IAlterer<G, F> where F : IComparable<F> where R : IGene, new() where G : IListGenotype<G,R>
+    public abstract class Mutator<G, R, F> : IAlterer<G, F> where F : IComparable<F>
+        where R : IGene, new()
+        where G : IListGenotype<G, R>
 
     {
-
         public Mutator(double probability)
         {
             if (probability < 0 || probability > 1)
@@ -56,6 +56,5 @@ namespace Singular.Evolution.Core
         }
 
         protected abstract R Mutate(R g);
-        
     }
 }

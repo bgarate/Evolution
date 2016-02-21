@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Singular.Evolution.Core;
-using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Algorithms
 {
     public class EasyGa<G, F> : IAlgorithm<G, F> where G : IGenotype where F : IComparable<F>
     {
+        private Executor executor;
+
+        private HashSet<Individual<G, F>> individualInProcess = new HashSet<Individual<G, F>>();
+
         private EasyGa()
         {
             Breeders = new List<object>();
@@ -24,11 +26,23 @@ namespace Singular.Evolution.Algorithms
 
         public double ElitismPercentage { get; private set; }
 
-        public FitnessFunctionDelegate<G,F> FitnessFunction { get; private set; }
+        public Executor Executor
+        {
+            get { return executor; }
+            set
+            {
+                if (executor != null)
+                    throw new Exception("Executor already registered");
+
+                executor = value;
+            }
+        }
+
+        public FitnessFunctionDelegate<G, F> FitnessFunction { get; private set; }
 
         public IList<Individual<G, F>> Initialize()
         {
-            List<Individual<G,F>> firstGeneration= new List<Individual<G,F>>();
+            List<Individual<G, F>> firstGeneration = new List<Individual<G, F>>();
 
             foreach (object item in Breeders)
             {
@@ -36,7 +50,7 @@ namespace Singular.Evolution.Algorithms
 
                 if (breeder != null)
                 {
-                    firstGeneration.AddRange(Individual<G,F>.FromGenotypes(breeder.Breed()));
+                    firstGeneration.AddRange(Individual<G, F>.FromGenotypes(breeder.Breed()));
                 }
                 else
                 {
@@ -44,7 +58,6 @@ namespace Singular.Evolution.Algorithms
                     Debug.Assert(alterer != null);
                     firstGeneration = alterer.Apply(firstGeneration).ToList();
                 }
-
             }
             firstGeneration = UpdateFitness(firstGeneration).ToList();
             return firstGeneration;
@@ -62,6 +75,11 @@ namespace Singular.Evolution.Algorithms
 
             individuals = UpdateFitness(individuals);
             return individuals;
+        }
+
+        public bool ShouldStop(World<G, F> world)
+        {
+            return StopCriteria(world);
         }
 
         private List<Individual<G, F>> Select(List<Individual<G, F>> original)
@@ -85,25 +103,36 @@ namespace Singular.Evolution.Algorithms
 
         private List<Individual<G, F>> UpdateFitness(List<Individual<G, F>> original)
         {
-            original = original.Select(i => new Individual<G, F>(i.Genotype, FitnessFunction(i.Genotype))).ToList();
-            return original;
-        }
-
-        public bool ShouldStop(World<G, F> world)
-        {
-            return StopCriteria(world);
+            return Executor.AddToQueueAndWait(i => new Individual<G, F>(i.Genotype, FitnessFunction(i.Genotype)),
+                original);
         }
 
         public class Builder
         {
             private readonly EasyGa<G, F> algorithm = new EasyGa<G, F>();
 
-            public FitnessFunctionDelegate<G,F> FitnessFunction
+            public FitnessFunctionDelegate<G, F> FitnessFunction
             {
                 set { algorithm.FitnessFunction = value; }
             }
 
-            public Builder WithFitnessFunction(FitnessFunctionDelegate<G,F> value)
+            public Predicate<World<G, F>> StopCriteria
+            {
+                set { algorithm.StopCriteria = value; }
+            }
+
+            public double ElitismPercentage
+            {
+                set
+                {
+                    if (value < 0 || value > 1)
+                        throw new Exception($"{nameof(algorithm.ElitismPercentage)} must be between 0 and 1");
+
+                    algorithm.ElitismPercentage = value;
+                }
+            }
+
+            public Builder WithFitnessFunction(FitnessFunctionDelegate<G, F> value)
             {
                 FitnessFunction = value;
                 return this;
@@ -113,11 +142,6 @@ namespace Singular.Evolution.Algorithms
             {
                 StopCriteria = value;
                 return this;
-            }
-
-            public Predicate<World<G, F>> StopCriteria
-            {
-                set { algorithm.StopCriteria = value; }
             }
 
             public Builder RegisterBreeder(IBreeder<G> breeder)
@@ -142,17 +166,6 @@ namespace Singular.Evolution.Algorithms
             {
                 algorithm.Alterers.Add(alterer);
                 return this;
-            }
-
-            public double ElitismPercentage
-            {
-                set
-                {
-                    if(value < 0 || value > 1)
-                        throw new Exception($"{nameof(algorithm.ElitismPercentage)} must be between 0 and 1");
-
-                    algorithm.ElitismPercentage = value;
-                } 
             }
 
             public Builder WithElitismPercentage(double value)

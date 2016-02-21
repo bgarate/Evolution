@@ -4,14 +4,12 @@ using Singular.Evolution.Algorithms;
 
 namespace Singular.Evolution.Core
 {
-
     public class Engine<G, F> where F : IComparable<F> where G : IGenotype
     {
         private Stats<G, F> statistics;
 
         private Engine()
         {
-
         }
 
 
@@ -21,6 +19,7 @@ namespace Singular.Evolution.Core
 
         public IAlgorithm<G, F> Algorithm { get; private set; }
         public World<G, F> CurrentWorld { get; private set; }
+        public Executor Executor { get; private set; }
 
         public void NextGeneration()
         {
@@ -38,42 +37,39 @@ namespace Singular.Evolution.Core
                 CurrentWorld = new World<G, F>(CurrentWorld, newGeneration);
             }
 
-            statistics = Stats<G, F>.CalculateNewStatistis(CurrentWorld,Statistics);
+            statistics = Stats<G, F>.CalculateNewStatistis(CurrentWorld, Statistics);
 
             if (Algorithm.ShouldStop(CurrentWorld))
             {
                 HasReachedStopCriteria = true;
             }
         }
-        
+
         public class Builder
         {
             private readonly Engine<G, F> engine = new Engine<G, F>();
-
-            public Builder()
-            {
-            }
-
-            public Builder WithAlgorithm(IAlgorithm<G,F> algorithm)
-            {
-                engine.Algorithm = algorithm;
-                return this;
-            }
 
             public IAlgorithm<G, F> Algorithm
             {
                 set { engine.Algorithm = value; }
             }
 
+            public Builder WithAlgorithm(IAlgorithm<G, F> algorithm)
+            {
+                engine.Algorithm = algorithm;
+                return this;
+            }
+
             public Engine<G, F> Build()
             {
-                if(engine.Algorithm == null)
-                    throw  new Exception($"{nameof(engine.Algorithm)} must be set");
+                if (engine.Algorithm == null)
+                    throw new Exception($"{nameof(engine.Algorithm)} must be set");
+
+                engine.Executor = new Executor();
+                engine.Algorithm.Executor = engine.Executor;
 
                 return engine;
             }
-        
         }
-        
     }
 }

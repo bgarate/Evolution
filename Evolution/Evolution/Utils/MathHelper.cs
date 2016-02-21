@@ -2,7 +2,7 @@
 
 namespace Singular.Evolution.Utils
 {
-    public static class MoreMath
+    public static class MathHelper
     {
         public static T Clamp<T>(T value, T min, T max) where T : IComparable<T>
         {
@@ -11,12 +11,12 @@ namespace Singular.Evolution.Utils
 
         public static bool IsInteger(double number)
         {
-            return Math.Abs(number - (int) number) < Double.Epsilon;
+            return Math.Abs(number - (int) number) < double.Epsilon;
         }
 
         public static bool IsInteger(float number)
         {
-            return Math.Abs(number - (int)number) < Single.Epsilon;
+            return Math.Abs(number - (int) number) < float.Epsilon;
         }
 
         public static bool IsProbabilty(double number)
