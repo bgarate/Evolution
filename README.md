@@ -18,6 +18,34 @@ Evolution is an Evolutionary Computation Framework written in C#. It runs on Mic
 - Pluggable source of Random Number Generator
 - Generic fitness: any type F that implements IComparable<F> can be used as a Fitness type
 
+## Implemented operators
+
+- Algorithm:
+  - EasyGa: A simple Genetic Algorithm
+- Genes
+  - Bit
+  - Enum
+  - Float
+- Genotypes
+  - List
+- Breeders:
+  - Bit
+  - GeneratorByDelegate
+- Selectors
+  - Roulette Wheel Selection (Fitness Proportionate Selection)
+- Fitness scaling
+  - Linear Rank
+- Crossovers:
+  - Multipoint
+  - Partially Matched Crossover (PMX, ordered)
+- Mutators:
+ - Bit
+ - Uniform
+ - Gaussian
+ - Reverse (ordered)
+ - Swap (ordered)
+ - ByDelegate
+ 
 ## Sample code
 (Code is written on C# 6)
 
@@ -70,6 +98,7 @@ An example output would be:
 
 ````
 24 generations reached
+24 is best indivual's generation
 20 is best Fitness
 1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1 is best Genotype
 ````
