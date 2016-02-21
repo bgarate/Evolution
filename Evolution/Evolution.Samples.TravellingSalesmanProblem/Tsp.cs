@@ -79,17 +79,20 @@ namespace Evolution.Samples.TravelingSalesmanProblem
                 index => new ListGenotype<FloatGene>(
                     Enumerable.Range(0, cities.Count).ToList().RandomSort().Select(i => new FloatGene(i)));
 
-        EasyGa<ListGenotype<FloatGene>,double> algorithm =
+            EasyGa<ListGenotype<FloatGene>, double> algorithm =
                 new EasyGa<ListGenotype<FloatGene>, double>.Builder()
-                .WithElitismPercentage(0.01)
-                .WithFitnessFunction(FitnessFunction)
-                .WithStopCriteria(world => world.Generation == 1200)
-                .RegisterBreeder(new GenotypeGeneratorBreeder<ListGenotype<FloatGene>>(generateNewGenotype, 200))
-                .Register(new RouletteWheelSelector<ListGenotype<FloatGene>>(200))
-                .Register(new Recombinator<ListGenotype<FloatGene>, double>(new PartiallyMatchedCrossover<ListGenotype<FloatGene>,FloatGene,double>(),2,100))
-                .Register(new ReverseAlterer<ListGenotype<FloatGene>,FloatGene,double>(0.3))
-                .Register(new SwapAlterer<ListGenotype<FloatGene>, FloatGene, double>(0.3))
-                .Build();
+                    .WithElitismPercentage(0.01)
+                    .WithFitnessFunction(FitnessFunction)
+                    .WithStopCriteria(world => world.Generation == 1200)
+                    .RegisterBreeder(new GenotypeGeneratorBreeder<ListGenotype<FloatGene>>(generateNewGenotype, 200))
+                    .Register(new RouletteWheelSelector<ListGenotype<FloatGene>>(200))
+                    .Register(
+                        new Recombinator<ListGenotype<FloatGene>, double>(
+                            new PartiallyMatchedCrossover<ListGenotype<FloatGene>, FloatGene, double>(), 2, 100,
+                            Recombinator<ListGenotype<FloatGene>, double>.RecombinatioNumberType.Absolute))
+                    .Register(new ReverseAlterer<ListGenotype<FloatGene>, FloatGene, double>(0.3))
+                    .Register(new SwapAlterer<ListGenotype<FloatGene>, FloatGene, double>(0.3))
+                    .Build();
 
             Engine = new Engine<ListGenotype<FloatGene>, double>.Builder()
                 .WithAlgorithm(algorithm)

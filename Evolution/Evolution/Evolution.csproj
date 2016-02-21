@@ -48,6 +48,7 @@
     <Compile Include="Algorithms\EasyGa.cs" />
     <Compile Include="Algorithms\IAlgorithm.cs" />
     <Compile Include="Alterers\BitMutator.cs" />
+    <Compile Include="Alterers\CrossoverBase.cs" />
     <Compile Include="Alterers\GaussianMutator.cs" />
     <Compile Include="Alterers\MutatorByDelegate.cs" />
     <Compile Include="Alterers\SwapAlterer.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Core\GeneEnumerator.cs" />
     <Compile Include="Core\IAlterer.cs" />
     <Compile Include="Core\IBreeder.cs" />
+    <Compile Include="Core\IFitnessScaling.cs" />
     <Compile Include="Core\IGene.cs" />
     <Compile Include="Core\IGenotype.cs" />
     <Compile Include="Core\IGenotypeFactory.cs" />
@@ -69,6 +71,7 @@
     <Compile Include="Core\INumericGene.cs" />
     <Compile Include="Core\ISelector.cs" />
     <Compile Include="Core\IStats.cs" />
+    <Compile Include="Core\LinearRankScaling.cs" />
     <Compile Include="Core\ListGenotypeFactory.cs" />
     <Compile Include="Core\Recombinator.cs" />
     <Compile Include="Core\Mutator.cs" />
@@ -85,7 +88,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Selectors\ProbabilitySelector.cs" />
+    <Compile Include="Selectors\BaseSelector.cs" />
     <Compile Include="Selectors\RouletteWheelSelector.cs" />
     <Compile Include="Utils\MoreMath.cs" />
     <Compile Include="Utils\IRandomGenerator.cs" />

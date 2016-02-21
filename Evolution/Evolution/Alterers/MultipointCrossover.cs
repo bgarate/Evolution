@@ -6,38 +6,21 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class MultipointCrossover<G, R, F> : IAlterer<G, F> where G : IListGenotype<G,R>
-        where F : IComparable<F>
-        where R : IGene, new()
+    public class MultipointCrossover<G, R, F> : CrossoverBase<G,R,F> where G : IListGenotype<G, R> where R : IGene, new() where F : IComparable<F>
     {
-        public MultipointCrossover(int points)
+        public MultipointCrossover(int points):base(2,2,points+1,true)
         {
             Points = points;
         }
 
         public int Points { get; }
 
-        public IList<Individual<G, F>> Apply(IList<Individual<G, F>> parents)
+        protected override IList<G> GetOffspring(IEnumerable<G> parents)
         {
-            if (parents.Count() != 2)
-                throw new ArgumentException("Input expected two parents");
+            List<G> parentsList = parents.ToList();
+            G parent1 = parentsList[0];
+            G parent2 = parentsList[1];
 
-            G parent1 = parents[0].Genotype;
-            G parent2 = parents[1].Genotype;
-
-            if (parent1.Count != parent2.Count)
-                throw new ArgumentException("Parents should have same length");
-
-            int count = parent1.Count;
-
-            if (Points >= count)
-                throw new ArgumentException($"Parents should have at least {count} genes");
-
-            return Individual<G, F>.FromGenotypes(GetOffspring(parent1, parent2));
-        }
-
-        private IList<G> GetOffspring(IListGenotype<G,R> parent1, IListGenotype<G,R> parent2)
-        {
             int count = parent1.Count;
 
             List<R> child1 = new List<R>();

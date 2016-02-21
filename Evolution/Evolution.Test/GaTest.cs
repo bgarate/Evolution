@@ -27,7 +27,7 @@ namespace Evolution.Test
                     .WithStopCriteria(w => w.Generation > 2500 || w.BestFitness == 20)
                     .RegisterBreeder(new BitBreeder(20,20))
                     .Register(new RouletteWheelSelector<ListGenotype<BitGene>>(20))
-                    .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10))
+                    .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10,Recombinator<ListGenotype<BitGene>, double>.RecombinatioNumberType.Absolute))
                     .Register(new BitMutator<ListGenotype<BitGene>, double>(0.05))
                     .Build();
 

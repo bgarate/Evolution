@@ -4,5 +4,6 @@ namespace Singular.Evolution.Core
 {
     public interface ISelector<G, F> : IAlterer<G, F> where G : IGenotype where F : IComparable<F>
     {
+        IFitnessScaling<F> Scaling { get; }
     }
 }

@@ -28,7 +28,8 @@ namespace Evolution.Test
                 new List<Individual<ListGenotype<FloatGene>, int>>(new[] {individual});
 
             Recombinator<ListGenotype<FloatGene>, int> recombinator =
-                new Recombinator<ListGenotype<FloatGene>, int>(sumAlterer, 3, 2);
+                new Recombinator<ListGenotype<FloatGene>, int>(sumAlterer, 3, 2,
+                    Recombinator<ListGenotype<FloatGene>, int>.RecombinatioNumberType.Absolute);
             
             IList<Individual<ListGenotype<FloatGene>, int>> offspring = recombinator.Apply(list);
 

@@ -6,27 +6,22 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
-    public class PartiallyMatchedCrossover<G, R, F> : IAlterer<G, F> where G : IListGenotype<G,R>
+    public class PartiallyMatchedCrossover<G, R, F> : CrossoverBase<G,R, F> where G : IListGenotype<G,R>
         where F : IComparable<F>
         where R : class, IGene,new()
     {
-        
-        public IList<Individual<G, F>> Apply(IList<Individual<G, F>> parents)
+
+        public PartiallyMatchedCrossover() : base(2, 2, 2, true)
         {
-            if (parents.Count() != 2)
-                throw new ArgumentException("Input expected two parents");
 
-            G parent1 = parents[0].Genotype;
-            G parent2 = parents[1].Genotype;
-
-            if (parent1.Count != parent2.Count)
-                throw new ArgumentException("Parents should have same length");
-            
-            return Individual<G, F>.FromGenotypes(GetOffspring(parent1.ToList(), parent2.ToList()).ToList());
         }
 
-        private IEnumerable<G> GetOffspring(IList<R> parent1, IList<R> parent2)
+        protected override IList<G> GetOffspring(IEnumerable<G> parents)
         {
+            List<G> parentsList = parents.ToList();
+            List<R> parent1 = parentsList[0].ToList();
+            List<R> parent2 = parentsList[1].ToList();
+
             int count = parent1.Count;
 
             RandomGenerator rnd = RandomGenerator.GetInstance();
@@ -102,5 +97,6 @@ namespace Singular.Evolution.Alterers
                 destination[i] = source[i];
             }
         }
+
     }
 }
