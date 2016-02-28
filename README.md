@@ -11,10 +11,10 @@ Evolution is an Evolutionary Computation Framework written in C#. It runs on Mic
 ## Features
 
 - Algorithms can be defined in a fluent, declarative style
-- Multithreading
+- Multithreading and chaching on Fitness calculation
 - Completely custom algorithms can be implemented reusing the existing operators and engine
 - Generic, flexible and extendable
-- Already implemented Mutators, selectors, alterers and chromosomes. More can be implemented
+- Already implemented Mutators, selectors, alterers, chromosomes and executors. More can be implemented
 - Pluggable source of Random Number Generator
 - Generic fitness: any type F that implements IComparable<F> can be used as a Fitness type
 
@@ -56,14 +56,17 @@ This is a simple example in which genotypes are a collection of `BitGene` and th
 ````c#
   var crossover = new MultipointCrossover<ListGenotype<BitGene>, BitGene, double>(1);
 
-  var algorithm =
+  EasyGa<ListGenotype<BitGene>, double> algorithm =
     new EasyGa<ListGenotype<BitGene>, double>.Builder()
       .WithElitismPercentage(0.5)
       .WithFitnessFunction(g => g.Count(b => b.Value))
-      .WithStopCriteria(w => w.Generation > 2500 || w.BestFitness == 20)
-      .RegisterBreeder(new BitBreeder(20,20))
+      .WithStopCriteria(
+          StopCriteriaBuilder.StopAtGeneration<ListGenotype<BitGene>, double>(2500)
+              .Or(StopCriteriaBuilder.StopAtFitness<ListGenotype<BitGene>, double>(20)))
+      .RegisterBreeder(new BitBreeder(20, 20))
       .Register(new RouletteWheelSelector<ListGenotype<BitGene>>(20))
-      .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10,Recombinator<ListGenotype<BitGene>, double>.RecombinatioNumberType.Absolute))
+      .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10,
+          Recombinator<ListGenotype<BitGene>, double>.RecombinatioNumberType.Absolute))
       .Register(new BitMutator<ListGenotype<BitGene>, double>(0.05))
       .Build();
   ````
