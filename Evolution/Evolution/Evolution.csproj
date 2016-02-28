@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Algorithms\EasyGa.cs" />
     <Compile Include="Algorithms\IAlgorithm.cs" />
+    <Compile Include="Algorithms\IFitnessExecutor.cs" />
     <Compile Include="Alterers\BitMutator.cs" />
     <Compile Include="Alterers\CrossoverBase.cs" />
     <Compile Include="Alterers\GaussianMutator.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Core\GeneEnumerator.cs" />
     <Compile Include="Core\IAlterer.cs" />
     <Compile Include="Core\IBreeder.cs" />
+    <Compile Include="Core\IExecutor.cs" />
     <Compile Include="Core\IFitnessScaling.cs" />
     <Compile Include="Core\IGene.cs" />
     <Compile Include="Core\IGenotype.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Core\INumericGene.cs" />
     <Compile Include="Core\ISelector.cs" />
     <Compile Include="Core\IStats.cs" />
+    <Compile Include="Core\ParallelResult.cs" />
     <Compile Include="Scaling\LinearRankScaling.cs" />
     <Compile Include="Core\ListGenotypeFactory.cs" />
     <Compile Include="Core\Recombinator.cs" />
@@ -91,6 +94,7 @@
     </Compile>
     <Compile Include="Selectors\BaseSelector.cs" />
     <Compile Include="Selectors\RouletteWheelSelector.cs" />
+    <Compile Include="Utils\Cache.cs" />
     <Compile Include="Utils\MathHelper.cs" />
     <Compile Include="Utils\IRandomGenerator.cs" />
     <Compile Include="Utils\IRandomSource.cs" />

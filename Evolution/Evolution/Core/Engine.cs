@@ -11,15 +11,14 @@ namespace Singular.Evolution.Core
         private Engine()
         {
         }
-
-
+        
         public IStats<G, F> Statistics => statistics;
 
         public bool HasReachedStopCriteria { get; private set; }
 
-        public IAlgorithm<G, F> Algorithm { get; private set; }
+        public IAlgorithm<G, F> Algorithm { get; set; }
         public World<G, F> CurrentWorld { get; private set; }
-        public Executor Executor { get; private set; }
+        public IExecutor<G,F> Executor { get; private set; }
 
         public void NextGeneration()
         {
@@ -60,13 +59,24 @@ namespace Singular.Evolution.Core
                 return this;
             }
 
+            public Builder WithExecutor(IExecutor<G,F> executor)
+            {
+                engine.Executor = executor;
+                return this;
+            }
+
             public Engine<G, F> Build()
             {
                 if (engine.Algorithm == null)
                     throw new Exception($"{nameof(engine.Algorithm)} must be set");
 
-                engine.Executor = new Executor();
-                engine.Algorithm.Executor = engine.Executor;
+                if (engine.Executor == null)
+                {
+                    engine.Executor =
+                        new MultithreadedCachedExecutor<G, F>(engine.Algorithm.FitnessFunction);
+
+                    engine.Algorithm.Engine = engine;
+                }
 
                 return engine;
             }

@@ -9,7 +9,7 @@ namespace Singular.Evolution.Algorithms
     public interface IAlgorithm<G, F> where F : IComparable<F> where G : IGenotype
     {
         FitnessFunctionDelegate<G, F> FitnessFunction { get; }
-        Executor Executor { get; set; }
+        Engine<G,F> Engine { get; set; }
 
         IList<Individual<G, F>> Execute(World<G, F> original);
         IList<Individual<G, F>> Initialize();

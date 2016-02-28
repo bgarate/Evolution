@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Singular.Evolution.Core;
+using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Algorithms
 {
     public class EasyGa<G, F> : IAlgorithm<G, F> where G : IGenotype where F : IComparable<F>
     {
-        private Executor executor;
-
-        private HashSet<Individual<G, F>> individualInProcess = new HashSet<Individual<G, F>>();
-
         private EasyGa()
         {
             Breeders = new List<object>();
@@ -26,15 +23,17 @@ namespace Singular.Evolution.Algorithms
 
         public double ElitismPercentage { get; private set; }
 
-        public Executor Executor
+        private Engine<G, F> engine;
+
+        public Engine<G, F> Engine
         {
-            get { return executor; }
+            get { return engine; }
             set
             {
-                if (executor != null)
-                    throw new Exception("Executor already registered");
+                if (engine != null)
+                    throw new Exception($"{nameof(Engine)} is already set");
 
-                executor = value;
+                engine = value;
             }
         }
 
@@ -103,8 +102,7 @@ namespace Singular.Evolution.Algorithms
 
         private List<Individual<G, F>> UpdateFitness(List<Individual<G, F>> original)
         {
-            return Executor.AddToQueueAndWait(i => new Individual<G, F>(i.Genotype, FitnessFunction(i.Genotype)),
-                original);
+            return Engine.Executor.UpdateFitness(original);
         }
 
         public class Builder
@@ -195,4 +193,6 @@ namespace Singular.Evolution.Algorithms
             }
         }
     }
+
+
 }
