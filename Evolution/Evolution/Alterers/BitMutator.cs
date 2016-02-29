@@ -5,10 +5,14 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
+    /// <summary>
+    /// A <see cref="Mutator{G,R,F}"/> which flips the state of the bits in a <see cref="IListGenotype{G,R}"/>
+    /// </summary>
+    /// <typeparam name="G">Genotype</typeparam>
+    /// <typeparam name="F">Fitness</typeparam>
+    /// <seealso cref="Mutator{G, BitGene, F}" />
     public class BitMutator<G, F> : Mutator<G, BitGene, F> where F : IComparable<F> where G : IListGenotype<G, BitGene>
     {
-        private readonly RandomGenerator rnd = RandomGenerator.GetInstance();
-
         public BitMutator(double probability) : base(probability)
         {
         }

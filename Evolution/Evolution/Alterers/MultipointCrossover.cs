@@ -6,6 +6,13 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
+    /// <summary>
+    /// Classic N-point Crossover on <see cref="IListGenotype{G,R}"/>
+    /// </summary>
+    /// <typeparam name="G">Genotype</typeparam>
+    /// <typeparam name="R">Gene</typeparam>
+    /// <typeparam name="F">Fitness</typeparam>
+    /// <seealso cref="Singular.Evolution.Alterers.CrossoverBase{G, R, F}" />
     public class MultipointCrossover<G, R, F> : CrossoverBase<G, R, F> where G : IListGenotype<G, R>
         where R : IGene, new()
         where F : IComparable<F>

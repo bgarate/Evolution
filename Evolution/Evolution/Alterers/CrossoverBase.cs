@@ -5,6 +5,14 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Alterers
 {
+    /// <summary>
+    /// Base class for crossovers. Does the basic validations on input parents
+    /// Child classes call it's constructor passing their input requirements
+    /// </summary>
+    /// <typeparam name="G">Genotype</typeparam>
+    /// <typeparam name="R">Gene</typeparam>
+    /// <typeparam name="F">Fitness</typeparam>
+    /// <seealso cref="Singular.Evolution.Core.IAlterer{G, F}" />
     public abstract class CrossoverBase<G, R, F> : IAlterer<G, F> where G : IListGenotype<G, R>
         where F : IComparable<F>
         where R : IGene, new()
@@ -43,6 +51,12 @@ namespace Singular.Evolution.Alterers
             return Individual<G, F>.FromGenotypes(GetOffspring(parents.Select(g => g.Genotype)));
         }
 
+        /// <summary>
+        /// Gets the offspring.
+        /// This method is called by CrossoverBase's Apply after a successful validation
+        /// </summary>
+        /// <param name="parents">The parents.</param>
+        /// <returns></returns>
         protected abstract IList<G> GetOffspring(IEnumerable<G> parents);
     }
 }

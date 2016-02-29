@@ -6,6 +6,13 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
+    /// <summary>
+    /// Classic Partially Matched Crossover (PMX) over Ordered <see cref="IListGenotype{G,R}"/>
+    /// </summary>
+    /// <typeparam name="G">Genotype</typeparam>
+    /// <typeparam name="R">Gene</typeparam>
+    /// <typeparam name="F">Fitness</typeparam>
+    /// <seealso cref="Singular.Evolution.Alterers.CrossoverBase{G, R, F}" />
     public class PartiallyMatchedCrossover<G, R, F> : CrossoverBase<G, R, F> where G : IListGenotype<G, R>
         where F : IComparable<F>
         where R : class, IGene, new()

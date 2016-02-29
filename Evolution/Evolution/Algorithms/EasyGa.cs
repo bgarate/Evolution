@@ -6,8 +6,15 @@ using Singular.Evolution.Core;
 
 namespace Singular.Evolution.Algorithms
 {
+    /// <summary>
+    /// Simple Genetic Algorithm. Basic flow with elitism
+    /// </summary>
+    /// <typeparam name="G">Genotype</typeparam>
+    /// <typeparam name="F">Fitness</typeparam>
+    /// <seealso cref="Singular.Evolution.Algorithms.IAlgorithm{G, F}" />
     public class EasyGa<G, F> : IAlgorithm<G, F> where G : IGenotype where F : IComparable<F>
     {
+
         private Engine<G, F> engine;
 
         private EasyGa()
@@ -16,7 +23,7 @@ namespace Singular.Evolution.Algorithms
             Selectors = new List<ISelector<G, F>>();
             Alterers = new List<IAlterer<G, F>>();
         }
-
+        //
         public IList<object> Breeders { get; }
         public IList<ISelector<G, F>> Selectors { get; }
         public IList<IAlterer<G, F>> Alterers { get; }

@@ -1,0 +1,42 @@
+# IStats(*G*, *F*).BestGenotype Property 
+ 
+
+\[Missing <summary> documentation for "P:Singular.Evolution.Core.IStats`2.BestGenotype"\]
+
+**Namespace:**&nbsp;<a href="7a43d210-bf66-e44d-0f97-e9e0fe26b1b8">Singular.Evolution.Core</a><br />**Assembly:**&nbsp;Evolution (in Evolution.dll) Version: 1.0.0.0 (1.0.0.0)
+
+## Syntax
+
+**C#**<br />
+``` C#
+G BestGenotype { get; }
+```
+
+**VB**<br />
+``` VB
+ReadOnly Property BestGenotype As G
+	Get
+```
+
+**C++**<br />
+``` C++
+property G BestGenotype {
+	G get ();
+}
+```
+
+**F#**<br />
+``` F#
+abstract BestGenotype : 'G with get
+
+```
+
+
+#### Property Value
+Type: <a href="b69bf5a6-967a-3b3b-09c1-85649488a391">*G*</a>
+
+## See Also
+
+
+#### Reference
+<a href="b69bf5a6-967a-3b3b-09c1-85649488a391">IStats(G, F) Interface</a><br /><a href="7a43d210-bf66-e44d-0f97-e9e0fe26b1b8">Singular.Evolution.Core Namespace</a><br />

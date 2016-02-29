@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -47,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Algorithms\EasyGa.cs" />
     <Compile Include="Algorithms\IAlgorithm.cs" />
-    <Compile Include="Algorithms\IFitnessExecutor.cs" />
     <Compile Include="Alterers\BitMutator.cs" />
     <Compile Include="Alterers\CrossoverBase.cs" />
     <Compile Include="Alterers\GaussianMutator.cs" />
