@@ -75,6 +75,7 @@
     <Compile Include="Core\ISelector.cs" />
     <Compile Include="Core\IStats.cs" />
     <Compile Include="Core\ParallelResult.cs" />
+    <Compile Include="Core\StopCriteriaDelegate.cs" />
     <Compile Include="Scaling\LinearRankScaling.cs" />
     <Compile Include="Core\ListGenotypeFactory.cs" />
     <Compile Include="Core\Recombinator.cs" />

@@ -9,7 +9,7 @@ namespace Singular.Evolution.Core
         private readonly object lockObject = new object();
         private readonly List<O> output = new List<O>();
 
-        private readonly AutoResetEvent waitHandle = new AutoResetEvent(false);
+        private readonly ManualResetEvent waitHandle = new ManualResetEvent(false);
         private int counter;
 
         public ParallelResult()
@@ -27,12 +27,17 @@ namespace Singular.Evolution.Core
 
         public List<O> Run()
         {
-            foreach (I i in Input)
+            lock (lockObject)
             {
-                Interlocked.Increment(ref counter);
-                ThreadPool.QueueUserWorkItem(WorkUnit, i);
+                counter = 0;
+                foreach (I i in Input)
+                {
+                    counter++;
+                    ThreadPool.QueueUserWorkItem(WorkUnit, i);
+                }
             }
             waitHandle.WaitOne();
+            waitHandle.Close();
             return output;
         }
 
@@ -42,11 +47,11 @@ namespace Singular.Evolution.Core
             lock (lockObject)
             {
                 output.Add(item);
-            }
-            Interlocked.Decrement(ref counter);
-            if (counter == 0)
-            {
-                waitHandle.Set();
+                counter--;
+                if (counter == 0)
+                {
+                    waitHandle.Set();
+                }
             }
         }
     }

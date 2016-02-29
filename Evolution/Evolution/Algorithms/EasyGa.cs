@@ -19,7 +19,7 @@ namespace Singular.Evolution.Algorithms
         public IList<object> Breeders { get; }
         public IList<ISelector<G, F>> Selectors { get; }
         public IList<IAlterer<G, F>> Alterers { get; }
-        public Predicate<World<G, F>> StopCriteria { get; private set; }
+        public StopCriteriaDelegate<G,F> StopCriteria { get; private set; }
 
         public double ElitismPercentage { get; private set; }
 
@@ -114,7 +114,7 @@ namespace Singular.Evolution.Algorithms
                 set { algorithm.FitnessFunction = value; }
             }
 
-            public Predicate<World<G, F>> StopCriteria
+            public StopCriteriaDelegate<G,F> StopCriteria
             {
                 set { algorithm.StopCriteria = value; }
             }
@@ -136,7 +136,7 @@ namespace Singular.Evolution.Algorithms
                 return this;
             }
 
-            public Builder WithStopCriteria(Predicate<World<G, F>> value)
+            public Builder WithStopCriteria(StopCriteriaDelegate<G,F> value)
             {
                 StopCriteria = value;
                 return this;

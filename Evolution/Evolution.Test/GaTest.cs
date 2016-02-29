@@ -23,7 +23,9 @@ namespace Evolution.Test
                 new EasyGa<ListGenotype<BitGene>, double>.Builder()
                     .WithElitismPercentage(0.5)
                     .WithFitnessFunction(g => g.Count(b => b.Value))
-                    .WithStopCriteria(w => w.Generation > 2500 || w.BestFitness == 20)
+                    .WithStopCriteria(
+                        StopCriteriaBuilder.StopAtGeneration<ListGenotype<BitGene>, double>(2500)
+                            .Or(StopCriteriaBuilder.StopAtFitness<ListGenotype<BitGene>, double>(20)))
                     .RegisterBreeder(new BitBreeder(20, 20))
                     .Register(new RouletteWheelSelector<ListGenotype<BitGene>>(20))
                     .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10,
