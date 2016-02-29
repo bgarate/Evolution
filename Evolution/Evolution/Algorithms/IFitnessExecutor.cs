@@ -8,7 +8,7 @@ namespace Singular.Evolution.Algorithms
         where G : IGenotype
         where F : IComparable<F>
     {
-        MultithreadedCachedExecutor<G,F> ParentMultithreadedCachedExecutor { get; }
+        MultithreadedCachedExecutor<G, F> ParentMultithreadedCachedExecutor { get; }
         FitnessFunctionDelegate<G, F> FitnessFunction { get; }
 
         List<Individual<G, F>> UpdateFitness(List<Individual<G, F>> original);

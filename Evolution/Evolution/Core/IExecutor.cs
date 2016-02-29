@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Singular.Evolution.Core
 {
-    public interface IExecutor<G,F> where G: IGenotype where F: IComparable<F>
+    public interface IExecutor<G, F> where G : IGenotype where F : IComparable<F>
     {
         void AddToQueue(Action<object> action, object obj);
         void AddToQueueAndWait<I>(Action<I> action, IEnumerable<I> input);

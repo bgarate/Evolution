@@ -13,7 +13,7 @@ namespace Singular.Evolution.Core
         }
 
         public static StopCriteriaDelegate<G, F> And<G, F>(this StopCriteriaDelegate<G, F> a,
-    StopCriteriaDelegate<G, F> b) where G : IGenotype where F : IComparable<F>
+            StopCriteriaDelegate<G, F> b) where G : IGenotype where F : IComparable<F>
         {
             return world => a(world) && b(world);
         }
@@ -35,5 +35,5 @@ namespace Singular.Evolution.Core
         {
             return world => world.BestFitness.CompareTo(fitness) != -1;
         }
-    } 
+    }
 }

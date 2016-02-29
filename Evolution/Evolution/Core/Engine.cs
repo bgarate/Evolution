@@ -11,14 +11,14 @@ namespace Singular.Evolution.Core
         private Engine()
         {
         }
-        
+
         public IStats<G, F> Statistics => statistics;
 
         public bool HasReachedStopCriteria { get; private set; }
 
         public IAlgorithm<G, F> Algorithm { get; set; }
         public World<G, F> CurrentWorld { get; private set; }
-        public IExecutor<G,F> Executor { get; private set; }
+        public IExecutor<G, F> Executor { get; private set; }
 
         public void NextGeneration()
         {
@@ -59,7 +59,7 @@ namespace Singular.Evolution.Core
                 return this;
             }
 
-            public Builder WithExecutor(IExecutor<G,F> executor)
+            public Builder WithExecutor(IExecutor<G, F> executor)
             {
                 engine.Executor = executor;
                 return this;

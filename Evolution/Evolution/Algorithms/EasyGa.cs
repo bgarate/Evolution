@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Singular.Evolution.Core;
-using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Algorithms
 {
     public class EasyGa<G, F> : IAlgorithm<G, F> where G : IGenotype where F : IComparable<F>
     {
+        private Engine<G, F> engine;
+
         private EasyGa()
         {
             Breeders = new List<object>();
@@ -19,11 +20,9 @@ namespace Singular.Evolution.Algorithms
         public IList<object> Breeders { get; }
         public IList<ISelector<G, F>> Selectors { get; }
         public IList<IAlterer<G, F>> Alterers { get; }
-        public StopCriteriaDelegate<G,F> StopCriteria { get; private set; }
+        public StopCriteriaDelegate<G, F> StopCriteria { get; private set; }
 
         public double ElitismPercentage { get; private set; }
-
-        private Engine<G, F> engine;
 
         public Engine<G, F> Engine
         {
@@ -114,7 +113,7 @@ namespace Singular.Evolution.Algorithms
                 set { algorithm.FitnessFunction = value; }
             }
 
-            public StopCriteriaDelegate<G,F> StopCriteria
+            public StopCriteriaDelegate<G, F> StopCriteria
             {
                 set { algorithm.StopCriteria = value; }
             }
@@ -136,7 +135,7 @@ namespace Singular.Evolution.Algorithms
                 return this;
             }
 
-            public Builder WithStopCriteria(StopCriteriaDelegate<G,F> value)
+            public Builder WithStopCriteria(StopCriteriaDelegate<G, F> value)
             {
                 StopCriteria = value;
                 return this;
@@ -193,6 +192,4 @@ namespace Singular.Evolution.Algorithms
             }
         }
     }
-
-
 }

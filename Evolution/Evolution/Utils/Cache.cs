@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Singular.Evolution.Utils
 {
-    public class SimpleLRUCache<K,V>
+    public class SimpleLRUCache<K, V>
     {
         private readonly Dictionary<K, LinkedListNode<V>> cache = new Dictionary<K, LinkedListNode<V>>();
         private readonly LinkedList<V> fetchOrder = new LinkedList<V>();
@@ -30,7 +27,6 @@ namespace Singular.Evolution.Utils
                 fetchOrder.AddFirst(item);
                 if (cache.Count > CacheSize)
                 {
-                    
                 }
             }
         }

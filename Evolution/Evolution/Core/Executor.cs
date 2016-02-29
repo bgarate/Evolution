@@ -8,13 +8,21 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Core
 {
-    public class MultithreadedCachedExecutor<G, F> : IExecutor<G,F>
+    public class MultithreadedCachedExecutor<G, F> : IExecutor<G, F>
         where G : IGenotype
         where F : IComparable<F>
     {
-        
+        private readonly SimpleLRUCache<G, F> fitnessCache = new SimpleLRUCache<G, F>();
+
+        public MultithreadedCachedExecutor(FitnessFunctionDelegate<G, F> fitnessFunction)
+        {
+            FitnessFunction = fitnessFunction;
+        }
+
         public bool UseMultithreading { get; set; } = true;
-        
+
+        public FitnessFunctionDelegate<G, F> FitnessFunction { get; }
+
         public void AddToQueue(Action<object> action, object obj)
         {
             ThreadPool.QueueUserWorkItem(new WaitCallback(action), obj);
@@ -24,14 +32,6 @@ namespace Singular.Evolution.Core
         {
             ParallelResult<I, O> parallelResult = new ParallelResult<I, O>(input, action);
             return parallelResult.Run();
-        }
-        
-        public FitnessFunctionDelegate<G, F> FitnessFunction { get; }
-        private readonly SimpleLRUCache<G, F> fitnessCache = new SimpleLRUCache<G, F>();
-
-        public MultithreadedCachedExecutor(FitnessFunctionDelegate<G, F> fitnessFunction)
-        {
-            FitnessFunction = fitnessFunction;
         }
 
         public List<Individual<G, F>> UpdateFitness(List<Individual<G, F>> original)
@@ -77,7 +77,7 @@ namespace Singular.Evolution.Core
 
         public void AddToQueueAndWait<I>(Action<I> action, IEnumerable<I> input)
         {
-            ParallelResult<I, bool> parallelResult = new ParallelResult<I, bool>(input, (i) =>
+            ParallelResult<I, bool> parallelResult = new ParallelResult<I, bool>(input, i =>
             {
                 action(i);
                 return true;
