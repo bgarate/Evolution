@@ -6,6 +6,13 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Alterers
 {
+    /// <summary>
+    /// This alterer takes two genes at random at a <see cref="IListGenotype{G,R}"/> and swaps them
+    /// </summary>
+    /// <typeparam name="G"></typeparam>
+    /// <typeparam name="R"></typeparam>
+    /// <typeparam name="F"></typeparam>
+    /// <seealso cref="Singular.Evolution.Core.IAlterer{G, F}" />
     public class SwapAlterer<G, R, F> : IAlterer<G, F> where G : IListGenotype<G, R>
         where F : IComparable<F>
         where R : class, IGene, new()
@@ -17,6 +24,12 @@ namespace Singular.Evolution.Alterers
 
         public double Probability { get; }
 
+        /// <summary>
+        /// Returns the result of applying the alterer over the individuals.
+        /// This alterer returns al list of the parents, modified or not.
+        /// </summary>
+        /// <param name="parents">The parents.</param>
+        /// <returns></returns>
         public IList<Individual<G, F>> Apply(IList<Individual<G, F>> parents)
         {
             List<G> offspring = new List<G>(parents.Select(g => g.Genotype));

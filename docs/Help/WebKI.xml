@@ -1,0 +1,1507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Absolute enumeration member" Url="html/61555f75-ac35-64c2-e3cd-d6adbd608226.htm" />
+  <HelpKINode Title="Activator class">
+    <HelpKINode Title="Activator Class" Url="html/28e4c604-1dd7-7679-440f-c990077d4c9b.htm" />
+    <HelpKINode Title="about Activator class" Url="html/28e4c604-1dd7-7679-440f-c990077d4c9b.htm" />
+    <HelpKINode Title="methods" Url="html/8249b361-19ea-2cd5-8d9d-a32e6acf038a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Activator.GetActivator method" Url="html/cb8ba0ea-bbcd-cfb8-f92f-7ef63dcc5ef2.htm" />
+  <HelpKINode Title="Activator.ObjectActivator delegate" Url="html/d0f36d16-3c94-7660-d36d-ae3295d32a9d.htm" />
+  <HelpKINode Title="Add method" Url="html/caa4dc26-9174-8cae-1d46-051cc017e6b7.htm" />
+  <HelpKINode Title="AddToQueue method">
+    <HelpKINode Title="IExecutor(G, F).AddToQueue Method " Url="html/96460788-3e94-90ec-8232-16cf4570c1e2.htm" />
+    <HelpKINode Title="MultithreadedCachedExecutor(G, F).AddToQueue Method " Url="html/d15a4f48-f436-0f28-a93d-ecf497ba6179.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddToQueueAndWait method">
+    <HelpKINode Title="IExecutor(G, F).AddToQueueAndWait Method " Url="html/cf9a6674-c9d3-67f9-553a-b8b8708eab52.htm" />
+    <HelpKINode Title="MultithreadedCachedExecutor(G, F).AddToQueueAndWait Method " Url="html/b67c9801-4709-6d80-a5e3-c7339aa73c8a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Algorithm property">
+    <HelpKINode Title="Engine(G, F).Algorithm Property " Url="html/2722a792-9d20-0fa4-774f-6d6e06ea0242.htm" />
+    <HelpKINode Title="Engine(G, F).Builder.Algorithm Property " Url="html/e207447b-784e-ff8b-9239-6bdf78911b97.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Alterer property" Url="html/5c6c79d6-3b3a-47de-821e-776d3a3ea986.htm" />
+  <HelpKINode Title="Alterers property" Url="html/abe6c5f8-e358-8ab1-0172-6c84d075a02a.htm" />
+  <HelpKINode Title="And(Of G, F) method" Url="html/34d41b22-1cba-6fb1-ef87-31a90fc2d27a.htm" />
+  <HelpKINode Title="And&lt;G, F&gt; method" Url="html/34d41b22-1cba-6fb1-ef87-31a90fc2d27a.htm" />
+  <HelpKINode Title="Apply method">
+    <HelpKINode Title="BaseSelector(G, F).Apply Method " Url="html/9e52d6e5-f87f-4f05-e875-4403e2c929d7.htm" />
+    <HelpKINode Title="CrossoverBase(G, R, F).Apply Method " Url="html/d069c81e-1152-10a0-e656-c501e3bcce71.htm" />
+    <HelpKINode Title="IAlterer(G, F).Apply Method " Url="html/184184a2-a6a0-3167-760a-9884918045be.htm" />
+    <HelpKINode Title="Mutator(G, R, F).Apply Method " Url="html/2d6f5ff7-adcc-3d3b-7137-209e6472c0f6.htm" />
+    <HelpKINode Title="Recombinator(G, F).Apply Method " Url="html/2bea576b-56ea-2eeb-5705-04d3d316c90b.htm" />
+    <HelpKINode Title="ReverseAlterer(G, R, F).Apply Method " Url="html/93ffa659-83d6-d402-646d-2f52ee83f54b.htm" />
+    <HelpKINode Title="SwapAlterer(G, R, F).Apply Method " Url="html/d6644da7-bee8-8350-9191-931b521fc968.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseSelector(Of G, F) class">
+    <HelpKINode Title="BaseSelector(G, F) Class" Url="html/b07f8aa3-7d64-f29a-64c9-092c29e89b7e.htm" />
+    <HelpKINode Title="about BaseSelector(Of G, F) class" Url="html/b07f8aa3-7d64-f29a-64c9-092c29e89b7e.htm" />
+    <HelpKINode Title="constructor" Url="html/97af2902-1b2b-fa95-6d48-3922a884c86d.htm" />
+    <HelpKINode Title="methods" Url="html/c4720854-c844-71d6-56e6-3ae056f456b8.htm" />
+    <HelpKINode Title="properties" Url="html/97cf6275-c563-3e05-e4c2-5c5ccf8a1a3c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseSelector(Of G, F).Apply method" Url="html/9e52d6e5-f87f-4f05-e875-4403e2c929d7.htm" />
+  <HelpKINode Title="BaseSelector(Of G, F).BaseSelector constructor" Url="html/97af2902-1b2b-fa95-6d48-3922a884c86d.htm" />
+  <HelpKINode Title="BaseSelector(Of G, F).IndividualScore class">
+    <HelpKINode Title="BaseSelector(G, F).IndividualScore Class" Url="html/4f6ed530-2c3e-1357-cde8-bdb2bd506b23.htm" />
+    <HelpKINode Title="about BaseSelector(Of G, F).IndividualScore class" Url="html/4f6ed530-2c3e-1357-cde8-bdb2bd506b23.htm" />
+    <HelpKINode Title="constructor" Url="html/78eb9b31-d11a-ac09-3cac-cd4c5a6f8cc2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseSelector(Of G, F).IndividualScore.Individual property" Url="html/831fd19c-139b-3d99-63fc-9484d6d1f892.htm" />
+  <HelpKINode Title="BaseSelector(Of G, F).IndividualScore.IndividualScore constructor" Url="html/78eb9b31-d11a-ac09-3cac-cd4c5a6f8cc2.htm" />
+  <HelpKINode Title="BaseSelector(Of G, F).IndividualScore.Score property" Url="html/0b1a808b-95fc-3826-2dcc-3a68420c76a0.htm" />
+  <HelpKINode Title="BaseSelector(Of G, F).NumberOfSelected property" Url="html/1112932f-18d5-a3ae-dbc1-8b2095b4dc33.htm" />
+  <HelpKINode Title="BaseSelector(Of G, F).Scaling property" Url="html/4fe4541d-8250-2086-d986-c87593c75b50.htm" />
+  <HelpKINode Title="BaseSelector(Of G, F).Select method" Url="html/1dad2d3a-ad40-76d5-b3a6-0481b57412a1.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt; class">
+    <HelpKINode Title="BaseSelector(G, F) Class" Url="html/b07f8aa3-7d64-f29a-64c9-092c29e89b7e.htm" />
+    <HelpKINode Title="about BaseSelector&lt;G, F&gt; class" Url="html/b07f8aa3-7d64-f29a-64c9-092c29e89b7e.htm" />
+    <HelpKINode Title="constructor" Url="html/97af2902-1b2b-fa95-6d48-3922a884c86d.htm" />
+    <HelpKINode Title="methods" Url="html/c4720854-c844-71d6-56e6-3ae056f456b8.htm" />
+    <HelpKINode Title="properties" Url="html/97cf6275-c563-3e05-e4c2-5c5ccf8a1a3c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.Apply method" Url="html/9e52d6e5-f87f-4f05-e875-4403e2c929d7.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.BaseSelector constructor" Url="html/97af2902-1b2b-fa95-6d48-3922a884c86d.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.IndividualScore class">
+    <HelpKINode Title="BaseSelector(G, F).IndividualScore Class" Url="html/4f6ed530-2c3e-1357-cde8-bdb2bd506b23.htm" />
+    <HelpKINode Title="about BaseSelector&lt;G, F&gt;.IndividualScore class" Url="html/4f6ed530-2c3e-1357-cde8-bdb2bd506b23.htm" />
+    <HelpKINode Title="constructor" Url="html/78eb9b31-d11a-ac09-3cac-cd4c5a6f8cc2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.IndividualScore.Individual property" Url="html/831fd19c-139b-3d99-63fc-9484d6d1f892.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.IndividualScore.IndividualScore constructor" Url="html/78eb9b31-d11a-ac09-3cac-cd4c5a6f8cc2.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.IndividualScore.Score property" Url="html/0b1a808b-95fc-3826-2dcc-3a68420c76a0.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.NumberOfSelected property" Url="html/1112932f-18d5-a3ae-dbc1-8b2095b4dc33.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.Scaling property" Url="html/4fe4541d-8250-2086-d986-c87593c75b50.htm" />
+  <HelpKINode Title="BaseSelector&lt;G, F&gt;.Select method" Url="html/1dad2d3a-ad40-76d5-b3a6-0481b57412a1.htm" />
+  <HelpKINode Title="BestFitness property">
+    <HelpKINode Title="IStats(G, F).BestFitness Property " Url="html/42834928-f183-b04f-be6c-1803c998d0f4.htm" />
+    <HelpKINode Title="Stats(G, F).BestFitness Property " Url="html/a1d89301-f6cb-b594-e50b-a7c00b97f34d.htm" />
+    <HelpKINode Title="World(G, F).BestFitness Property " Url="html/d61f87dc-6c27-e40a-9229-ac41c6ed1121.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BestGenotype property">
+    <HelpKINode Title="IStats(G, F).BestGenotype Property " Url="html/732acdc7-55af-cfec-a35c-f5b857eaf98f.htm" />
+    <HelpKINode Title="Stats(G, F).BestGenotype Property " Url="html/f6138fc1-0fa9-9050-c909-0f420c50c38a.htm" />
+    <HelpKINode Title="World(G, F).BestGenotype Property " Url="html/3a7a1d20-6ad6-be94-3d5d-73850737e6f6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BestIndividual property">
+    <HelpKINode Title="IStats(G, F).BestIndividual Property " Url="html/124433df-029f-ee54-f82e-9c499108311d.htm" />
+    <HelpKINode Title="Stats(G, F).BestIndividual Property " Url="html/b93501fb-551e-592e-4cc2-04bd9e28a25a.htm" />
+    <HelpKINode Title="World(G, F).BestIndividual Property " Url="html/75c9dd7a-4a25-9ca7-4f53-90a57ac0681c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BestIndividualGeneration property">
+    <HelpKINode Title="IStats(G, F).BestIndividualGeneration Property " Url="html/248e301f-8d9d-8cde-5ba3-6e058a82bdba.htm" />
+    <HelpKINode Title="Stats(G, F).BestIndividualGeneration Property " Url="html/0408c46e-d4f5-c3e5-acc1-90ff73f70457.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BestWorld property">
+    <HelpKINode Title="IStats(G, F).BestWorld Property " Url="html/904dda50-42be-212f-8f3e-22e8a706c3e9.htm" />
+    <HelpKINode Title="Stats(G, F).BestWorld Property " Url="html/04963cc1-7bf3-4780-e05d-95dfceeac86a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitBreeder class">
+    <HelpKINode Title="BitBreeder Class" Url="html/eb522aca-7fb4-ab1a-53f2-35e1a6243426.htm" />
+    <HelpKINode Title="about BitBreeder class" Url="html/eb522aca-7fb4-ab1a-53f2-35e1a6243426.htm" />
+    <HelpKINode Title="constructor" Url="html/69e9d4af-5d7a-9fe5-3dc0-99943572989b.htm" />
+    <HelpKINode Title="methods" Url="html/fe4c2458-bbb3-b2e0-6973-68042b99396d.htm" />
+    <HelpKINode Title="properties" Url="html/363ad516-acb8-672b-d799-96b70280d5bc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitBreeder.BitBreeder constructor" Url="html/69e9d4af-5d7a-9fe5-3dc0-99943572989b.htm" />
+  <HelpKINode Title="BitBreeder.Breed method" Url="html/b1520f5b-6212-d9d0-dea9-73dd666be5e5.htm" />
+  <HelpKINode Title="BitBreeder.ListSize property" Url="html/ac0a0148-550a-d5d0-b554-c3959430e5e9.htm" />
+  <HelpKINode Title="BitBreeder.PopulationNumber property" Url="html/e99186c5-6c9c-5fe5-126f-b1f38a842d48.htm" />
+  <HelpKINode Title="BitGene class">
+    <HelpKINode Title="BitGene Class" Url="html/6e3ceb63-3c40-7d72-09e8-13c51a663103.htm" />
+    <HelpKINode Title="about BitGene class" Url="html/6e3ceb63-3c40-7d72-09e8-13c51a663103.htm" />
+    <HelpKINode Title="constructor" Url="html/a3304d0d-db60-1af0-b4aa-e2c1f98f0b85.htm" />
+    <HelpKINode Title="methods" Url="html/6fe68995-84af-f7dd-31d8-a7d8e756fd3d.htm" />
+    <HelpKINode Title="properties" Url="html/a733f66f-806f-32aa-a70f-70de2e36a67a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitGene.BitGene constructor" Url="html/a3304d0d-db60-1af0-b4aa-e2c1f98f0b85.htm" />
+  <HelpKINode Title="BitGene.Clone method" Url="html/738deab1-01f8-9088-3b78-8f799e0e50bf.htm" />
+  <HelpKINode Title="BitGene.CompareTo method" Url="html/80f97191-fc10-b046-f001-82866c3e4ddc.htm" />
+  <HelpKINode Title="BitGene.Divide method" Url="html/3c0d6d14-943d-5f6d-93f0-539449fab825.htm" />
+  <HelpKINode Title="BitGene.Equals method" Url="html/2f5c2f9f-7879-95ae-417b-ae3aa58a6be5.htm" />
+  <HelpKINode Title="BitGene.GetHashCode method" Url="html/4580b2b2-d301-a3ef-412a-2b7088252a6d.htm" />
+  <HelpKINode Title="BitGene.IsValid property" Url="html/98e65364-8332-7c3f-c3d6-73f0cd5bc32d.htm" />
+  <HelpKINode Title="BitGene.Multiply method" Url="html/93463731-900d-a3de-5dd1-b15fa06f7608.htm" />
+  <HelpKINode Title="BitGene.Subtract method" Url="html/d93ccdce-a60f-5b53-71b7-ada591885c37.htm" />
+  <HelpKINode Title="BitGene.Sum method" Url="html/086c9553-960c-9a76-1388-d1b3ccb10a1b.htm" />
+  <HelpKINode Title="BitGene.ToString method" Url="html/be934d0c-7ec5-ffcc-97d9-f6359327c1aa.htm" />
+  <HelpKINode Title="BitGene.Value property" Url="html/2c8d98c0-23f0-b3ab-e741-2aae3cb3118d.htm" />
+  <HelpKINode Title="BitMutator(Of G, F) class">
+    <HelpKINode Title="BitMutator(G, F) Class" Url="html/739b5db5-dc16-a6d5-45a3-f909264234b5.htm" />
+    <HelpKINode Title="about BitMutator(Of G, F) class" Url="html/739b5db5-dc16-a6d5-45a3-f909264234b5.htm" />
+    <HelpKINode Title="constructor" Url="html/4dd5ae85-9016-38ba-f289-6974235ffc48.htm" />
+    <HelpKINode Title="methods" Url="html/38e09614-63d1-4a2b-e095-ad637681895f.htm" />
+    <HelpKINode Title="properties" Url="html/3ca4cdb5-b1a2-d9a7-f2f7-ed2f60238b2d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitMutator(Of G, F).BitMutator constructor" Url="html/4dd5ae85-9016-38ba-f289-6974235ffc48.htm" />
+  <HelpKINode Title="BitMutator(Of G, F).Mutate method" Url="html/e52fbf79-b0c7-dbd0-3732-982e656074e9.htm" />
+  <HelpKINode Title="BitMutator&lt;G, F&gt; class">
+    <HelpKINode Title="BitMutator(G, F) Class" Url="html/739b5db5-dc16-a6d5-45a3-f909264234b5.htm" />
+    <HelpKINode Title="about BitMutator&lt;G, F&gt; class" Url="html/739b5db5-dc16-a6d5-45a3-f909264234b5.htm" />
+    <HelpKINode Title="constructor" Url="html/4dd5ae85-9016-38ba-f289-6974235ffc48.htm" />
+    <HelpKINode Title="methods" Url="html/38e09614-63d1-4a2b-e095-ad637681895f.htm" />
+    <HelpKINode Title="properties" Url="html/3ca4cdb5-b1a2-d9a7-f2f7-ed2f60238b2d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitMutator&lt;G, F&gt;.BitMutator constructor" Url="html/4dd5ae85-9016-38ba-f289-6974235ffc48.htm" />
+  <HelpKINode Title="BitMutator&lt;G, F&gt;.Mutate method" Url="html/e52fbf79-b0c7-dbd0-3732-982e656074e9.htm" />
+  <HelpKINode Title="Breed method">
+    <HelpKINode Title="BitBreeder.Breed Method " Url="html/b1520f5b-6212-d9d0-dea9-73dd666be5e5.htm" />
+    <HelpKINode Title="GenotypeGeneratorBreeder(G).Breed Method " Url="html/883bbda0-6889-550f-5a64-3aee135ac372.htm" />
+    <HelpKINode Title="IBreeder(G).Breed Method " Url="html/7a04eb0f-d4f8-4594-d328-080619104df6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BreederGenerators class">
+    <HelpKINode Title="BreederGenerators Class" Url="html/d366c4f3-688a-b0eb-d804-0094384e5905.htm" />
+    <HelpKINode Title="about BreederGenerators class" Url="html/d366c4f3-688a-b0eb-d804-0094384e5905.htm" />
+    <HelpKINode Title="methods" Url="html/78a514f2-116f-f6d6-4c9e-7e3e54577221.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BreederGenerators.FloatBreeder method" Url="html/3b7969d5-eb28-64d3-e36a-c1c168168ef8.htm" />
+  <HelpKINode Title="BreederGenerators.RangeBreeder method" Url="html/8d934fdf-97eb-e953-3cf5-394b2cdd9b90.htm" />
+  <HelpKINode Title="Breeders property" Url="html/dd441cb4-d151-8a9e-ccf8-0858ae9567da.htm" />
+  <HelpKINode Title="Build method">
+    <HelpKINode Title="EasyGa(G, F).Builder.Build Method " Url="html/4d8137f6-caf3-9cc8-ec7e-d2b6708199ca.htm" />
+    <HelpKINode Title="Engine(G, F).Builder.Build Method " Url="html/505d265a-aaf0-dd00-0e6f-56c06e70f320.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Builder class">
+    <HelpKINode Title="methods" Url="html/6218fb82-2b8f-a600-4953-56ebb5e05b2a.htm" />
+    <HelpKINode Title="methods" Url="html/0b94755a-2372-d6d1-b4b0-4ae3dc8a5ded.htm" />
+    <HelpKINode Title="properties" Url="html/b2f722e8-e92c-b44a-ae97-4b73eace5e53.htm" />
+    <HelpKINode Title="properties" Url="html/122d0f04-fe3b-c40e-a738-145ccf2e72ec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BuildFactory(Of T, G) method" Url="html/3c5010ac-84b5-6d46-522e-187ba4839dcf.htm" />
+  <HelpKINode Title="BuildFactory&lt;T, G&gt; method" Url="html/3c5010ac-84b5-6d46-522e-187ba4839dcf.htm" />
+  <HelpKINode Title="CacheSize property" Url="html/11352fbb-9046-785f-fbf6-0eb40e3d5a08.htm" />
+  <HelpKINode Title="CalculateNewStatistis method" Url="html/0b490c9e-195f-efa1-ab17-d03529749bcb.htm" />
+  <HelpKINode Title="Clamp(Of T) method" Url="html/cfb85f70-5aa0-4ec1-1d0f-de6076fd0ebb.htm" />
+  <HelpKINode Title="Clamp&lt;T&gt; method" Url="html/cfb85f70-5aa0-4ec1-1d0f-de6076fd0ebb.htm" />
+  <HelpKINode Title="Clone method">
+    <HelpKINode Title="BitGene.Clone Method " Url="html/738deab1-01f8-9088-3b78-8f799e0e50bf.htm" />
+    <HelpKINode Title="EnumGene(T).Clone Method " Url="html/9e2e2831-e30e-7e83-cad0-c600710749e1.htm" />
+    <HelpKINode Title="FloatGene.Clone Method " Url="html/b8208f9b-45b7-5dd9-8b6b-042d1f99fca3.htm" />
+    <HelpKINode Title="IGene.Clone Method " Url="html/04131b68-625f-4781-31e0-69a71d7f498d.htm" />
+    <HelpKINode Title="IGenotype.Clone Method " Url="html/e6f6cece-6181-7d38-c60d-a88d6c1348b0.htm" />
+    <HelpKINode Title="Individual(G, F).Clone Method " Url="html/c2117e2e-17cc-eb7f-4816-0ef16183825c.htm" />
+    <HelpKINode Title="ListGenotype(G).Clone Method " Url="html/cd8391e8-f585-3b70-be74-712d4f336071.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CompareTo method">
+    <HelpKINode Title="BitGene.CompareTo Method " Url="html/80f97191-fc10-b046-f001-82866c3e4ddc.htm" />
+    <HelpKINode Title="EnumGene(T).CompareTo Method " Url="html/438e067b-2759-eb51-5649-50f0d8ae5cad.htm" />
+    <HelpKINode Title="FloatGene.CompareTo Method " Url="html/f726f046-4441-b7d4-98fd-bda87594983d.htm" />
+    <HelpKINode Title="Individual(G, F).CompareTo Method " Url="html/f0ac4673-a4c3-f8d7-01df-a012113ecd6a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Count property">
+    <HelpKINode Title="IListGenotype(G, R).Count Property " Url="html/838d188d-ca14-f0f3-0096-e9f30cee31ee.htm" />
+    <HelpKINode Title="ListGenotype(G).Count Property " Url="html/ee4a61ed-4642-d463-1f63-1aadba5156c6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Create method" Url="html/44b287a6-6adc-ec89-bee2-1ed2b3e0d350.htm" />
+  <HelpKINode Title="CrossoverBase(Of G, R, F) class">
+    <HelpKINode Title="CrossoverBase(G, R, F) Class" Url="html/4631d0db-76c4-44f3-f8c5-488af00fd0e4.htm" />
+    <HelpKINode Title="about CrossoverBase(Of G, R, F) class" Url="html/4631d0db-76c4-44f3-f8c5-488af00fd0e4.htm" />
+    <HelpKINode Title="constructor" Url="html/d6123463-d974-4756-eabf-b07374ff1778.htm" />
+    <HelpKINode Title="methods" Url="html/f5b8be64-9ef0-3493-f682-b58f8136df43.htm" />
+    <HelpKINode Title="properties" Url="html/52d584be-24aa-58e7-dbbc-4017737046d6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CrossoverBase(Of G, R, F).Apply method" Url="html/d069c81e-1152-10a0-e656-c501e3bcce71.htm" />
+  <HelpKINode Title="CrossoverBase(Of G, R, F).CrossoverBase constructor" Url="html/d6123463-d974-4756-eabf-b07374ff1778.htm" />
+  <HelpKINode Title="CrossoverBase(Of G, R, F).GetOffspring method" Url="html/2597d31b-d7f6-8adb-a5ee-31ad9f4a9ca0.htm" />
+  <HelpKINode Title="CrossoverBase(Of G, R, F).MinimumGenesRequired property" Url="html/cd85fa2e-1b8f-b0f4-0a86-93b65e7c8a1c.htm" />
+  <HelpKINode Title="CrossoverBase(Of G, R, F).NumberOfChildsGenerated property" Url="html/d8cfbc79-c380-bcfb-ccd9-ea344f202ff7.htm" />
+  <HelpKINode Title="CrossoverBase(Of G, R, F).NumberOfParentsNeeded property" Url="html/febf48c7-1a51-2847-67b1-b4e6da1f43c3.htm" />
+  <HelpKINode Title="CrossoverBase(Of G, R, F).SameLengthParentsNeeded property" Url="html/e9787a70-0911-f2cf-6fed-7561940b7eb9.htm" />
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt; class">
+    <HelpKINode Title="CrossoverBase(G, R, F) Class" Url="html/4631d0db-76c4-44f3-f8c5-488af00fd0e4.htm" />
+    <HelpKINode Title="about CrossoverBase&lt;G, R, F&gt; class" Url="html/4631d0db-76c4-44f3-f8c5-488af00fd0e4.htm" />
+    <HelpKINode Title="constructor" Url="html/d6123463-d974-4756-eabf-b07374ff1778.htm" />
+    <HelpKINode Title="methods" Url="html/f5b8be64-9ef0-3493-f682-b58f8136df43.htm" />
+    <HelpKINode Title="properties" Url="html/52d584be-24aa-58e7-dbbc-4017737046d6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt;.Apply method" Url="html/d069c81e-1152-10a0-e656-c501e3bcce71.htm" />
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt;.CrossoverBase constructor" Url="html/d6123463-d974-4756-eabf-b07374ff1778.htm" />
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt;.GetOffspring method" Url="html/2597d31b-d7f6-8adb-a5ee-31ad9f4a9ca0.htm" />
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt;.MinimumGenesRequired property" Url="html/cd85fa2e-1b8f-b0f4-0a86-93b65e7c8a1c.htm" />
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt;.NumberOfChildsGenerated property" Url="html/d8cfbc79-c380-bcfb-ccd9-ea344f202ff7.htm" />
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt;.NumberOfParentsNeeded property" Url="html/febf48c7-1a51-2847-67b1-b4e6da1f43c3.htm" />
+  <HelpKINode Title="CrossoverBase&lt;G, R, F&gt;.SameLengthParentsNeeded property" Url="html/e9787a70-0911-f2cf-6fed-7561940b7eb9.htm" />
+  <HelpKINode Title="Current property" Url="html/20a812c7-2438-138a-5111-dd328444244d.htm" />
+  <HelpKINode Title="CurrentWorld property" Url="html/52d55c40-1c1b-de17-5bff-ac348b83aa34.htm" />
+  <HelpKINode Title="DelegateWithIndex property" Url="html/b1599867-f83e-e83c-24cb-aca13700c37d.htm" />
+  <HelpKINode Title="DelegateWithoutIndex property" Url="html/d44cb9e1-de31-81b3-84da-feeab51f13ed.htm" />
+  <HelpKINode Title="Dispose method" Url="html/239a96aa-436d-c764-81d8-0df22ede2915.htm" />
+  <HelpKINode Title="Divide method">
+    <HelpKINode Title="BitGene.Divide Method " Url="html/3c0d6d14-943d-5f6d-93f0-539449fab825.htm" />
+    <HelpKINode Title="FloatGene.Divide Method " Url="html/539e62fe-32c1-c099-7549-c6d0e7c5f568.htm" />
+    <HelpKINode Title="INumericGene(G, T).Divide Method " Url="html/10cf5088-312d-acae-2880-a456818dffff.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DoubleSequence method">
+    <HelpKINode Title="IRandomGenerator.DoubleSequence Method " Url="html/816dbdfc-8001-bf2b-320a-5698e68682dc.htm" />
+    <HelpKINode Title="RandomGenerator.DoubleSequence Method " Url="html/6cfa2425-0607-b79c-4d07-5193514ff9e8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EasyGa(Of G, F) class">
+    <HelpKINode Title="EasyGa(G, F) Class" Url="html/29c1d5fc-2784-8fb5-0c46-438b59fd6a9c.htm" />
+    <HelpKINode Title="about EasyGa(Of G, F) class" Url="html/29c1d5fc-2784-8fb5-0c46-438b59fd6a9c.htm" />
+    <HelpKINode Title="methods" Url="html/c1d0ad83-4eb9-cc6f-2260-b31a033fca5c.htm" />
+    <HelpKINode Title="properties" Url="html/bd485958-88fe-184e-bce3-cf1ec2937a0a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EasyGa(Of G, F).Alterers property" Url="html/abe6c5f8-e358-8ab1-0172-6c84d075a02a.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Breeders property" Url="html/dd441cb4-d151-8a9e-ccf8-0858ae9567da.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder class">
+    <HelpKINode Title="EasyGa(G, F).Builder Class" Url="html/9098310a-97ee-397b-6869-a7e55c0645f7.htm" />
+    <HelpKINode Title="about EasyGa(Of G, F).Builder class" Url="html/9098310a-97ee-397b-6869-a7e55c0645f7.htm" />
+    <HelpKINode Title="constructor" Url="html/d5ba4aef-ea40-b88e-c615-020e3f73fbc6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EasyGa(Of G, F).Builder.Build method" Url="html/4d8137f6-caf3-9cc8-ec7e-d2b6708199ca.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.Builder constructor" Url="html/d5ba4aef-ea40-b88e-c615-020e3f73fbc6.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.ElitismPercentage property" Url="html/21006aa8-eb47-0b18-b3a7-e30ed3183848.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.FitnessFunction property" Url="html/12fe96d4-23ea-cfe8-92be-aff9e21bb117.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.Register method" Url="html/66317f2f-b620-a9ca-7010-02ad821815d0.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.RegisterBreeder method" Url="html/360498ae-ba5f-308f-5a78-5ef37d03bc0d.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.StopCriteria property" Url="html/4bf4359f-f5d3-6e07-5f6e-965fef65564b.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.WithElitismPercentage method" Url="html/f36745ab-c05c-b224-ca4f-c7cea63177db.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.WithFitnessFunction method" Url="html/2e9b3741-52e2-9de0-4d87-8dc9fc08343b.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Builder.WithStopCriteria method" Url="html/8989b948-fea9-18c6-feaf-cbd63a52de0b.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).ElitismPercentage property" Url="html/1792274b-3d3e-1800-4ed3-be5aa058b3be.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Engine property" Url="html/d27d058b-3028-5f0c-03a0-a6c755e92294.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Execute method" Url="html/de01ebdd-75e1-27fb-f3ea-227e67d5ced4.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).FitnessFunction property" Url="html/e532d43b-ffc0-726d-f730-3ac992b6bd7b.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Initialize method" Url="html/8e202960-4ed0-30a4-d8d0-384955fddc22.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).Selectors property" Url="html/2de03c67-a722-ef1c-e4b5-a910644bb776.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).ShouldStop method" Url="html/ac28ef12-a247-3c20-5632-321ef2080666.htm" />
+  <HelpKINode Title="EasyGa(Of G, F).StopCriteria property" Url="html/9f66c17f-37f3-3440-22ef-d64db931773a.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt; class">
+    <HelpKINode Title="EasyGa(G, F) Class" Url="html/29c1d5fc-2784-8fb5-0c46-438b59fd6a9c.htm" />
+    <HelpKINode Title="about EasyGa&lt;G, F&gt; class" Url="html/29c1d5fc-2784-8fb5-0c46-438b59fd6a9c.htm" />
+    <HelpKINode Title="methods" Url="html/c1d0ad83-4eb9-cc6f-2260-b31a033fca5c.htm" />
+    <HelpKINode Title="properties" Url="html/bd485958-88fe-184e-bce3-cf1ec2937a0a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Alterers property" Url="html/abe6c5f8-e358-8ab1-0172-6c84d075a02a.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Breeders property" Url="html/dd441cb4-d151-8a9e-ccf8-0858ae9567da.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder class">
+    <HelpKINode Title="EasyGa(G, F).Builder Class" Url="html/9098310a-97ee-397b-6869-a7e55c0645f7.htm" />
+    <HelpKINode Title="about EasyGa&lt;G, F&gt;.Builder class" Url="html/9098310a-97ee-397b-6869-a7e55c0645f7.htm" />
+    <HelpKINode Title="constructor" Url="html/d5ba4aef-ea40-b88e-c615-020e3f73fbc6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.Build method" Url="html/4d8137f6-caf3-9cc8-ec7e-d2b6708199ca.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.Builder constructor" Url="html/d5ba4aef-ea40-b88e-c615-020e3f73fbc6.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.ElitismPercentage property" Url="html/21006aa8-eb47-0b18-b3a7-e30ed3183848.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.FitnessFunction property" Url="html/12fe96d4-23ea-cfe8-92be-aff9e21bb117.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.Register method" Url="html/66317f2f-b620-a9ca-7010-02ad821815d0.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.RegisterBreeder method" Url="html/360498ae-ba5f-308f-5a78-5ef37d03bc0d.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.StopCriteria property" Url="html/4bf4359f-f5d3-6e07-5f6e-965fef65564b.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.WithElitismPercentage method" Url="html/f36745ab-c05c-b224-ca4f-c7cea63177db.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.WithFitnessFunction method" Url="html/2e9b3741-52e2-9de0-4d87-8dc9fc08343b.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Builder.WithStopCriteria method" Url="html/8989b948-fea9-18c6-feaf-cbd63a52de0b.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.ElitismPercentage property" Url="html/1792274b-3d3e-1800-4ed3-be5aa058b3be.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Engine property" Url="html/d27d058b-3028-5f0c-03a0-a6c755e92294.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Execute method" Url="html/de01ebdd-75e1-27fb-f3ea-227e67d5ced4.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.FitnessFunction property" Url="html/e532d43b-ffc0-726d-f730-3ac992b6bd7b.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Initialize method" Url="html/8e202960-4ed0-30a4-d8d0-384955fddc22.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.Selectors property" Url="html/2de03c67-a722-ef1c-e4b5-a910644bb776.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.ShouldStop method" Url="html/ac28ef12-a247-3c20-5632-321ef2080666.htm" />
+  <HelpKINode Title="EasyGa&lt;G, F&gt;.StopCriteria property" Url="html/9f66c17f-37f3-3440-22ef-d64db931773a.htm" />
+  <HelpKINode Title="ElitismPercentage property">
+    <HelpKINode Title="EasyGa(G, F).Builder.ElitismPercentage Property " Url="html/21006aa8-eb47-0b18-b3a7-e30ed3183848.htm" />
+    <HelpKINode Title="EasyGa(G, F).ElitismPercentage Property " Url="html/1792274b-3d3e-1800-4ed3-be5aa058b3be.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Engine property">
+    <HelpKINode Title="EasyGa(G, F).Engine Property " Url="html/d27d058b-3028-5f0c-03a0-a6c755e92294.htm" />
+    <HelpKINode Title="IAlgorithm(G, F).Engine Property " Url="html/06539222-fa82-5012-c9f9-c893fc58fef2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Engine(Of G, F) class">
+    <HelpKINode Title="Engine(G, F) Class" Url="html/92194d95-738c-47ab-5991-65a487f5b8c2.htm" />
+    <HelpKINode Title="about Engine(Of G, F) class" Url="html/92194d95-738c-47ab-5991-65a487f5b8c2.htm" />
+    <HelpKINode Title="methods" Url="html/9ac7f9be-cfb3-101d-d60f-59b40fef290b.htm" />
+    <HelpKINode Title="properties" Url="html/664b6a2e-f76a-1126-81bc-b4e4afd9f845.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Engine(Of G, F).Algorithm property" Url="html/2722a792-9d20-0fa4-774f-6d6e06ea0242.htm" />
+  <HelpKINode Title="Engine(Of G, F).Builder class">
+    <HelpKINode Title="Engine(G, F).Builder Class" Url="html/65e3f7c5-3628-1aa4-b4b5-34a500cb9d0c.htm" />
+    <HelpKINode Title="about Engine(Of G, F).Builder class" Url="html/65e3f7c5-3628-1aa4-b4b5-34a500cb9d0c.htm" />
+    <HelpKINode Title="constructor" Url="html/0d5311ee-74d1-a0b9-c023-243c6775045a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Engine(Of G, F).Builder.Algorithm property" Url="html/e207447b-784e-ff8b-9239-6bdf78911b97.htm" />
+  <HelpKINode Title="Engine(Of G, F).Builder.Build method" Url="html/505d265a-aaf0-dd00-0e6f-56c06e70f320.htm" />
+  <HelpKINode Title="Engine(Of G, F).Builder.Builder constructor" Url="html/0d5311ee-74d1-a0b9-c023-243c6775045a.htm" />
+  <HelpKINode Title="Engine(Of G, F).Builder.WithAlgorithm method" Url="html/2d0aa821-2a0b-83bb-ab00-4f4fbd05fecb.htm" />
+  <HelpKINode Title="Engine(Of G, F).Builder.WithExecutor method" Url="html/98a36300-1565-43e4-8822-7331d4603364.htm" />
+  <HelpKINode Title="Engine(Of G, F).CurrentWorld property" Url="html/52d55c40-1c1b-de17-5bff-ac348b83aa34.htm" />
+  <HelpKINode Title="Engine(Of G, F).Executor property" Url="html/f0746a9f-5c58-c225-d724-337f3f2ec051.htm" />
+  <HelpKINode Title="Engine(Of G, F).HasReachedStopCriteria property" Url="html/53e206b0-2d27-14c5-3636-09184cac7c53.htm" />
+  <HelpKINode Title="Engine(Of G, F).NextGeneration method" Url="html/ac1c3cc4-aa2a-946a-6528-950f8ccd14a6.htm" />
+  <HelpKINode Title="Engine(Of G, F).Statistics property" Url="html/2851c2d6-3784-ccec-9d47-28c3db7aec93.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt; class">
+    <HelpKINode Title="Engine(G, F) Class" Url="html/92194d95-738c-47ab-5991-65a487f5b8c2.htm" />
+    <HelpKINode Title="about Engine&lt;G, F&gt; class" Url="html/92194d95-738c-47ab-5991-65a487f5b8c2.htm" />
+    <HelpKINode Title="methods" Url="html/9ac7f9be-cfb3-101d-d60f-59b40fef290b.htm" />
+    <HelpKINode Title="properties" Url="html/664b6a2e-f76a-1126-81bc-b4e4afd9f845.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Engine&lt;G, F&gt;.Algorithm property" Url="html/2722a792-9d20-0fa4-774f-6d6e06ea0242.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.Builder class">
+    <HelpKINode Title="Engine(G, F).Builder Class" Url="html/65e3f7c5-3628-1aa4-b4b5-34a500cb9d0c.htm" />
+    <HelpKINode Title="about Engine&lt;G, F&gt;.Builder class" Url="html/65e3f7c5-3628-1aa4-b4b5-34a500cb9d0c.htm" />
+    <HelpKINode Title="constructor" Url="html/0d5311ee-74d1-a0b9-c023-243c6775045a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Engine&lt;G, F&gt;.Builder.Algorithm property" Url="html/e207447b-784e-ff8b-9239-6bdf78911b97.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.Builder.Build method" Url="html/505d265a-aaf0-dd00-0e6f-56c06e70f320.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.Builder.Builder constructor" Url="html/0d5311ee-74d1-a0b9-c023-243c6775045a.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.Builder.WithAlgorithm method" Url="html/2d0aa821-2a0b-83bb-ab00-4f4fbd05fecb.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.Builder.WithExecutor method" Url="html/98a36300-1565-43e4-8822-7331d4603364.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.CurrentWorld property" Url="html/52d55c40-1c1b-de17-5bff-ac348b83aa34.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.Executor property" Url="html/f0746a9f-5c58-c225-d724-337f3f2ec051.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.HasReachedStopCriteria property" Url="html/53e206b0-2d27-14c5-3636-09184cac7c53.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.NextGeneration method" Url="html/ac1c3cc4-aa2a-946a-6528-950f8ccd14a6.htm" />
+  <HelpKINode Title="Engine&lt;G, F&gt;.Statistics property" Url="html/2851c2d6-3784-ccec-9d47-28c3db7aec93.htm" />
+  <HelpKINode Title="EnumGene(Of T) class">
+    <HelpKINode Title="EnumGene(T) Class" Url="html/4fecc7be-9552-30ff-5645-a76762f44273.htm" />
+    <HelpKINode Title="about EnumGene(Of T) class" Url="html/4fecc7be-9552-30ff-5645-a76762f44273.htm" />
+    <HelpKINode Title="constructor" Url="html/42137d70-9bcb-8884-f2f0-aa2075606bb0.htm" />
+    <HelpKINode Title="methods" Url="html/ee22ae9a-bc7b-1efb-64f8-8256de08965b.htm" />
+    <HelpKINode Title="properties" Url="html/ffb75324-ebdc-3324-09e9-6425d7d79918.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnumGene(Of T).Clone method" Url="html/9e2e2831-e30e-7e83-cad0-c600710749e1.htm" />
+  <HelpKINode Title="EnumGene(Of T).CompareTo method" Url="html/438e067b-2759-eb51-5649-50f0d8ae5cad.htm" />
+  <HelpKINode Title="EnumGene(Of T).EnumGene constructor" Url="html/42137d70-9bcb-8884-f2f0-aa2075606bb0.htm" />
+  <HelpKINode Title="EnumGene(Of T).Equals method" Url="html/9482e43b-1d20-fb9c-1347-ffe27e97afde.htm" />
+  <HelpKINode Title="EnumGene(Of T).GetHashCode method" Url="html/a27ef5bf-1ccf-6f56-9314-6b90d9e89651.htm" />
+  <HelpKINode Title="EnumGene(Of T).IsValid property" Url="html/c75c5ee8-6f55-0ed2-0d63-1f6ac0977d8d.htm" />
+  <HelpKINode Title="EnumGene(Of T).ToString method" Url="html/d4fc2712-1452-d132-c88f-7a39a0de4d6f.htm" />
+  <HelpKINode Title="EnumGene(Of T).Value property" Url="html/e6a136d5-071f-c7a5-1b5a-b48e959464a1.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt; class">
+    <HelpKINode Title="EnumGene(T) Class" Url="html/4fecc7be-9552-30ff-5645-a76762f44273.htm" />
+    <HelpKINode Title="about EnumGene&lt;T&gt; class" Url="html/4fecc7be-9552-30ff-5645-a76762f44273.htm" />
+    <HelpKINode Title="constructor" Url="html/42137d70-9bcb-8884-f2f0-aa2075606bb0.htm" />
+    <HelpKINode Title="methods" Url="html/ee22ae9a-bc7b-1efb-64f8-8256de08965b.htm" />
+    <HelpKINode Title="properties" Url="html/ffb75324-ebdc-3324-09e9-6425d7d79918.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnumGene&lt;T&gt;.Clone method" Url="html/9e2e2831-e30e-7e83-cad0-c600710749e1.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt;.CompareTo method" Url="html/438e067b-2759-eb51-5649-50f0d8ae5cad.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt;.EnumGene constructor" Url="html/42137d70-9bcb-8884-f2f0-aa2075606bb0.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt;.Equals method" Url="html/9482e43b-1d20-fb9c-1347-ffe27e97afde.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt;.GetHashCode method" Url="html/a27ef5bf-1ccf-6f56-9314-6b90d9e89651.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt;.IsValid property" Url="html/c75c5ee8-6f55-0ed2-0d63-1f6ac0977d8d.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt;.ToString method" Url="html/d4fc2712-1452-d132-c88f-7a39a0de4d6f.htm" />
+  <HelpKINode Title="EnumGene&lt;T&gt;.Value property" Url="html/e6a136d5-071f-c7a5-1b5a-b48e959464a1.htm" />
+  <HelpKINode Title="Equals method">
+    <HelpKINode Title="BitGene.Equals Method " Url="html/2f5c2f9f-7879-95ae-417b-ae3aa58a6be5.htm" />
+    <HelpKINode Title="EnumGene(T).Equals Method " Url="html/9482e43b-1d20-fb9c-1347-ffe27e97afde.htm" />
+    <HelpKINode Title="FloatGene.Equals Method " Url="html/95b90f6e-1616-a1e1-3c14-cecc1e5318a7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Execute method">
+    <HelpKINode Title="EasyGa(G, F).Execute Method " Url="html/de01ebdd-75e1-27fb-f3ea-227e67d5ced4.htm" />
+    <HelpKINode Title="IAlgorithm(G, F).Execute Method " Url="html/4a2f4a6e-c35a-a5a4-1c08-ecd677c46685.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Executor property" Url="html/f0746a9f-5c58-c225-d724-337f3f2ec051.htm" />
+  <HelpKINode Title="Factory class">
+    <HelpKINode Title="Factory Class" Url="html/dfb2963a-3ad4-5e26-9581-07f2f35d8b8e.htm" />
+    <HelpKINode Title="about Factory class" Url="html/dfb2963a-3ad4-5e26-9581-07f2f35d8b8e.htm" />
+    <HelpKINode Title="methods" Url="html/fb5cc3f5-8d84-5979-f2b8-0844e25a4550.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Factory.BuildFactory(Of T, G) method" Url="html/3c5010ac-84b5-6d46-522e-187ba4839dcf.htm" />
+  <HelpKINode Title="Factory.BuildFactory&lt;T, G&gt; method" Url="html/3c5010ac-84b5-6d46-522e-187ba4839dcf.htm" />
+  <HelpKINode Title="Factory.GetInstance method" Url="html/33d8bba5-0965-8b6a-ae4e-97b6931716b8.htm" />
+  <HelpKINode Title="FactoryAttribute class">
+    <HelpKINode Title="FactoryAttribute Class" Url="html/54d66747-3cb1-3e62-cb29-f8593b6e0fa4.htm" />
+    <HelpKINode Title="about FactoryAttribute class" Url="html/54d66747-3cb1-3e62-cb29-f8593b6e0fa4.htm" />
+    <HelpKINode Title="constructor" Url="html/de4e2310-aeae-03c3-65db-b352f0ab7ee4.htm" />
+    <HelpKINode Title="methods" Url="html/6e18a4c2-76ff-e624-6b28-e88ebe009316.htm" />
+    <HelpKINode Title="properties" Url="html/50cc7c47-931b-3e2e-d111-6c716bc54093.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FactoryAttribute.FactoryAttribute constructor" Url="html/de4e2310-aeae-03c3-65db-b352f0ab7ee4.htm" />
+  <HelpKINode Title="FactoryAttribute.FactoryType property" Url="html/65b3416e-5c03-82c0-bac2-dcb9475a2bee.htm" />
+  <HelpKINode Title="FactoryType property" Url="html/65b3416e-5c03-82c0-bac2-dcb9475a2bee.htm" />
+  <HelpKINode Title="Fitness property" Url="html/b0c6a6d5-da66-240b-52cf-f2eec2f29902.htm" />
+  <HelpKINode Title="FitnessFunction property">
+    <HelpKINode Title="EasyGa(G, F).Builder.FitnessFunction Property " Url="html/12fe96d4-23ea-cfe8-92be-aff9e21bb117.htm" />
+    <HelpKINode Title="EasyGa(G, F).FitnessFunction Property " Url="html/e532d43b-ffc0-726d-f730-3ac992b6bd7b.htm" />
+    <HelpKINode Title="IAlgorithm(G, F).FitnessFunction Property " Url="html/f133172f-f2b0-ebb2-3a64-6be4edd8008e.htm" />
+    <HelpKINode Title="IFitnessExecutor(G, F).FitnessFunction Property " Url="html/e3e15088-f5d3-985d-26b1-5dbffb3c8834.htm" />
+    <HelpKINode Title="MultithreadedCachedExecutor(G, F).FitnessFunction Property " Url="html/17dac2ba-3602-c5e7-a0a9-abb4e6e9f65b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FitnessFunctionDelegate(Of G, F) delegate" Url="html/4b88a454-39e8-e68a-5fc1-8872005ab6ad.htm" />
+  <HelpKINode Title="FitnessFunctionDelegate&lt;G, F&gt; delegate" Url="html/4b88a454-39e8-e68a-5fc1-8872005ab6ad.htm" />
+  <HelpKINode Title="FitnessOrDefault property" Url="html/80d5acaf-661d-ad1b-f369-0edb4e91a48e.htm" />
+  <HelpKINode Title="FloatBreeder method" Url="html/3b7969d5-eb28-64d3-e36a-c1c168168ef8.htm" />
+  <HelpKINode Title="FloatGene class">
+    <HelpKINode Title="FloatGene Class" Url="html/0669b42b-c8df-2480-a278-6e83e27b51b7.htm" />
+    <HelpKINode Title="about FloatGene class" Url="html/0669b42b-c8df-2480-a278-6e83e27b51b7.htm" />
+    <HelpKINode Title="constructor" Url="html/622e02f7-603a-c523-9111-9650570109fd.htm" />
+    <HelpKINode Title="methods" Url="html/0bc35f7c-99a5-dba5-6ff0-952a24a9009c.htm" />
+    <HelpKINode Title="properties" Url="html/6cb3fba5-9c6b-5c5b-af0e-937f6a4fe7c8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FloatGene.Clone method" Url="html/b8208f9b-45b7-5dd9-8b6b-042d1f99fca3.htm" />
+  <HelpKINode Title="FloatGene.CompareTo method" Url="html/f726f046-4441-b7d4-98fd-bda87594983d.htm" />
+  <HelpKINode Title="FloatGene.Divide method" Url="html/539e62fe-32c1-c099-7549-c6d0e7c5f568.htm" />
+  <HelpKINode Title="FloatGene.Equals method" Url="html/95b90f6e-1616-a1e1-3c14-cecc1e5318a7.htm" />
+  <HelpKINode Title="FloatGene.FloatGene constructor" Url="html/622e02f7-603a-c523-9111-9650570109fd.htm" />
+  <HelpKINode Title="FloatGene.GetHashCode method" Url="html/1fd24071-4e1b-8907-a1cc-4e74abe32549.htm" />
+  <HelpKINode Title="FloatGene.IsBounded property" Url="html/9c68f988-1659-24c9-8200-471ff236097e.htm" />
+  <HelpKINode Title="FloatGene.IsValid property" Url="html/bd33cbd7-d4a7-df63-e685-7b2d05353e31.htm" />
+  <HelpKINode Title="FloatGene.MaxValue property" Url="html/6bf2eee7-cfe3-4344-6af9-9876ff530216.htm" />
+  <HelpKINode Title="FloatGene.MinimumBoundedGene method" Url="html/d5c5c48f-b5ab-a522-3730-ee9d393b6ad5.htm" />
+  <HelpKINode Title="FloatGene.MinValue property" Url="html/cea8f826-0237-ddf0-7b0c-219c5d20b69a.htm" />
+  <HelpKINode Title="FloatGene.Multiply method" Url="html/5499f686-094c-07bc-9017-02350613cd36.htm" />
+  <HelpKINode Title="FloatGene.Subtract method" Url="html/905efe5c-fcc7-366d-c4a4-2529baba566b.htm" />
+  <HelpKINode Title="FloatGene.Sum method" Url="html/38e040cd-016f-85ce-d4f9-e89bb99443e5.htm" />
+  <HelpKINode Title="FloatGene.ToString method" Url="html/1a278436-edab-652f-eee2-261cf90338fe.htm" />
+  <HelpKINode Title="FloatGene.Value property" Url="html/02c33b8e-4657-9e67-81a9-eed21924a237.htm" />
+  <HelpKINode Title="FromCrossover(Of G2, R) method" Url="html/ea6407bc-c762-0450-eff0-9885121665b6.htm" />
+  <HelpKINode Title="FromCrossover&lt;G2, R&gt; method" Url="html/ea6407bc-c762-0450-eff0-9885121665b6.htm" />
+  <HelpKINode Title="FromGenotypes method" Url="html/f829fe1e-0f78-3a9b-dc64-60b52be194e1.htm" />
+  <HelpKINode Title="GaussianMutator(Of G, F) class">
+    <HelpKINode Title="GaussianMutator(G, F) Class" Url="html/5ec07f9f-63b8-d893-00a1-18dcfa1d7783.htm" />
+    <HelpKINode Title="about GaussianMutator(Of G, F) class" Url="html/5ec07f9f-63b8-d893-00a1-18dcfa1d7783.htm" />
+    <HelpKINode Title="constructor" Url="html/30feaad6-7d50-3d40-b55f-e09541ac1d41.htm" />
+    <HelpKINode Title="methods" Url="html/72ddbdfa-b57a-c7a8-fdcf-5596e8fbcfb5.htm" />
+    <HelpKINode Title="properties" Url="html/65e342fe-c7a4-5a5e-ac11-25513a320c8a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GaussianMutator(Of G, F).GaussianMutator constructor" Url="html/30feaad6-7d50-3d40-b55f-e09541ac1d41.htm" />
+  <HelpKINode Title="GaussianMutator(Of G, F).Mutate method" Url="html/c41d2e0c-425a-df26-0cd6-2b33eafee4e6.htm" />
+  <HelpKINode Title="GaussianMutator&lt;G, F&gt; class">
+    <HelpKINode Title="GaussianMutator(G, F) Class" Url="html/5ec07f9f-63b8-d893-00a1-18dcfa1d7783.htm" />
+    <HelpKINode Title="about GaussianMutator&lt;G, F&gt; class" Url="html/5ec07f9f-63b8-d893-00a1-18dcfa1d7783.htm" />
+    <HelpKINode Title="constructor" Url="html/30feaad6-7d50-3d40-b55f-e09541ac1d41.htm" />
+    <HelpKINode Title="methods" Url="html/72ddbdfa-b57a-c7a8-fdcf-5596e8fbcfb5.htm" />
+    <HelpKINode Title="properties" Url="html/65e342fe-c7a4-5a5e-ac11-25513a320c8a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GaussianMutator&lt;G, F&gt;.GaussianMutator constructor" Url="html/30feaad6-7d50-3d40-b55f-e09541ac1d41.htm" />
+  <HelpKINode Title="GaussianMutator&lt;G, F&gt;.Mutate method" Url="html/c41d2e0c-425a-df26-0cd6-2b33eafee4e6.htm" />
+  <HelpKINode Title="GeneEnumerator(Of G) class">
+    <HelpKINode Title="GeneEnumerator(G) Class" Url="html/483d470c-473d-a3e8-558d-ef10ae33de68.htm" />
+    <HelpKINode Title="about GeneEnumerator(Of G) class" Url="html/483d470c-473d-a3e8-558d-ef10ae33de68.htm" />
+    <HelpKINode Title="constructor" Url="html/57caa86d-d828-b76a-34da-99ac8834cbee.htm" />
+    <HelpKINode Title="methods" Url="html/7308438e-8ba6-405c-a34f-67dc313f7fbc.htm" />
+    <HelpKINode Title="properties" Url="html/fd7a972f-5e9f-00fc-7386-cfedc9679e34.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GeneEnumerator(Of G).Current property" Url="html/20a812c7-2438-138a-5111-dd328444244d.htm" />
+  <HelpKINode Title="GeneEnumerator(Of G).Dispose method" Url="html/239a96aa-436d-c764-81d8-0df22ede2915.htm" />
+  <HelpKINode Title="GeneEnumerator(Of G).GeneEnumerator constructor" Url="html/57caa86d-d828-b76a-34da-99ac8834cbee.htm" />
+  <HelpKINode Title="GeneEnumerator(Of G).MoveNext method" Url="html/5eb17c1d-0e9e-dbbc-6e18-cd3eb16a8bc3.htm" />
+  <HelpKINode Title="GeneEnumerator(Of G).Reset method" Url="html/a178007e-5240-2324-ef7c-ff1303856b86.htm" />
+  <HelpKINode Title="GeneEnumerator&lt;G&gt; class">
+    <HelpKINode Title="GeneEnumerator(G) Class" Url="html/483d470c-473d-a3e8-558d-ef10ae33de68.htm" />
+    <HelpKINode Title="about GeneEnumerator&lt;G&gt; class" Url="html/483d470c-473d-a3e8-558d-ef10ae33de68.htm" />
+    <HelpKINode Title="constructor" Url="html/57caa86d-d828-b76a-34da-99ac8834cbee.htm" />
+    <HelpKINode Title="methods" Url="html/7308438e-8ba6-405c-a34f-67dc313f7fbc.htm" />
+    <HelpKINode Title="properties" Url="html/fd7a972f-5e9f-00fc-7386-cfedc9679e34.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GeneEnumerator&lt;G&gt;.Current property" Url="html/20a812c7-2438-138a-5111-dd328444244d.htm" />
+  <HelpKINode Title="GeneEnumerator&lt;G&gt;.Dispose method" Url="html/239a96aa-436d-c764-81d8-0df22ede2915.htm" />
+  <HelpKINode Title="GeneEnumerator&lt;G&gt;.GeneEnumerator constructor" Url="html/57caa86d-d828-b76a-34da-99ac8834cbee.htm" />
+  <HelpKINode Title="GeneEnumerator&lt;G&gt;.MoveNext method" Url="html/5eb17c1d-0e9e-dbbc-6e18-cd3eb16a8bc3.htm" />
+  <HelpKINode Title="GeneEnumerator&lt;G&gt;.Reset method" Url="html/a178007e-5240-2324-ef7c-ff1303856b86.htm" />
+  <HelpKINode Title="Generation property" Url="html/0ca303a7-f0fe-3731-71d8-16224957a8ab.htm" />
+  <HelpKINode Title="Genotype property" Url="html/19fbd507-06c0-85c1-df3a-9b1e929ebf6f.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G) class">
+    <HelpKINode Title="GenotypeGeneratorBreeder(G) Class" Url="html/f2bd7f96-c16d-6060-e8ff-a37e739b4aaf.htm" />
+    <HelpKINode Title="about GenotypeGeneratorBreeder(Of G) class" Url="html/f2bd7f96-c16d-6060-e8ff-a37e739b4aaf.htm" />
+    <HelpKINode Title="constructor" Url="html/9c052c58-727d-3fb7-3f80-672d25649db5.htm" />
+    <HelpKINode Title="methods" Url="html/7b93dceb-9b08-006b-3ea1-c191ae9e024b.htm" />
+    <HelpKINode Title="properties" Url="html/ec110f8a-7dc1-38c4-e3ae-039edff1805a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G).Breed method" Url="html/883bbda0-6889-550f-5a64-3aee135ac372.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G).BreederDelegateWithIndex delegate" Url="html/a497d5be-b463-c5c1-9c5a-7c21e9c2810f.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G).BreederDelegateWithoutIndex delegate" Url="html/a54cf8de-417e-75bb-824a-fae89e713948.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G).DelegateWithIndex property" Url="html/b1599867-f83e-e83c-24cb-aca13700c37d.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G).DelegateWithoutIndex property" Url="html/d44cb9e1-de31-81b3-84da-feeab51f13ed.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G).GenotypeGeneratorBreeder constructor" Url="html/9c052c58-727d-3fb7-3f80-672d25649db5.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder(Of G).PopulationSize property" Url="html/239647f7-8ac3-ee97-24e4-c5e21d3d76fd.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt; class">
+    <HelpKINode Title="GenotypeGeneratorBreeder(G) Class" Url="html/f2bd7f96-c16d-6060-e8ff-a37e739b4aaf.htm" />
+    <HelpKINode Title="about GenotypeGeneratorBreeder&lt;G&gt; class" Url="html/f2bd7f96-c16d-6060-e8ff-a37e739b4aaf.htm" />
+    <HelpKINode Title="constructor" Url="html/9c052c58-727d-3fb7-3f80-672d25649db5.htm" />
+    <HelpKINode Title="methods" Url="html/7b93dceb-9b08-006b-3ea1-c191ae9e024b.htm" />
+    <HelpKINode Title="properties" Url="html/ec110f8a-7dc1-38c4-e3ae-039edff1805a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt;.Breed method" Url="html/883bbda0-6889-550f-5a64-3aee135ac372.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt;.BreederDelegateWithIndex delegate" Url="html/a497d5be-b463-c5c1-9c5a-7c21e9c2810f.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt;.BreederDelegateWithoutIndex delegate" Url="html/a54cf8de-417e-75bb-824a-fae89e713948.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt;.DelegateWithIndex property" Url="html/b1599867-f83e-e83c-24cb-aca13700c37d.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt;.DelegateWithoutIndex property" Url="html/d44cb9e1-de31-81b3-84da-feeab51f13ed.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt;.GenotypeGeneratorBreeder constructor" Url="html/9c052c58-727d-3fb7-3f80-672d25649db5.htm" />
+  <HelpKINode Title="GenotypeGeneratorBreeder&lt;G&gt;.PopulationSize property" Url="html/239647f7-8ac3-ee97-24e4-c5e21d3d76fd.htm" />
+  <HelpKINode Title="GetActivator method" Url="html/cb8ba0ea-bbcd-cfb8-f92f-7ef63dcc5ef2.htm" />
+  <HelpKINode Title="GetEnumerator method" Url="html/df00de9b-e868-111f-d8ed-b47a97720d88.htm" />
+  <HelpKINode Title="GetGenotypes(Of G, F) method" Url="html/d409a291-9bab-255e-4375-2a560b6356c4.htm" />
+  <HelpKINode Title="GetGenotypes&lt;G, F&gt; method" Url="html/d409a291-9bab-255e-4375-2a560b6356c4.htm" />
+  <HelpKINode Title="GetHashCode method">
+    <HelpKINode Title="BitGene.GetHashCode Method " Url="html/4580b2b2-d301-a3ef-412a-2b7088252a6d.htm" />
+    <HelpKINode Title="EnumGene(T).GetHashCode Method " Url="html/a27ef5bf-1ccf-6f56-9314-6b90d9e89651.htm" />
+    <HelpKINode Title="FloatGene.GetHashCode Method " Url="html/1fd24071-4e1b-8907-a1cc-4e74abe32549.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetInstance method">
+    <HelpKINode Title="Factory.GetInstance Method " Url="html/33d8bba5-0965-8b6a-ae4e-97b6931716b8.htm" />
+    <HelpKINode Title="RandomGenerator.GetInstance Method " Url="html/bc9c223a-e4b5-7fe2-e389-710ae0380b37.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetOffspring method">
+    <HelpKINode Title="CrossoverBase(G, R, F).GetOffspring Method " Url="html/2597d31b-d7f6-8adb-a5ee-31ad9f4a9ca0.htm" />
+    <HelpKINode Title="MultipointCrossover(G, R, F).GetOffspring Method " Url="html/30a941fc-05d4-780f-87d2-734b2fd239d1.htm" />
+    <HelpKINode Title="PartiallyMatchedCrossover(G, R, F).GetOffspring Method " Url="html/bd794e96-a117-43ad-7685-7f791f475b7e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HasFitnessAssigned property" Url="html/dbb6ee2a-6215-e53a-6e9a-c9322f4330d3.htm" />
+  <HelpKINode Title="HasReachedStopCriteria property" Url="html/53e206b0-2d27-14c5-3636-09184cac7c53.htm" />
+  <HelpKINode Title="IAlgorithm(Of G, F) interface">
+    <HelpKINode Title="IAlgorithm(G, F) Interface" Url="html/380c8195-f6a4-2ccc-b3f9-d1d7cfbbba9e.htm" />
+    <HelpKINode Title="about IAlgorithm(Of G, F) interface" Url="html/380c8195-f6a4-2ccc-b3f9-d1d7cfbbba9e.htm" />
+    <HelpKINode Title="methods" Url="html/2a01cb8f-26cc-fa60-ae1a-fb407bd83100.htm" />
+    <HelpKINode Title="properties" Url="html/aafdef7b-2a72-5a85-a626-8a118d9e714f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAlgorithm(Of G, F).Engine property" Url="html/06539222-fa82-5012-c9f9-c893fc58fef2.htm" />
+  <HelpKINode Title="IAlgorithm(Of G, F).Execute method" Url="html/4a2f4a6e-c35a-a5a4-1c08-ecd677c46685.htm" />
+  <HelpKINode Title="IAlgorithm(Of G, F).FitnessFunction property" Url="html/f133172f-f2b0-ebb2-3a64-6be4edd8008e.htm" />
+  <HelpKINode Title="IAlgorithm(Of G, F).Initialize method" Url="html/008a96f2-807c-69cb-9ff2-0289c19235d3.htm" />
+  <HelpKINode Title="IAlgorithm(Of G, F).ShouldStop method" Url="html/6abe113b-a53f-58c4-e026-b24291c92e1e.htm" />
+  <HelpKINode Title="IAlgorithm&lt;G, F&gt; interface">
+    <HelpKINode Title="IAlgorithm(G, F) Interface" Url="html/380c8195-f6a4-2ccc-b3f9-d1d7cfbbba9e.htm" />
+    <HelpKINode Title="about IAlgorithm&lt;G, F&gt; interface" Url="html/380c8195-f6a4-2ccc-b3f9-d1d7cfbbba9e.htm" />
+    <HelpKINode Title="methods" Url="html/2a01cb8f-26cc-fa60-ae1a-fb407bd83100.htm" />
+    <HelpKINode Title="properties" Url="html/aafdef7b-2a72-5a85-a626-8a118d9e714f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAlgorithm&lt;G, F&gt;.Engine property" Url="html/06539222-fa82-5012-c9f9-c893fc58fef2.htm" />
+  <HelpKINode Title="IAlgorithm&lt;G, F&gt;.Execute method" Url="html/4a2f4a6e-c35a-a5a4-1c08-ecd677c46685.htm" />
+  <HelpKINode Title="IAlgorithm&lt;G, F&gt;.FitnessFunction property" Url="html/f133172f-f2b0-ebb2-3a64-6be4edd8008e.htm" />
+  <HelpKINode Title="IAlgorithm&lt;G, F&gt;.Initialize method" Url="html/008a96f2-807c-69cb-9ff2-0289c19235d3.htm" />
+  <HelpKINode Title="IAlgorithm&lt;G, F&gt;.ShouldStop method" Url="html/6abe113b-a53f-58c4-e026-b24291c92e1e.htm" />
+  <HelpKINode Title="IAlterer interface">
+    <HelpKINode Title="IAlterer Interface" Url="html/b3b6dba2-70a9-262f-88ce-cdb0e8dbc2af.htm" />
+    <HelpKINode Title="about IAlterer interface" Url="html/b3b6dba2-70a9-262f-88ce-cdb0e8dbc2af.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAlterer(Of G, F) interface">
+    <HelpKINode Title="IAlterer(G, F) Interface" Url="html/ed066449-4bdb-1fa0-cc3f-771efbad23c9.htm" />
+    <HelpKINode Title="about IAlterer(Of G, F) interface" Url="html/ed066449-4bdb-1fa0-cc3f-771efbad23c9.htm" />
+    <HelpKINode Title="methods" Url="html/8347edae-1eae-9c9c-8684-553bf8d794a5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAlterer(Of G, F).Apply method" Url="html/184184a2-a6a0-3167-760a-9884918045be.htm" />
+  <HelpKINode Title="IAlterer&lt;G, F&gt; interface">
+    <HelpKINode Title="IAlterer(G, F) Interface" Url="html/ed066449-4bdb-1fa0-cc3f-771efbad23c9.htm" />
+    <HelpKINode Title="about IAlterer&lt;G, F&gt; interface" Url="html/ed066449-4bdb-1fa0-cc3f-771efbad23c9.htm" />
+    <HelpKINode Title="methods" Url="html/8347edae-1eae-9c9c-8684-553bf8d794a5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAlterer&lt;G, F&gt;.Apply method" Url="html/184184a2-a6a0-3167-760a-9884918045be.htm" />
+  <HelpKINode Title="IBreeder(Of G) interface">
+    <HelpKINode Title="IBreeder(G) Interface" Url="html/cedd80b5-b6b0-4b27-7062-f851d964326d.htm" />
+    <HelpKINode Title="about IBreeder(Of G) interface" Url="html/cedd80b5-b6b0-4b27-7062-f851d964326d.htm" />
+    <HelpKINode Title="methods" Url="html/38583b94-06d6-3a3f-336b-3eea03c082fe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IBreeder(Of G).Breed method" Url="html/7a04eb0f-d4f8-4594-d328-080619104df6.htm" />
+  <HelpKINode Title="IBreeder&lt;G&gt; interface">
+    <HelpKINode Title="IBreeder(G) Interface" Url="html/cedd80b5-b6b0-4b27-7062-f851d964326d.htm" />
+    <HelpKINode Title="about IBreeder&lt;G&gt; interface" Url="html/cedd80b5-b6b0-4b27-7062-f851d964326d.htm" />
+    <HelpKINode Title="methods" Url="html/38583b94-06d6-3a3f-336b-3eea03c082fe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IBreeder&lt;G&gt;.Breed method" Url="html/7a04eb0f-d4f8-4594-d328-080619104df6.htm" />
+  <HelpKINode Title="IExecutor(Of G, F) interface">
+    <HelpKINode Title="IExecutor(G, F) Interface" Url="html/d2a85f00-aa54-0390-b06c-4c8490a4c39c.htm" />
+    <HelpKINode Title="about IExecutor(Of G, F) interface" Url="html/d2a85f00-aa54-0390-b06c-4c8490a4c39c.htm" />
+    <HelpKINode Title="methods" Url="html/97758bd0-8ba9-bfe8-04f1-f23ca4063d47.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IExecutor(Of G, F).AddToQueue method" Url="html/96460788-3e94-90ec-8232-16cf4570c1e2.htm" />
+  <HelpKINode Title="IExecutor(Of G, F).AddToQueueAndWait method" Url="html/cf9a6674-c9d3-67f9-553a-b8b8708eab52.htm" />
+  <HelpKINode Title="IExecutor(Of G, F).UpdateFitness method" Url="html/860d7588-3426-1462-4a3e-981e82e26446.htm" />
+  <HelpKINode Title="IExecutor&lt;G, F&gt; interface">
+    <HelpKINode Title="IExecutor(G, F) Interface" Url="html/d2a85f00-aa54-0390-b06c-4c8490a4c39c.htm" />
+    <HelpKINode Title="about IExecutor&lt;G, F&gt; interface" Url="html/d2a85f00-aa54-0390-b06c-4c8490a4c39c.htm" />
+    <HelpKINode Title="methods" Url="html/97758bd0-8ba9-bfe8-04f1-f23ca4063d47.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IExecutor&lt;G, F&gt;.AddToQueue method" Url="html/96460788-3e94-90ec-8232-16cf4570c1e2.htm" />
+  <HelpKINode Title="IExecutor&lt;G, F&gt;.AddToQueueAndWait method" Url="html/cf9a6674-c9d3-67f9-553a-b8b8708eab52.htm" />
+  <HelpKINode Title="IExecutor&lt;G, F&gt;.UpdateFitness method" Url="html/860d7588-3426-1462-4a3e-981e82e26446.htm" />
+  <HelpKINode Title="IFitnessExecutor(Of G, F) interface">
+    <HelpKINode Title="IFitnessExecutor(G, F) Interface" Url="html/2b161e85-97b6-d164-e1e5-d57c8be7c80f.htm" />
+    <HelpKINode Title="about IFitnessExecutor(Of G, F) interface" Url="html/2b161e85-97b6-d164-e1e5-d57c8be7c80f.htm" />
+    <HelpKINode Title="methods" Url="html/1f0027e4-6dd6-1cb1-775e-10dd4baf88b9.htm" />
+    <HelpKINode Title="properties" Url="html/76458e0a-8a4d-679b-5f08-757ddfd6e320.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IFitnessExecutor(Of G, F).FitnessFunction property" Url="html/e3e15088-f5d3-985d-26b1-5dbffb3c8834.htm" />
+  <HelpKINode Title="IFitnessExecutor(Of G, F).ParentMultithreadedCachedExecutor property" Url="html/d6a7b261-a694-4003-a87c-71dbcbf30a80.htm" />
+  <HelpKINode Title="IFitnessExecutor(Of G, F).UpdateFitness method" Url="html/d8c1b38d-4a6f-ddaa-5269-9a84dbab3ece.htm" />
+  <HelpKINode Title="IFitnessExecutor&lt;G, F&gt; interface">
+    <HelpKINode Title="IFitnessExecutor(G, F) Interface" Url="html/2b161e85-97b6-d164-e1e5-d57c8be7c80f.htm" />
+    <HelpKINode Title="about IFitnessExecutor&lt;G, F&gt; interface" Url="html/2b161e85-97b6-d164-e1e5-d57c8be7c80f.htm" />
+    <HelpKINode Title="methods" Url="html/1f0027e4-6dd6-1cb1-775e-10dd4baf88b9.htm" />
+    <HelpKINode Title="properties" Url="html/76458e0a-8a4d-679b-5f08-757ddfd6e320.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IFitnessExecutor&lt;G, F&gt;.FitnessFunction property" Url="html/e3e15088-f5d3-985d-26b1-5dbffb3c8834.htm" />
+  <HelpKINode Title="IFitnessExecutor&lt;G, F&gt;.ParentMultithreadedCachedExecutor property" Url="html/d6a7b261-a694-4003-a87c-71dbcbf30a80.htm" />
+  <HelpKINode Title="IFitnessExecutor&lt;G, F&gt;.UpdateFitness method" Url="html/d8c1b38d-4a6f-ddaa-5269-9a84dbab3ece.htm" />
+  <HelpKINode Title="IFitnessScaling(Of F) interface">
+    <HelpKINode Title="IFitnessScaling(F) Interface" Url="html/5174d5b1-6eb3-0998-b206-97aea6d60924.htm" />
+    <HelpKINode Title="about IFitnessScaling(Of F) interface" Url="html/5174d5b1-6eb3-0998-b206-97aea6d60924.htm" />
+    <HelpKINode Title="methods" Url="html/b790af91-0148-907b-dcb0-fa432a8d492d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IFitnessScaling(Of F).Scale method" Url="html/e1d3fab8-742e-a7eb-2311-6d29fc1f21e2.htm" />
+  <HelpKINode Title="IFitnessScaling&lt;F&gt; interface">
+    <HelpKINode Title="IFitnessScaling(F) Interface" Url="html/5174d5b1-6eb3-0998-b206-97aea6d60924.htm" />
+    <HelpKINode Title="about IFitnessScaling&lt;F&gt; interface" Url="html/5174d5b1-6eb3-0998-b206-97aea6d60924.htm" />
+    <HelpKINode Title="methods" Url="html/b790af91-0148-907b-dcb0-fa432a8d492d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IFitnessScaling&lt;F&gt;.Scale method" Url="html/e1d3fab8-742e-a7eb-2311-6d29fc1f21e2.htm" />
+  <HelpKINode Title="IGene interface">
+    <HelpKINode Title="IGene Interface" Url="html/552869bb-fdba-3830-c43b-06b3800a1b70.htm" />
+    <HelpKINode Title="about IGene interface" Url="html/552869bb-fdba-3830-c43b-06b3800a1b70.htm" />
+    <HelpKINode Title="methods" Url="html/a8f68a48-c9d9-a57e-4b51-c8291d0a7236.htm" />
+    <HelpKINode Title="properties" Url="html/59590705-9c5d-8b82-67c2-1e07f808400d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IGene.Clone method" Url="html/04131b68-625f-4781-31e0-69a71d7f498d.htm" />
+  <HelpKINode Title="IGene.IsValid property" Url="html/6a11ecff-9d88-1f93-e8f4-8175f124b4c4.htm" />
+  <HelpKINode Title="IGenotype interface">
+    <HelpKINode Title="IGenotype Interface" Url="html/13c3b50d-c9d9-6628-0a67-85353cdcfbb8.htm" />
+    <HelpKINode Title="about IGenotype interface" Url="html/13c3b50d-c9d9-6628-0a67-85353cdcfbb8.htm" />
+    <HelpKINode Title="methods" Url="html/2f65a61c-15f0-cedc-f0bd-16b7920ee667.htm" />
+    <HelpKINode Title="properties" Url="html/a9007e79-fea8-afd8-c485-18d1f503b9fb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IGenotype.Clone method" Url="html/e6f6cece-6181-7d38-c60d-a88d6c1348b0.htm" />
+  <HelpKINode Title="IGenotype.IsValid property" Url="html/daa9b607-0705-841a-d421-f8910cd5c62e.htm" />
+  <HelpKINode Title="IGenotypeFactory(Of G) interface">
+    <HelpKINode Title="IGenotypeFactory(G) Interface" Url="html/99ff8b1c-9c85-0d5c-4c80-a3c7c29a8ee6.htm" />
+    <HelpKINode Title="about IGenotypeFactory(Of G) interface" Url="html/99ff8b1c-9c85-0d5c-4c80-a3c7c29a8ee6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IGenotypeFactory&lt;G&gt; interface">
+    <HelpKINode Title="IGenotypeFactory(G) Interface" Url="html/99ff8b1c-9c85-0d5c-4c80-a3c7c29a8ee6.htm" />
+    <HelpKINode Title="about IGenotypeFactory&lt;G&gt; interface" Url="html/99ff8b1c-9c85-0d5c-4c80-a3c7c29a8ee6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IListGenotype(Of G, R) interface">
+    <HelpKINode Title="IListGenotype(G, R) Interface" Url="html/b41dfc3c-7aab-f649-1f02-9c78109b62c7.htm" />
+    <HelpKINode Title="about IListGenotype(Of G, R) interface" Url="html/b41dfc3c-7aab-f649-1f02-9c78109b62c7.htm" />
+    <HelpKINode Title="methods" Url="html/01af0502-cdac-eccc-6809-70f47ef1e783.htm" />
+    <HelpKINode Title="properties" Url="html/949c2fec-192b-a7ea-61e9-dc27c4122400.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IListGenotype(Of G, R).Count property" Url="html/838d188d-ca14-f0f3-0096-e9f30cee31ee.htm" />
+  <HelpKINode Title="IListGenotype(Of G, R).Item property" Url="html/1eb45478-5ca3-ecfe-1160-ed8e590b119e.htm" />
+  <HelpKINode Title="IListGenotype(Of G, R).Replace method" Url="html/3a3700c7-dd14-d365-a657-2477f90fb070.htm" />
+  <HelpKINode Title="IListGenotype(Of G, R).Swap method" Url="html/190f34d6-f41e-22fa-a7d1-c2f5ea32f5da.htm" />
+  <HelpKINode Title="IListGenotype&lt;G, R&gt; interface">
+    <HelpKINode Title="IListGenotype(G, R) Interface" Url="html/b41dfc3c-7aab-f649-1f02-9c78109b62c7.htm" />
+    <HelpKINode Title="about IListGenotype&lt;G, R&gt; interface" Url="html/b41dfc3c-7aab-f649-1f02-9c78109b62c7.htm" />
+    <HelpKINode Title="methods" Url="html/01af0502-cdac-eccc-6809-70f47ef1e783.htm" />
+    <HelpKINode Title="properties" Url="html/949c2fec-192b-a7ea-61e9-dc27c4122400.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IListGenotype&lt;G, R&gt;.Count property" Url="html/838d188d-ca14-f0f3-0096-e9f30cee31ee.htm" />
+  <HelpKINode Title="IListGenotype&lt;G, R&gt;.Item property" Url="html/1eb45478-5ca3-ecfe-1160-ed8e590b119e.htm" />
+  <HelpKINode Title="IListGenotype&lt;G, R&gt;.Replace method" Url="html/3a3700c7-dd14-d365-a657-2477f90fb070.htm" />
+  <HelpKINode Title="IListGenotype&lt;G, R&gt;.Swap method" Url="html/190f34d6-f41e-22fa-a7d1-c2f5ea32f5da.htm" />
+  <HelpKINode Title="IListGenotypeFactory(Of G, R) interface">
+    <HelpKINode Title="IListGenotypeFactory(G, R) Interface" Url="html/7db5f8de-9d12-b5e7-41e5-7492e1eaf5f2.htm" />
+    <HelpKINode Title="about IListGenotypeFactory(Of G, R) interface" Url="html/7db5f8de-9d12-b5e7-41e5-7492e1eaf5f2.htm" />
+    <HelpKINode Title="methods" Url="html/1587b742-a85c-4efc-b674-2c34c2bf0c3a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IListGenotypeFactory(Of G, R).Create method" Url="html/44b287a6-6adc-ec89-bee2-1ed2b3e0d350.htm" />
+  <HelpKINode Title="IListGenotypeFactory&lt;G, R&gt; interface">
+    <HelpKINode Title="IListGenotypeFactory(G, R) Interface" Url="html/7db5f8de-9d12-b5e7-41e5-7492e1eaf5f2.htm" />
+    <HelpKINode Title="about IListGenotypeFactory&lt;G, R&gt; interface" Url="html/7db5f8de-9d12-b5e7-41e5-7492e1eaf5f2.htm" />
+    <HelpKINode Title="methods" Url="html/1587b742-a85c-4efc-b674-2c34c2bf0c3a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IListGenotypeFactory&lt;G, R&gt;.Create method" Url="html/44b287a6-6adc-ec89-bee2-1ed2b3e0d350.htm" />
+  <HelpKINode Title="Individual property" Url="html/831fd19c-139b-3d99-63fc-9484d6d1f892.htm" />
+  <HelpKINode Title="Individual(Of G, F) class">
+    <HelpKINode Title="Individual(G, F) Class" Url="html/afb26626-7779-18a2-0296-c5579e7867df.htm" />
+    <HelpKINode Title="about Individual(Of G, F) class" Url="html/afb26626-7779-18a2-0296-c5579e7867df.htm" />
+    <HelpKINode Title="constructor" Url="html/b8978d21-f1e3-8239-c5cd-91e83eb1cea0.htm" />
+    <HelpKINode Title="methods" Url="html/99b6b4bc-7c75-4ae6-3bc3-eec9246cb6d6.htm" />
+    <HelpKINode Title="properties" Url="html/97ee0ff9-a32e-983d-c0ad-eee3aa319d34.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Individual(Of G, F).Clone method" Url="html/c2117e2e-17cc-eb7f-4816-0ef16183825c.htm" />
+  <HelpKINode Title="Individual(Of G, F).CompareTo method" Url="html/f0ac4673-a4c3-f8d7-01df-a012113ecd6a.htm" />
+  <HelpKINode Title="Individual(Of G, F).Fitness property" Url="html/b0c6a6d5-da66-240b-52cf-f2eec2f29902.htm" />
+  <HelpKINode Title="Individual(Of G, F).FitnessOrDefault property" Url="html/80d5acaf-661d-ad1b-f369-0edb4e91a48e.htm" />
+  <HelpKINode Title="Individual(Of G, F).FromGenotypes method" Url="html/f829fe1e-0f78-3a9b-dc64-60b52be194e1.htm" />
+  <HelpKINode Title="Individual(Of G, F).Genotype property" Url="html/19fbd507-06c0-85c1-df3a-9b1e929ebf6f.htm" />
+  <HelpKINode Title="Individual(Of G, F).HasFitnessAssigned property" Url="html/dbb6ee2a-6215-e53a-6e9a-c9322f4330d3.htm" />
+  <HelpKINode Title="Individual(Of G, F).Individual constructor" Url="html/b8978d21-f1e3-8239-c5cd-91e83eb1cea0.htm" />
+  <HelpKINode Title="Individual(Of G, F).ToString method" Url="html/6b78902d-0866-6d81-d5c4-074085913d60.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt; class">
+    <HelpKINode Title="Individual(G, F) Class" Url="html/afb26626-7779-18a2-0296-c5579e7867df.htm" />
+    <HelpKINode Title="about Individual&lt;G, F&gt; class" Url="html/afb26626-7779-18a2-0296-c5579e7867df.htm" />
+    <HelpKINode Title="constructor" Url="html/b8978d21-f1e3-8239-c5cd-91e83eb1cea0.htm" />
+    <HelpKINode Title="methods" Url="html/99b6b4bc-7c75-4ae6-3bc3-eec9246cb6d6.htm" />
+    <HelpKINode Title="properties" Url="html/97ee0ff9-a32e-983d-c0ad-eee3aa319d34.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Individual&lt;G, F&gt;.Clone method" Url="html/c2117e2e-17cc-eb7f-4816-0ef16183825c.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.CompareTo method" Url="html/f0ac4673-a4c3-f8d7-01df-a012113ecd6a.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.Fitness property" Url="html/b0c6a6d5-da66-240b-52cf-f2eec2f29902.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.FitnessOrDefault property" Url="html/80d5acaf-661d-ad1b-f369-0edb4e91a48e.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.FromGenotypes method" Url="html/f829fe1e-0f78-3a9b-dc64-60b52be194e1.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.Genotype property" Url="html/19fbd507-06c0-85c1-df3a-9b1e929ebf6f.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.HasFitnessAssigned property" Url="html/dbb6ee2a-6215-e53a-6e9a-c9322f4330d3.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.Individual constructor" Url="html/b8978d21-f1e3-8239-c5cd-91e83eb1cea0.htm" />
+  <HelpKINode Title="Individual&lt;G, F&gt;.ToString method" Url="html/6b78902d-0866-6d81-d5c4-074085913d60.htm" />
+  <HelpKINode Title="IndividualExtensions class">
+    <HelpKINode Title="IndividualExtensions Class" Url="html/658f826d-1045-3bd5-a75e-85da9b53c245.htm" />
+    <HelpKINode Title="about IndividualExtensions class" Url="html/658f826d-1045-3bd5-a75e-85da9b53c245.htm" />
+    <HelpKINode Title="methods" Url="html/56f98752-ed61-69c4-df39-49f3f0914dd1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IndividualExtensions.GetGenotypes(Of G, F) method" Url="html/d409a291-9bab-255e-4375-2a560b6356c4.htm" />
+  <HelpKINode Title="IndividualExtensions.GetGenotypes&lt;G, F&gt; method" Url="html/d409a291-9bab-255e-4375-2a560b6356c4.htm" />
+  <HelpKINode Title="IndividualScore class">
+    <HelpKINode Title="methods" Url="html/649a22d3-7253-b4c3-a6ab-9ae7ee6a47fe.htm" />
+    <HelpKINode Title="properties" Url="html/0eca3c98-1bb2-cf19-aea4-41d4ab1f31ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Initialize method">
+    <HelpKINode Title="EasyGa(G, F).Initialize Method " Url="html/8e202960-4ed0-30a4-d8d0-384955fddc22.htm" />
+    <HelpKINode Title="IAlgorithm(G, F).Initialize Method " Url="html/008a96f2-807c-69cb-9ff2-0289c19235d3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Input property" Url="html/5b8b9576-a35a-7a68-e103-c6f201adb017.htm" />
+  <HelpKINode Title="IntSequence method">
+    <HelpKINode Title="IRandomGenerator.IntSequence Method " Url="html/35902184-3746-d34c-d9b8-26f7772e08f2.htm" />
+    <HelpKINode Title="RandomGenerator.IntSequence Method " Url="html/416358a2-a384-15d0-149a-7a798e6bbf5c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="INumericGene(Of G, T) interface">
+    <HelpKINode Title="INumericGene(G, T) Interface" Url="html/f0f53be2-e25b-e4a4-9328-e5974ea1e16d.htm" />
+    <HelpKINode Title="about INumericGene(Of G, T) interface" Url="html/f0f53be2-e25b-e4a4-9328-e5974ea1e16d.htm" />
+    <HelpKINode Title="methods" Url="html/33028752-b006-4718-c494-51b4c2c634a3.htm" />
+    <HelpKINode Title="properties" Url="html/89946d91-3c90-fa66-ba59-3949233f25d2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="INumericGene(Of G, T).Divide method" Url="html/10cf5088-312d-acae-2880-a456818dffff.htm" />
+  <HelpKINode Title="INumericGene(Of G, T).Multiply method" Url="html/2b350edb-3b13-f6ea-81c2-7956f8c45f86.htm" />
+  <HelpKINode Title="INumericGene(Of G, T).Subtract method" Url="html/dcf0680f-58bd-46e9-a7b2-c31e6bcb4ab9.htm" />
+  <HelpKINode Title="INumericGene(Of G, T).Sum method" Url="html/b02344ba-1d67-d02c-1128-163d126c2cca.htm" />
+  <HelpKINode Title="INumericGene(Of G, T).Value property" Url="html/392fdd33-7c0c-ab96-1717-e5555c6bd624.htm" />
+  <HelpKINode Title="INumericGene&lt;G, T&gt; interface">
+    <HelpKINode Title="INumericGene(G, T) Interface" Url="html/f0f53be2-e25b-e4a4-9328-e5974ea1e16d.htm" />
+    <HelpKINode Title="about INumericGene&lt;G, T&gt; interface" Url="html/f0f53be2-e25b-e4a4-9328-e5974ea1e16d.htm" />
+    <HelpKINode Title="methods" Url="html/33028752-b006-4718-c494-51b4c2c634a3.htm" />
+    <HelpKINode Title="properties" Url="html/89946d91-3c90-fa66-ba59-3949233f25d2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="INumericGene&lt;G, T&gt;.Divide method" Url="html/10cf5088-312d-acae-2880-a456818dffff.htm" />
+  <HelpKINode Title="INumericGene&lt;G, T&gt;.Multiply method" Url="html/2b350edb-3b13-f6ea-81c2-7956f8c45f86.htm" />
+  <HelpKINode Title="INumericGene&lt;G, T&gt;.Subtract method" Url="html/dcf0680f-58bd-46e9-a7b2-c31e6bcb4ab9.htm" />
+  <HelpKINode Title="INumericGene&lt;G, T&gt;.Sum method" Url="html/b02344ba-1d67-d02c-1128-163d126c2cca.htm" />
+  <HelpKINode Title="INumericGene&lt;G, T&gt;.Value property" Url="html/392fdd33-7c0c-ab96-1717-e5555c6bd624.htm" />
+  <HelpKINode Title="IRandomGenerator interface">
+    <HelpKINode Title="IRandomGenerator Interface" Url="html/1a505df9-17bd-2b3c-3904-6599504965ae.htm" />
+    <HelpKINode Title="about IRandomGenerator interface" Url="html/1a505df9-17bd-2b3c-3904-6599504965ae.htm" />
+    <HelpKINode Title="methods" Url="html/fc715462-2b46-2020-e122-7320b689b1e7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IRandomGenerator.DoubleSequence method" Url="html/816dbdfc-8001-bf2b-320a-5698e68682dc.htm" />
+  <HelpKINode Title="IRandomGenerator.IntSequence method" Url="html/35902184-3746-d34c-d9b8-26f7772e08f2.htm" />
+  <HelpKINode Title="IRandomGenerator.NextBoundedGaussian method" Url="html/6a81f632-5c66-163a-6a67-abc42a6b6d82.htm" />
+  <HelpKINode Title="IRandomGenerator.NextDouble method" Url="html/ea3c3564-534c-a7af-4696-a9eebba9db1a.htm" />
+  <HelpKINode Title="IRandomGenerator.NextGaussian method" Url="html/f1df34a9-86a8-de9b-3e03-c77f3bd7650a.htm" />
+  <HelpKINode Title="IRandomGenerator.NextInt method" Url="html/7b6c3f36-ff9d-2da9-47ee-541f73303b30.htm" />
+  <HelpKINode Title="IRandomSource interface">
+    <HelpKINode Title="IRandomSource Interface" Url="html/a0204962-298c-bff9-ed42-e9b55afad042.htm" />
+    <HelpKINode Title="about IRandomSource interface" Url="html/a0204962-298c-bff9-ed42-e9b55afad042.htm" />
+    <HelpKINode Title="methods" Url="html/8eb40a2d-5026-7b98-128a-7c4566fa4176.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IRandomSource.NextDouble method" Url="html/c3805468-6d65-37f7-1551-455a4eae98cd.htm" />
+  <HelpKINode Title="IRandomSource.NextInt method" Url="html/e8ccf6f8-7c38-151b-1654-fc76936a3275.htm" />
+  <HelpKINode Title="IsBounded property" Url="html/9c68f988-1659-24c9-8200-471ff236097e.htm" />
+  <HelpKINode Title="ISelector(Of G, F) interface">
+    <HelpKINode Title="ISelector(G, F) Interface" Url="html/e289021f-da54-0bad-5407-35a2c7a02592.htm" />
+    <HelpKINode Title="about ISelector(Of G, F) interface" Url="html/e289021f-da54-0bad-5407-35a2c7a02592.htm" />
+    <HelpKINode Title="methods" Url="html/7827d2e3-cf88-c2d1-1b82-0395bffde960.htm" />
+    <HelpKINode Title="properties" Url="html/3412cace-da4c-60d0-4c80-b867e2ef6579.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISelector(Of G, F).Scaling property" Url="html/a1afeb09-b466-772b-f8bb-82949f478489.htm" />
+  <HelpKINode Title="ISelector&lt;G, F&gt; interface">
+    <HelpKINode Title="ISelector(G, F) Interface" Url="html/e289021f-da54-0bad-5407-35a2c7a02592.htm" />
+    <HelpKINode Title="about ISelector&lt;G, F&gt; interface" Url="html/e289021f-da54-0bad-5407-35a2c7a02592.htm" />
+    <HelpKINode Title="methods" Url="html/7827d2e3-cf88-c2d1-1b82-0395bffde960.htm" />
+    <HelpKINode Title="properties" Url="html/3412cace-da4c-60d0-4c80-b867e2ef6579.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISelector&lt;G, F&gt;.Scaling property" Url="html/a1afeb09-b466-772b-f8bb-82949f478489.htm" />
+  <HelpKINode Title="IsInteger method" Url="html/3b9949f0-2b02-ff65-f20f-38f180365295.htm" />
+  <HelpKINode Title="IsProbabilty method" Url="html/1f2d6bef-fb16-279c-9f74-1fbd3ff5a14e.htm" />
+  <HelpKINode Title="IStats(Of G, F) interface">
+    <HelpKINode Title="IStats(G, F) Interface" Url="html/b69bf5a6-967a-3b3b-09c1-85649488a391.htm" />
+    <HelpKINode Title="about IStats(Of G, F) interface" Url="html/b69bf5a6-967a-3b3b-09c1-85649488a391.htm" />
+    <HelpKINode Title="properties" Url="html/2d260e9c-5a65-3e3b-3ed2-3a03e0a55995.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IStats(Of G, F).BestFitness property" Url="html/42834928-f183-b04f-be6c-1803c998d0f4.htm" />
+  <HelpKINode Title="IStats(Of G, F).BestGenotype property" Url="html/732acdc7-55af-cfec-a35c-f5b857eaf98f.htm" />
+  <HelpKINode Title="IStats(Of G, F).BestIndividual property" Url="html/124433df-029f-ee54-f82e-9c499108311d.htm" />
+  <HelpKINode Title="IStats(Of G, F).BestIndividualGeneration property" Url="html/248e301f-8d9d-8cde-5ba3-6e058a82bdba.htm" />
+  <HelpKINode Title="IStats(Of G, F).BestWorld property" Url="html/904dda50-42be-212f-8f3e-22e8a706c3e9.htm" />
+  <HelpKINode Title="IStats&lt;G, F&gt; interface">
+    <HelpKINode Title="IStats(G, F) Interface" Url="html/b69bf5a6-967a-3b3b-09c1-85649488a391.htm" />
+    <HelpKINode Title="about IStats&lt;G, F&gt; interface" Url="html/b69bf5a6-967a-3b3b-09c1-85649488a391.htm" />
+    <HelpKINode Title="properties" Url="html/2d260e9c-5a65-3e3b-3ed2-3a03e0a55995.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IStats&lt;G, F&gt;.BestFitness property" Url="html/42834928-f183-b04f-be6c-1803c998d0f4.htm" />
+  <HelpKINode Title="IStats&lt;G, F&gt;.BestGenotype property" Url="html/732acdc7-55af-cfec-a35c-f5b857eaf98f.htm" />
+  <HelpKINode Title="IStats&lt;G, F&gt;.BestIndividual property" Url="html/124433df-029f-ee54-f82e-9c499108311d.htm" />
+  <HelpKINode Title="IStats&lt;G, F&gt;.BestIndividualGeneration property" Url="html/248e301f-8d9d-8cde-5ba3-6e058a82bdba.htm" />
+  <HelpKINode Title="IStats&lt;G, F&gt;.BestWorld property" Url="html/904dda50-42be-212f-8f3e-22e8a706c3e9.htm" />
+  <HelpKINode Title="IsValid property">
+    <HelpKINode Title="BitGene.IsValid Property " Url="html/98e65364-8332-7c3f-c3d6-73f0cd5bc32d.htm" />
+    <HelpKINode Title="EnumGene(T).IsValid Property " Url="html/c75c5ee8-6f55-0ed2-0d63-1f6ac0977d8d.htm" />
+    <HelpKINode Title="FloatGene.IsValid Property " Url="html/bd33cbd7-d4a7-df63-e685-7b2d05353e31.htm" />
+    <HelpKINode Title="IGene.IsValid Property " Url="html/6a11ecff-9d88-1f93-e8f4-8175f124b4c4.htm" />
+    <HelpKINode Title="IGenotype.IsValid Property " Url="html/daa9b607-0705-841a-d421-f8910cd5c62e.htm" />
+    <HelpKINode Title="ListGenotype(G).IsValid Property " Url="html/2a013745-b2ab-2750-6d79-b3c5b47176c4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Item property">
+    <HelpKINode Title="IListGenotype(G, R).Item Property " Url="html/1eb45478-5ca3-ecfe-1160-ed8e590b119e.htm" />
+    <HelpKINode Title="ListGenotype(G).Item Property " Url="html/08682074-7d25-906d-4a1c-c460e534e2bf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LinearRankScaling class">
+    <HelpKINode Title="LinearRankScaling Class" Url="html/bf99e773-271c-d3a9-f0d1-00a69b2400b0.htm" />
+    <HelpKINode Title="about LinearRankScaling class" Url="html/bf99e773-271c-d3a9-f0d1-00a69b2400b0.htm" />
+    <HelpKINode Title="constructor" Url="html/b9a916b8-cfa2-6449-cdd4-dc7596271bf9.htm" />
+    <HelpKINode Title="methods" Url="html/86741cfc-823a-33df-3275-166f298e646b.htm" />
+    <HelpKINode Title="properties" Url="html/8d278368-6692-8d92-c5c3-8d9651746bea.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LinearRankScaling.LinearRankScaling constructor" Url="html/b9a916b8-cfa2-6449-cdd4-dc7596271bf9.htm" />
+  <HelpKINode Title="LinearRankScaling.Scale method" Url="html/d7c47d9c-0e37-55b1-7e8e-669b3868c471.htm" />
+  <HelpKINode Title="LinearRankScaling.SelectionPresure property" Url="html/55cde94f-ddb7-187a-49e2-4f730e5c9953.htm" />
+  <HelpKINode Title="ListGenotype(Of G) class">
+    <HelpKINode Title="ListGenotype(G) Class" Url="html/1152d6d3-c8d2-b914-2ab9-aba800be4156.htm" />
+    <HelpKINode Title="about ListGenotype(Of G) class" Url="html/1152d6d3-c8d2-b914-2ab9-aba800be4156.htm" />
+    <HelpKINode Title="constructor" Url="html/e0f2ac22-d7fe-43af-b259-44f7d80316c9.htm" />
+    <HelpKINode Title="methods" Url="html/ba81137a-0f20-c513-a905-bcdb35b70669.htm" />
+    <HelpKINode Title="properties" Url="html/e4e00f87-9a95-7971-88ef-d2f5572adb8d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ListGenotype(Of G).Clone method" Url="html/cd8391e8-f585-3b70-be74-712d4f336071.htm" />
+  <HelpKINode Title="ListGenotype(Of G).Count property" Url="html/ee4a61ed-4642-d463-1f63-1aadba5156c6.htm" />
+  <HelpKINode Title="ListGenotype(Of G).GetEnumerator method" Url="html/df00de9b-e868-111f-d8ed-b47a97720d88.htm" />
+  <HelpKINode Title="ListGenotype(Of G).IsValid property" Url="html/2a013745-b2ab-2750-6d79-b3c5b47176c4.htm" />
+  <HelpKINode Title="ListGenotype(Of G).Item property" Url="html/08682074-7d25-906d-4a1c-c460e534e2bf.htm" />
+  <HelpKINode Title="ListGenotype(Of G).ListGenotype constructor" Url="html/e0f2ac22-d7fe-43af-b259-44f7d80316c9.htm" />
+  <HelpKINode Title="ListGenotype(Of G).Replace method" Url="html/f70c3694-167b-09c4-c27c-cbe6c0d07bcd.htm" />
+  <HelpKINode Title="ListGenotype(Of G).Swap method" Url="html/c49827d8-34ab-defc-902b-167bc9b744a9.htm" />
+  <HelpKINode Title="ListGenotype(Of G).ToString method" Url="html/f148bf81-c49a-d518-8635-d1b816cb1a7f.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt; class">
+    <HelpKINode Title="ListGenotype(G) Class" Url="html/1152d6d3-c8d2-b914-2ab9-aba800be4156.htm" />
+    <HelpKINode Title="about ListGenotype&lt;G&gt; class" Url="html/1152d6d3-c8d2-b914-2ab9-aba800be4156.htm" />
+    <HelpKINode Title="constructor" Url="html/e0f2ac22-d7fe-43af-b259-44f7d80316c9.htm" />
+    <HelpKINode Title="methods" Url="html/ba81137a-0f20-c513-a905-bcdb35b70669.htm" />
+    <HelpKINode Title="properties" Url="html/e4e00f87-9a95-7971-88ef-d2f5572adb8d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ListGenotype&lt;G&gt;.Clone method" Url="html/cd8391e8-f585-3b70-be74-712d4f336071.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.Count property" Url="html/ee4a61ed-4642-d463-1f63-1aadba5156c6.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.GetEnumerator method" Url="html/df00de9b-e868-111f-d8ed-b47a97720d88.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.IsValid property" Url="html/2a013745-b2ab-2750-6d79-b3c5b47176c4.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.Item property" Url="html/08682074-7d25-906d-4a1c-c460e534e2bf.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.ListGenotype constructor" Url="html/e0f2ac22-d7fe-43af-b259-44f7d80316c9.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.Replace method" Url="html/f70c3694-167b-09c4-c27c-cbe6c0d07bcd.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.Swap method" Url="html/c49827d8-34ab-defc-902b-167bc9b744a9.htm" />
+  <HelpKINode Title="ListGenotype&lt;G&gt;.ToString method" Url="html/f148bf81-c49a-d518-8635-d1b816cb1a7f.htm" />
+  <HelpKINode Title="ListSize property" Url="html/ac0a0148-550a-d5d0-b554-c3959430e5e9.htm" />
+  <HelpKINode Title="MathHelper class">
+    <HelpKINode Title="MathHelper Class" Url="html/bbce1819-ea5a-d666-8610-6d14b944b981.htm" />
+    <HelpKINode Title="about MathHelper class" Url="html/bbce1819-ea5a-d666-8610-6d14b944b981.htm" />
+    <HelpKINode Title="methods" Url="html/0e048b08-08e0-fcfc-0ddc-17ededee60e3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MathHelper.Clamp(Of T) method" Url="html/cfb85f70-5aa0-4ec1-1d0f-de6076fd0ebb.htm" />
+  <HelpKINode Title="MathHelper.Clamp&lt;T&gt; method" Url="html/cfb85f70-5aa0-4ec1-1d0f-de6076fd0ebb.htm" />
+  <HelpKINode Title="MathHelper.IsInteger method" Url="html/3b9949f0-2b02-ff65-f20f-38f180365295.htm" />
+  <HelpKINode Title="MathHelper.IsProbabilty method" Url="html/1f2d6bef-fb16-279c-9f74-1fbd3ff5a14e.htm" />
+  <HelpKINode Title="MaxValue property" Url="html/6bf2eee7-cfe3-4344-6af9-9876ff530216.htm" />
+  <HelpKINode Title="MinimumBoundedGene method" Url="html/d5c5c48f-b5ab-a522-3730-ee9d393b6ad5.htm" />
+  <HelpKINode Title="MinimumGenesRequired property" Url="html/cd85fa2e-1b8f-b0f4-0a86-93b65e7c8a1c.htm" />
+  <HelpKINode Title="MinValue property" Url="html/cea8f826-0237-ddf0-7b0c-219c5d20b69a.htm" />
+  <HelpKINode Title="MockRandomSource class">
+    <HelpKINode Title="MockRandomSource Class" Url="html/479e7d5d-3d7e-be72-9cc1-7f1df11d466e.htm" />
+    <HelpKINode Title="about MockRandomSource class" Url="html/479e7d5d-3d7e-be72-9cc1-7f1df11d466e.htm" />
+    <HelpKINode Title="constructor" Url="html/ea94b12a-7445-95e3-bf7f-9839a7a33bf1.htm" />
+    <HelpKINode Title="methods" Url="html/0062059f-e2ac-d64a-257a-45989fecc5ff.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MockRandomSource.MockRandomSource constructor" Url="html/ea94b12a-7445-95e3-bf7f-9839a7a33bf1.htm" />
+  <HelpKINode Title="MockRandomSource.NextDouble method" Url="html/3cac86e7-71e1-3ce5-246e-32e324a7a695.htm" />
+  <HelpKINode Title="MockRandomSource.NextInt method" Url="html/859b17e3-2a8c-50dd-aa58-32e866f412ff.htm" />
+  <HelpKINode Title="MoveNext method" Url="html/5eb17c1d-0e9e-dbbc-6e18-cd3eb16a8bc3.htm" />
+  <HelpKINode Title="Multiply method">
+    <HelpKINode Title="BitGene.Multiply Method " Url="html/93463731-900d-a3de-5dd1-b15fa06f7608.htm" />
+    <HelpKINode Title="FloatGene.Multiply Method " Url="html/5499f686-094c-07bc-9017-02350613cd36.htm" />
+    <HelpKINode Title="INumericGene(G, T).Multiply Method " Url="html/2b350edb-3b13-f6ea-81c2-7956f8c45f86.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MultipointCrossover(Of G, R, F) class">
+    <HelpKINode Title="MultipointCrossover(G, R, F) Class" Url="html/20f176a1-eda0-65f5-ada1-2889364b299e.htm" />
+    <HelpKINode Title="about MultipointCrossover(Of G, R, F) class" Url="html/20f176a1-eda0-65f5-ada1-2889364b299e.htm" />
+    <HelpKINode Title="constructor" Url="html/cd2cea60-5b4d-7cec-4f59-67a8e8c03a4f.htm" />
+    <HelpKINode Title="methods" Url="html/4f65b275-7b3b-d283-6cb6-e41e86f37df1.htm" />
+    <HelpKINode Title="properties" Url="html/67a83f4f-19f2-d2b4-d30d-f75bf087c36d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MultipointCrossover(Of G, R, F).GetOffspring method" Url="html/30a941fc-05d4-780f-87d2-734b2fd239d1.htm" />
+  <HelpKINode Title="MultipointCrossover(Of G, R, F).MultipointCrossover constructor" Url="html/cd2cea60-5b4d-7cec-4f59-67a8e8c03a4f.htm" />
+  <HelpKINode Title="MultipointCrossover(Of G, R, F).Points property" Url="html/faa41178-7355-e0e5-a985-8997241da783.htm" />
+  <HelpKINode Title="MultipointCrossover&lt;G, R, F&gt; class">
+    <HelpKINode Title="MultipointCrossover(G, R, F) Class" Url="html/20f176a1-eda0-65f5-ada1-2889364b299e.htm" />
+    <HelpKINode Title="about MultipointCrossover&lt;G, R, F&gt; class" Url="html/20f176a1-eda0-65f5-ada1-2889364b299e.htm" />
+    <HelpKINode Title="constructor" Url="html/cd2cea60-5b4d-7cec-4f59-67a8e8c03a4f.htm" />
+    <HelpKINode Title="methods" Url="html/4f65b275-7b3b-d283-6cb6-e41e86f37df1.htm" />
+    <HelpKINode Title="properties" Url="html/67a83f4f-19f2-d2b4-d30d-f75bf087c36d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MultipointCrossover&lt;G, R, F&gt;.GetOffspring method" Url="html/30a941fc-05d4-780f-87d2-734b2fd239d1.htm" />
+  <HelpKINode Title="MultipointCrossover&lt;G, R, F&gt;.MultipointCrossover constructor" Url="html/cd2cea60-5b4d-7cec-4f59-67a8e8c03a4f.htm" />
+  <HelpKINode Title="MultipointCrossover&lt;G, R, F&gt;.Points property" Url="html/faa41178-7355-e0e5-a985-8997241da783.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor(Of G, F) class">
+    <HelpKINode Title="MultithreadedCachedExecutor(G, F) Class" Url="html/924e633d-b30d-1ea7-e770-96ba720c56c1.htm" />
+    <HelpKINode Title="about MultithreadedCachedExecutor(Of G, F) class" Url="html/924e633d-b30d-1ea7-e770-96ba720c56c1.htm" />
+    <HelpKINode Title="constructor" Url="html/8147dd7f-f7ce-3678-3d37-dc48d8915492.htm" />
+    <HelpKINode Title="methods" Url="html/d6db21bc-5b8d-f4f0-3a4a-b373d77f9e4b.htm" />
+    <HelpKINode Title="properties" Url="html/9b9540a6-e0d4-d536-a090-29cd42df1777.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MultithreadedCachedExecutor(Of G, F).AddToQueue method" Url="html/d15a4f48-f436-0f28-a93d-ecf497ba6179.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor(Of G, F).AddToQueueAndWait method" Url="html/b67c9801-4709-6d80-a5e3-c7339aa73c8a.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor(Of G, F).FitnessFunction property" Url="html/17dac2ba-3602-c5e7-a0a9-abb4e6e9f65b.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor(Of G, F).MultithreadedCachedExecutor constructor" Url="html/8147dd7f-f7ce-3678-3d37-dc48d8915492.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor(Of G, F).UpdateFitness method" Url="html/0c8e8d42-2869-cede-305a-afe93746cb60.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor(Of G, F).UseMultithreading property" Url="html/e1d3288c-491f-198e-ef4e-036076a182e6.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor&lt;G, F&gt; class">
+    <HelpKINode Title="MultithreadedCachedExecutor(G, F) Class" Url="html/924e633d-b30d-1ea7-e770-96ba720c56c1.htm" />
+    <HelpKINode Title="about MultithreadedCachedExecutor&lt;G, F&gt; class" Url="html/924e633d-b30d-1ea7-e770-96ba720c56c1.htm" />
+    <HelpKINode Title="constructor" Url="html/8147dd7f-f7ce-3678-3d37-dc48d8915492.htm" />
+    <HelpKINode Title="methods" Url="html/d6db21bc-5b8d-f4f0-3a4a-b373d77f9e4b.htm" />
+    <HelpKINode Title="properties" Url="html/9b9540a6-e0d4-d536-a090-29cd42df1777.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MultithreadedCachedExecutor&lt;G, F&gt;.AddToQueue method" Url="html/d15a4f48-f436-0f28-a93d-ecf497ba6179.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor&lt;G, F&gt;.AddToQueueAndWait method" Url="html/b67c9801-4709-6d80-a5e3-c7339aa73c8a.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor&lt;G, F&gt;.FitnessFunction property" Url="html/17dac2ba-3602-c5e7-a0a9-abb4e6e9f65b.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor&lt;G, F&gt;.MultithreadedCachedExecutor constructor" Url="html/8147dd7f-f7ce-3678-3d37-dc48d8915492.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor&lt;G, F&gt;.UpdateFitness method" Url="html/0c8e8d42-2869-cede-305a-afe93746cb60.htm" />
+  <HelpKINode Title="MultithreadedCachedExecutor&lt;G, F&gt;.UseMultithreading property" Url="html/e1d3288c-491f-198e-ef4e-036076a182e6.htm" />
+  <HelpKINode Title="Mutate method">
+    <HelpKINode Title="BitMutator(G, F).Mutate Method " Url="html/e52fbf79-b0c7-dbd0-3732-982e656074e9.htm" />
+    <HelpKINode Title="GaussianMutator(G, F).Mutate Method " Url="html/c41d2e0c-425a-df26-0cd6-2b33eafee4e6.htm" />
+    <HelpKINode Title="Mutator(G, R, F).Mutate Method " Url="html/e8ca6390-ebc4-f1aa-f782-d201b0a2c643.htm" />
+    <HelpKINode Title="MutatorByDelegate(G, R, F).Mutate Method " Url="html/cce79454-16cb-072b-9923-724979f37ad5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MutateDelegate property" Url="html/e444656e-094e-42c9-9a92-116b2de55601.htm" />
+  <HelpKINode Title="Mutator(Of G, R, F) class">
+    <HelpKINode Title="Mutator(G, R, F) Class" Url="html/99c165ab-2d07-13c0-1ee8-3577da24918f.htm" />
+    <HelpKINode Title="about Mutator(Of G, R, F) class" Url="html/99c165ab-2d07-13c0-1ee8-3577da24918f.htm" />
+    <HelpKINode Title="constructor" Url="html/ec4542e4-fa9f-1791-fb31-b5055c27da87.htm" />
+    <HelpKINode Title="methods" Url="html/84987044-3c15-239d-447f-a0e7f9c7896a.htm" />
+    <HelpKINode Title="properties" Url="html/d47669a7-830a-9059-213e-57ec6cb83b2c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Mutator(Of G, R, F).Apply method" Url="html/2d6f5ff7-adcc-3d3b-7137-209e6472c0f6.htm" />
+  <HelpKINode Title="Mutator(Of G, R, F).Mutate method" Url="html/e8ca6390-ebc4-f1aa-f782-d201b0a2c643.htm" />
+  <HelpKINode Title="Mutator(Of G, R, F).Mutator constructor" Url="html/ec4542e4-fa9f-1791-fb31-b5055c27da87.htm" />
+  <HelpKINode Title="Mutator(Of G, R, F).Probability property" Url="html/2b1dfd1f-d35b-4ed3-81da-b27aaa0a4ca5.htm" />
+  <HelpKINode Title="Mutator&lt;G, R, F&gt; class">
+    <HelpKINode Title="Mutator(G, R, F) Class" Url="html/99c165ab-2d07-13c0-1ee8-3577da24918f.htm" />
+    <HelpKINode Title="about Mutator&lt;G, R, F&gt; class" Url="html/99c165ab-2d07-13c0-1ee8-3577da24918f.htm" />
+    <HelpKINode Title="constructor" Url="html/ec4542e4-fa9f-1791-fb31-b5055c27da87.htm" />
+    <HelpKINode Title="methods" Url="html/84987044-3c15-239d-447f-a0e7f9c7896a.htm" />
+    <HelpKINode Title="properties" Url="html/d47669a7-830a-9059-213e-57ec6cb83b2c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Mutator&lt;G, R, F&gt;.Apply method" Url="html/2d6f5ff7-adcc-3d3b-7137-209e6472c0f6.htm" />
+  <HelpKINode Title="Mutator&lt;G, R, F&gt;.Mutate method" Url="html/e8ca6390-ebc4-f1aa-f782-d201b0a2c643.htm" />
+  <HelpKINode Title="Mutator&lt;G, R, F&gt;.Mutator constructor" Url="html/ec4542e4-fa9f-1791-fb31-b5055c27da87.htm" />
+  <HelpKINode Title="Mutator&lt;G, R, F&gt;.Probability property" Url="html/2b1dfd1f-d35b-4ed3-81da-b27aaa0a4ca5.htm" />
+  <HelpKINode Title="MutatorByDelegate(Of G, R, F) class">
+    <HelpKINode Title="MutatorByDelegate(G, R, F) Class" Url="html/833d228f-c223-dfb5-ca81-bad24a6a4b65.htm" />
+    <HelpKINode Title="about MutatorByDelegate(Of G, R, F) class" Url="html/833d228f-c223-dfb5-ca81-bad24a6a4b65.htm" />
+    <HelpKINode Title="constructor" Url="html/1fbd44bf-55b4-fd27-b06d-9e152ea5cf19.htm" />
+    <HelpKINode Title="methods" Url="html/25d9f449-3297-fa9b-3b59-4d60b5724d57.htm" />
+    <HelpKINode Title="properties" Url="html/63787f5f-c5ea-e037-39a8-d572ab088cfe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MutatorByDelegate(Of G, R, F).Mutate method" Url="html/cce79454-16cb-072b-9923-724979f37ad5.htm" />
+  <HelpKINode Title="MutatorByDelegate(Of G, R, F).MutateDelegate property" Url="html/e444656e-094e-42c9-9a92-116b2de55601.htm" />
+  <HelpKINode Title="MutatorByDelegate(Of G, R, F).MutateGeneDelegate delegate" Url="html/d0f7faa3-90da-8a0f-7726-dee32ea773ae.htm" />
+  <HelpKINode Title="MutatorByDelegate(Of G, R, F).MutatorByDelegate constructor" Url="html/1fbd44bf-55b4-fd27-b06d-9e152ea5cf19.htm" />
+  <HelpKINode Title="MutatorByDelegate&lt;G, R, F&gt; class">
+    <HelpKINode Title="MutatorByDelegate(G, R, F) Class" Url="html/833d228f-c223-dfb5-ca81-bad24a6a4b65.htm" />
+    <HelpKINode Title="about MutatorByDelegate&lt;G, R, F&gt; class" Url="html/833d228f-c223-dfb5-ca81-bad24a6a4b65.htm" />
+    <HelpKINode Title="constructor" Url="html/1fbd44bf-55b4-fd27-b06d-9e152ea5cf19.htm" />
+    <HelpKINode Title="methods" Url="html/25d9f449-3297-fa9b-3b59-4d60b5724d57.htm" />
+    <HelpKINode Title="properties" Url="html/63787f5f-c5ea-e037-39a8-d572ab088cfe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MutatorByDelegate&lt;G, R, F&gt;.Mutate method" Url="html/cce79454-16cb-072b-9923-724979f37ad5.htm" />
+  <HelpKINode Title="MutatorByDelegate&lt;G, R, F&gt;.MutateDelegate property" Url="html/e444656e-094e-42c9-9a92-116b2de55601.htm" />
+  <HelpKINode Title="MutatorByDelegate&lt;G, R, F&gt;.MutateGeneDelegate delegate" Url="html/d0f7faa3-90da-8a0f-7726-dee32ea773ae.htm" />
+  <HelpKINode Title="MutatorByDelegate&lt;G, R, F&gt;.MutatorByDelegate constructor" Url="html/1fbd44bf-55b4-fd27-b06d-9e152ea5cf19.htm" />
+  <HelpKINode Title="NextBoundedGaussian method">
+    <HelpKINode Title="IRandomGenerator.NextBoundedGaussian Method " Url="html/6a81f632-5c66-163a-6a67-abc42a6b6d82.htm" />
+    <HelpKINode Title="RandomGenerator.NextBoundedGaussian Method " Url="html/87450df6-875d-9de7-3a0f-44963211a650.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NextDouble method">
+    <HelpKINode Title="IRandomGenerator.NextDouble Method " Url="html/ea3c3564-534c-a7af-4696-a9eebba9db1a.htm" />
+    <HelpKINode Title="IRandomSource.NextDouble Method " Url="html/c3805468-6d65-37f7-1551-455a4eae98cd.htm" />
+    <HelpKINode Title="MockRandomSource.NextDouble Method " Url="html/3cac86e7-71e1-3ce5-246e-32e324a7a695.htm" />
+    <HelpKINode Title="RandomGenerator.NextDouble Method " Url="html/241f200a-d71b-94d3-67fd-93007bdcc401.htm" />
+    <HelpKINode Title="SystemRandomSource.NextDouble Method " Url="html/3f6580fd-8aac-80f6-b782-020e920cf4fe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NextGaussian method">
+    <HelpKINode Title="IRandomGenerator.NextGaussian Method " Url="html/f1df34a9-86a8-de9b-3e03-c77f3bd7650a.htm" />
+    <HelpKINode Title="RandomGenerator.NextGaussian Method " Url="html/96ffa31a-1230-6ec3-b0c4-89139e643fa9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NextGeneration method" Url="html/ac1c3cc4-aa2a-946a-6528-950f8ccd14a6.htm" />
+  <HelpKINode Title="NextInt method">
+    <HelpKINode Title="IRandomGenerator.NextInt Method " Url="html/7b6c3f36-ff9d-2da9-47ee-541f73303b30.htm" />
+    <HelpKINode Title="IRandomSource.NextInt Method " Url="html/e8ccf6f8-7c38-151b-1654-fc76936a3275.htm" />
+    <HelpKINode Title="MockRandomSource.NextInt Method " Url="html/859b17e3-2a8c-50dd-aa58-32e866f412ff.htm" />
+    <HelpKINode Title="RandomGenerator.NextInt Method " Url="html/c68932c0-c219-b3d6-a71f-e222c28cab19.htm" />
+    <HelpKINode Title="SystemRandomSource.NextInt Method " Url="html/70edd8e4-45fb-1790-35a7-0073bae26472.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Not(Of G, F) method" Url="html/cc2229d4-47eb-8acf-af08-8c4cf53555d6.htm" />
+  <HelpKINode Title="Not&lt;G, F&gt; method" Url="html/cc2229d4-47eb-8acf-af08-8c4cf53555d6.htm" />
+  <HelpKINode Title="NumberOfChildsGenerated property" Url="html/d8cfbc79-c380-bcfb-ccd9-ea344f202ff7.htm" />
+  <HelpKINode Title="NumberOfParents property" Url="html/8c86fa1e-f34a-23f8-77f5-379f2ccc9852.htm" />
+  <HelpKINode Title="NumberOfParentsNeeded property" Url="html/febf48c7-1a51-2847-67b1-b4e6da1f43c3.htm" />
+  <HelpKINode Title="NumberOfRecombinations property" Url="html/4a715faf-8c15-0870-d6f6-09202902745c.htm" />
+  <HelpKINode Title="NumberOfSelected property" Url="html/1112932f-18d5-a3ae-dbc1-8b2095b4dc33.htm" />
+  <HelpKINode Title="Or(Of G, F) method" Url="html/b2dae182-990b-ae89-9deb-50aa71e34c13.htm" />
+  <HelpKINode Title="Or&lt;G, F&gt; method" Url="html/b2dae182-990b-ae89-9deb-50aa71e34c13.htm" />
+  <HelpKINode Title="ParallelResult(Of I, O) class">
+    <HelpKINode Title="ParallelResult(I, O) Class" Url="html/86418fef-dcb8-b07b-d988-7ec4a507709e.htm" />
+    <HelpKINode Title="about ParallelResult(Of I, O) class" Url="html/86418fef-dcb8-b07b-d988-7ec4a507709e.htm" />
+    <HelpKINode Title="constructor" Url="html/ae6a31f1-b6a0-ff61-ef4c-ea7b272001c8.htm" />
+    <HelpKINode Title="methods" Url="html/6763d6af-2f16-2298-f480-6d892b9cba38.htm" />
+    <HelpKINode Title="properties" Url="html/9e6855f9-965f-7c0b-7898-0a400da0ca52.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ParallelResult(Of I, O).Input property" Url="html/5b8b9576-a35a-7a68-e103-c6f201adb017.htm" />
+  <HelpKINode Title="ParallelResult(Of I, O).ParallelResult constructor" Url="html/ae6a31f1-b6a0-ff61-ef4c-ea7b272001c8.htm" />
+  <HelpKINode Title="ParallelResult(Of I, O).Run method" Url="html/60d34faf-d0e9-4a29-1dd9-7e835818fda6.htm" />
+  <HelpKINode Title="ParallelResult(Of I, O).Task property" Url="html/d5dcbf58-a87e-61ef-36c8-d8d0b09a8e0a.htm" />
+  <HelpKINode Title="ParallelResult&lt;I, O&gt; class">
+    <HelpKINode Title="ParallelResult(I, O) Class" Url="html/86418fef-dcb8-b07b-d988-7ec4a507709e.htm" />
+    <HelpKINode Title="about ParallelResult&lt;I, O&gt; class" Url="html/86418fef-dcb8-b07b-d988-7ec4a507709e.htm" />
+    <HelpKINode Title="constructor" Url="html/ae6a31f1-b6a0-ff61-ef4c-ea7b272001c8.htm" />
+    <HelpKINode Title="methods" Url="html/6763d6af-2f16-2298-f480-6d892b9cba38.htm" />
+    <HelpKINode Title="properties" Url="html/9e6855f9-965f-7c0b-7898-0a400da0ca52.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ParallelResult&lt;I, O&gt;.Input property" Url="html/5b8b9576-a35a-7a68-e103-c6f201adb017.htm" />
+  <HelpKINode Title="ParallelResult&lt;I, O&gt;.ParallelResult constructor" Url="html/ae6a31f1-b6a0-ff61-ef4c-ea7b272001c8.htm" />
+  <HelpKINode Title="ParallelResult&lt;I, O&gt;.Run method" Url="html/60d34faf-d0e9-4a29-1dd9-7e835818fda6.htm" />
+  <HelpKINode Title="ParallelResult&lt;I, O&gt;.Task property" Url="html/d5dcbf58-a87e-61ef-36c8-d8d0b09a8e0a.htm" />
+  <HelpKINode Title="ParentMultithreadedCachedExecutor property" Url="html/d6a7b261-a694-4003-a87c-71dbcbf30a80.htm" />
+  <HelpKINode Title="PartiallyMatchedCrossover(Of G, R, F) class">
+    <HelpKINode Title="PartiallyMatchedCrossover(G, R, F) Class" Url="html/c70e0865-cf58-b73c-3488-71a9afb426c5.htm" />
+    <HelpKINode Title="about PartiallyMatchedCrossover(Of G, R, F) class" Url="html/c70e0865-cf58-b73c-3488-71a9afb426c5.htm" />
+    <HelpKINode Title="constructor" Url="html/743e6deb-fa09-38f7-703a-693498192fea.htm" />
+    <HelpKINode Title="methods" Url="html/c76d5ced-e995-878f-ea82-ffcb6aec745e.htm" />
+    <HelpKINode Title="properties" Url="html/91082e31-0874-724f-3cd0-b3f6402b4fb3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PartiallyMatchedCrossover(Of G, R, F).GetOffspring method" Url="html/bd794e96-a117-43ad-7685-7f791f475b7e.htm" />
+  <HelpKINode Title="PartiallyMatchedCrossover(Of G, R, F).PartiallyMatchedCrossover constructor" Url="html/743e6deb-fa09-38f7-703a-693498192fea.htm" />
+  <HelpKINode Title="PartiallyMatchedCrossover&lt;G, R, F&gt; class">
+    <HelpKINode Title="PartiallyMatchedCrossover(G, R, F) Class" Url="html/c70e0865-cf58-b73c-3488-71a9afb426c5.htm" />
+    <HelpKINode Title="about PartiallyMatchedCrossover&lt;G, R, F&gt; class" Url="html/c70e0865-cf58-b73c-3488-71a9afb426c5.htm" />
+    <HelpKINode Title="constructor" Url="html/743e6deb-fa09-38f7-703a-693498192fea.htm" />
+    <HelpKINode Title="methods" Url="html/c76d5ced-e995-878f-ea82-ffcb6aec745e.htm" />
+    <HelpKINode Title="properties" Url="html/91082e31-0874-724f-3cd0-b3f6402b4fb3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PartiallyMatchedCrossover&lt;G, R, F&gt;.GetOffspring method" Url="html/bd794e96-a117-43ad-7685-7f791f475b7e.htm" />
+  <HelpKINode Title="PartiallyMatchedCrossover&lt;G, R, F&gt;.PartiallyMatchedCrossover constructor" Url="html/743e6deb-fa09-38f7-703a-693498192fea.htm" />
+  <HelpKINode Title="Points property" Url="html/faa41178-7355-e0e5-a985-8997241da783.htm" />
+  <HelpKINode Title="Population property" Url="html/1bc5e2ae-6019-05e6-8fad-e6eb159ffb77.htm" />
+  <HelpKINode Title="PopulationNumber property" Url="html/e99186c5-6c9c-5fe5-126f-b1f38a842d48.htm" />
+  <HelpKINode Title="PopulationSize property" Url="html/239647f7-8ac3-ee97-24e4-c5e21d3d76fd.htm" />
+  <HelpKINode Title="Probability enumeration member" Url="html/61555f75-ac35-64c2-e3cd-d6adbd608226.htm" />
+  <HelpKINode Title="Probability property">
+    <HelpKINode Title="Mutator(G, R, F).Probability Property " Url="html/2b1dfd1f-d35b-4ed3-81da-b27aaa0a4ca5.htm" />
+    <HelpKINode Title="ReverseAlterer(G, R, F).Probability Property " Url="html/7058b02c-2f57-541b-94cc-833bbeedc3f3.htm" />
+    <HelpKINode Title="SwapAlterer(G, R, F).Probability Property " Url="html/23c6f21b-b05d-9606-fa74-9b355c09f361.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RandomChooser class">
+    <HelpKINode Title="RandomChooser Class" Url="html/cb00cea9-74e6-a1a1-8ec7-4d48c2888e2b.htm" />
+    <HelpKINode Title="about RandomChooser class" Url="html/cb00cea9-74e6-a1a1-8ec7-4d48c2888e2b.htm" />
+    <HelpKINode Title="methods" Url="html/0716d895-e5e2-2ac9-2d50-94296bb638ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RandomChooser.RandomSort(Of T) method" Url="html/cdd9797a-af73-3004-b6f9-c0e54475f2e7.htm" />
+  <HelpKINode Title="RandomChooser.RandomSort&lt;T&gt; method" Url="html/cdd9797a-af73-3004-b6f9-c0e54475f2e7.htm" />
+  <HelpKINode Title="RandomChooser.RandomTake(Of T) method" Url="html/8daef7ef-8cc4-1a5f-4087-2316936de5c9.htm" />
+  <HelpKINode Title="RandomChooser.RandomTake&lt;T&gt; method" Url="html/8daef7ef-8cc4-1a5f-4087-2316936de5c9.htm" />
+  <HelpKINode Title="RandomChooser.ToRandomEnumerable(Of T) method" Url="html/e014653a-03ed-8cf8-a257-23daa7bac494.htm" />
+  <HelpKINode Title="RandomChooser.ToRandomEnumerable&lt;T&gt; method" Url="html/e014653a-03ed-8cf8-a257-23daa7bac494.htm" />
+  <HelpKINode Title="RandomGenerator class">
+    <HelpKINode Title="RandomGenerator Class" Url="html/0a7f0aa3-9689-dee5-3781-57ec96d060c4.htm" />
+    <HelpKINode Title="about RandomGenerator class" Url="html/0a7f0aa3-9689-dee5-3781-57ec96d060c4.htm" />
+    <HelpKINode Title="methods" Url="html/224f354f-c2b6-6330-0a60-2917ba24fdb8.htm" />
+    <HelpKINode Title="properties" Url="html/5d24a6d4-eb01-167d-836c-08984a3f85ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RandomGenerator.DoubleSequence method" Url="html/6cfa2425-0607-b79c-4d07-5193514ff9e8.htm" />
+  <HelpKINode Title="RandomGenerator.GetInstance method" Url="html/bc9c223a-e4b5-7fe2-e389-710ae0380b37.htm" />
+  <HelpKINode Title="RandomGenerator.IntSequence method" Url="html/416358a2-a384-15d0-149a-7a798e6bbf5c.htm" />
+  <HelpKINode Title="RandomGenerator.NextBoundedGaussian method" Url="html/87450df6-875d-9de7-3a0f-44963211a650.htm" />
+  <HelpKINode Title="RandomGenerator.NextDouble method" Url="html/241f200a-d71b-94d3-67fd-93007bdcc401.htm" />
+  <HelpKINode Title="RandomGenerator.NextGaussian method" Url="html/96ffa31a-1230-6ec3-b0c4-89139e643fa9.htm" />
+  <HelpKINode Title="RandomGenerator.NextInt method" Url="html/c68932c0-c219-b3d6-a71f-e222c28cab19.htm" />
+  <HelpKINode Title="RandomGenerator.RandomSource property" Url="html/919bbb94-fa23-98a7-013b-45b3f947c4ee.htm" />
+  <HelpKINode Title="RandomSort(Of T) method" Url="html/cdd9797a-af73-3004-b6f9-c0e54475f2e7.htm" />
+  <HelpKINode Title="RandomSort&lt;T&gt; method" Url="html/cdd9797a-af73-3004-b6f9-c0e54475f2e7.htm" />
+  <HelpKINode Title="RandomSource property" Url="html/919bbb94-fa23-98a7-013b-45b3f947c4ee.htm" />
+  <HelpKINode Title="RandomTake(Of T) method" Url="html/8daef7ef-8cc4-1a5f-4087-2316936de5c9.htm" />
+  <HelpKINode Title="RandomTake&lt;T&gt; method" Url="html/8daef7ef-8cc4-1a5f-4087-2316936de5c9.htm" />
+  <HelpKINode Title="RangeBreeder method" Url="html/8d934fdf-97eb-e953-3cf5-394b2cdd9b90.htm" />
+  <HelpKINode Title="RecombinationType property" Url="html/674c6ff9-e0f0-93d6-b320-39f29c53ce03.htm" />
+  <HelpKINode Title="Recombinator(Of G, F) class">
+    <HelpKINode Title="Recombinator(G, F) Class" Url="html/a541bb07-a9c0-980e-c4b8-3bbc2cd7d3a3.htm" />
+    <HelpKINode Title="about Recombinator(Of G, F) class" Url="html/a541bb07-a9c0-980e-c4b8-3bbc2cd7d3a3.htm" />
+    <HelpKINode Title="constructor" Url="html/ac4f5954-20ed-3c35-a0ab-6e3dc25302fc.htm" />
+    <HelpKINode Title="methods" Url="html/c7fd6d2c-239d-3481-7229-94dc022b2131.htm" />
+    <HelpKINode Title="properties" Url="html/c57527af-284b-8c83-9a6e-1245eee4d8a0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Recombinator(Of G, F).Alterer property" Url="html/5c6c79d6-3b3a-47de-821e-776d3a3ea986.htm" />
+  <HelpKINode Title="Recombinator(Of G, F).Apply method" Url="html/2bea576b-56ea-2eeb-5705-04d3d316c90b.htm" />
+  <HelpKINode Title="Recombinator(Of G, F).FromCrossover(Of G2, R) method" Url="html/ea6407bc-c762-0450-eff0-9885121665b6.htm" />
+  <HelpKINode Title="Recombinator(Of G, F).NumberOfParents property" Url="html/8c86fa1e-f34a-23f8-77f5-379f2ccc9852.htm" />
+  <HelpKINode Title="Recombinator(Of G, F).NumberOfRecombinations property" Url="html/4a715faf-8c15-0870-d6f6-09202902745c.htm" />
+  <HelpKINode Title="Recombinator(Of G, F).RecombinationType property" Url="html/674c6ff9-e0f0-93d6-b320-39f29c53ce03.htm" />
+  <HelpKINode Title="Recombinator(Of G, F).RecombinatioNumberType enumeration" Url="html/61555f75-ac35-64c2-e3cd-d6adbd608226.htm" />
+  <HelpKINode Title="Recombinator(Of G, F).Recombinator constructor" Url="html/ac4f5954-20ed-3c35-a0ab-6e3dc25302fc.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt; class">
+    <HelpKINode Title="Recombinator(G, F) Class" Url="html/a541bb07-a9c0-980e-c4b8-3bbc2cd7d3a3.htm" />
+    <HelpKINode Title="about Recombinator&lt;G, F&gt; class" Url="html/a541bb07-a9c0-980e-c4b8-3bbc2cd7d3a3.htm" />
+    <HelpKINode Title="constructor" Url="html/ac4f5954-20ed-3c35-a0ab-6e3dc25302fc.htm" />
+    <HelpKINode Title="methods" Url="html/c7fd6d2c-239d-3481-7229-94dc022b2131.htm" />
+    <HelpKINode Title="properties" Url="html/c57527af-284b-8c83-9a6e-1245eee4d8a0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.Alterer property" Url="html/5c6c79d6-3b3a-47de-821e-776d3a3ea986.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.Apply method" Url="html/2bea576b-56ea-2eeb-5705-04d3d316c90b.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.FromCrossover&lt;G2, R&gt; method" Url="html/ea6407bc-c762-0450-eff0-9885121665b6.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.NumberOfParents property" Url="html/8c86fa1e-f34a-23f8-77f5-379f2ccc9852.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.NumberOfRecombinations property" Url="html/4a715faf-8c15-0870-d6f6-09202902745c.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.RecombinationType property" Url="html/674c6ff9-e0f0-93d6-b320-39f29c53ce03.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.RecombinatioNumberType enumeration" Url="html/61555f75-ac35-64c2-e3cd-d6adbd608226.htm" />
+  <HelpKINode Title="Recombinator&lt;G, F&gt;.Recombinator constructor" Url="html/ac4f5954-20ed-3c35-a0ab-6e3dc25302fc.htm" />
+  <HelpKINode Title="Register method" Url="html/66317f2f-b620-a9ca-7010-02ad821815d0.htm" />
+  <HelpKINode Title="RegisterBreeder method" Url="html/360498ae-ba5f-308f-5a78-5ef37d03bc0d.htm" />
+  <HelpKINode Title="Replace method">
+    <HelpKINode Title="IListGenotype(G, R).Replace Method " Url="html/3a3700c7-dd14-d365-a657-2477f90fb070.htm" />
+    <HelpKINode Title="ListGenotype(G).Replace Method " Url="html/f70c3694-167b-09c4-c27c-cbe6c0d07bcd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Reset method" Url="html/a178007e-5240-2324-ef7c-ff1303856b86.htm" />
+  <HelpKINode Title="ReverseAlterer(Of G, R, F) class">
+    <HelpKINode Title="ReverseAlterer(G, R, F) Class" Url="html/69d8b378-9b3a-db1f-50ad-f0112c576c85.htm" />
+    <HelpKINode Title="about ReverseAlterer(Of G, R, F) class" Url="html/69d8b378-9b3a-db1f-50ad-f0112c576c85.htm" />
+    <HelpKINode Title="constructor" Url="html/2ceeb98a-a32a-56f1-3dc9-94591069354f.htm" />
+    <HelpKINode Title="methods" Url="html/fca6a794-3370-d408-ae61-5a90db67a564.htm" />
+    <HelpKINode Title="properties" Url="html/69b3e284-07ba-caf4-cfa1-36e65ef42fdc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReverseAlterer(Of G, R, F).Apply method" Url="html/93ffa659-83d6-d402-646d-2f52ee83f54b.htm" />
+  <HelpKINode Title="ReverseAlterer(Of G, R, F).Probability property" Url="html/7058b02c-2f57-541b-94cc-833bbeedc3f3.htm" />
+  <HelpKINode Title="ReverseAlterer(Of G, R, F).ReverseAlterer constructor" Url="html/2ceeb98a-a32a-56f1-3dc9-94591069354f.htm" />
+  <HelpKINode Title="ReverseAlterer&lt;G, R, F&gt; class">
+    <HelpKINode Title="ReverseAlterer(G, R, F) Class" Url="html/69d8b378-9b3a-db1f-50ad-f0112c576c85.htm" />
+    <HelpKINode Title="about ReverseAlterer&lt;G, R, F&gt; class" Url="html/69d8b378-9b3a-db1f-50ad-f0112c576c85.htm" />
+    <HelpKINode Title="constructor" Url="html/2ceeb98a-a32a-56f1-3dc9-94591069354f.htm" />
+    <HelpKINode Title="methods" Url="html/fca6a794-3370-d408-ae61-5a90db67a564.htm" />
+    <HelpKINode Title="properties" Url="html/69b3e284-07ba-caf4-cfa1-36e65ef42fdc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReverseAlterer&lt;G, R, F&gt;.Apply method" Url="html/93ffa659-83d6-d402-646d-2f52ee83f54b.htm" />
+  <HelpKINode Title="ReverseAlterer&lt;G, R, F&gt;.Probability property" Url="html/7058b02c-2f57-541b-94cc-833bbeedc3f3.htm" />
+  <HelpKINode Title="ReverseAlterer&lt;G, R, F&gt;.ReverseAlterer constructor" Url="html/2ceeb98a-a32a-56f1-3dc9-94591069354f.htm" />
+  <HelpKINode Title="RouletteWheelSelector(Of G) class">
+    <HelpKINode Title="RouletteWheelSelector(G) Class" Url="html/55160e8f-6153-c2b6-1a0a-22377860007a.htm" />
+    <HelpKINode Title="about RouletteWheelSelector(Of G) class" Url="html/55160e8f-6153-c2b6-1a0a-22377860007a.htm" />
+    <HelpKINode Title="constructor" Url="html/115a9dcb-0e78-3f36-b169-e0bf4efa9d0d.htm" />
+    <HelpKINode Title="methods" Url="html/9b589067-47bb-55ab-7f9a-6c6e888c3dae.htm" />
+    <HelpKINode Title="properties" Url="html/08f4fd9c-1549-9c87-f63a-e7c30aa03728.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RouletteWheelSelector(Of G).RouletteWheelSelector constructor" Url="html/115a9dcb-0e78-3f36-b169-e0bf4efa9d0d.htm" />
+  <HelpKINode Title="RouletteWheelSelector(Of G).Scaling property" Url="html/42db271a-d21b-eeb9-e69c-006daba9c895.htm" />
+  <HelpKINode Title="RouletteWheelSelector(Of G).Select method" Url="html/44d69d2a-0943-0823-f728-7fa05d69c12b.htm" />
+  <HelpKINode Title="RouletteWheelSelector&lt;G&gt; class">
+    <HelpKINode Title="RouletteWheelSelector(G) Class" Url="html/55160e8f-6153-c2b6-1a0a-22377860007a.htm" />
+    <HelpKINode Title="about RouletteWheelSelector&lt;G&gt; class" Url="html/55160e8f-6153-c2b6-1a0a-22377860007a.htm" />
+    <HelpKINode Title="constructor" Url="html/115a9dcb-0e78-3f36-b169-e0bf4efa9d0d.htm" />
+    <HelpKINode Title="methods" Url="html/9b589067-47bb-55ab-7f9a-6c6e888c3dae.htm" />
+    <HelpKINode Title="properties" Url="html/08f4fd9c-1549-9c87-f63a-e7c30aa03728.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RouletteWheelSelector&lt;G&gt;.RouletteWheelSelector constructor" Url="html/115a9dcb-0e78-3f36-b169-e0bf4efa9d0d.htm" />
+  <HelpKINode Title="RouletteWheelSelector&lt;G&gt;.Scaling property" Url="html/42db271a-d21b-eeb9-e69c-006daba9c895.htm" />
+  <HelpKINode Title="RouletteWheelSelector&lt;G&gt;.Select method" Url="html/44d69d2a-0943-0823-f728-7fa05d69c12b.htm" />
+  <HelpKINode Title="Run method" Url="html/60d34faf-d0e9-4a29-1dd9-7e835818fda6.htm" />
+  <HelpKINode Title="SameLengthParentsNeeded property" Url="html/e9787a70-0911-f2cf-6fed-7561940b7eb9.htm" />
+  <HelpKINode Title="Scale method">
+    <HelpKINode Title="IFitnessScaling(F).Scale Method " Url="html/e1d3fab8-742e-a7eb-2311-6d29fc1f21e2.htm" />
+    <HelpKINode Title="LinearRankScaling.Scale Method " Url="html/d7c47d9c-0e37-55b1-7e8e-669b3868c471.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Scaling property">
+    <HelpKINode Title="BaseSelector(G, F).Scaling Property " Url="html/4fe4541d-8250-2086-d986-c87593c75b50.htm" />
+    <HelpKINode Title="ISelector(G, F).Scaling Property " Url="html/a1afeb09-b466-772b-f8bb-82949f478489.htm" />
+    <HelpKINode Title="RouletteWheelSelector(G).Scaling Property " Url="html/42db271a-d21b-eeb9-e69c-006daba9c895.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Score property" Url="html/0b1a808b-95fc-3826-2dcc-3a68420c76a0.htm" />
+  <HelpKINode Title="Select method">
+    <HelpKINode Title="BaseSelector(G, F).Select Method " Url="html/1dad2d3a-ad40-76d5-b3a6-0481b57412a1.htm" />
+    <HelpKINode Title="RouletteWheelSelector(G).Select Method " Url="html/44d69d2a-0943-0823-f728-7fa05d69c12b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SelectionPresure property" Url="html/55cde94f-ddb7-187a-49e2-4f730e5c9953.htm" />
+  <HelpKINode Title="Selectors property" Url="html/2de03c67-a722-ef1c-e4b5-a910644bb776.htm" />
+  <HelpKINode Title="ShouldStop method">
+    <HelpKINode Title="EasyGa(G, F).ShouldStop Method " Url="html/ac28ef12-a247-3c20-5632-321ef2080666.htm" />
+    <HelpKINode Title="IAlgorithm(G, F).ShouldStop Method " Url="html/6abe113b-a53f-58c4-e026-b24291c92e1e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SimpleLRUCache(Of K, V) class">
+    <HelpKINode Title="SimpleLRUCache(K, V) Class" Url="html/101cfad4-680d-980f-7849-bcd9c302d319.htm" />
+    <HelpKINode Title="about SimpleLRUCache(Of K, V) class" Url="html/101cfad4-680d-980f-7849-bcd9c302d319.htm" />
+    <HelpKINode Title="constructor" Url="html/f6d6b8ac-2d56-cc57-085b-df6ac8a66244.htm" />
+    <HelpKINode Title="methods" Url="html/0fd79efb-8f8f-f93f-37a3-ada1a311dc21.htm" />
+    <HelpKINode Title="properties" Url="html/1cc3d82c-5bd4-961c-1bfd-32bf4e915079.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SimpleLRUCache(Of K, V).Add method" Url="html/caa4dc26-9174-8cae-1d46-051cc017e6b7.htm" />
+  <HelpKINode Title="SimpleLRUCache(Of K, V).CacheSize property" Url="html/11352fbb-9046-785f-fbf6-0eb40e3d5a08.htm" />
+  <HelpKINode Title="SimpleLRUCache(Of K, V).SimpleLRUCache constructor" Url="html/f6d6b8ac-2d56-cc57-085b-df6ac8a66244.htm" />
+  <HelpKINode Title="SimpleLRUCache(Of K, V).TryGet method" Url="html/8ac1ffeb-f776-3eca-3e08-74e7f919c159.htm" />
+  <HelpKINode Title="SimpleLRUCache&lt;K, V&gt; class">
+    <HelpKINode Title="SimpleLRUCache(K, V) Class" Url="html/101cfad4-680d-980f-7849-bcd9c302d319.htm" />
+    <HelpKINode Title="about SimpleLRUCache&lt;K, V&gt; class" Url="html/101cfad4-680d-980f-7849-bcd9c302d319.htm" />
+    <HelpKINode Title="constructor" Url="html/f6d6b8ac-2d56-cc57-085b-df6ac8a66244.htm" />
+    <HelpKINode Title="methods" Url="html/0fd79efb-8f8f-f93f-37a3-ada1a311dc21.htm" />
+    <HelpKINode Title="properties" Url="html/1cc3d82c-5bd4-961c-1bfd-32bf4e915079.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SimpleLRUCache&lt;K, V&gt;.Add method" Url="html/caa4dc26-9174-8cae-1d46-051cc017e6b7.htm" />
+  <HelpKINode Title="SimpleLRUCache&lt;K, V&gt;.CacheSize property" Url="html/11352fbb-9046-785f-fbf6-0eb40e3d5a08.htm" />
+  <HelpKINode Title="SimpleLRUCache&lt;K, V&gt;.SimpleLRUCache constructor" Url="html/f6d6b8ac-2d56-cc57-085b-df6ac8a66244.htm" />
+  <HelpKINode Title="SimpleLRUCache&lt;K, V&gt;.TryGet method" Url="html/8ac1ffeb-f776-3eca-3e08-74e7f919c159.htm" />
+  <HelpKINode Title="Singular.Evolution namespace" Url="html/acedf244-963b-8088-a668-8d116860929d.htm" />
+  <HelpKINode Title="Singular.Evolution.Activator class" Url="html/28e4c604-1dd7-7679-440f-c990077d4c9b.htm" />
+  <HelpKINode Title="Singular.Evolution.Activator.ObjectActivator delegate" Url="html/d0f36d16-3c94-7660-d36d-ae3295d32a9d.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms namespace" Url="html/abe06fa4-bd7d-97b9-28d0-1b08952971eb.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.EasyGa(Of G, F) class" Url="html/29c1d5fc-2784-8fb5-0c46-438b59fd6a9c.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.EasyGa(Of G, F).Builder class" Url="html/9098310a-97ee-397b-6869-a7e55c0645f7.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.EasyGa&lt;G, F&gt; class" Url="html/29c1d5fc-2784-8fb5-0c46-438b59fd6a9c.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.EasyGa&lt;G, F&gt;.Builder class" Url="html/9098310a-97ee-397b-6869-a7e55c0645f7.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.FitnessFunctionDelegate(Of G, F) delegate" Url="html/4b88a454-39e8-e68a-5fc1-8872005ab6ad.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.FitnessFunctionDelegate&lt;G, F&gt; delegate" Url="html/4b88a454-39e8-e68a-5fc1-8872005ab6ad.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.IAlgorithm(Of G, F) interface" Url="html/380c8195-f6a4-2ccc-b3f9-d1d7cfbbba9e.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.IAlgorithm&lt;G, F&gt; interface" Url="html/380c8195-f6a4-2ccc-b3f9-d1d7cfbbba9e.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.IFitnessExecutor(Of G, F) interface" Url="html/2b161e85-97b6-d164-e1e5-d57c8be7c80f.htm" />
+  <HelpKINode Title="Singular.Evolution.Algorithms.IFitnessExecutor&lt;G, F&gt; interface" Url="html/2b161e85-97b6-d164-e1e5-d57c8be7c80f.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers namespace" Url="html/d83a42df-2b66-dfad-1be9-58a7420b0c0f.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.BitMutator(Of G, F) class" Url="html/739b5db5-dc16-a6d5-45a3-f909264234b5.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.BitMutator&lt;G, F&gt; class" Url="html/739b5db5-dc16-a6d5-45a3-f909264234b5.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.CrossoverBase(Of G, R, F) class" Url="html/4631d0db-76c4-44f3-f8c5-488af00fd0e4.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.CrossoverBase&lt;G, R, F&gt; class" Url="html/4631d0db-76c4-44f3-f8c5-488af00fd0e4.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.GaussianMutator(Of G, F) class" Url="html/5ec07f9f-63b8-d893-00a1-18dcfa1d7783.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.GaussianMutator&lt;G, F&gt; class" Url="html/5ec07f9f-63b8-d893-00a1-18dcfa1d7783.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.MultipointCrossover(Of G, R, F) class" Url="html/20f176a1-eda0-65f5-ada1-2889364b299e.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.MultipointCrossover&lt;G, R, F&gt; class" Url="html/20f176a1-eda0-65f5-ada1-2889364b299e.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.MutatorByDelegate(Of G, R, F) class" Url="html/833d228f-c223-dfb5-ca81-bad24a6a4b65.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.MutatorByDelegate(Of G, R, F).MutateGeneDelegate delegate" Url="html/d0f7faa3-90da-8a0f-7726-dee32ea773ae.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.MutatorByDelegate&lt;G, R, F&gt; class" Url="html/833d228f-c223-dfb5-ca81-bad24a6a4b65.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.MutatorByDelegate&lt;G, R, F&gt;.MutateGeneDelegate delegate" Url="html/d0f7faa3-90da-8a0f-7726-dee32ea773ae.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.PartiallyMatchedCrossover(Of G, R, F) class" Url="html/c70e0865-cf58-b73c-3488-71a9afb426c5.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.PartiallyMatchedCrossover&lt;G, R, F&gt; class" Url="html/c70e0865-cf58-b73c-3488-71a9afb426c5.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.ReverseAlterer(Of G, R, F) class" Url="html/69d8b378-9b3a-db1f-50ad-f0112c576c85.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.ReverseAlterer&lt;G, R, F&gt; class" Url="html/69d8b378-9b3a-db1f-50ad-f0112c576c85.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.SwapAlterer(Of G, R, F) class" Url="html/e8092949-e408-6869-9ec8-06739fc80992.htm" />
+  <HelpKINode Title="Singular.Evolution.Alterers.SwapAlterer&lt;G, R, F&gt; class" Url="html/e8092949-e408-6869-9ec8-06739fc80992.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders namespace" Url="html/ed999852-f424-569f-ca7a-ae7710cee658.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.BitBreeder class" Url="html/eb522aca-7fb4-ab1a-53f2-35e1a6243426.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.BreederGenerators class" Url="html/d366c4f3-688a-b0eb-d804-0094384e5905.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.GenotypeGeneratorBreeder(Of G) class" Url="html/f2bd7f96-c16d-6060-e8ff-a37e739b4aaf.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.GenotypeGeneratorBreeder(Of G).BreederDelegateWithIndex delegate" Url="html/a497d5be-b463-c5c1-9c5a-7c21e9c2810f.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.GenotypeGeneratorBreeder(Of G).BreederDelegateWithoutIndex delegate" Url="html/a54cf8de-417e-75bb-824a-fae89e713948.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.GenotypeGeneratorBreeder&lt;G&gt; class" Url="html/f2bd7f96-c16d-6060-e8ff-a37e739b4aaf.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.GenotypeGeneratorBreeder&lt;G&gt;.BreederDelegateWithIndex delegate" Url="html/a497d5be-b463-c5c1-9c5a-7c21e9c2810f.htm" />
+  <HelpKINode Title="Singular.Evolution.Breeders.GenotypeGeneratorBreeder&lt;G&gt;.BreederDelegateWithoutIndex delegate" Url="html/a54cf8de-417e-75bb-824a-fae89e713948.htm" />
+  <HelpKINode Title="Singular.Evolution.Core namespace" Url="html/7a43d210-bf66-e44d-0f97-e9e0fe26b1b8.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Engine(Of G, F) class" Url="html/92194d95-738c-47ab-5991-65a487f5b8c2.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Engine(Of G, F).Builder class" Url="html/65e3f7c5-3628-1aa4-b4b5-34a500cb9d0c.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Engine&lt;G, F&gt; class" Url="html/92194d95-738c-47ab-5991-65a487f5b8c2.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Engine&lt;G, F&gt;.Builder class" Url="html/65e3f7c5-3628-1aa4-b4b5-34a500cb9d0c.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.GeneEnumerator(Of G) class" Url="html/483d470c-473d-a3e8-558d-ef10ae33de68.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.GeneEnumerator&lt;G&gt; class" Url="html/483d470c-473d-a3e8-558d-ef10ae33de68.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IAlterer interface" Url="html/b3b6dba2-70a9-262f-88ce-cdb0e8dbc2af.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IAlterer(Of G, F) interface" Url="html/ed066449-4bdb-1fa0-cc3f-771efbad23c9.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IAlterer&lt;G, F&gt; interface" Url="html/ed066449-4bdb-1fa0-cc3f-771efbad23c9.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IBreeder(Of G) interface" Url="html/cedd80b5-b6b0-4b27-7062-f851d964326d.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IBreeder&lt;G&gt; interface" Url="html/cedd80b5-b6b0-4b27-7062-f851d964326d.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IExecutor(Of G, F) interface" Url="html/d2a85f00-aa54-0390-b06c-4c8490a4c39c.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IExecutor&lt;G, F&gt; interface" Url="html/d2a85f00-aa54-0390-b06c-4c8490a4c39c.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IFitnessScaling(Of F) interface" Url="html/5174d5b1-6eb3-0998-b206-97aea6d60924.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IFitnessScaling&lt;F&gt; interface" Url="html/5174d5b1-6eb3-0998-b206-97aea6d60924.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IGene interface" Url="html/552869bb-fdba-3830-c43b-06b3800a1b70.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IGenotype interface" Url="html/13c3b50d-c9d9-6628-0a67-85353cdcfbb8.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IGenotypeFactory(Of G) interface" Url="html/99ff8b1c-9c85-0d5c-4c80-a3c7c29a8ee6.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IGenotypeFactory&lt;G&gt; interface" Url="html/99ff8b1c-9c85-0d5c-4c80-a3c7c29a8ee6.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IListGenotype(Of G, R) interface" Url="html/b41dfc3c-7aab-f649-1f02-9c78109b62c7.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IListGenotype&lt;G, R&gt; interface" Url="html/b41dfc3c-7aab-f649-1f02-9c78109b62c7.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IListGenotypeFactory(Of G, R) interface" Url="html/7db5f8de-9d12-b5e7-41e5-7492e1eaf5f2.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IListGenotypeFactory&lt;G, R&gt; interface" Url="html/7db5f8de-9d12-b5e7-41e5-7492e1eaf5f2.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Individual(Of G, F) class" Url="html/afb26626-7779-18a2-0296-c5579e7867df.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Individual&lt;G, F&gt; class" Url="html/afb26626-7779-18a2-0296-c5579e7867df.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IndividualExtensions class" Url="html/658f826d-1045-3bd5-a75e-85da9b53c245.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.INumericGene(Of G, T) interface" Url="html/f0f53be2-e25b-e4a4-9328-e5974ea1e16d.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.INumericGene&lt;G, T&gt; interface" Url="html/f0f53be2-e25b-e4a4-9328-e5974ea1e16d.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.ISelector(Of G, F) interface" Url="html/e289021f-da54-0bad-5407-35a2c7a02592.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.ISelector&lt;G, F&gt; interface" Url="html/e289021f-da54-0bad-5407-35a2c7a02592.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IStats(Of G, F) interface" Url="html/b69bf5a6-967a-3b3b-09c1-85649488a391.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.IStats&lt;G, F&gt; interface" Url="html/b69bf5a6-967a-3b3b-09c1-85649488a391.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.MultithreadedCachedExecutor(Of G, F) class" Url="html/924e633d-b30d-1ea7-e770-96ba720c56c1.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.MultithreadedCachedExecutor&lt;G, F&gt; class" Url="html/924e633d-b30d-1ea7-e770-96ba720c56c1.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Mutator(Of G, R, F) class" Url="html/99c165ab-2d07-13c0-1ee8-3577da24918f.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Mutator&lt;G, R, F&gt; class" Url="html/99c165ab-2d07-13c0-1ee8-3577da24918f.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.ParallelResult(Of I, O) class" Url="html/86418fef-dcb8-b07b-d988-7ec4a507709e.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.ParallelResult&lt;I, O&gt; class" Url="html/86418fef-dcb8-b07b-d988-7ec4a507709e.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Recombinator(Of G, F) class" Url="html/a541bb07-a9c0-980e-c4b8-3bbc2cd7d3a3.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Recombinator(Of G, F).RecombinatioNumberType enumeration" Url="html/61555f75-ac35-64c2-e3cd-d6adbd608226.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Recombinator&lt;G, F&gt; class" Url="html/a541bb07-a9c0-980e-c4b8-3bbc2cd7d3a3.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Recombinator&lt;G, F&gt;.RecombinatioNumberType enumeration" Url="html/61555f75-ac35-64c2-e3cd-d6adbd608226.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Stats(Of G, F) class" Url="html/c64531fe-cf13-a3d2-8a70-fd88f30e5214.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.Stats&lt;G, F&gt; class" Url="html/c64531fe-cf13-a3d2-8a70-fd88f30e5214.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.StopCriteriaBuilder class" Url="html/23e8b3ae-642e-6350-768e-577acfb24521.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.StopCriteriaDelegate(Of G, F) delegate" Url="html/670fc923-8183-ea3d-535e-12540892cc62.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.StopCriteriaDelegate&lt;G, F&gt; delegate" Url="html/670fc923-8183-ea3d-535e-12540892cc62.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.World(Of G, F) class" Url="html/4f23c10d-618f-6deb-e2f3-d366fcee378d.htm" />
+  <HelpKINode Title="Singular.Evolution.Core.World&lt;G, F&gt; class" Url="html/4f23c10d-618f-6deb-e2f3-d366fcee378d.htm" />
+  <HelpKINode Title="Singular.Evolution.Factory class" Url="html/dfb2963a-3ad4-5e26-9581-07f2f35d8b8e.htm" />
+  <HelpKINode Title="Singular.Evolution.FactoryAttribute class" Url="html/54d66747-3cb1-3e62-cb29-f8593b6e0fa4.htm" />
+  <HelpKINode Title="Singular.Evolution.Genes namespace" Url="html/c9a39aef-d3b0-be3b-cda0-1d7eb5bdd4e1.htm" />
+  <HelpKINode Title="Singular.Evolution.Genes.BitGene class" Url="html/6e3ceb63-3c40-7d72-09e8-13c51a663103.htm" />
+  <HelpKINode Title="Singular.Evolution.Genes.EnumGene(Of T) class" Url="html/4fecc7be-9552-30ff-5645-a76762f44273.htm" />
+  <HelpKINode Title="Singular.Evolution.Genes.EnumGene&lt;T&gt; class" Url="html/4fecc7be-9552-30ff-5645-a76762f44273.htm" />
+  <HelpKINode Title="Singular.Evolution.Genes.FloatGene class" Url="html/0669b42b-c8df-2480-a278-6e83e27b51b7.htm" />
+  <HelpKINode Title="Singular.Evolution.Genotypes namespace" Url="html/f5565bcd-33e1-1ad1-5722-ea870be7f90d.htm" />
+  <HelpKINode Title="Singular.Evolution.Genotypes.ListGenotype(Of G) class" Url="html/1152d6d3-c8d2-b914-2ab9-aba800be4156.htm" />
+  <HelpKINode Title="Singular.Evolution.Genotypes.ListGenotype&lt;G&gt; class" Url="html/1152d6d3-c8d2-b914-2ab9-aba800be4156.htm" />
+  <HelpKINode Title="Singular.Evolution.Scaling namespace" Url="html/f51b7e2e-7a0b-db93-2c40-adc2e08ef21c.htm" />
+  <HelpKINode Title="Singular.Evolution.Scaling.LinearRankScaling class" Url="html/bf99e773-271c-d3a9-f0d1-00a69b2400b0.htm" />
+  <HelpKINode Title="Singular.Evolution.Selectors namespace" Url="html/8320b82a-6d2b-3b02-4fba-371d18ff3e24.htm" />
+  <HelpKINode Title="Singular.Evolution.Selectors.BaseSelector(Of G, F) class" Url="html/b07f8aa3-7d64-f29a-64c9-092c29e89b7e.htm" />
+  <HelpKINode Title="Singular.Evolution.Selectors.BaseSelector(Of G, F).IndividualScore class" Url="html/4f6ed530-2c3e-1357-cde8-bdb2bd506b23.htm" />
+  <HelpKINode Title="Singular.Evolution.Selectors.BaseSelector&lt;G, F&gt; class" Url="html/b07f8aa3-7d64-f29a-64c9-092c29e89b7e.htm" />
+  <HelpKINode Title="Singular.Evolution.Selectors.BaseSelector&lt;G, F&gt;.IndividualScore class" Url="html/4f6ed530-2c3e-1357-cde8-bdb2bd506b23.htm" />
+  <HelpKINode Title="Singular.Evolution.Selectors.RouletteWheelSelector(Of G) class" Url="html/55160e8f-6153-c2b6-1a0a-22377860007a.htm" />
+  <HelpKINode Title="Singular.Evolution.Selectors.RouletteWheelSelector&lt;G&gt; class" Url="html/55160e8f-6153-c2b6-1a0a-22377860007a.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils namespace" Url="html/bb7b030e-87d6-8095-f2c6-b0b821b0d323.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.IRandomGenerator interface" Url="html/1a505df9-17bd-2b3c-3904-6599504965ae.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.IRandomSource interface" Url="html/a0204962-298c-bff9-ed42-e9b55afad042.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.MathHelper class" Url="html/bbce1819-ea5a-d666-8610-6d14b944b981.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.MockRandomSource class" Url="html/479e7d5d-3d7e-be72-9cc1-7f1df11d466e.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.RandomChooser class" Url="html/cb00cea9-74e6-a1a1-8ec7-4d48c2888e2b.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.RandomGenerator class" Url="html/0a7f0aa3-9689-dee5-3781-57ec96d060c4.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.SimpleLRUCache(Of K, V) class" Url="html/101cfad4-680d-980f-7849-bcd9c302d319.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.SimpleLRUCache&lt;K, V&gt; class" Url="html/101cfad4-680d-980f-7849-bcd9c302d319.htm" />
+  <HelpKINode Title="Singular.Evolution.Utils.SystemRandomSource class" Url="html/04cfd437-7642-cf5f-f1e5-49bd56c4148f.htm" />
+  <HelpKINode Title="Statistics property" Url="html/2851c2d6-3784-ccec-9d47-28c3db7aec93.htm" />
+  <HelpKINode Title="Stats(Of G, F) class">
+    <HelpKINode Title="Stats(G, F) Class" Url="html/c64531fe-cf13-a3d2-8a70-fd88f30e5214.htm" />
+    <HelpKINode Title="about Stats(Of G, F) class" Url="html/c64531fe-cf13-a3d2-8a70-fd88f30e5214.htm" />
+    <HelpKINode Title="methods" Url="html/ed6022f5-c0d0-eec3-971c-2d2cab540fa9.htm" />
+    <HelpKINode Title="properties" Url="html/748f22e8-721d-47bf-f8a1-8640d7f0bb01.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stats(Of G, F).BestFitness property" Url="html/a1d89301-f6cb-b594-e50b-a7c00b97f34d.htm" />
+  <HelpKINode Title="Stats(Of G, F).BestGenotype property" Url="html/f6138fc1-0fa9-9050-c909-0f420c50c38a.htm" />
+  <HelpKINode Title="Stats(Of G, F).BestIndividual property" Url="html/b93501fb-551e-592e-4cc2-04bd9e28a25a.htm" />
+  <HelpKINode Title="Stats(Of G, F).BestIndividualGeneration property" Url="html/0408c46e-d4f5-c3e5-acc1-90ff73f70457.htm" />
+  <HelpKINode Title="Stats(Of G, F).BestWorld property" Url="html/04963cc1-7bf3-4780-e05d-95dfceeac86a.htm" />
+  <HelpKINode Title="Stats(Of G, F).CalculateNewStatistis method" Url="html/0b490c9e-195f-efa1-ab17-d03529749bcb.htm" />
+  <HelpKINode Title="Stats&lt;G, F&gt; class">
+    <HelpKINode Title="Stats(G, F) Class" Url="html/c64531fe-cf13-a3d2-8a70-fd88f30e5214.htm" />
+    <HelpKINode Title="about Stats&lt;G, F&gt; class" Url="html/c64531fe-cf13-a3d2-8a70-fd88f30e5214.htm" />
+    <HelpKINode Title="methods" Url="html/ed6022f5-c0d0-eec3-971c-2d2cab540fa9.htm" />
+    <HelpKINode Title="properties" Url="html/748f22e8-721d-47bf-f8a1-8640d7f0bb01.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stats&lt;G, F&gt;.BestFitness property" Url="html/a1d89301-f6cb-b594-e50b-a7c00b97f34d.htm" />
+  <HelpKINode Title="Stats&lt;G, F&gt;.BestGenotype property" Url="html/f6138fc1-0fa9-9050-c909-0f420c50c38a.htm" />
+  <HelpKINode Title="Stats&lt;G, F&gt;.BestIndividual property" Url="html/b93501fb-551e-592e-4cc2-04bd9e28a25a.htm" />
+  <HelpKINode Title="Stats&lt;G, F&gt;.BestIndividualGeneration property" Url="html/0408c46e-d4f5-c3e5-acc1-90ff73f70457.htm" />
+  <HelpKINode Title="Stats&lt;G, F&gt;.BestWorld property" Url="html/04963cc1-7bf3-4780-e05d-95dfceeac86a.htm" />
+  <HelpKINode Title="Stats&lt;G, F&gt;.CalculateNewStatistis method" Url="html/0b490c9e-195f-efa1-ab17-d03529749bcb.htm" />
+  <HelpKINode Title="StopAtFitness(Of G, F) method" Url="html/129abc05-dfe3-874a-990b-0fc5dbb8c974.htm" />
+  <HelpKINode Title="StopAtFitness&lt;G, F&gt; method" Url="html/129abc05-dfe3-874a-990b-0fc5dbb8c974.htm" />
+  <HelpKINode Title="StopAtGeneration(Of G, F) method" Url="html/f14c4f22-fc43-a7b4-da45-e2ad17e49cfc.htm" />
+  <HelpKINode Title="StopAtGeneration&lt;G, F&gt; method" Url="html/f14c4f22-fc43-a7b4-da45-e2ad17e49cfc.htm" />
+  <HelpKINode Title="StopCriteria property">
+    <HelpKINode Title="EasyGa(G, F).Builder.StopCriteria Property " Url="html/4bf4359f-f5d3-6e07-5f6e-965fef65564b.htm" />
+    <HelpKINode Title="EasyGa(G, F).StopCriteria Property " Url="html/9f66c17f-37f3-3440-22ef-d64db931773a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StopCriteriaBuilder class">
+    <HelpKINode Title="StopCriteriaBuilder Class" Url="html/23e8b3ae-642e-6350-768e-577acfb24521.htm" />
+    <HelpKINode Title="about StopCriteriaBuilder class" Url="html/23e8b3ae-642e-6350-768e-577acfb24521.htm" />
+    <HelpKINode Title="methods" Url="html/cf9f2984-c90a-0268-9bb8-d48ff3cf397c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StopCriteriaBuilder.And(Of G, F) method" Url="html/34d41b22-1cba-6fb1-ef87-31a90fc2d27a.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.And&lt;G, F&gt; method" Url="html/34d41b22-1cba-6fb1-ef87-31a90fc2d27a.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.Not(Of G, F) method" Url="html/cc2229d4-47eb-8acf-af08-8c4cf53555d6.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.Not&lt;G, F&gt; method" Url="html/cc2229d4-47eb-8acf-af08-8c4cf53555d6.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.Or(Of G, F) method" Url="html/b2dae182-990b-ae89-9deb-50aa71e34c13.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.Or&lt;G, F&gt; method" Url="html/b2dae182-990b-ae89-9deb-50aa71e34c13.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.StopAtFitness(Of G, F) method" Url="html/129abc05-dfe3-874a-990b-0fc5dbb8c974.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.StopAtFitness&lt;G, F&gt; method" Url="html/129abc05-dfe3-874a-990b-0fc5dbb8c974.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.StopAtGeneration(Of G, F) method" Url="html/f14c4f22-fc43-a7b4-da45-e2ad17e49cfc.htm" />
+  <HelpKINode Title="StopCriteriaBuilder.StopAtGeneration&lt;G, F&gt; method" Url="html/f14c4f22-fc43-a7b4-da45-e2ad17e49cfc.htm" />
+  <HelpKINode Title="StopCriteriaDelegate(Of G, F) delegate" Url="html/670fc923-8183-ea3d-535e-12540892cc62.htm" />
+  <HelpKINode Title="StopCriteriaDelegate&lt;G, F&gt; delegate" Url="html/670fc923-8183-ea3d-535e-12540892cc62.htm" />
+  <HelpKINode Title="Subtract method">
+    <HelpKINode Title="BitGene.Subtract Method " Url="html/d93ccdce-a60f-5b53-71b7-ada591885c37.htm" />
+    <HelpKINode Title="FloatGene.Subtract Method " Url="html/905efe5c-fcc7-366d-c4a4-2529baba566b.htm" />
+    <HelpKINode Title="INumericGene(G, T).Subtract Method " Url="html/dcf0680f-58bd-46e9-a7b2-c31e6bcb4ab9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sum method">
+    <HelpKINode Title="BitGene.Sum Method " Url="html/086c9553-960c-9a76-1388-d1b3ccb10a1b.htm" />
+    <HelpKINode Title="FloatGene.Sum Method " Url="html/38e040cd-016f-85ce-d4f9-e89bb99443e5.htm" />
+    <HelpKINode Title="INumericGene(G, T).Sum Method " Url="html/b02344ba-1d67-d02c-1128-163d126c2cca.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Swap method">
+    <HelpKINode Title="IListGenotype(G, R).Swap Method " Url="html/190f34d6-f41e-22fa-a7d1-c2f5ea32f5da.htm" />
+    <HelpKINode Title="ListGenotype(G).Swap Method " Url="html/c49827d8-34ab-defc-902b-167bc9b744a9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SwapAlterer(Of G, R, F) class">
+    <HelpKINode Title="SwapAlterer(G, R, F) Class" Url="html/e8092949-e408-6869-9ec8-06739fc80992.htm" />
+    <HelpKINode Title="about SwapAlterer(Of G, R, F) class" Url="html/e8092949-e408-6869-9ec8-06739fc80992.htm" />
+    <HelpKINode Title="constructor" Url="html/e71bf2f5-6b2a-a65f-5e38-8c3482a47d03.htm" />
+    <HelpKINode Title="methods" Url="html/d0a9afc8-0a44-6688-e717-a109e6de51fe.htm" />
+    <HelpKINode Title="properties" Url="html/b9fec075-6272-8577-0718-1051402de483.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SwapAlterer(Of G, R, F).Apply method" Url="html/d6644da7-bee8-8350-9191-931b521fc968.htm" />
+  <HelpKINode Title="SwapAlterer(Of G, R, F).Probability property" Url="html/23c6f21b-b05d-9606-fa74-9b355c09f361.htm" />
+  <HelpKINode Title="SwapAlterer(Of G, R, F).SwapAlterer constructor" Url="html/e71bf2f5-6b2a-a65f-5e38-8c3482a47d03.htm" />
+  <HelpKINode Title="SwapAlterer&lt;G, R, F&gt; class">
+    <HelpKINode Title="SwapAlterer(G, R, F) Class" Url="html/e8092949-e408-6869-9ec8-06739fc80992.htm" />
+    <HelpKINode Title="about SwapAlterer&lt;G, R, F&gt; class" Url="html/e8092949-e408-6869-9ec8-06739fc80992.htm" />
+    <HelpKINode Title="constructor" Url="html/e71bf2f5-6b2a-a65f-5e38-8c3482a47d03.htm" />
+    <HelpKINode Title="methods" Url="html/d0a9afc8-0a44-6688-e717-a109e6de51fe.htm" />
+    <HelpKINode Title="properties" Url="html/b9fec075-6272-8577-0718-1051402de483.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SwapAlterer&lt;G, R, F&gt;.Apply method" Url="html/d6644da7-bee8-8350-9191-931b521fc968.htm" />
+  <HelpKINode Title="SwapAlterer&lt;G, R, F&gt;.Probability property" Url="html/23c6f21b-b05d-9606-fa74-9b355c09f361.htm" />
+  <HelpKINode Title="SwapAlterer&lt;G, R, F&gt;.SwapAlterer constructor" Url="html/e71bf2f5-6b2a-a65f-5e38-8c3482a47d03.htm" />
+  <HelpKINode Title="SystemRandomSource class">
+    <HelpKINode Title="SystemRandomSource Class" Url="html/04cfd437-7642-cf5f-f1e5-49bd56c4148f.htm" />
+    <HelpKINode Title="about SystemRandomSource class" Url="html/04cfd437-7642-cf5f-f1e5-49bd56c4148f.htm" />
+    <HelpKINode Title="constructor" Url="html/ebc40cd6-213d-514c-3617-20561d53deeb.htm" />
+    <HelpKINode Title="methods" Url="html/dc34ca87-e07e-47c8-69be-544ae14b2c33.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SystemRandomSource.NextDouble method" Url="html/3f6580fd-8aac-80f6-b782-020e920cf4fe.htm" />
+  <HelpKINode Title="SystemRandomSource.NextInt method" Url="html/70edd8e4-45fb-1790-35a7-0073bae26472.htm" />
+  <HelpKINode Title="SystemRandomSource.SystemRandomSource constructor" Url="html/ebc40cd6-213d-514c-3617-20561d53deeb.htm" />
+  <HelpKINode Title="Task property" Url="html/d5dcbf58-a87e-61ef-36c8-d8d0b09a8e0a.htm" />
+  <HelpKINode Title="ToRandomEnumerable(Of T) method" Url="html/e014653a-03ed-8cf8-a257-23daa7bac494.htm" />
+  <HelpKINode Title="ToRandomEnumerable&lt;T&gt; method" Url="html/e014653a-03ed-8cf8-a257-23daa7bac494.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="BitGene.ToString Method " Url="html/be934d0c-7ec5-ffcc-97d9-f6359327c1aa.htm" />
+    <HelpKINode Title="EnumGene(T).ToString Method " Url="html/d4fc2712-1452-d132-c88f-7a39a0de4d6f.htm" />
+    <HelpKINode Title="FloatGene.ToString Method " Url="html/1a278436-edab-652f-eee2-261cf90338fe.htm" />
+    <HelpKINode Title="Individual(G, F).ToString Method " Url="html/6b78902d-0866-6d81-d5c4-074085913d60.htm" />
+    <HelpKINode Title="ListGenotype(G).ToString Method " Url="html/f148bf81-c49a-d518-8635-d1b816cb1a7f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TryGet method" Url="html/8ac1ffeb-f776-3eca-3e08-74e7f919c159.htm" />
+  <HelpKINode Title="UpdateFitness method">
+    <HelpKINode Title="IExecutor(G, F).UpdateFitness Method " Url="html/860d7588-3426-1462-4a3e-981e82e26446.htm" />
+    <HelpKINode Title="IFitnessExecutor(G, F).UpdateFitness Method " Url="html/d8c1b38d-4a6f-ddaa-5269-9a84dbab3ece.htm" />
+    <HelpKINode Title="MultithreadedCachedExecutor(G, F).UpdateFitness Method " Url="html/0c8e8d42-2869-cede-305a-afe93746cb60.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UseMultithreading property" Url="html/e1d3288c-491f-198e-ef4e-036076a182e6.htm" />
+  <HelpKINode Title="Value property">
+    <HelpKINode Title="BitGene.Value Property " Url="html/2c8d98c0-23f0-b3ab-e741-2aae3cb3118d.htm" />
+    <HelpKINode Title="EnumGene(T).Value Property " Url="html/e6a136d5-071f-c7a5-1b5a-b48e959464a1.htm" />
+    <HelpKINode Title="FloatGene.Value Property " Url="html/02c33b8e-4657-9e67-81a9-eed21924a237.htm" />
+    <HelpKINode Title="INumericGene(G, T).Value Property " Url="html/392fdd33-7c0c-ab96-1717-e5555c6bd624.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WithAlgorithm method" Url="html/2d0aa821-2a0b-83bb-ab00-4f4fbd05fecb.htm" />
+  <HelpKINode Title="WithElitismPercentage method" Url="html/f36745ab-c05c-b224-ca4f-c7cea63177db.htm" />
+  <HelpKINode Title="WithExecutor method" Url="html/98a36300-1565-43e4-8822-7331d4603364.htm" />
+  <HelpKINode Title="WithFitnessFunction method" Url="html/2e9b3741-52e2-9de0-4d87-8dc9fc08343b.htm" />
+  <HelpKINode Title="WithStopCriteria method" Url="html/8989b948-fea9-18c6-feaf-cbd63a52de0b.htm" />
+  <HelpKINode Title="World(Of G, F) class">
+    <HelpKINode Title="World(G, F) Class" Url="html/4f23c10d-618f-6deb-e2f3-d366fcee378d.htm" />
+    <HelpKINode Title="about World(Of G, F) class" Url="html/4f23c10d-618f-6deb-e2f3-d366fcee378d.htm" />
+    <HelpKINode Title="constructor" Url="html/408ed31f-12a8-d856-8db0-e02f340c4237.htm" />
+    <HelpKINode Title="methods" Url="html/11960952-bb57-87ac-2747-7578da34799b.htm" />
+    <HelpKINode Title="properties" Url="html/af5480ef-b160-9737-0a08-08bf5d3980f3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="World(Of G, F).BestFitness property" Url="html/d61f87dc-6c27-e40a-9229-ac41c6ed1121.htm" />
+  <HelpKINode Title="World(Of G, F).BestGenotype property" Url="html/3a7a1d20-6ad6-be94-3d5d-73850737e6f6.htm" />
+  <HelpKINode Title="World(Of G, F).BestIndividual property" Url="html/75c9dd7a-4a25-9ca7-4f53-90a57ac0681c.htm" />
+  <HelpKINode Title="World(Of G, F).Generation property" Url="html/0ca303a7-f0fe-3731-71d8-16224957a8ab.htm" />
+  <HelpKINode Title="World(Of G, F).Population property" Url="html/1bc5e2ae-6019-05e6-8fad-e6eb159ffb77.htm" />
+  <HelpKINode Title="World(Of G, F).World constructor" Url="html/408ed31f-12a8-d856-8db0-e02f340c4237.htm" />
+  <HelpKINode Title="World&lt;G, F&gt; class">
+    <HelpKINode Title="World(G, F) Class" Url="html/4f23c10d-618f-6deb-e2f3-d366fcee378d.htm" />
+    <HelpKINode Title="about World&lt;G, F&gt; class" Url="html/4f23c10d-618f-6deb-e2f3-d366fcee378d.htm" />
+    <HelpKINode Title="constructor" Url="html/408ed31f-12a8-d856-8db0-e02f340c4237.htm" />
+    <HelpKINode Title="methods" Url="html/11960952-bb57-87ac-2747-7578da34799b.htm" />
+    <HelpKINode Title="properties" Url="html/af5480ef-b160-9737-0a08-08bf5d3980f3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="World&lt;G, F&gt;.BestFitness property" Url="html/d61f87dc-6c27-e40a-9229-ac41c6ed1121.htm" />
+  <HelpKINode Title="World&lt;G, F&gt;.BestGenotype property" Url="html/3a7a1d20-6ad6-be94-3d5d-73850737e6f6.htm" />
+  <HelpKINode Title="World&lt;G, F&gt;.BestIndividual property" Url="html/75c9dd7a-4a25-9ca7-4f53-90a57ac0681c.htm" />
+  <HelpKINode Title="World&lt;G, F&gt;.Generation property" Url="html/0ca303a7-f0fe-3731-71d8-16224957a8ab.htm" />
+  <HelpKINode Title="World&lt;G, F&gt;.Population property" Url="html/1bc5e2ae-6019-05e6-8fad-e6eb159ffb77.htm" />
+  <HelpKINode Title="World&lt;G, F&gt;.World constructor" Url="html/408ed31f-12a8-d856-8db0-e02f340c4237.htm" />
+</HelpKI>

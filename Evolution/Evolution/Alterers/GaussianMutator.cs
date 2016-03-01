@@ -12,13 +12,13 @@ namespace Singular.Evolution.Alterers
     /// </summary>
     /// <typeparam name="G">Genotype</typeparam>
     /// <typeparam name="F">Fitness</typeparam>
-    /// <seealso cref="Core.Mutator{G, FloatGene, F}" />
-    public class GaussianMutator<G, F> : Mutator<G, FloatGene, F> where F : IComparable<F>
+    /// <seealso cref="BaseMutator{G,R,F}" />
+    public class GaussianBaseMutator<G, F> : BaseMutator<G, FloatGene, F> where F : IComparable<F>
         where G : IListGenotype<G, FloatGene>
     {
         private readonly RandomGenerator rnd = RandomGenerator.GetInstance();
 
-        public GaussianMutator(double probability) : base(probability)
+        public GaussianBaseMutator(double probability) : base(probability)
         {
         }
 

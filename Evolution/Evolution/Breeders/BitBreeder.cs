@@ -6,21 +6,42 @@ using Singular.Evolution.Genotypes;
 
 namespace Singular.Evolution.Breeders
 {
+    /// <summary>
+    /// Breeds a number of <see cref="IListGenotype{G,BitGene}"/>
+    /// </summary>
+    /// <seealso cref="Core.IBreeder{ListGenotype{BitGene}}" />
     public class BitBreeder : IBreeder<ListGenotype<BitGene>>
     {
-        public BitBreeder(int populationNumber, int listSize)
+        public BitBreeder(int populationSize, int genotypeSize)
         {
-            PopulationNumber = populationNumber;
-            ListSize = listSize;
+            PopulationSize = populationSize;
+            GenotypeSize = genotypeSize;
         }
 
-        public int PopulationNumber { get; }
-        public int ListSize { get; }
+        /// <summary>
+        /// Population size
+        /// </summary>
+        /// <value>
+        /// The population size.
+        /// </value>
+        public int PopulationSize { get; }
 
+        /// <summary>
+        /// Genotype size
+        /// </summary>
+        /// <value>
+        /// The size of the genotype.
+        /// </value>
+        public int GenotypeSize { get; }
+
+        /// <summary>
+        /// Breeds the initial population
+        /// </summary>
+        /// <returns></returns>
         public IList<ListGenotype<BitGene>> Breed()
         {
-            ListGenotype<BitGene> genotype = new ListGenotype<BitGene>(ListSize);
-            List<ListGenotype<BitGene>> population = Enumerable.Repeat(genotype, PopulationNumber).ToList();
+            ListGenotype<BitGene> genotype = new ListGenotype<BitGene>(GenotypeSize);
+            List<ListGenotype<BitGene>> population = Enumerable.Repeat(genotype, PopulationSize).ToList();
             return population;
         }
     }

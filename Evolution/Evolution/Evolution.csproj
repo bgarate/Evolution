@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\EasyGa.cs" />
-    <Compile Include="Algorithms\IAlgorithm.cs" />
+    <Compile Include="Alterers\BaseMutator.cs" />
     <Compile Include="Alterers\BitMutator.cs" />
     <Compile Include="Alterers\CrossoverBase.cs" />
     <Compile Include="Alterers\GaussianMutator.cs" />
@@ -57,10 +57,12 @@
     <Compile Include="Alterers\PartiallyMatchedCrossover.cs" />
     <Compile Include="Alterers\MultipointCrossover.cs" />
     <Compile Include="Breeders\BitBreeder.cs" />
+    <Compile Include="Breeders\BreederGenerators.cs" />
     <Compile Include="Breeders\GenotypeGeneratorBreeder.cs" />
     <Compile Include="Core\Engine.cs" />
-    <Compile Include="Core\Executor.cs" />
+    <Compile Include="Core\MultithreadedCachedExecutor.cs" />
     <Compile Include="Core\GeneEnumerator.cs" />
+    <Compile Include="Core\IAlgorithm.cs" />
     <Compile Include="Core\IAlterer.cs" />
     <Compile Include="Core\IBreeder.cs" />
     <Compile Include="Core\IExecutor.cs" />
@@ -79,7 +81,6 @@
     <Compile Include="Scaling\LinearRankScaling.cs" />
     <Compile Include="Core\ListGenotypeFactory.cs" />
     <Compile Include="Core\Recombinator.cs" />
-    <Compile Include="Core\Mutator.cs" />
     <Compile Include="Core\Stats.cs" />
     <Compile Include="Core\World.cs" />
     <Compile Include="Genes\EnumGene.cs" />

@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="928c9f9f-ea81-4066-9323-880f0fef603c" Title="Singular.Evolution" Url="html/acedf244-963b-8088-a668-8d116860929d.htm">
+    <HelpTOCNode Id="29f137fd-cf17-49c8-a91a-a9564833de0b" Title="Activator Class" Url="html/28e4c604-1dd7-7679-440f-c990077d4c9b.htm">
+      <HelpTOCNode Id="ab1f259d-7ffe-477c-8bf0-86940f06b1d7" Title="Activator Methods" Url="html/8249b361-19ea-2cd5-8d9d-a32e6acf038a.htm">
+        <HelpTOCNode Title="GetActivator Method " Url="html/cb8ba0ea-bbcd-cfb8-f92f-7ef63dcc5ef2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Activator.ObjectActivator Delegate" Url="html/d0f36d16-3c94-7660-d36d-ae3295d32a9d.htm" />
+    <HelpTOCNode Id="08f71784-db87-479a-b20f-99287a800232" Title="Factory Class" Url="html/dfb2963a-3ad4-5e26-9581-07f2f35d8b8e.htm">
+      <HelpTOCNode Id="2f7e2997-b31d-4abd-a5f3-5abb7130c46f" Title="Factory Methods" Url="html/fb5cc3f5-8d84-5979-f2b8-0844e25a4550.htm">
+        <HelpTOCNode Title="BuildFactory(T, G) Method " Url="html/3c5010ac-84b5-6d46-522e-187ba4839dcf.htm" />
+        <HelpTOCNode Title="GetInstance Method " Url="html/33d8bba5-0965-8b6a-ae4e-97b6931716b8.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f9b95859-b175-445c-9736-f1fe250c067c" Title="FactoryAttribute Class" Url="html/54d66747-3cb1-3e62-cb29-f8593b6e0fa4.htm">
+      <HelpTOCNode Title="FactoryAttribute Constructor " Url="html/de4e2310-aeae-03c3-65db-b352f0ab7ee4.htm" />
+      <HelpTOCNode Id="3a22eebb-641d-4058-add9-a2f067cc85ce" Title="FactoryAttribute Properties" Url="html/50cc7c47-931b-3e2e-d111-6c716bc54093.htm">
+        <HelpTOCNode Title="FactoryType Property " Url="html/65b3416e-5c03-82c0-bac2-dcb9475a2bee.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FactoryAttribute Methods" Url="html/6e18a4c2-76ff-e624-6b28-e88ebe009316.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8641d00b-e3d6-4893-b219-c44df2d1c285" Title="Singular.Evolution.Algorithms" Url="html/abe06fa4-bd7d-97b9-28d0-1b08952971eb.htm">
+    <HelpTOCNode Id="a3b51552-fbf0-4943-a3f8-d9e95e2f1738" Title="EasyGa(G, F) Class" Url="html/29c1d5fc-2784-8fb5-0c46-438b59fd6a9c.htm">
+      <HelpTOCNode Id="fa306d86-94cf-48ac-a899-e0a1d37aff01" Title="EasyGa(G, F) Properties" Url="html/bd485958-88fe-184e-bce3-cf1ec2937a0a.htm">
+        <HelpTOCNode Title="Alterers Property " Url="html/abe6c5f8-e358-8ab1-0172-6c84d075a02a.htm" />
+        <HelpTOCNode Title="Breeders Property " Url="html/dd441cb4-d151-8a9e-ccf8-0858ae9567da.htm" />
+        <HelpTOCNode Title="ElitismPercentage Property " Url="html/1792274b-3d3e-1800-4ed3-be5aa058b3be.htm" />
+        <HelpTOCNode Title="Engine Property " Url="html/d27d058b-3028-5f0c-03a0-a6c755e92294.htm" />
+        <HelpTOCNode Title="FitnessFunction Property " Url="html/e532d43b-ffc0-726d-f730-3ac992b6bd7b.htm" />
+        <HelpTOCNode Title="Selectors Property " Url="html/2de03c67-a722-ef1c-e4b5-a910644bb776.htm" />
+        <HelpTOCNode Title="StopCriteria Property " Url="html/9f66c17f-37f3-3440-22ef-d64db931773a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a9220e95-23ad-4e49-9c06-008a11b74e94" Title="EasyGa(G, F) Methods" Url="html/c1d0ad83-4eb9-cc6f-2260-b31a033fca5c.htm">
+        <HelpTOCNode Title="Execute Method " Url="html/de01ebdd-75e1-27fb-f3ea-227e67d5ced4.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/8e202960-4ed0-30a4-d8d0-384955fddc22.htm" />
+        <HelpTOCNode Title="ShouldStop Method " Url="html/ac28ef12-a247-3c20-5632-321ef2080666.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="24b3a0eb-931e-426a-af97-ba69a6f3cc22" Title="EasyGa(G, F).Builder Class" Url="html/9098310a-97ee-397b-6869-a7e55c0645f7.htm">
+      <HelpTOCNode Title="EasyGa(G, F).Builder Constructor " Url="html/d5ba4aef-ea40-b88e-c615-020e3f73fbc6.htm" />
+      <HelpTOCNode Id="b3082ce2-27b8-4f5d-a99a-ef581195be23" Title="Builder Properties" Url="html/b2f722e8-e92c-b44a-ae97-4b73eace5e53.htm">
+        <HelpTOCNode Title="ElitismPercentage Property " Url="html/21006aa8-eb47-0b18-b3a7-e30ed3183848.htm" />
+        <HelpTOCNode Title="FitnessFunction Property " Url="html/12fe96d4-23ea-cfe8-92be-aff9e21bb117.htm" />
+        <HelpTOCNode Title="StopCriteria Property " Url="html/4bf4359f-f5d3-6e07-5f6e-965fef65564b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fe0228c4-7cf5-462f-bd76-5aee743d4452" Title="Builder Methods" Url="html/0b94755a-2372-d6d1-b4b0-4ae3dc8a5ded.htm">
+        <HelpTOCNode Title="Build Method " Url="html/4d8137f6-caf3-9cc8-ec7e-d2b6708199ca.htm" />
+        <HelpTOCNode Id="88814b95-0947-4ae2-9172-8693ae19f153" Title="Register Method " Url="html/66317f2f-b620-a9ca-7010-02ad821815d0.htm">
+          <HelpTOCNode Title="Register Method (IAlterer(G, F))" Url="html/1e62846b-ed63-6e64-d0cd-998464c0c8f8.htm" />
+          <HelpTOCNode Title="Register Method (ISelector(G, F))" Url="html/46ba4065-27e7-5a06-eb26-74503b640d6a.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="27059298-f528-497a-b01e-558367975c81" Title="RegisterBreeder Method " Url="html/360498ae-ba5f-308f-5a78-5ef37d03bc0d.htm">
+          <HelpTOCNode Title="RegisterBreeder Method (IAlterer)" Url="html/d834851e-c6f2-a566-7167-1c1b3f462770.htm" />
+          <HelpTOCNode Title="RegisterBreeder Method (IBreeder(G))" Url="html/b787ab15-fe9b-5221-aee3-57d006e391c9.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WithElitismPercentage Method " Url="html/f36745ab-c05c-b224-ca4f-c7cea63177db.htm" />
+        <HelpTOCNode Title="WithFitnessFunction Method " Url="html/2e9b3741-52e2-9de0-4d87-8dc9fc08343b.htm" />
+        <HelpTOCNode Title="WithStopCriteria Method " Url="html/8989b948-fea9-18c6-feaf-cbd63a52de0b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="FitnessFunctionDelegate(G, F) Delegate" Url="html/4b88a454-39e8-e68a-5fc1-8872005ab6ad.htm" />
+    <HelpTOCNode Id="55fecf3a-5560-4c88-8c68-71b0696e7ab0" Title="IAlgorithm(G, F) Interface" Url="html/380c8195-f6a4-2ccc-b3f9-d1d7cfbbba9e.htm">
+      <HelpTOCNode Id="fa954a12-7c62-4a92-bc5d-beeb567d9206" Title="IAlgorithm(G, F) Properties" Url="html/aafdef7b-2a72-5a85-a626-8a118d9e714f.htm">
+        <HelpTOCNode Title="Engine Property " Url="html/06539222-fa82-5012-c9f9-c893fc58fef2.htm" />
+        <HelpTOCNode Title="FitnessFunction Property " Url="html/f133172f-f2b0-ebb2-3a64-6be4edd8008e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="03ca8ebd-5874-4c37-ba32-fd0734304c2c" Title="IAlgorithm(G, F) Methods" Url="html/2a01cb8f-26cc-fa60-ae1a-fb407bd83100.htm">
+        <HelpTOCNode Title="Execute Method " Url="html/4a2f4a6e-c35a-a5a4-1c08-ecd677c46685.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/008a96f2-807c-69cb-9ff2-0289c19235d3.htm" />
+        <HelpTOCNode Title="ShouldStop Method " Url="html/6abe113b-a53f-58c4-e026-b24291c92e1e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5bdbf07b-e360-4dc1-badc-2932a648dcc8" Title="IFitnessExecutor(G, F) Interface" Url="html/2b161e85-97b6-d164-e1e5-d57c8be7c80f.htm">
+      <HelpTOCNode Id="d2fe9b3a-608b-4f48-b596-0a113e61cbf5" Title="IFitnessExecutor(G, F) Properties" Url="html/76458e0a-8a4d-679b-5f08-757ddfd6e320.htm">
+        <HelpTOCNode Title="FitnessFunction Property " Url="html/e3e15088-f5d3-985d-26b1-5dbffb3c8834.htm" />
+        <HelpTOCNode Title="ParentMultithreadedCachedExecutor Property " Url="html/d6a7b261-a694-4003-a87c-71dbcbf30a80.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9fb67162-dffe-4a0b-b2cb-65765513ffb6" Title="IFitnessExecutor(G, F) Methods" Url="html/1f0027e4-6dd6-1cb1-775e-10dd4baf88b9.htm">
+        <HelpTOCNode Title="UpdateFitness Method " Url="html/d8c1b38d-4a6f-ddaa-5269-9a84dbab3ece.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="120d23e0-59e9-4e31-b369-9b4b4dfd0a63" Title="Singular.Evolution.Alterers" Url="html/d83a42df-2b66-dfad-1be9-58a7420b0c0f.htm">
+    <HelpTOCNode Id="6c53ab58-f0f7-4463-a91a-880e4de4b6bf" Title="BitMutator(G, F) Class" Url="html/739b5db5-dc16-a6d5-45a3-f909264234b5.htm">
+      <HelpTOCNode Title="BitMutator(G, F) Constructor " Url="html/4dd5ae85-9016-38ba-f289-6974235ffc48.htm" />
+      <HelpTOCNode Title="BitMutator(G, F) Properties" Url="html/3ca4cdb5-b1a2-d9a7-f2f7-ed2f60238b2d.htm" />
+      <HelpTOCNode Id="e6f39ccb-1b0b-4b49-aa94-a463487e1fc0" Title="BitMutator(G, F) Methods" Url="html/38e09614-63d1-4a2b-e095-ad637681895f.htm">
+        <HelpTOCNode Title="Mutate Method " Url="html/e52fbf79-b0c7-dbd0-3732-982e656074e9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="acbd1157-d034-4a97-b36b-3de9201200a7" Title="CrossoverBase(G, R, F) Class" Url="html/4631d0db-76c4-44f3-f8c5-488af00fd0e4.htm">
+      <HelpTOCNode Title="CrossoverBase(G, R, F) Constructor " Url="html/d6123463-d974-4756-eabf-b07374ff1778.htm" />
+      <HelpTOCNode Id="5a638389-e926-4c33-8028-1b094e3eef17" Title="CrossoverBase(G, R, F) Properties" Url="html/52d584be-24aa-58e7-dbbc-4017737046d6.htm">
+        <HelpTOCNode Title="MinimumGenesRequired Property " Url="html/cd85fa2e-1b8f-b0f4-0a86-93b65e7c8a1c.htm" />
+        <HelpTOCNode Title="NumberOfChildsGenerated Property " Url="html/d8cfbc79-c380-bcfb-ccd9-ea344f202ff7.htm" />
+        <HelpTOCNode Title="NumberOfParentsNeeded Property " Url="html/febf48c7-1a51-2847-67b1-b4e6da1f43c3.htm" />
+        <HelpTOCNode Title="SameLengthParentsNeeded Property " Url="html/e9787a70-0911-f2cf-6fed-7561940b7eb9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6c5fc697-1703-4e0d-b965-404097cdbe22" Title="CrossoverBase(G, R, F) Methods" Url="html/f5b8be64-9ef0-3493-f682-b58f8136df43.htm">
+        <HelpTOCNode Title="Apply Method " Url="html/d069c81e-1152-10a0-e656-c501e3bcce71.htm" />
+        <HelpTOCNode Title="GetOffspring Method " Url="html/2597d31b-d7f6-8adb-a5ee-31ad9f4a9ca0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2b08cbce-9234-4265-90d5-fa907c7da84f" Title="GaussianMutator(G, F) Class" Url="html/5ec07f9f-63b8-d893-00a1-18dcfa1d7783.htm">
+      <HelpTOCNode Title="GaussianMutator(G, F) Constructor " Url="html/30feaad6-7d50-3d40-b55f-e09541ac1d41.htm" />
+      <HelpTOCNode Title="GaussianMutator(G, F) Properties" Url="html/65e342fe-c7a4-5a5e-ac11-25513a320c8a.htm" />
+      <HelpTOCNode Id="5145aef6-b6ad-4ccc-a1e6-f9e3687e55be" Title="GaussianMutator(G, F) Methods" Url="html/72ddbdfa-b57a-c7a8-fdcf-5596e8fbcfb5.htm">
+        <HelpTOCNode Title="Mutate Method " Url="html/c41d2e0c-425a-df26-0cd6-2b33eafee4e6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c76b7642-6025-4345-b2ec-9fe9b7425a8e" Title="MultipointCrossover(G, R, F) Class" Url="html/20f176a1-eda0-65f5-ada1-2889364b299e.htm">
+      <HelpTOCNode Title="MultipointCrossover(G, R, F) Constructor " Url="html/cd2cea60-5b4d-7cec-4f59-67a8e8c03a4f.htm" />
+      <HelpTOCNode Id="0b0e7219-b60b-4086-9091-b2f8bbab6336" Title="MultipointCrossover(G, R, F) Properties" Url="html/67a83f4f-19f2-d2b4-d30d-f75bf087c36d.htm">
+        <HelpTOCNode Title="Points Property " Url="html/faa41178-7355-e0e5-a985-8997241da783.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="420d9ee4-9419-4482-80b8-c7234183d2bb" Title="MultipointCrossover(G, R, F) Methods" Url="html/4f65b275-7b3b-d283-6cb6-e41e86f37df1.htm">
+        <HelpTOCNode Title="GetOffspring Method " Url="html/30a941fc-05d4-780f-87d2-734b2fd239d1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="15c2e6ac-3dd4-43ee-a533-d271cbca8a57" Title="MutatorByDelegate(G, R, F) Class" Url="html/833d228f-c223-dfb5-ca81-bad24a6a4b65.htm">
+      <HelpTOCNode Title="MutatorByDelegate(G, R, F) Constructor " Url="html/1fbd44bf-55b4-fd27-b06d-9e152ea5cf19.htm" />
+      <HelpTOCNode Id="58592883-a1d3-4023-833a-996229c0b159" Title="MutatorByDelegate(G, R, F) Properties" Url="html/63787f5f-c5ea-e037-39a8-d572ab088cfe.htm">
+        <HelpTOCNode Title="MutateDelegate Property " Url="html/e444656e-094e-42c9-9a92-116b2de55601.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2aa76b91-00a9-4d2e-b85d-2852e626169b" Title="MutatorByDelegate(G, R, F) Methods" Url="html/25d9f449-3297-fa9b-3b59-4d60b5724d57.htm">
+        <HelpTOCNode Title="Mutate Method " Url="html/cce79454-16cb-072b-9923-724979f37ad5.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="MutatorByDelegate(G, R, F).MutateGeneDelegate Delegate" Url="html/d0f7faa3-90da-8a0f-7726-dee32ea773ae.htm" />
+    <HelpTOCNode Id="2e695080-6ea4-400d-ade1-34dbb385c2c1" Title="PartiallyMatchedCrossover(G, R, F) Class" Url="html/c70e0865-cf58-b73c-3488-71a9afb426c5.htm">
+      <HelpTOCNode Title="PartiallyMatchedCrossover(G, R, F) Constructor " Url="html/743e6deb-fa09-38f7-703a-693498192fea.htm" />
+      <HelpTOCNode Title="PartiallyMatchedCrossover(G, R, F) Properties" Url="html/91082e31-0874-724f-3cd0-b3f6402b4fb3.htm" />
+      <HelpTOCNode Id="fe8705fd-13d0-4148-913b-0f5ab67c2886" Title="PartiallyMatchedCrossover(G, R, F) Methods" Url="html/c76d5ced-e995-878f-ea82-ffcb6aec745e.htm">
+        <HelpTOCNode Title="GetOffspring Method " Url="html/bd794e96-a117-43ad-7685-7f791f475b7e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="23ebb4fa-43e5-4dd4-b4c6-43e06bb0f689" Title="ReverseAlterer(G, R, F) Class" Url="html/69d8b378-9b3a-db1f-50ad-f0112c576c85.htm">
+      <HelpTOCNode Title="ReverseAlterer(G, R, F) Constructor " Url="html/2ceeb98a-a32a-56f1-3dc9-94591069354f.htm" />
+      <HelpTOCNode Id="d9027d17-bf81-4f86-b052-704612fcd460" Title="ReverseAlterer(G, R, F) Properties" Url="html/69b3e284-07ba-caf4-cfa1-36e65ef42fdc.htm">
+        <HelpTOCNode Title="Probability Property " Url="html/7058b02c-2f57-541b-94cc-833bbeedc3f3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8a5993d6-59a6-4f11-898a-4ba3a6fb4453" Title="ReverseAlterer(G, R, F) Methods" Url="html/fca6a794-3370-d408-ae61-5a90db67a564.htm">
+        <HelpTOCNode Title="Apply Method " Url="html/93ffa659-83d6-d402-646d-2f52ee83f54b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0d8d6f31-05e0-458c-80e1-e2788408433e" Title="SwapAlterer(G, R, F) Class" Url="html/e8092949-e408-6869-9ec8-06739fc80992.htm">
+      <HelpTOCNode Title="SwapAlterer(G, R, F) Constructor " Url="html/e71bf2f5-6b2a-a65f-5e38-8c3482a47d03.htm" />
+      <HelpTOCNode Id="8aa11254-952a-4454-9b00-8eb848df6d34" Title="SwapAlterer(G, R, F) Properties" Url="html/b9fec075-6272-8577-0718-1051402de483.htm">
+        <HelpTOCNode Title="Probability Property " Url="html/23c6f21b-b05d-9606-fa74-9b355c09f361.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="df3464c2-4bff-401a-872b-0d49728290bc" Title="SwapAlterer(G, R, F) Methods" Url="html/d0a9afc8-0a44-6688-e717-a109e6de51fe.htm">
+        <HelpTOCNode Title="Apply Method " Url="html/d6644da7-bee8-8350-9191-931b521fc968.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0c2b57ed-1090-4b5c-a9ce-2b31d7c3ac0c" Title="Singular.Evolution.Breeders" Url="html/ed999852-f424-569f-ca7a-ae7710cee658.htm">
+    <HelpTOCNode Id="db75fc46-cca6-4aa6-8eba-36df8efa6e51" Title="BitBreeder Class" Url="html/eb522aca-7fb4-ab1a-53f2-35e1a6243426.htm">
+      <HelpTOCNode Title="BitBreeder Constructor " Url="html/69e9d4af-5d7a-9fe5-3dc0-99943572989b.htm" />
+      <HelpTOCNode Id="94df0075-de75-498f-9a7d-3cfef274603f" Title="BitBreeder Properties" Url="html/363ad516-acb8-672b-d799-96b70280d5bc.htm">
+        <HelpTOCNode Title="ListSize Property " Url="html/ac0a0148-550a-d5d0-b554-c3959430e5e9.htm" />
+        <HelpTOCNode Title="PopulationNumber Property " Url="html/e99186c5-6c9c-5fe5-126f-b1f38a842d48.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5df3c8f6-6f82-490e-a06b-bf5855ea5718" Title="BitBreeder Methods" Url="html/fe4c2458-bbb3-b2e0-6973-68042b99396d.htm">
+        <HelpTOCNode Title="Breed Method " Url="html/b1520f5b-6212-d9d0-dea9-73dd666be5e5.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fca28b51-a52d-458b-9e28-8e279ecb43c7" Title="BreederGenerators Class" Url="html/d366c4f3-688a-b0eb-d804-0094384e5905.htm">
+      <HelpTOCNode Id="fab10480-bada-4757-ae29-39ae250c079a" Title="BreederGenerators Methods" Url="html/78a514f2-116f-f6d6-4c9e-7e3e54577221.htm">
+        <HelpTOCNode Title="FloatBreeder Method " Url="html/3b7969d5-eb28-64d3-e36a-c1c168168ef8.htm" />
+        <HelpTOCNode Title="RangeBreeder Method " Url="html/8d934fdf-97eb-e953-3cf5-394b2cdd9b90.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b550509b-76a5-4d2a-82e9-17dbd86e47dd" Title="GenotypeGeneratorBreeder(G) Class" Url="html/f2bd7f96-c16d-6060-e8ff-a37e739b4aaf.htm">
+      <HelpTOCNode Id="1c553248-96f8-4f10-b149-5e077eff297a" Title="GenotypeGeneratorBreeder(G) Constructor " Url="html/9c052c58-727d-3fb7-3f80-672d25649db5.htm">
+        <HelpTOCNode Title="GenotypeGeneratorBreeder(G) Constructor (GenotypeGeneratorBreeder(G).BreederDelegateWithIndex, Int32)" Url="html/a608c29a-4cd4-1ac3-2a78-b124fdf429c5.htm" />
+        <HelpTOCNode Title="GenotypeGeneratorBreeder(G) Constructor (GenotypeGeneratorBreeder(G).BreederDelegateWithoutIndex, Int32)" Url="html/674a4b94-81a3-eaf0-1ce9-e11afbcaa359.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dc3df978-1bd7-4cfd-bd1a-9966c718e2ca" Title="GenotypeGeneratorBreeder(G) Properties" Url="html/ec110f8a-7dc1-38c4-e3ae-039edff1805a.htm">
+        <HelpTOCNode Title="DelegateWithIndex Property " Url="html/b1599867-f83e-e83c-24cb-aca13700c37d.htm" />
+        <HelpTOCNode Title="DelegateWithoutIndex Property " Url="html/d44cb9e1-de31-81b3-84da-feeab51f13ed.htm" />
+        <HelpTOCNode Title="PopulationSize Property " Url="html/239647f7-8ac3-ee97-24e4-c5e21d3d76fd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0b0a40dd-be3d-481f-b136-d67c11e2f9e4" Title="GenotypeGeneratorBreeder(G) Methods" Url="html/7b93dceb-9b08-006b-3ea1-c191ae9e024b.htm">
+        <HelpTOCNode Title="Breed Method " Url="html/883bbda0-6889-550f-5a64-3aee135ac372.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="GenotypeGeneratorBreeder(G).BreederDelegateWithIndex Delegate" Url="html/a497d5be-b463-c5c1-9c5a-7c21e9c2810f.htm" />
+    <HelpTOCNode Title="GenotypeGeneratorBreeder(G).BreederDelegateWithoutIndex Delegate" Url="html/a54cf8de-417e-75bb-824a-fae89e713948.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="fa629e09-2420-4fdd-b93c-4cef9dec3006" Title="Singular.Evolution.Core" Url="html/7a43d210-bf66-e44d-0f97-e9e0fe26b1b8.htm">
+    <HelpTOCNode Id="6598b1ca-43d1-489a-a343-b3b2acafab62" Title="Engine(G, F) Class" Url="html/92194d95-738c-47ab-5991-65a487f5b8c2.htm">
+      <HelpTOCNode Id="b47a947a-9186-4aea-98a5-aff87233258f" Title="Engine(G, F) Properties" Url="html/664b6a2e-f76a-1126-81bc-b4e4afd9f845.htm">
+        <HelpTOCNode Title="Algorithm Property " Url="html/2722a792-9d20-0fa4-774f-6d6e06ea0242.htm" />
+        <HelpTOCNode Title="CurrentWorld Property " Url="html/52d55c40-1c1b-de17-5bff-ac348b83aa34.htm" />
+        <HelpTOCNode Title="Executor Property " Url="html/f0746a9f-5c58-c225-d724-337f3f2ec051.htm" />
+        <HelpTOCNode Title="HasReachedStopCriteria Property " Url="html/53e206b0-2d27-14c5-3636-09184cac7c53.htm" />
+        <HelpTOCNode Title="Statistics Property " Url="html/2851c2d6-3784-ccec-9d47-28c3db7aec93.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="097178d3-4c79-48e6-bf51-423bca8c4df2" Title="Engine(G, F) Methods" Url="html/9ac7f9be-cfb3-101d-d60f-59b40fef290b.htm">
+        <HelpTOCNode Title="NextGeneration Method " Url="html/ac1c3cc4-aa2a-946a-6528-950f8ccd14a6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0cd6e390-2b1a-4177-9564-e5e92bf193ea" Title="Engine(G, F).Builder Class" Url="html/65e3f7c5-3628-1aa4-b4b5-34a500cb9d0c.htm">
+      <HelpTOCNode Title="Engine(G, F).Builder Constructor " Url="html/0d5311ee-74d1-a0b9-c023-243c6775045a.htm" />
+      <HelpTOCNode Id="8dd80617-de61-4fb8-a160-deed1c46cd21" Title="Builder Properties" Url="html/122d0f04-fe3b-c40e-a738-145ccf2e72ec.htm">
+        <HelpTOCNode Title="Algorithm Property " Url="html/e207447b-784e-ff8b-9239-6bdf78911b97.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0a07c886-b6e8-4f50-920b-fe1d7a7a1934" Title="Builder Methods" Url="html/6218fb82-2b8f-a600-4953-56ebb5e05b2a.htm">
+        <HelpTOCNode Title="Build Method " Url="html/505d265a-aaf0-dd00-0e6f-56c06e70f320.htm" />
+        <HelpTOCNode Title="WithAlgorithm Method " Url="html/2d0aa821-2a0b-83bb-ab00-4f4fbd05fecb.htm" />
+        <HelpTOCNode Title="WithExecutor Method " Url="html/98a36300-1565-43e4-8822-7331d4603364.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ef274e80-a33d-4e05-9e9d-175cc651b365" Title="GeneEnumerator(G) Class" Url="html/483d470c-473d-a3e8-558d-ef10ae33de68.htm">
+      <HelpTOCNode Title="GeneEnumerator(G) Constructor " Url="html/57caa86d-d828-b76a-34da-99ac8834cbee.htm" />
+      <HelpTOCNode Id="2b501343-4214-409e-9da9-3fce4949bb4b" Title="GeneEnumerator(G) Properties" Url="html/fd7a972f-5e9f-00fc-7386-cfedc9679e34.htm">
+        <HelpTOCNode Title="Current Property " Url="html/20a812c7-2438-138a-5111-dd328444244d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3b1ec08d-5c64-4ab1-a8e8-1d85d1253600" Title="GeneEnumerator(G) Methods" Url="html/7308438e-8ba6-405c-a34f-67dc313f7fbc.htm">
+        <HelpTOCNode Title="Dispose Method " Url="html/239a96aa-436d-c764-81d8-0df22ede2915.htm" />
+        <HelpTOCNode Title="MoveNext Method " Url="html/5eb17c1d-0e9e-dbbc-6e18-cd3eb16a8bc3.htm" />
+        <HelpTOCNode Title="Reset Method " Url="html/a178007e-5240-2324-ef7c-ff1303856b86.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="IAlterer Interface" Url="html/b3b6dba2-70a9-262f-88ce-cdb0e8dbc2af.htm" />
+    <HelpTOCNode Id="67210726-3759-42ae-afe4-7fe1477b2ced" Title="IAlterer(G, F) Interface" Url="html/ed066449-4bdb-1fa0-cc3f-771efbad23c9.htm">
+      <HelpTOCNode Id="d7a82cf9-af92-4542-aae2-cc428edd0fdb" Title="IAlterer(G, F) Methods" Url="html/8347edae-1eae-9c9c-8684-553bf8d794a5.htm">
+        <HelpTOCNode Title="Apply Method " Url="html/184184a2-a6a0-3167-760a-9884918045be.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4298ece6-05d9-400c-8aff-05bbb1abd40e" Title="IBreeder(G) Interface" Url="html/cedd80b5-b6b0-4b27-7062-f851d964326d.htm">
+      <HelpTOCNode Id="58465826-492b-4368-826c-6ae7b9652c12" Title="IBreeder(G) Methods" Url="html/38583b94-06d6-3a3f-336b-3eea03c082fe.htm">
+        <HelpTOCNode Title="Breed Method " Url="html/7a04eb0f-d4f8-4594-d328-080619104df6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fce2d5d6-c1dd-4419-aa1d-1b0ad1083686" Title="IExecutor(G, F) Interface" Url="html/d2a85f00-aa54-0390-b06c-4c8490a4c39c.htm">
+      <HelpTOCNode Id="1e07e702-34aa-4365-ae01-b02c408ebd70" Title="IExecutor(G, F) Methods" Url="html/97758bd0-8ba9-bfe8-04f1-f23ca4063d47.htm">
+        <HelpTOCNode Title="AddToQueue Method " Url="html/96460788-3e94-90ec-8232-16cf4570c1e2.htm" />
+        <HelpTOCNode Id="4bb34ce0-4d7f-4e2f-a7db-bf961720f8a6" Title="AddToQueueAndWait Method " Url="html/cf9a6674-c9d3-67f9-553a-b8b8708eab52.htm">
+          <HelpTOCNode Title="AddToQueueAndWait(I) Method (Action(I), IEnumerable(I))" Url="html/5a772fdf-84a6-f709-ab05-ab672a46c168.htm" />
+          <HelpTOCNode Title="AddToQueueAndWait(I, O) Method (Func(I, O), IEnumerable(I))" Url="html/7cde5a37-5d99-a11b-52bf-17574d76e4cc.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UpdateFitness Method " Url="html/860d7588-3426-1462-4a3e-981e82e26446.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e6c2050c-93c6-411a-adaa-4c72b4247bd1" Title="IFitnessScaling(F) Interface" Url="html/5174d5b1-6eb3-0998-b206-97aea6d60924.htm">
+      <HelpTOCNode Id="1da25465-fa83-40fe-9454-cb68c29d1164" Title="IFitnessScaling(F) Methods" Url="html/b790af91-0148-907b-dcb0-fa432a8d492d.htm">
+        <HelpTOCNode Title="Scale Method " Url="html/e1d3fab8-742e-a7eb-2311-6d29fc1f21e2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b73b325c-8f8f-40f1-9942-f04ac6fbbd1d" Title="IGene Interface" Url="html/552869bb-fdba-3830-c43b-06b3800a1b70.htm">
+      <HelpTOCNode Id="07fbb04e-9347-4b98-9c69-859f9cd1b9c5" Title="IGene Properties" Url="html/59590705-9c5d-8b82-67c2-1e07f808400d.htm">
+        <HelpTOCNode Title="IsValid Property " Url="html/6a11ecff-9d88-1f93-e8f4-8175f124b4c4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="01f86d95-a09b-47c2-a5da-cae6e2819944" Title="IGene Methods" Url="html/a8f68a48-c9d9-a57e-4b51-c8291d0a7236.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/04131b68-625f-4781-31e0-69a71d7f498d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="357b1a4a-63d9-466a-8993-a8ded9155302" Title="IGenotype Interface" Url="html/13c3b50d-c9d9-6628-0a67-85353cdcfbb8.htm">
+      <HelpTOCNode Id="fed96568-17e0-4553-b038-88c20d7c4e2e" Title="IGenotype Properties" Url="html/a9007e79-fea8-afd8-c485-18d1f503b9fb.htm">
+        <HelpTOCNode Title="IsValid Property " Url="html/daa9b607-0705-841a-d421-f8910cd5c62e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2d212aa1-cc48-4618-b630-6894f8b79736" Title="IGenotype Methods" Url="html/2f65a61c-15f0-cedc-f0bd-16b7920ee667.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/e6f6cece-6181-7d38-c60d-a88d6c1348b0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="IGenotypeFactory(G) Interface" Url="html/99ff8b1c-9c85-0d5c-4c80-a3c7c29a8ee6.htm" />
+    <HelpTOCNode Id="06bdd828-e29a-4e12-984c-39ec94805183" Title="IListGenotype(G, R) Interface" Url="html/b41dfc3c-7aab-f649-1f02-9c78109b62c7.htm">
+      <HelpTOCNode Id="98852727-ea91-4818-8ddb-7a9b6f684c3a" Title="IListGenotype(G, R) Properties" Url="html/949c2fec-192b-a7ea-61e9-dc27c4122400.htm">
+        <HelpTOCNode Title="Count Property " Url="html/838d188d-ca14-f0f3-0096-e9f30cee31ee.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/1eb45478-5ca3-ecfe-1160-ed8e590b119e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aa697d4f-8213-4cce-848c-a616833af083" Title="IListGenotype(G, R) Methods" Url="html/01af0502-cdac-eccc-6809-70f47ef1e783.htm">
+        <HelpTOCNode Title="Replace Method " Url="html/3a3700c7-dd14-d365-a657-2477f90fb070.htm" />
+        <HelpTOCNode Title="Swap Method " Url="html/190f34d6-f41e-22fa-a7d1-c2f5ea32f5da.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9be0ff7b-de87-4197-951f-d765eceedcff" Title="IListGenotypeFactory(G, R) Interface" Url="html/7db5f8de-9d12-b5e7-41e5-7492e1eaf5f2.htm">
+      <HelpTOCNode Id="3339d234-c5a7-4b1a-a14a-225924cbfcf3" Title="IListGenotypeFactory(G, R) Methods" Url="html/1587b742-a85c-4efc-b674-2c34c2bf0c3a.htm">
+        <HelpTOCNode Title="Create Method " Url="html/44b287a6-6adc-ec89-bee2-1ed2b3e0d350.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b93408dc-da11-46d4-854a-ee032c24e8ac" Title="Individual(G, F) Class" Url="html/afb26626-7779-18a2-0296-c5579e7867df.htm">
+      <HelpTOCNode Id="2db2cb34-8ecf-4ec3-9842-04a7568f6bc1" Title="Individual(G, F) Constructor " Url="html/b8978d21-f1e3-8239-c5cd-91e83eb1cea0.htm">
+        <HelpTOCNode Title="Individual(G, F) Constructor (G)" Url="html/08c0e83c-2083-a31a-f94d-12a36cfd4a51.htm" />
+        <HelpTOCNode Title="Individual(G, F) Constructor (G, F)" Url="html/ba1b507b-4d39-ff0d-0b5b-51ac027c7939.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="efcbe60b-58a2-452b-a8b4-7d451ed1326b" Title="Individual(G, F) Properties" Url="html/97ee0ff9-a32e-983d-c0ad-eee3aa319d34.htm">
+        <HelpTOCNode Title="Fitness Property " Url="html/b0c6a6d5-da66-240b-52cf-f2eec2f29902.htm" />
+        <HelpTOCNode Title="FitnessOrDefault Property " Url="html/80d5acaf-661d-ad1b-f369-0edb4e91a48e.htm" />
+        <HelpTOCNode Title="Genotype Property " Url="html/19fbd507-06c0-85c1-df3a-9b1e929ebf6f.htm" />
+        <HelpTOCNode Title="HasFitnessAssigned Property " Url="html/dbb6ee2a-6215-e53a-6e9a-c9322f4330d3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5364f580-b70a-4e2f-9c3c-88879668781d" Title="Individual(G, F) Methods" Url="html/99b6b4bc-7c75-4ae6-3bc3-eec9246cb6d6.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/c2117e2e-17cc-eb7f-4816-0ef16183825c.htm" />
+        <HelpTOCNode Title="CompareTo Method " Url="html/f0ac4673-a4c3-f8d7-01df-a012113ecd6a.htm" />
+        <HelpTOCNode Title="FromGenotypes Method " Url="html/f829fe1e-0f78-3a9b-dc64-60b52be194e1.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/6b78902d-0866-6d81-d5c4-074085913d60.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0f28a9f6-56cc-45a4-aeb2-e29bd4f69899" Title="IndividualExtensions Class" Url="html/658f826d-1045-3bd5-a75e-85da9b53c245.htm">
+      <HelpTOCNode Id="98689af7-fd52-406a-af36-0266a9cbdaf4" Title="IndividualExtensions Methods" Url="html/56f98752-ed61-69c4-df39-49f3f0914dd1.htm">
+        <HelpTOCNode Title="GetGenotypes(G, F) Method " Url="html/d409a291-9bab-255e-4375-2a560b6356c4.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0ebecacf-7f57-4dc5-9715-031bf8c7b47e" Title="INumericGene(G, T) Interface" Url="html/f0f53be2-e25b-e4a4-9328-e5974ea1e16d.htm">
+      <HelpTOCNode Id="b792dbfc-0dc0-4e30-a320-dce33a432a75" Title="INumericGene(G, T) Properties" Url="html/89946d91-3c90-fa66-ba59-3949233f25d2.htm">
+        <HelpTOCNode Title="Value Property " Url="html/392fdd33-7c0c-ab96-1717-e5555c6bd624.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="774e8d62-052b-4534-80e1-5baa8a469650" Title="INumericGene(G, T) Methods" Url="html/33028752-b006-4718-c494-51b4c2c634a3.htm">
+        <HelpTOCNode Title="Divide Method " Url="html/10cf5088-312d-acae-2880-a456818dffff.htm" />
+        <HelpTOCNode Title="Multiply Method " Url="html/2b350edb-3b13-f6ea-81c2-7956f8c45f86.htm" />
+        <HelpTOCNode Title="Subtract Method " Url="html/dcf0680f-58bd-46e9-a7b2-c31e6bcb4ab9.htm" />
+        <HelpTOCNode Title="Sum Method " Url="html/b02344ba-1d67-d02c-1128-163d126c2cca.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f4517945-b2fb-47a2-bf3f-5f6803e7bd46" Title="ISelector(G, F) Interface" Url="html/e289021f-da54-0bad-5407-35a2c7a02592.htm">
+      <HelpTOCNode Id="b660b289-f4c3-4c8f-bedc-3bf9b71f5291" Title="ISelector(G, F) Properties" Url="html/3412cace-da4c-60d0-4c80-b867e2ef6579.htm">
+        <HelpTOCNode Title="Scaling Property " Url="html/a1afeb09-b466-772b-f8bb-82949f478489.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ISelector(G, F) Methods" Url="html/7827d2e3-cf88-c2d1-1b82-0395bffde960.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="022e5e92-bf68-4d2c-8d58-a3f50c919179" Title="IStats(G, F) Interface" Url="html/b69bf5a6-967a-3b3b-09c1-85649488a391.htm">
+      <HelpTOCNode Id="f48aac37-b450-4931-b7c5-016aa822a420" Title="IStats(G, F) Properties" Url="html/2d260e9c-5a65-3e3b-3ed2-3a03e0a55995.htm">
+        <HelpTOCNode Title="BestFitness Property " Url="html/42834928-f183-b04f-be6c-1803c998d0f4.htm" />
+        <HelpTOCNode Title="BestGenotype Property " Url="html/732acdc7-55af-cfec-a35c-f5b857eaf98f.htm" />
+        <HelpTOCNode Title="BestIndividual Property " Url="html/124433df-029f-ee54-f82e-9c499108311d.htm" />
+        <HelpTOCNode Title="BestIndividualGeneration Property " Url="html/248e301f-8d9d-8cde-5ba3-6e058a82bdba.htm" />
+        <HelpTOCNode Title="BestWorld Property " Url="html/904dda50-42be-212f-8f3e-22e8a706c3e9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5173807f-c09c-4279-9749-22880f1a2dfc" Title="MultithreadedCachedExecutor(G, F) Class" Url="html/924e633d-b30d-1ea7-e770-96ba720c56c1.htm">
+      <HelpTOCNode Title="MultithreadedCachedExecutor(G, F) Constructor " Url="html/8147dd7f-f7ce-3678-3d37-dc48d8915492.htm" />
+      <HelpTOCNode Id="0b279827-cc25-48d2-a4d6-d04aff0ec586" Title="MultithreadedCachedExecutor(G, F) Properties" Url="html/9b9540a6-e0d4-d536-a090-29cd42df1777.htm">
+        <HelpTOCNode Title="FitnessFunction Property " Url="html/17dac2ba-3602-c5e7-a0a9-abb4e6e9f65b.htm" />
+        <HelpTOCNode Title="UseMultithreading Property " Url="html/e1d3288c-491f-198e-ef4e-036076a182e6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d11bd7a3-c6f4-455c-ac24-376e5510f4c4" Title="MultithreadedCachedExecutor(G, F) Methods" Url="html/d6db21bc-5b8d-f4f0-3a4a-b373d77f9e4b.htm">
+        <HelpTOCNode Title="AddToQueue Method " Url="html/d15a4f48-f436-0f28-a93d-ecf497ba6179.htm" />
+        <HelpTOCNode Id="8e595a8c-ecbb-4d12-803c-e2fa7f09d51b" Title="AddToQueueAndWait Method " Url="html/b67c9801-4709-6d80-a5e3-c7339aa73c8a.htm">
+          <HelpTOCNode Title="AddToQueueAndWait(I) Method (Action(I), IEnumerable(I))" Url="html/c02eb4ba-92cc-39ee-ac84-6d3b69aa4942.htm" />
+          <HelpTOCNode Title="AddToQueueAndWait(I, O) Method (Func(I, O), IEnumerable(I))" Url="html/44ce3503-2961-f702-7c90-b560472646bd.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UpdateFitness Method " Url="html/0c8e8d42-2869-cede-305a-afe93746cb60.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5b77259e-b7f1-4570-801b-81b7c6b3a981" Title="Mutator(G, R, F) Class" Url="html/99c165ab-2d07-13c0-1ee8-3577da24918f.htm">
+      <HelpTOCNode Title="Mutator(G, R, F) Constructor " Url="html/ec4542e4-fa9f-1791-fb31-b5055c27da87.htm" />
+      <HelpTOCNode Id="1e4bf713-f94c-413a-b3b4-48342a55c1a7" Title="Mutator(G, R, F) Properties" Url="html/d47669a7-830a-9059-213e-57ec6cb83b2c.htm">
+        <HelpTOCNode Title="Probability Property " Url="html/2b1dfd1f-d35b-4ed3-81da-b27aaa0a4ca5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="94e17aed-adec-4215-9f4a-99777d7b1a08" Title="Mutator(G, R, F) Methods" Url="html/84987044-3c15-239d-447f-a0e7f9c7896a.htm">
+        <HelpTOCNode Title="Apply Method " Url="html/2d6f5ff7-adcc-3d3b-7137-209e6472c0f6.htm" />
+        <HelpTOCNode Title="Mutate Method " Url="html/e8ca6390-ebc4-f1aa-f782-d201b0a2c643.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7588d528-3633-4849-b621-586b20f34651" Title="ParallelResult(I, O) Class" Url="html/86418fef-dcb8-b07b-d988-7ec4a507709e.htm">
+      <HelpTOCNode Id="f33731b7-6648-4031-8a28-a460789f15b0" Title="ParallelResult(I, O) Constructor " Url="html/ae6a31f1-b6a0-ff61-ef4c-ea7b272001c8.htm">
+        <HelpTOCNode Title="ParallelResult(I, O) Constructor " Url="html/de52c502-4dbf-b659-c299-f01091ea12c9.htm" />
+        <HelpTOCNode Title="ParallelResult(I, O) Constructor (IEnumerable(I), Func(I, O))" Url="html/0fcea7aa-905a-c356-febf-3f659ae3f88d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="67276100-acb1-4589-8793-f52410729067" Title="ParallelResult(I, O) Properties" Url="html/9e6855f9-965f-7c0b-7898-0a400da0ca52.htm">
+        <HelpTOCNode Title="Input Property " Url="html/5b8b9576-a35a-7a68-e103-c6f201adb017.htm" />
+        <HelpTOCNode Title="Task Property " Url="html/d5dcbf58-a87e-61ef-36c8-d8d0b09a8e0a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="58422fb1-3780-4763-846c-492175073448" Title="ParallelResult(I, O) Methods" Url="html/6763d6af-2f16-2298-f480-6d892b9cba38.htm">
+        <HelpTOCNode Title="Run Method " Url="html/60d34faf-d0e9-4a29-1dd9-7e835818fda6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b1d3410a-6830-4210-9b25-13eae8c03ecd" Title="Recombinator(G, F) Class" Url="html/a541bb07-a9c0-980e-c4b8-3bbc2cd7d3a3.htm">
+      <HelpTOCNode Title="Recombinator(G, F) Constructor " Url="html/ac4f5954-20ed-3c35-a0ab-6e3dc25302fc.htm" />
+      <HelpTOCNode Id="e9931b89-7599-4695-a498-5a2376021a93" Title="Recombinator(G, F) Properties" Url="html/c57527af-284b-8c83-9a6e-1245eee4d8a0.htm">
+        <HelpTOCNode Title="Alterer Property " Url="html/5c6c79d6-3b3a-47de-821e-776d3a3ea986.htm" />
+        <HelpTOCNode Title="NumberOfParents Property " Url="html/8c86fa1e-f34a-23f8-77f5-379f2ccc9852.htm" />
+        <HelpTOCNode Title="NumberOfRecombinations Property " Url="html/4a715faf-8c15-0870-d6f6-09202902745c.htm" />
+        <HelpTOCNode Title="RecombinationType Property " Url="html/674c6ff9-e0f0-93d6-b320-39f29c53ce03.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b4559292-ee2c-4e7c-8a01-b110d719157a" Title="Recombinator(G, F) Methods" Url="html/c7fd6d2c-239d-3481-7229-94dc022b2131.htm">
+        <HelpTOCNode Title="Apply Method " Url="html/2bea576b-56ea-2eeb-5705-04d3d316c90b.htm" />
+        <HelpTOCNode Title="FromCrossover(G2, R) Method " Url="html/ea6407bc-c762-0450-eff0-9885121665b6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Recombinator(G, F).RecombinatioNumberType Enumeration" Url="html/61555f75-ac35-64c2-e3cd-d6adbd608226.htm" />
+    <HelpTOCNode Id="aff35712-1257-41e8-b17f-f7ddb36bce17" Title="Stats(G, F) Class" Url="html/c64531fe-cf13-a3d2-8a70-fd88f30e5214.htm">
+      <HelpTOCNode Id="9c7eea08-def9-49de-aadd-3bafc173d860" Title="Stats(G, F) Properties" Url="html/748f22e8-721d-47bf-f8a1-8640d7f0bb01.htm">
+        <HelpTOCNode Title="BestFitness Property " Url="html/a1d89301-f6cb-b594-e50b-a7c00b97f34d.htm" />
+        <HelpTOCNode Title="BestGenotype Property " Url="html/f6138fc1-0fa9-9050-c909-0f420c50c38a.htm" />
+        <HelpTOCNode Title="BestIndividual Property " Url="html/b93501fb-551e-592e-4cc2-04bd9e28a25a.htm" />
+        <HelpTOCNode Title="BestIndividualGeneration Property " Url="html/0408c46e-d4f5-c3e5-acc1-90ff73f70457.htm" />
+        <HelpTOCNode Title="BestWorld Property " Url="html/04963cc1-7bf3-4780-e05d-95dfceeac86a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5730c115-fde3-4ea0-866a-e460573e13aa" Title="Stats(G, F) Methods" Url="html/ed6022f5-c0d0-eec3-971c-2d2cab540fa9.htm">
+        <HelpTOCNode Title="CalculateNewStatistis Method " Url="html/0b490c9e-195f-efa1-ab17-d03529749bcb.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="db34d0a8-507f-457e-b667-f05778a06550" Title="StopCriteriaBuilder Class" Url="html/23e8b3ae-642e-6350-768e-577acfb24521.htm">
+      <HelpTOCNode Id="f492f38c-cbf7-4047-9e3e-ed030e751e27" Title="StopCriteriaBuilder Methods" Url="html/cf9f2984-c90a-0268-9bb8-d48ff3cf397c.htm">
+        <HelpTOCNode Title="And(G, F) Method " Url="html/34d41b22-1cba-6fb1-ef87-31a90fc2d27a.htm" />
+        <HelpTOCNode Title="Not(G, F) Method " Url="html/cc2229d4-47eb-8acf-af08-8c4cf53555d6.htm" />
+        <HelpTOCNode Title="Or(G, F) Method " Url="html/b2dae182-990b-ae89-9deb-50aa71e34c13.htm" />
+        <HelpTOCNode Title="StopAtFitness(G, F) Method " Url="html/129abc05-dfe3-874a-990b-0fc5dbb8c974.htm" />
+        <HelpTOCNode Title="StopAtGeneration(G, F) Method " Url="html/f14c4f22-fc43-a7b4-da45-e2ad17e49cfc.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="StopCriteriaDelegate(G, F) Delegate" Url="html/670fc923-8183-ea3d-535e-12540892cc62.htm" />
+    <HelpTOCNode Id="252441b5-1a47-4dc6-b003-4c6dd4b08688" Title="World(G, F) Class" Url="html/4f23c10d-618f-6deb-e2f3-d366fcee378d.htm">
+      <HelpTOCNode Id="b0b67a49-b9f5-45d9-acac-946223467964" Title="World(G, F) Constructor " Url="html/408ed31f-12a8-d856-8db0-e02f340c4237.htm">
+        <HelpTOCNode Title="World(G, F) Constructor (IList(Individual(G, F)))" Url="html/539fad57-e0b1-5011-4cbc-5a0dee26d139.htm" />
+        <HelpTOCNode Title="World(G, F) Constructor (World(G, F), IList(Individual(G, F)))" Url="html/7474a14c-0fd1-aaa2-bc08-56351569dbbf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0b2e388b-66d4-4421-88f1-e00364ef69ff" Title="World(G, F) Properties" Url="html/af5480ef-b160-9737-0a08-08bf5d3980f3.htm">
+        <HelpTOCNode Title="BestFitness Property " Url="html/d61f87dc-6c27-e40a-9229-ac41c6ed1121.htm" />
+        <HelpTOCNode Title="BestGenotype Property " Url="html/3a7a1d20-6ad6-be94-3d5d-73850737e6f6.htm" />
+        <HelpTOCNode Title="BestIndividual Property " Url="html/75c9dd7a-4a25-9ca7-4f53-90a57ac0681c.htm" />
+        <HelpTOCNode Title="Generation Property " Url="html/0ca303a7-f0fe-3731-71d8-16224957a8ab.htm" />
+        <HelpTOCNode Title="Population Property " Url="html/1bc5e2ae-6019-05e6-8fad-e6eb159ffb77.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="World(G, F) Methods" Url="html/11960952-bb57-87ac-2747-7578da34799b.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="cc3a2b4d-e531-4835-b2c1-dbb6cb507a19" Title="Singular.Evolution.Genes" Url="html/c9a39aef-d3b0-be3b-cda0-1d7eb5bdd4e1.htm">
+    <HelpTOCNode Id="f7f0a364-1136-46e7-bc72-62fc91b8b208" Title="BitGene Class" Url="html/6e3ceb63-3c40-7d72-09e8-13c51a663103.htm">
+      <HelpTOCNode Id="1952ed65-2f6a-4b86-bbe1-13d37c058a2e" Title="BitGene Constructor " Url="html/a3304d0d-db60-1af0-b4aa-e2c1f98f0b85.htm">
+        <HelpTOCNode Title="BitGene Constructor " Url="html/44e8c921-4cf7-0433-21c4-dac81525880c.htm" />
+        <HelpTOCNode Title="BitGene Constructor (Boolean)" Url="html/ce30b692-9c44-0d0d-e76f-4423bf4e95f5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="36c5bf54-3b37-4c5f-ab74-7248e6ca4b45" Title="BitGene Properties" Url="html/a733f66f-806f-32aa-a70f-70de2e36a67a.htm">
+        <HelpTOCNode Title="IsValid Property " Url="html/98e65364-8332-7c3f-c3d6-73f0cd5bc32d.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/2c8d98c0-23f0-b3ab-e741-2aae3cb3118d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a137d4a8-a335-4c4c-b121-6e8dd70bd0a1" Title="BitGene Methods" Url="html/6fe68995-84af-f7dd-31d8-a7d8e756fd3d.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/738deab1-01f8-9088-3b78-8f799e0e50bf.htm" />
+        <HelpTOCNode Title="CompareTo Method " Url="html/80f97191-fc10-b046-f001-82866c3e4ddc.htm" />
+        <HelpTOCNode Title="Divide Method " Url="html/3c0d6d14-943d-5f6d-93f0-539449fab825.htm" />
+        <HelpTOCNode Id="564692af-22f2-427f-a5b9-ffc8e922fbce" Title="Equals Method " Url="html/2f5c2f9f-7879-95ae-417b-ae3aa58a6be5.htm">
+          <HelpTOCNode Title="Equals Method (Object)" Url="html/99e3dd64-ec0b-fc93-70f0-80538f946ff0.htm" />
+          <HelpTOCNode Title="Equals Method (BitGene)" Url="html/5bd0fd53-928d-071c-e22a-183a2e79e8f1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode Method " Url="html/4580b2b2-d301-a3ef-412a-2b7088252a6d.htm" />
+        <HelpTOCNode Title="Multiply Method " Url="html/93463731-900d-a3de-5dd1-b15fa06f7608.htm" />
+        <HelpTOCNode Title="Subtract Method " Url="html/d93ccdce-a60f-5b53-71b7-ada591885c37.htm" />
+        <HelpTOCNode Title="Sum Method " Url="html/086c9553-960c-9a76-1388-d1b3ccb10a1b.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/be934d0c-7ec5-ffcc-97d9-f6359327c1aa.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="effda9ea-8c0e-4e6e-9b70-b1dcdae5435f" Title="EnumGene(T) Class" Url="html/4fecc7be-9552-30ff-5645-a76762f44273.htm">
+      <HelpTOCNode Id="69ad3982-85e3-4dc3-91a7-40921c434307" Title="EnumGene(T) Constructor " Url="html/42137d70-9bcb-8884-f2f0-aa2075606bb0.htm">
+        <HelpTOCNode Title="EnumGene(T) Constructor " Url="html/dbdeb567-8642-48af-1757-304a5c3623c8.htm" />
+        <HelpTOCNode Title="EnumGene(T) Constructor (T)" Url="html/b05a2bb8-656f-3f59-807d-199545681ea2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="20535dbd-1da4-4f2a-9202-9dd69e09645f" Title="EnumGene(T) Properties" Url="html/ffb75324-ebdc-3324-09e9-6425d7d79918.htm">
+        <HelpTOCNode Title="IsValid Property " Url="html/c75c5ee8-6f55-0ed2-0d63-1f6ac0977d8d.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/e6a136d5-071f-c7a5-1b5a-b48e959464a1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6733bda2-3c58-4f71-a333-6f0ab8b3d1c7" Title="EnumGene(T) Methods" Url="html/ee22ae9a-bc7b-1efb-64f8-8256de08965b.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/9e2e2831-e30e-7e83-cad0-c600710749e1.htm" />
+        <HelpTOCNode Title="CompareTo Method " Url="html/438e067b-2759-eb51-5649-50f0d8ae5cad.htm" />
+        <HelpTOCNode Id="b34c2e17-b82b-429f-8553-740286a4472d" Title="Equals Method " Url="html/9482e43b-1d20-fb9c-1347-ffe27e97afde.htm">
+          <HelpTOCNode Title="Equals Method (Object)" Url="html/5f09d676-a649-8982-dc89-edbaae202901.htm" />
+          <HelpTOCNode Title="Equals Method (EnumGene(T))" Url="html/4fba8f03-566c-cc16-b6d1-f434a25fc248.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode Method " Url="html/a27ef5bf-1ccf-6f56-9314-6b90d9e89651.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/d4fc2712-1452-d132-c88f-7a39a0de4d6f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2d020c40-51f2-4fb7-a147-ffd3cf54248e" Title="FloatGene Class" Url="html/0669b42b-c8df-2480-a278-6e83e27b51b7.htm">
+      <HelpTOCNode Id="affdcf67-5f6f-4eee-93e9-6a2d4ce488f5" Title="FloatGene Constructor " Url="html/622e02f7-603a-c523-9111-9650570109fd.htm">
+        <HelpTOCNode Title="FloatGene Constructor " Url="html/c3128e8e-aba1-e767-d7b8-575c97556a76.htm" />
+        <HelpTOCNode Title="FloatGene Constructor (Double, Nullable(Double), Nullable(Double))" Url="html/9b457341-3a65-0298-0593-537404529a29.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d9a4f6e0-24fc-4c69-9283-6f5dfcfab611" Title="FloatGene Properties" Url="html/6cb3fba5-9c6b-5c5b-af0e-937f6a4fe7c8.htm">
+        <HelpTOCNode Title="IsBounded Property " Url="html/9c68f988-1659-24c9-8200-471ff236097e.htm" />
+        <HelpTOCNode Title="IsValid Property " Url="html/bd33cbd7-d4a7-df63-e685-7b2d05353e31.htm" />
+        <HelpTOCNode Title="MaxValue Property " Url="html/6bf2eee7-cfe3-4344-6af9-9876ff530216.htm" />
+        <HelpTOCNode Title="MinValue Property " Url="html/cea8f826-0237-ddf0-7b0c-219c5d20b69a.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/02c33b8e-4657-9e67-81a9-eed21924a237.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dc1558ee-d281-4582-99d1-652031843ad9" Title="FloatGene Methods" Url="html/0bc35f7c-99a5-dba5-6ff0-952a24a9009c.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/b8208f9b-45b7-5dd9-8b6b-042d1f99fca3.htm" />
+        <HelpTOCNode Title="CompareTo Method " Url="html/f726f046-4441-b7d4-98fd-bda87594983d.htm" />
+        <HelpTOCNode Title="Divide Method " Url="html/539e62fe-32c1-c099-7549-c6d0e7c5f568.htm" />
+        <HelpTOCNode Id="d3507fb6-cccc-479a-b94b-cd16b6807e48" Title="Equals Method " Url="html/95b90f6e-1616-a1e1-3c14-cecc1e5318a7.htm">
+          <HelpTOCNode Title="Equals Method (Object)" Url="html/aa873931-fadd-a7e9-fba4-ecc5a05a09d1.htm" />
+          <HelpTOCNode Title="Equals Method (FloatGene)" Url="html/d53bd558-d85f-0e83-bc48-3a947e04a797.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode Method " Url="html/1fd24071-4e1b-8907-a1cc-4e74abe32549.htm" />
+        <HelpTOCNode Title="MinimumBoundedGene Method " Url="html/d5c5c48f-b5ab-a522-3730-ee9d393b6ad5.htm" />
+        <HelpTOCNode Title="Multiply Method " Url="html/5499f686-094c-07bc-9017-02350613cd36.htm" />
+        <HelpTOCNode Title="Subtract Method " Url="html/905efe5c-fcc7-366d-c4a4-2529baba566b.htm" />
+        <HelpTOCNode Title="Sum Method " Url="html/38e040cd-016f-85ce-d4f9-e89bb99443e5.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/1a278436-edab-652f-eee2-261cf90338fe.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="5514f055-f5e9-4874-b486-694fe1401367" Title="Singular.Evolution.Genotypes" Url="html/f5565bcd-33e1-1ad1-5722-ea870be7f90d.htm">
+    <HelpTOCNode Id="06cf9681-9a71-4805-9e66-c33cb5007645" Title="ListGenotype(G) Class" Url="html/1152d6d3-c8d2-b914-2ab9-aba800be4156.htm">
+      <HelpTOCNode Id="90fad156-3b6c-48cd-9ce9-9fb82611137c" Title="ListGenotype(G) Constructor " Url="html/e0f2ac22-d7fe-43af-b259-44f7d80316c9.htm">
+        <HelpTOCNode Title="ListGenotype(G) Constructor (IEnumerable(G))" Url="html/31b53226-50eb-cacc-4f39-df9279c9a190.htm" />
+        <HelpTOCNode Title="ListGenotype(G) Constructor (Int32)" Url="html/0fec81e5-aea6-d950-cb73-68ea2cdc69e5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="02413d9c-805e-468e-8ef5-24365f9dddb8" Title="ListGenotype(G) Properties" Url="html/e4e00f87-9a95-7971-88ef-d2f5572adb8d.htm">
+        <HelpTOCNode Title="Count Property " Url="html/ee4a61ed-4642-d463-1f63-1aadba5156c6.htm" />
+        <HelpTOCNode Title="IsValid Property " Url="html/2a013745-b2ab-2750-6d79-b3c5b47176c4.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/08682074-7d25-906d-4a1c-c460e534e2bf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="db65e8af-cabb-4308-8c34-7917c445e90f" Title="ListGenotype(G) Methods" Url="html/ba81137a-0f20-c513-a905-bcdb35b70669.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/cd8391e8-f585-3b70-be74-712d4f336071.htm" />
+        <HelpTOCNode Title="GetEnumerator Method " Url="html/df00de9b-e868-111f-d8ed-b47a97720d88.htm" />
+        <HelpTOCNode Title="Replace Method " Url="html/f70c3694-167b-09c4-c27c-cbe6c0d07bcd.htm" />
+        <HelpTOCNode Title="Swap Method " Url="html/c49827d8-34ab-defc-902b-167bc9b744a9.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/f148bf81-c49a-d518-8635-d1b816cb1a7f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d5bc8139-d972-40de-96f0-8c3ed0e6d39b" Title="Singular.Evolution.Scaling" Url="html/f51b7e2e-7a0b-db93-2c40-adc2e08ef21c.htm">
+    <HelpTOCNode Id="87254422-6c12-4565-995a-95dd8530fb67" Title="LinearRankScaling Class" Url="html/bf99e773-271c-d3a9-f0d1-00a69b2400b0.htm">
+      <HelpTOCNode Title="LinearRankScaling Constructor " Url="html/b9a916b8-cfa2-6449-cdd4-dc7596271bf9.htm" />
+      <HelpTOCNode Id="9a015554-ae6b-4f71-84d9-f54c2af01714" Title="LinearRankScaling Properties" Url="html/8d278368-6692-8d92-c5c3-8d9651746bea.htm">
+        <HelpTOCNode Title="SelectionPresure Property " Url="html/55cde94f-ddb7-187a-49e2-4f730e5c9953.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="145950ff-7208-44ba-8545-d36d6295aca6" Title="LinearRankScaling Methods" Url="html/86741cfc-823a-33df-3275-166f298e646b.htm">
+        <HelpTOCNode Title="Scale Method " Url="html/d7c47d9c-0e37-55b1-7e8e-669b3868c471.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="7404c069-44b1-40b7-9612-2db603138546" Title="Singular.Evolution.Selectors" Url="html/8320b82a-6d2b-3b02-4fba-371d18ff3e24.htm">
+    <HelpTOCNode Id="5a9e28a8-924d-4ea1-b4cd-c5939c513fd9" Title="BaseSelector(G, F) Class" Url="html/b07f8aa3-7d64-f29a-64c9-092c29e89b7e.htm">
+      <HelpTOCNode Title="BaseSelector(G, F) Constructor " Url="html/97af2902-1b2b-fa95-6d48-3922a884c86d.htm" />
+      <HelpTOCNode Id="e70474dd-38e7-418d-b6e5-3abdffed66bb" Title="BaseSelector(G, F) Properties" Url="html/97cf6275-c563-3e05-e4c2-5c5ccf8a1a3c.htm">
+        <HelpTOCNode Title="NumberOfSelected Property " Url="html/1112932f-18d5-a3ae-dbc1-8b2095b4dc33.htm" />
+        <HelpTOCNode Title="Scaling Property " Url="html/4fe4541d-8250-2086-d986-c87593c75b50.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="60e74f8c-6b40-4b80-bd19-9e9be25c7b6c" Title="BaseSelector(G, F) Methods" Url="html/c4720854-c844-71d6-56e6-3ae056f456b8.htm">
+        <HelpTOCNode Title="Apply Method " Url="html/9e52d6e5-f87f-4f05-e875-4403e2c929d7.htm" />
+        <HelpTOCNode Title="Select Method " Url="html/1dad2d3a-ad40-76d5-b3a6-0481b57412a1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7359d121-639c-43fc-b40f-57873cda0c61" Title="BaseSelector(G, F).IndividualScore Class" Url="html/4f6ed530-2c3e-1357-cde8-bdb2bd506b23.htm">
+      <HelpTOCNode Title="BaseSelector(G, F).IndividualScore Constructor " Url="html/78eb9b31-d11a-ac09-3cac-cd4c5a6f8cc2.htm" />
+      <HelpTOCNode Id="54f2881f-d995-4fae-baa9-39cf242fb83e" Title="IndividualScore Properties" Url="html/0eca3c98-1bb2-cf19-aea4-41d4ab1f31ee.htm">
+        <HelpTOCNode Title="Individual Property " Url="html/831fd19c-139b-3d99-63fc-9484d6d1f892.htm" />
+        <HelpTOCNode Title="Score Property " Url="html/0b1a808b-95fc-3826-2dcc-3a68420c76a0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="IndividualScore Methods" Url="html/649a22d3-7253-b4c3-a6ab-9ae7ee6a47fe.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="39f38e43-2dd7-4452-a2ba-35e51b7d1d76" Title="RouletteWheelSelector(G) Class" Url="html/55160e8f-6153-c2b6-1a0a-22377860007a.htm">
+      <HelpTOCNode Title="RouletteWheelSelector(G) Constructor " Url="html/115a9dcb-0e78-3f36-b169-e0bf4efa9d0d.htm" />
+      <HelpTOCNode Id="99f5a518-9da4-4595-b482-af2f848b7655" Title="RouletteWheelSelector(G) Properties" Url="html/08f4fd9c-1549-9c87-f63a-e7c30aa03728.htm">
+        <HelpTOCNode Title="Scaling Property " Url="html/42db271a-d21b-eeb9-e69c-006daba9c895.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="be8d0898-ce28-4c02-9e89-a2b2d7e4a63c" Title="RouletteWheelSelector(G) Methods" Url="html/9b589067-47bb-55ab-7f9a-6c6e888c3dae.htm">
+        <HelpTOCNode Title="Select Method " Url="html/44d69d2a-0943-0823-f728-7fa05d69c12b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="088de30a-3283-4294-99b9-424dedcb6787" Title="Singular.Evolution.Utils" Url="html/bb7b030e-87d6-8095-f2c6-b0b821b0d323.htm">
+    <HelpTOCNode Id="adec8bff-f093-4516-a852-5c5a67c6bacb" Title="IRandomGenerator Interface" Url="html/1a505df9-17bd-2b3c-3904-6599504965ae.htm">
+      <HelpTOCNode Id="e24e837b-30c4-406e-993e-439cb02a1d65" Title="IRandomGenerator Methods" Url="html/fc715462-2b46-2020-e122-7320b689b1e7.htm">
+        <HelpTOCNode Id="60c1d85d-dafb-4adc-a080-083c261ca17a" Title="DoubleSequence Method " Url="html/816dbdfc-8001-bf2b-320a-5698e68682dc.htm">
+          <HelpTOCNode Title="DoubleSequence Method " Url="html/b2a8bc0f-9a50-b741-dcae-8529de29b0d7.htm" />
+          <HelpTOCNode Title="DoubleSequence Method (Double)" Url="html/37469912-9d8b-58c1-1f90-77fab6bb9af1.htm" />
+          <HelpTOCNode Title="DoubleSequence Method (Double, Double)" Url="html/1de2e02d-506b-7be6-96f6-24617d86bbc8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="97cdb03a-0f16-45b7-b150-0e1a9fc76678" Title="IntSequence Method " Url="html/35902184-3746-d34c-d9b8-26f7772e08f2.htm">
+          <HelpTOCNode Title="IntSequence Method " Url="html/78209d6c-3d36-2fd0-95ca-509aef4945e3.htm" />
+          <HelpTOCNode Title="IntSequence Method (Int32)" Url="html/ba210dbd-a94a-fd8d-5290-ecb11e9c086c.htm" />
+          <HelpTOCNode Title="IntSequence Method (Int32, Int32)" Url="html/4dc52bba-ad0f-fd48-c66d-ce4e2d63e164.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="NextBoundedGaussian Method " Url="html/6a81f632-5c66-163a-6a67-abc42a6b6d82.htm" />
+        <HelpTOCNode Id="ec1fc4c9-f6fa-437f-a581-aacafe324a7f" Title="NextDouble Method " Url="html/ea3c3564-534c-a7af-4696-a9eebba9db1a.htm">
+          <HelpTOCNode Title="NextDouble Method " Url="html/9177740e-df87-76c0-d543-7b918721d9ed.htm" />
+          <HelpTOCNode Title="NextDouble Method (Double)" Url="html/34ae127f-4659-cf9a-90e3-47e40a520626.htm" />
+          <HelpTOCNode Title="NextDouble Method (Double, Double)" Url="html/566d9052-0fd9-f931-ed7e-8c8b0bc54bee.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="9de39c8b-d20e-4768-b918-db6c84a9e9b4" Title="NextGaussian Method " Url="html/f1df34a9-86a8-de9b-3e03-c77f3bd7650a.htm">
+          <HelpTOCNode Title="NextGaussian Method " Url="html/c2e53312-a9a6-a1c5-dff9-61feac3a1e26.htm" />
+          <HelpTOCNode Title="NextGaussian Method (Double, Double)" Url="html/eb1993e6-feb9-d9a4-0edd-c219031d06e8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="856d73bb-ba1f-4ffa-9eae-b4ae4918f570" Title="NextInt Method " Url="html/7b6c3f36-ff9d-2da9-47ee-541f73303b30.htm">
+          <HelpTOCNode Title="NextInt Method " Url="html/8614ebe3-3df3-fa18-c817-80b75430aaec.htm" />
+          <HelpTOCNode Title="NextInt Method (Int32)" Url="html/6b7cfd6c-091d-6aed-623e-cdd27f03db54.htm" />
+          <HelpTOCNode Title="NextInt Method (Int32, Int32)" Url="html/8abf4320-bda3-2e0a-8003-36c1c53cf2b7.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="247e3733-8561-4591-9daa-36aed80b1090" Title="IRandomSource Interface" Url="html/a0204962-298c-bff9-ed42-e9b55afad042.htm">
+      <HelpTOCNode Id="4193d520-5a9f-4016-9ece-8bcfaed11dd5" Title="IRandomSource Methods" Url="html/8eb40a2d-5026-7b98-128a-7c4566fa4176.htm">
+        <HelpTOCNode Title="NextDouble Method " Url="html/c3805468-6d65-37f7-1551-455a4eae98cd.htm" />
+        <HelpTOCNode Title="NextInt Method " Url="html/e8ccf6f8-7c38-151b-1654-fc76936a3275.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="101d58be-0859-40af-bf32-0180673ef243" Title="MathHelper Class" Url="html/bbce1819-ea5a-d666-8610-6d14b944b981.htm">
+      <HelpTOCNode Id="b8027405-4425-49e9-835b-f67eeefd9121" Title="MathHelper Methods" Url="html/0e048b08-08e0-fcfc-0ddc-17ededee60e3.htm">
+        <HelpTOCNode Title="Clamp(T) Method " Url="html/cfb85f70-5aa0-4ec1-1d0f-de6076fd0ebb.htm" />
+        <HelpTOCNode Id="f7886ddb-d1d6-4802-a869-0956fabc104f" Title="IsInteger Method " Url="html/3b9949f0-2b02-ff65-f20f-38f180365295.htm">
+          <HelpTOCNode Title="IsInteger Method (Double)" Url="html/228bd752-8947-7508-34f4-c6c7aab18961.htm" />
+          <HelpTOCNode Title="IsInteger Method (Single)" Url="html/26d12ab6-ae13-06c1-1ce1-f946e27845a5.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IsProbabilty Method " Url="html/1f2d6bef-fb16-279c-9f74-1fbd3ff5a14e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1c1b482c-6ecb-464e-bdcb-b03df149cd5e" Title="MockRandomSource Class" Url="html/479e7d5d-3d7e-be72-9cc1-7f1df11d466e.htm">
+      <HelpTOCNode Title="MockRandomSource Constructor " Url="html/ea94b12a-7445-95e3-bf7f-9839a7a33bf1.htm" />
+      <HelpTOCNode Id="018d86db-740f-49d8-981d-aae80060a5fb" Title="MockRandomSource Methods" Url="html/0062059f-e2ac-d64a-257a-45989fecc5ff.htm">
+        <HelpTOCNode Title="NextDouble Method " Url="html/3cac86e7-71e1-3ce5-246e-32e324a7a695.htm" />
+        <HelpTOCNode Title="NextInt Method " Url="html/859b17e3-2a8c-50dd-aa58-32e866f412ff.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f4b89504-e66c-4b7d-b473-25695a2546cb" Title="RandomChooser Class" Url="html/cb00cea9-74e6-a1a1-8ec7-4d48c2888e2b.htm">
+      <HelpTOCNode Id="6e535898-dcee-4e54-b9b0-3f33c61cb5f3" Title="RandomChooser Methods" Url="html/0716d895-e5e2-2ac9-2d50-94296bb638ee.htm">
+        <HelpTOCNode Title="RandomSort(T) Method " Url="html/cdd9797a-af73-3004-b6f9-c0e54475f2e7.htm" />
+        <HelpTOCNode Title="RandomTake(T) Method " Url="html/8daef7ef-8cc4-1a5f-4087-2316936de5c9.htm" />
+        <HelpTOCNode Title="ToRandomEnumerable(T) Method " Url="html/e014653a-03ed-8cf8-a257-23daa7bac494.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="753d7585-0cb0-4f50-8fff-191af4a3be1d" Title="RandomGenerator Class" Url="html/0a7f0aa3-9689-dee5-3781-57ec96d060c4.htm">
+      <HelpTOCNode Id="a3384c80-16d4-4f9f-9562-83b1c59f868e" Title="RandomGenerator Properties" Url="html/5d24a6d4-eb01-167d-836c-08984a3f85ee.htm">
+        <HelpTOCNode Title="RandomSource Property " Url="html/919bbb94-fa23-98a7-013b-45b3f947c4ee.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c93addba-8e97-4d72-a7b6-2b3c44aafaf6" Title="RandomGenerator Methods" Url="html/224f354f-c2b6-6330-0a60-2917ba24fdb8.htm">
+        <HelpTOCNode Id="30716a6b-aec7-4f59-88de-c8b8c22818e9" Title="DoubleSequence Method " Url="html/6cfa2425-0607-b79c-4d07-5193514ff9e8.htm">
+          <HelpTOCNode Title="DoubleSequence Method " Url="html/4a12cf5a-c75c-445a-3539-22b1e9b7f015.htm" />
+          <HelpTOCNode Title="DoubleSequence Method (Double)" Url="html/d31bf127-cc3b-a3ec-75ce-89426a61657e.htm" />
+          <HelpTOCNode Title="DoubleSequence Method (Double, Double)" Url="html/89d4fbde-eb06-82c1-fea0-dac55d0be961.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetInstance Method " Url="html/bc9c223a-e4b5-7fe2-e389-710ae0380b37.htm" />
+        <HelpTOCNode Id="24eaf7eb-52ba-407f-8805-e359f6209db2" Title="IntSequence Method " Url="html/416358a2-a384-15d0-149a-7a798e6bbf5c.htm">
+          <HelpTOCNode Title="IntSequence Method " Url="html/2dbaae02-742c-4dad-4df5-9015ae36d3a2.htm" />
+          <HelpTOCNode Title="IntSequence Method (Int32)" Url="html/5d7803ab-3425-00bc-864b-4fc21d234411.htm" />
+          <HelpTOCNode Title="IntSequence Method (Int32, Int32)" Url="html/670db6c4-a953-43a9-eacf-be3d8ebbd6b8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="NextBoundedGaussian Method " Url="html/87450df6-875d-9de7-3a0f-44963211a650.htm" />
+        <HelpTOCNode Id="b8f442b0-2871-4979-9144-a8ca8efc09a1" Title="NextDouble Method " Url="html/241f200a-d71b-94d3-67fd-93007bdcc401.htm">
+          <HelpTOCNode Title="NextDouble Method " Url="html/c9134dd6-3419-80a4-ab19-c31b0ff2add0.htm" />
+          <HelpTOCNode Title="NextDouble Method (Double)" Url="html/65a0ce03-13bc-d7da-c658-7506ce83d600.htm" />
+          <HelpTOCNode Title="NextDouble Method (Double, Double)" Url="html/2c50c055-3dbd-4f80-2536-2df29297f8d8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="869dd6e1-b74a-4ba2-a71f-e212ce48024b" Title="NextGaussian Method " Url="html/96ffa31a-1230-6ec3-b0c4-89139e643fa9.htm">
+          <HelpTOCNode Title="NextGaussian Method " Url="html/9e11e79f-0c08-b5a3-0720-8828fc1f93e4.htm" />
+          <HelpTOCNode Title="NextGaussian Method (Double, Double)" Url="html/9b307a2b-530c-9f96-5f9e-706e920371ce.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="baf200b4-b5d1-40bf-a091-889a6441fa32" Title="NextInt Method " Url="html/c68932c0-c219-b3d6-a71f-e222c28cab19.htm">
+          <HelpTOCNode Title="NextInt Method " Url="html/98f3f261-d07b-4b67-c194-999ae038a7ad.htm" />
+          <HelpTOCNode Title="NextInt Method (Int32)" Url="html/2d52f876-1094-709e-2a28-e0986f971979.htm" />
+          <HelpTOCNode Title="NextInt Method (Int32, Int32)" Url="html/22629618-d695-a4aa-ebf5-3abc8687e802.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="48a821dd-08c9-4de3-a17f-58b95e8a58b6" Title="SimpleLRUCache(K, V) Class" Url="html/101cfad4-680d-980f-7849-bcd9c302d319.htm">
+      <HelpTOCNode Title="SimpleLRUCache(K, V) Constructor " Url="html/f6d6b8ac-2d56-cc57-085b-df6ac8a66244.htm" />
+      <HelpTOCNode Id="24099139-c019-4b1a-bfa7-4fbaf5db6889" Title="SimpleLRUCache(K, V) Properties" Url="html/1cc3d82c-5bd4-961c-1bfd-32bf4e915079.htm">
+        <HelpTOCNode Title="CacheSize Property " Url="html/11352fbb-9046-785f-fbf6-0eb40e3d5a08.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2c5e2db5-411c-4ec9-978d-72570cb356a9" Title="SimpleLRUCache(K, V) Methods" Url="html/0fd79efb-8f8f-f93f-37a3-ada1a311dc21.htm">
+        <HelpTOCNode Title="Add Method " Url="html/caa4dc26-9174-8cae-1d46-051cc017e6b7.htm" />
+        <HelpTOCNode Title="TryGet Method " Url="html/8ac1ffeb-f776-3eca-3e08-74e7f919c159.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e0c947fa-1f90-45a4-9564-2f8d7c575816" Title="SystemRandomSource Class" Url="html/04cfd437-7642-cf5f-f1e5-49bd56c4148f.htm">
+      <HelpTOCNode Id="190544c7-e7f2-4f6c-bb93-8483b352045e" Title="SystemRandomSource Constructor " Url="html/ebc40cd6-213d-514c-3617-20561d53deeb.htm">
+        <HelpTOCNode Title="SystemRandomSource Constructor " Url="html/0f45504d-1b95-be3e-d89a-b2a07e93875e.htm" />
+        <HelpTOCNode Title="SystemRandomSource Constructor (Int32)" Url="html/d3fe19d0-83fe-fa16-dace-049163377d1c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3e6a460d-2741-460b-be19-fe980fbaa4d6" Title="SystemRandomSource Methods" Url="html/dc34ca87-e07e-47c8-69be-544ae14b2c33.htm">
+        <HelpTOCNode Title="NextDouble Method " Url="html/3f6580fd-8aac-80f6-b782-020e920cf4fe.htm" />
+        <HelpTOCNode Title="NextInt Method " Url="html/70edd8e4-45fb-1790-35a7-0073bae26472.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

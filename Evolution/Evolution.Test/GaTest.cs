@@ -30,7 +30,7 @@ namespace Evolution.Test
                     .Register(new RouletteWheelSelector<ListGenotype<BitGene>>(20))
                     .Register(new Recombinator<ListGenotype<BitGene>, double>(crossover, 2, 10,
                         Recombinator<ListGenotype<BitGene>, double>.RecombinatioNumberType.Absolute))
-                    .Register(new BitMutator<ListGenotype<BitGene>, double>(0.05))
+                    .Register(new BitBaseMutator<ListGenotype<BitGene>, double>(0.05))
                     .Build();
 
             Engine<ListGenotype<BitGene>, double> engine = new Engine<ListGenotype<BitGene>, double>.Builder()

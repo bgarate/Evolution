@@ -9,14 +9,14 @@ namespace Singular.Evolution.Alterers
     /// <typeparam name="G">Genotype</typeparam>
     /// <typeparam name="R">Gene</typeparam>
     /// <typeparam name="F">Fitness</typeparam>
-    /// <seealso cref="Singular.Evolution.Core.Mutator{G, R, F}" />
-    public class MutatorByDelegate<G, R, F> : Mutator<G, R, F> where F : IComparable<F>
+    /// <seealso cref="BaseMutator{G,R,F}" />
+    public class BaseMutatorByDelegate<G, R, F> : BaseMutator<G, R, F> where F : IComparable<F>
         where G : IListGenotype<G, R>
         where R : IGene, new()
     {
         public delegate R MutateGeneDelegate(R g);
 
-        public MutatorByDelegate(double probability, MutateGeneDelegate mutateDelegate) : base(probability)
+        public BaseMutatorByDelegate(double probability, MutateGeneDelegate mutateDelegate) : base(probability)
         {
             MutateDelegate = mutateDelegate;
         }
