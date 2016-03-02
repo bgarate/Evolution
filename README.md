@@ -107,7 +107,7 @@ An example output would be:
 ````
 ## Documentation
 
-You can found some samples in the source. References, which are still a work in progress, can be found at [bgarate.com/evolution/reference] or in the source. You can post your issues on github or contact me on [bgarate.com].
+You can found some samples in the source. References, which are still a work in progress, can be found at on the [Evolution's online reference](http://bgarate.com/evolution/reference) or in the source. You can post your issues on github or contact me on [bgarate.com](http://bgarate.com).
 
 ## Contributing
 
