@@ -105,6 +105,9 @@ An example output would be:
 20 is best Fitness
 1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1 is best Genotype
 ````
+## Documentation
+
+You can found some samples in the source. References, which are still a work in progress, can be found at on the [Evolution's online reference](http://bgarate.com/evolution/reference) or in the source. You can post your issues on github or contact me on [bgarate.com](http://bgarate.com).
 
 ## Contributing
 
