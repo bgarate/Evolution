@@ -17,11 +17,21 @@ namespace Singular.Evolution.Alterers
         where F : IComparable<F>
         where R : class, IGene, new()
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SwapAlterer{G, R, F}"/> class.
+        /// </summary>
+        /// <param name="probability">The probability.</param>
         public SwapAlterer(double probability)
         {
             Probability = probability;
         }
 
+        /// <summary>
+        /// Gets the probability.
+        /// </summary>
+        /// <value>
+        /// The probability.
+        /// </value>
         public double Probability { get; }
 
         /// <summary>

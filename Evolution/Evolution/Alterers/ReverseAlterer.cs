@@ -17,6 +17,10 @@ namespace Singular.Evolution.Alterers
         where F : IComparable<F>
         where R : class, IGene, new()
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ReverseAlterer{G, R, F}"/> class.
+        /// </summary>
+        /// <param name="probability">The probability.</param>
         public ReverseAlterer(double probability)
         {
             Probability = probability;

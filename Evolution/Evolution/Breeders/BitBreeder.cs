@@ -9,9 +9,16 @@ namespace Singular.Evolution.Breeders
     /// <summary>
     /// Breeds a number of <see cref="IListGenotype{G,BitGene}"/>
     /// </summary>
-    /// <seealso cref="Core.IBreeder{ListGenotype{BitGene}}" />
+    /// <seealso>
+    ///     <cref>IBreeder{ListGenotype{BitGene}}</cref>
+    /// </seealso>
     public class BitBreeder : IBreeder<ListGenotype<BitGene>>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BitBreeder"/> class.
+        /// </summary>
+        /// <param name="populationSize">Size of the population.</param>
+        /// <param name="genotypeSize">Size of the genotype.</param>
         public BitBreeder(int populationSize, int genotypeSize)
         {
             PopulationSize = populationSize;

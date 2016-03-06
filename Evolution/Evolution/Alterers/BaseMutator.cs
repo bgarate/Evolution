@@ -9,6 +9,7 @@ namespace Singular.Evolution.Alterers
     /// <summary>
     ///     Base class to define a mutator which acts one gene at a time
     /// </summary>
+    /// <typeparam name="G">Type of the genotype</typeparam>
     /// <typeparam name="R">Type of genes</typeparam>
     /// <typeparam name="F">Return type of the fitness function</typeparam>
     public abstract class BaseMutator<G, R, F> : IAlterer<G, F> where F : IComparable<F>
@@ -16,6 +17,11 @@ namespace Singular.Evolution.Alterers
         where G : IListGenotype<G, R>
 
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BaseMutator{G, R, F}"/> class.
+        /// </summary>
+        /// <param name="probability">The probability.</param>
+        /// <exception cref="System.ArgumentException">The mutation probability must be in the range [0,1]</exception>
         public BaseMutator(double probability)
         {
             if (probability < 0 || probability > 1)

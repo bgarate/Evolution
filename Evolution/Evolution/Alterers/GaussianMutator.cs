@@ -18,10 +18,21 @@ namespace Singular.Evolution.Alterers
     {
         private readonly RandomGenerator rnd = RandomGenerator.GetInstance();
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GaussianBaseMutator{G, F}"/> class.
+        /// </summary>
+        /// <param name="probability">The probability.</param>
         public GaussianBaseMutator(double probability) : base(probability)
         {
         }
 
+        /// <summary>
+        /// Mutates the specified Gene g.
+        /// </summary>
+        /// <param name="g">Original gene</param>
+        /// <returns>
+        /// Mutated gene
+        /// </returns>
         protected override FloatGene Mutate(FloatGene g)
         {
             return g.IsBounded

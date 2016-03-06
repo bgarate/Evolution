@@ -77,7 +77,7 @@ namespace Singular.Evolution.Core
                 CurrentWorld = new World<G, F>(CurrentWorld, newGeneration);
             }
 
-            statistics = Stats<G, F>.CalculateNewStatistis(CurrentWorld, Statistics);
+            statistics = Stats<G, F>.CalculateNewStatistics(CurrentWorld, Statistics);
 
             if (Algorithm.ShouldStop(CurrentWorld))
             {

@@ -13,7 +13,7 @@ namespace Singular.Evolution.Core
         where R : IGene, new()
     {
         /// <summary>
-        /// Gets thenumber of genes
+        /// Gets the number of genes
         /// </summary>
         /// <value>
         /// Number of genes
@@ -21,7 +21,7 @@ namespace Singular.Evolution.Core
         int Count { get; }
 
         /// <summary>
-        /// Gets the <see cref="R"/> at the specified index.
+        /// Gets the gene at the specified index.
         /// </summary>
         /// <value>
         /// The gene.

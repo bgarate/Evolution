@@ -9,7 +9,9 @@ namespace Singular.Evolution.Core
     /// </summary>
     /// <typeparam name="G"></typeparam>
     /// <typeparam name="F"></typeparam>
-    /// <seealso cref="System.IComparable{Singular.Evolution.Core.Individual{G, F}}" />
+    /// <seealso>
+    ///     <cref>System.IComparable{Individual{G, F}}</cref>
+    /// </seealso>
     public class Individual<G, F> : IComparable<Individual<G, F>> where F : IComparable<F> where G : IGenotype
     {
         private F fitness;

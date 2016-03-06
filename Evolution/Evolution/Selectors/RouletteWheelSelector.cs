@@ -5,26 +5,41 @@ using Singular.Evolution.Utils;
 
 namespace Singular.Evolution.Selectors
 {
+    /// <summary>
+    /// Represents a Roulette Wheel Selector, also called Fitness Proportionate Selection
+    /// </summary>
+    /// <typeparam name="G"></typeparam>
     public class RouletteWheelSelector<G> : BaseSelector<G, double> where G : IGenotype
     {
         private List<IndividualScore> sortedIndividuals;
         private List<double> sortedScores;
         private double sum;
 
-        public RouletteWheelSelector(int numberOfSelected, IFitnessScaling<double> scaling = null)
-            : base(numberOfSelected, scaling)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RouletteWheelSelector{G}"/> class.
+        /// </summary>
+        /// <param name="selectionSize">The number of selected.</param>
+        /// <param name="scaling">The scaling.</param>
+        public RouletteWheelSelector(int selectionSize, IFitnessScaling<double> scaling = null)
+            : base(selectionSize, scaling)
         {
+
         }
 
-        public IFitnessScaling<double> Scaling { get; }
-
+        /// <summary>
+        /// Selects from the individuals whose fitness has been previously scaled.
+        /// </summary>
+        /// <param name="scoredIndividuals">The input individuals.</param>
+        /// <returns>
+        /// Selected individuals
+        /// </returns>
         protected override IList<Individual<G, double>> Select(IList<IndividualScore> scoredIndividuals)
         {
             SortIndividuals(scoredIndividuals);
 
             IList<Individual<G, double>> selection = new List<Individual<G, double>>();
 
-            for (int i = 0; i < NumberOfSelected; i++)
+            for (int i = 0; i < SelectionSize; i++)
             {
                 selection.Add(SelectIndividual());
             }
@@ -57,13 +72,6 @@ namespace Singular.Evolution.Selectors
 
             sum = sumUpToLastScore;
         }
-
-        private IList<IndividualScore> Score(IList<Individual<G, double>> individuals)
-        {
-            List<double> originalScores = individuals.Select(s => s.Fitness).ToList();
-            List<double> newScores = Scaling?.Scale(originalScores) ?? originalScores;
-
-            return individuals.Select((individual, index) => new IndividualScore(newScores[index], individual)).ToList();
-        }
+        
     }
 }

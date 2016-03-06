@@ -3,6 +3,14 @@ using System.Collections.Generic;
 
 namespace Singular.Evolution.Core
 {
+    /// <summary>
+    /// Delegate for the fitness function which returns a fitness value given a genotype.
+    /// Note: It is asumed that the fitness function is idempotent
+    /// </summary>
+    /// <typeparam name="G"></typeparam>
+    /// <typeparam name="F"></typeparam>
+    /// <param name="genotype">The genotype.</param>
+    /// <returns></returns>
     public delegate F FitnessFunctionDelegate<in G, out F>(G genotype) where F : IComparable<F> where G : IGenotype;
 
     /// <summary>

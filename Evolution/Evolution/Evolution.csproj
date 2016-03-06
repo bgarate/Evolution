@@ -22,6 +22,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\Evolution.XML</DocumentationFile>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -61,7 +63,6 @@
     <Compile Include="Breeders\GenotypeGeneratorBreeder.cs" />
     <Compile Include="Core\Engine.cs" />
     <Compile Include="Core\MultithreadedCachedExecutor.cs" />
-    <Compile Include="Core\GeneEnumerator.cs" />
     <Compile Include="Core\IAlgorithm.cs" />
     <Compile Include="Core\IAlterer.cs" />
     <Compile Include="Core\IBreeder.cs" />
@@ -78,6 +79,8 @@
     <Compile Include="Core\IStats.cs" />
     <Compile Include="Core\ParallelResult.cs" />
     <Compile Include="Core\StopCriteriaDelegate.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="FactoryAttribute.cs" />
     <Compile Include="Scaling\LinearRankScaling.cs" />
     <Compile Include="Core\ListGenotypeFactory.cs" />
     <Compile Include="Core\Recombinator.cs" />
@@ -88,7 +91,7 @@
     <Compile Include="Genes\FloatGene.cs" />
     <Compile Include="Genotypes\ListGenotype.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GenotypeFactory.cs" />
+    <Compile Include="Activator.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

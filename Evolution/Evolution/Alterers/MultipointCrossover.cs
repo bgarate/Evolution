@@ -17,13 +17,28 @@ namespace Singular.Evolution.Alterers
         where R : IGene, new()
         where F : IComparable<F>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MultipointCrossover{G, R, F}"/> class.
+        /// </summary>
+        /// <param name="points">The points.</param>
         public MultipointCrossover(int points) : base(2, 2, points + 1, true)
         {
             Points = points;
         }
 
+        /// <summary>
+        /// Gets the number of slicing points.
+        /// </summary>
+        /// <value>
+        /// The points.
+        /// </value>
         public int Points { get; }
 
+        /// <summary>
+        /// Gets the offspring.
+        /// </summary>
+        /// <param name="parents">The parents.</param>
+        /// <returns></returns>
         protected override IList<G> GetOffspring(IEnumerable<G> parents)
         {
             List<G> parentsList = parents.ToList();

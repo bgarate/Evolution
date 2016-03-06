@@ -17,10 +17,18 @@ namespace Singular.Evolution.Alterers
         where F : IComparable<F>
         where R : class, IGene, new()
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PartiallyMatchedCrossover{G, R, F}"/> class.
+        /// </summary>
         public PartiallyMatchedCrossover() : base(2, 2, 2, true)
         {
         }
 
+        /// <summary>
+        /// Gets the offspring.
+        /// </summary>
+        /// <param name="parents">The parents.</param>
+        /// <returns></returns>
         protected override IList<G> GetOffspring(IEnumerable<G> parents)
         {
             List<G> parentsList = parents.ToList();
