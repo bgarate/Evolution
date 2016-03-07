@@ -28,8 +28,11 @@ namespace Evolution.Test
             ListGenotype<FloatGene> genotype2 = new ListGenotype<FloatGene>(genotype);
 
             Assert.AreEqual(genotype2.Count, 5);
-
-            Assert.IsTrue(genotype.All(g1 => genotype2.All(g2 => !ReferenceEquals(g1, g2))));
+            Assert.AreNotSame(genotype,genotype2);
+            for (int i = 0; i < genotype.Count; i++)
+            {
+                Assert.AreSame(genotype[i],genotype2[i]);
+            }
         }
     }
 }
