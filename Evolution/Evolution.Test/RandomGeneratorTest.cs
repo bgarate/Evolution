@@ -196,7 +196,7 @@ namespace Evolution.Test
             BoxMullerTransformation boxMullerTransformation = new BoxMullerTransformation(RandomGenerator.GetInstance());
             double[] values = Enumerable.Range(0, 1000000).Select(i => boxMullerTransformation.NextBoundedGaussian(3,2,10)).ToArray();
             ShapiroWilkTest test = new ShapiroWilkTest(values);
-            Assert.False(test.Significant);
+            Assert.True(test.Significant);
         }
 
 
