@@ -224,7 +224,7 @@ namespace Singular.Evolution.Utils
         }
     }
 
-    internal class BoxMullerTransformation
+    public class BoxMullerTransformation
     {
         private const int BOUNDED_DEVIATIONS = 3;
 
@@ -276,7 +276,7 @@ namespace Singular.Evolution.Utils
             double f = Math.Sqrt(-2.0*Math.Log(squares)/squares);
 
             secondDerivative = y*f;
-            return x;
+            return x*f;
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Accord.Statistics.Testing;
+using MathNet.Numerics.Statistics;
 using NUnit.Framework;
 using Singular.Evolution.Utils;
 
@@ -117,6 +119,7 @@ namespace Evolution.Test
 
             Assert.GreaterOrEqual(min3, -400);
             Assert.LessOrEqual(max3, -1);
+
         }
 
         [Test]
@@ -160,6 +163,69 @@ namespace Evolution.Test
             Assert.AreEqual(2.93, rnd.NextDouble(0.5, 3.2));
             Assert.Throws(typeof (InvalidOperationException), () => rnd.NextInt());
             Assert.Throws(typeof (Exception), () => rnd.NextDouble());
+        }
+
+        [Test]
+        public void TestXorShiftRandomSource()
+        {
+            XorShiftRandomSource source = new XorShiftRandomSource();
+            double[] values = Enumerable.Range(0, 1000000).Select(i => source.NextDouble()).ToArray();
+            UniformDistributionTest(values,0,1);
+        }
+
+        [Test]
+        public void TestSystemRandomSource()
+        {
+            SystemRandomSource source = new SystemRandomSource();
+            double[] values = Enumerable.Range(0, 1000000).Select(i => source.NextDouble()).ToArray();
+            UniformDistributionTest(values, 0, 1);
+        }
+
+        [Test]
+        public void TestBoxMullerTransformation()
+        {
+            BoxMullerTransformation boxMullerTransformation = new BoxMullerTransformation(RandomGenerator.GetInstance());
+            double[] values = Enumerable.Range(0, 1000000).Select(i => boxMullerTransformation.NextGaussian(3,5)).ToArray();
+            ShapiroWilkTest test = new ShapiroWilkTest(values);
+            Assert.False(test.Significant);
+        }
+
+        [Test]
+        public void TestBoxMullerTransformationClamped()
+        {
+            BoxMullerTransformation boxMullerTransformation = new BoxMullerTransformation(RandomGenerator.GetInstance());
+            double[] values = Enumerable.Range(0, 1000000).Select(i => boxMullerTransformation.NextBoundedGaussian(3,2,10)).ToArray();
+            ShapiroWilkTest test = new ShapiroWilkTest(values);
+            Assert.False(test.Significant);
+        }
+
+
+        public void UniformDistributionTest(double[] sampleArr, double lowerBound, double upperBound)
+        {
+            Array.Sort(sampleArr);
+            RunningStatistics runningStats = new RunningStatistics(sampleArr);
+
+            // Skewness should be pretty close to zero (evenly distributed samples)
+            if (Math.Abs(runningStats.Skewness) > 0.01) Assert.Fail();
+
+            // Mean test.
+            double range = upperBound - lowerBound;
+            double expectedMean = lowerBound + (range / 2.0);
+            double meanErr = expectedMean - runningStats.Mean;
+            double maxExpectedErr = range / 1000.0;
+
+            if (Math.Abs(meanErr) > maxExpectedErr) Assert.Fail();
+            
+            for (double tau = 0; tau <= 1.0; tau += 0.01)
+            {
+                double quantile = SortedArrayStatistics.Quantile(sampleArr, tau);
+                double expectedQuantile = lowerBound + (tau * range);
+                double quantileError = expectedQuantile - quantile;
+                if (Math.Abs(quantileError) > maxExpectedErr) Assert.Fail();
+            }
+
+            ShapiroWilkTest test = new ShapiroWilkTest(sampleArr);
+            Assert.True(test.Significant);
         }
     }
 }

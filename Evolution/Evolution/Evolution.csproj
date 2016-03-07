@@ -106,6 +106,7 @@
     <Compile Include="Utils\RandomChooser.cs" />
     <Compile Include="Utils\RandomGenerator.cs" />
     <Compile Include="Utils\MockRandomSource.cs" />
+    <Compile Include="Utils\XorShiftRandomSource.cs" />
     <Compile Include="Utils\SystemRandomSource.cs" />
   </ItemGroup>
   <ItemGroup>
